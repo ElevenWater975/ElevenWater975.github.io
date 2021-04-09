@@ -3,6 +3,7 @@ function text() {
 }
 const listen = event => {
     const p = document.createElement('p');
-    p.innerText = "The button worked!";
+    p.innerText = "Well, except for this";
     document.querySelector('#container').appendChild(p);
   }
+  // the button
