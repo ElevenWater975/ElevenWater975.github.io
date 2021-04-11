@@ -49,5 +49,29 @@
     <p>I think that JavaScript is great because it is very simple and good for web and game design</p>
     <p>But thats all about me</p>
     </div>
+
+    <canvas id="canvas" height="400" width="500">
+
+    </canvas>
+    <script>
+        function line() {
+            const canvas = document.querySelector('#canvas');
+
+            if (!canvas.getContext) {
+                return;
+            }
+
+            const ctx = canvas.getContext('2d');
+
+            ctx.strokeStyle = 'red';
+            ctx.lineWidth = 5;
+
+            ctx.beginPath();
+            ctx.moveTo(100, 100);
+            ctx.lineTo(300, 100);
+            ctx.stroke();
+
+        }
+    </script>
 </body>
 </html>
