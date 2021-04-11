@@ -8,6 +8,9 @@
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
 <style>
+    body {
+        background-color: rgb(80, 214, 27); 
+    }
     h1{
         color: blue;
         font-size: 28px;
@@ -20,6 +23,7 @@
     background-color: gray; 
     font-size: 1em;
     padding: 14px, 16px;
+    
     }
 
 .information {
@@ -76,9 +80,11 @@ a:hover {
 
             const ctx = canvas.getContext('2d');
 
+            //Change line style
             ctx.strokeStyle = 'red';
             ctx.lineWidth = 5;
 
+            //Draw the line
             ctx.beginPath();
             ctx.moveTo(1, 1);
             ctx.lineTo(8920, 1);
