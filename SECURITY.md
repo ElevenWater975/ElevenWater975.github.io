@@ -1,7 +1,7 @@
 # Security Policy
 
 ## Supported Versions
-Currently, we only have 1 version of this project running. That version is v1.0.0-alpha
+Here are the supported versions:
 
 | Version       | Supported          |
 | -------       | ------------------ |
