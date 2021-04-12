@@ -6,6 +6,7 @@ Currently, we only have 1 version of this project running. That version is v1.0.
 | Version       | Supported          |
 | -------       | ------------------ |
 | v1.0.0-alpha   | :white_check_mark: |
+| v1.0.1-alpha   | :white_check_mark: |
 
 
 ## Reporting a Vulnerability
