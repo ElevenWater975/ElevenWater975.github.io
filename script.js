@@ -7,3 +7,21 @@ const listen = event => {
     document.querySelector('#container').appendChild(p);
   }
  // This makes the button do something
+
+//Back to top button
+const button = document.getElementById("myBtn");
+
+window.onscroll = function() {scrollUp()};
+
+function scrollUp() {
+if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+myButton.style.display = "block";   
+} else {
+    myButton.style.display = "none; 
+}
+}
+
+function top() {
+document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0; 
+}
