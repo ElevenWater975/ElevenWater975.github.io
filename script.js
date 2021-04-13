@@ -9,6 +9,7 @@ const listen = event => {
  // This makes the button do something
 
 //Back to top button
+//Got some help from w3schools
 const button = document.getElementById("myBtn");
 
 window.onscroll = function() {scrollUp()};
