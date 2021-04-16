@@ -8,21 +8,4 @@ const listen = event => {
   }
  // This makes the button do something
 
-//Back to top button
-//Got some help from w3schools
-const button = document.getElementById("myBtn");
 
-window.onscroll = function() {scrollUp()};
-
-function scrollUp() {
-if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-myButton.style.display = "block";   
-} else {
-    myButton.style.display = "none"; 
-}
-}
-
-function top() {
-document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0; 
-}
