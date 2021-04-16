@@ -1,10 +1,11 @@
+<!--Programmed by ElevenWater975 and hosted using Github pages-->
 <!DOCTYPE html>
 <html>
     <link rel="stylesheet" href="style.css"></link>
     <script src="script.js"></script>
     <title>My first published site!</title>
 <body>
-<a href="https://github.com/ElevenWater975/ElevenWater975.github.io">Github</a> 
+<a href="https://github.com/ElevenWater975/ElevenWater975.github.io" target="_blank">Github</a> 
 <h1>Hello World</h1>
 <p>I'm hosted with GitHub Pages.</p>
 <style>
@@ -38,6 +39,7 @@
      text-align: center;
  }
 
+/*For this, I jsust made the links have a larger font size and a red color. And some other stuff*/
 a {
     text-align: right;
     font-size: 32px;
@@ -52,10 +54,14 @@ a:hover {
     text-shadow: -5px 5px 3px #999
 }
 
+/*
+*The code below is for the small link below the red line.
+*/
 #repository {
     font-family: sans-serif;
     font-size: 16px;
     color: blue;
+    /*A text shadow with a blue color on the small text would be nice!*/
     text-shadow: -3px 3px 3px #999;
 }
 </style>
@@ -69,7 +75,7 @@ a:hover {
         <p>Currently, there is no information for this site.</p>
     <p>Soon, we will display information here</p>
     </div>
-    <div id="OwnerInfo">
+    <div id="OwnerInfo"> 
     <h1>Who am I?</h1>
         <p>Well I would go by my username "ElevenWater975" and I am just a felllow programmer. I love to code. My main language is JavaScript.</p>
     <p>I think that JavaScript is great because it is very simple and good for web and game design</p>
@@ -79,6 +85,10 @@ a:hover {
     <canvas id="canvas" height="100" width="1920">
 
     </canvas>
+    <!--
+    In the script below, I made a line.
+    Thats it... just a line.
+    -->
     <script>
         function line() {
             const canvas = document.querySelector('canvas');
@@ -97,13 +107,13 @@ a:hover {
             ctx.beginPath();
             ctx.moveTo(1, 1);
             ctx.lineTo(8920, 1);
-            ctx.stroke();
-
+            ctx.stroke()
         }
         line();
+        //After that line was made, there were a few bugs including text being way below the line on the website. 
     </script>
    <h1>Other stuff</h1>
    <p>Information down here coming soon.</p><p>Hosted with <a href="https://github.com">Github</a></p>
-   <a id="repository" href="https://github.com/ElevenWater975/ElevenWater975.github.io/blob/main/index.html">Github repo</a>
+   <a id="repository" href="https://github.com/ElevenWater975/ElevenWater975.github.io/blob/main/index.html" rel="noopener noreferrer" target="_blank">Github repo</a>
 </body>
 </html>
