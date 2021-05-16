@@ -27,7 +27,8 @@
     font-size: 1em;
     padding: 14px, 16px;
         border-radius: 20px; 
-    
+    position: relative;
+    left: 20px; 
     }
 
 .information {
@@ -59,14 +60,22 @@ a:hover {
 /*
 *The code below is for the small link below the red line.
 */
+
+#otherStuff {
+    text-align: center;
+    position: relative;
+    top: -100px;
+}
+
 #repository {
     font-family: sans-serif;
     font-size: 16px;
     color: blue;
     /*A text shadow with a blue color on the small text would be nice!*/
     text-shadow: -3px 3px 3px #999;
+    position: relative;
+    top: -95px;
 }
-
 </style>
 <p>Yes it is me ElevenWater975 (or known as NJE_Eleven)</p>
 <p>This site is currently W.I.P (Work in progress) I am not sure what I am going to use it for</p>
@@ -102,15 +111,18 @@ a:hover {
 
             //Draw the line
             ctx.beginPath();
-            ctx.moveTo(1, 1);
-            ctx.lineTo(9000, 1);
+            ctx.moveTo(1, 10);
+            ctx.lineTo(9000, -50);
             ctx.stroke()
         }
         line();
         //After that line was made, there were a few bugs including text being way below the line on the website. 
     </script>
+    <div id="otherStuff">
    <h1>Other stuff</h1>
    <p>Information down here coming soon.</p><p>Hosted with <a href="https://github.com">Github</a></p>
+</div>
    <a id="repository" href="https://github.com/ElevenWater975/ElevenWater975.github.io/blob/main/index.html" rel="noopener noreferrer" target="_blank">Github repo</a>
+   
 </body>
 </html>
