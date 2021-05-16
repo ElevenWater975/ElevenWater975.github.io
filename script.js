@@ -7,5 +7,3 @@ const listen = event => {
     document.querySelector('#container').appendChild(p);
   }
  // This makes the button do something
-
-
