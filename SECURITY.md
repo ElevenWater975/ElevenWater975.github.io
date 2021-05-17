@@ -5,15 +5,9 @@ Here are the supported versions:
 
 | Version       | Supported          |
 | -------       | ------------------ |
-<<<<<<< HEAD
-| v1.1.0-alpha  |  :white_check_mark
-| v1.0.0-alpha   | :x:                |
-| v1.0.1-alpha   | :x:                |
-=======
 | v1.1.0-alpha   | :white_check_mark:
 | v1.0.0-alpha   | ❌ |
 | v1.0.1-alpha   | ❌ |
->>>>>>> d3e346c274ac7a21a43c65ec207d3a5888de5d19
 | V1.0.2-alpha   | :white_check_mark: |
 
 
