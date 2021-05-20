@@ -2,82 +2,116 @@
 <!DOCTYPE html>
 <html>
     <meta name="viewport" content="width-device-width, initial-scale-1.0">
-    <link rel="stylesheet" href="style.css"></link>
-    <script src="script.js"></script>
     <title>My first published site!</title>
 <body>
-<a href="https://github.com" rel="noopener noreferrer" target="_blank">Github</a> 
-<a href="support.html" rel="noopener noreferrer" target="_blank">Support</a>
-<h1>Welcome!</h1>
-<p>Welcome to my new website!</p>
-<style>
-    body {
-        background-color: lime; 
-    }
-    h1{
-        color: blue;
-        font-size: 28px;
-        text-align: center;
-        font-family: Arial;
-        text-shadow: -2px 2px 2px #999;
-    }
-    .btn {
-    border: 10px;
-    margin: 4px, 16px;
-    background-color: white; 
-    font-size: 1em;
-    padding: 14px, 16px;
-        border-radius: 20px; 
-    position: relative;
-    left: 20px; 
-    }
-
-.information {
- background-color: white; 
-}
+    <style>
+        body {
+            background-color: lime; 
+        }
+        h1{
+            color: blue;
+            font-size: 28px;
+            text-align: center;
+            font-family: Arial;
+            text-shadow: -2px 2px 2px #999;
+        }
+        .btn {
+        border: 10px;
+        margin: 4px, 16px;
+        background-color: white; 
+        font-size: 1em;
+        padding: 14px, 16px;
+            border-radius: 20px; 
+        position: relative;
+        left: 20px; 
+        }
     
- p {
-    font-size: 16px;
-    font-family: sans-serif;
-     text-align: center;
-     position: relative;
- }
+    .information {
+     background-color: white; 
+    }
+        
+     p {
+        font-size: 16px;
+        font-family: sans-serif;
+         text-align: center;
+         position: relative;
+     }
+    
+    /*For this, I jsust made the links have a larger font size and a red color. And some other stuff*/
+    a {
+        text-align: right;
+        font-size: 32px;
+        font-family: Arial; 
+        color: red; 
+        font-stretch: expanded;
+        text-decoration: none;
+        padding: 8px;
+        
+    }  
+    a:hover {
+        color: blue; 
+        font-style: bold; 
+        text-shadow: -5px 5px 3px #999
+    }
+    
+    /*
+    *The code below is for the small link below the red line.
+    */
+    
+    #otherStuff {
+        text-align: center;
+        position: relative;
+        top: -100px;
+        background-color: cyan;
+    }
+    
+    #repository {
+        font-family: sans-serif;
+        font-size: 16px;
+        color: blue;
+        /*A text shadow with a blue color on the small text would be nice!*/
+        text-shadow: -3px 3px 3px #999;
+        position: relative;
+        top: -95px;
+        background-color: lime;
+        font-style: bold;
+        top: 80;
+        left: 2;
+    }
+    li {
+        background-color: purple;
+        float: left;
+        display: block;
+        position: relative; 
+        left: -50px; 
+        top: 2px;
+    }
+    
+    #myBtn {
+        background-color: red;
+        position: fixed;
+        block-size: 10px;
+        color: white;
+    }
 
-/*For this, I jsust made the links have a larger font size and a red color. And some other stuff*/
-a {
-    text-align: right;
-    font-size: 32px;
-    font-family: sans-serif; 
-    color: red; 
-    font-stretch: expanded;
-    text-decoration: none;
-    padding: 10px 20px; 
-}  
-a:hover {
-    color: blue; 
-    font-style: bold; 
-    text-shadow: -5px 5px 3px #999
-}
+    #externalLinks {
+        position: relative;
+        top: -80;
+    }
+  
+   </style>
+   <ul>
+<li><a href="https://github.com" rel="noopener noreferrer" target="_blank">Github</a></li>
+<li><a href="support.html" rel="noopener noreferrer" target="_blank">Support</a></li>
+<li><a href="#">Social Media (soon)</a></li>
+<li><a href="#">About (soon)</a></li>
 
-/*
-*The code below is for the small link below the red line.
-*/
+</ul>
+<br>
+<br>
+<strong><h1 class="fix">Welcome!</h1></strong>
+<em><p>Welcome to my new website!</p></em>
 
-#otherStuff {
-    text-align: center;
-    position: relative;
-    top: -100px;
-}
-
-#repository {
-    font-family: sans-serif;
-    font-size: 16px;
-    color: blue;
-    /*A text shadow with a blue color on the small text would be nice!*/
-    text-shadow: -3px 3px 3px #999;
-    position: relative;
-    top: -95px;
-}
 </style>
 <p>Yes it is me ElevenWater975 (or known as NJE_Eleven)</p>
 <p>This site is currently W.I.P (Work in progress) I am not sure what I am going to use it for</p>
@@ -117,7 +151,6 @@ a:hover {
             ctx.lineTo(9000, -50);
             ctx.stroke()
         }
-        line();
         //After that line was made, there were a few bugs including text being way below the line on the website. 
     </script>
     <div id="otherStuff">
@@ -125,7 +158,13 @@ a:hover {
    <p>Information down here coming soon.</p><p>Hosted with <a href="https://github.com">Github</a></p>
    <p>Website made by ElevenWater975</p>
 </div>
+<canvas id="newCanvas" height="400" width="1920">
+
+</canvas>
+<div id="externalLinks">
    <a id="repository" href="https://github.com/ElevenWater975/ElevenWater975.github.io/blob/main/index.html" rel="noopener noreferrer" target="_blank">Github repo</a>
+    <p>We will not collect any personal information without explicit permission</p>
+</div>
    
 </body>
 </html>
