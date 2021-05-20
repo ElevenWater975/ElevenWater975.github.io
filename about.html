@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,9 +8,17 @@
     <title>About Me</title>
 </head>
 <body>
+    <script src="aboutButton.js"></script>
     <img src='pexels-negative-space-97077.jpg'>
-    <p>Image by https://www.pexels.com/photo/pink-white-black-purple-blue-textile-web-scripts-97077/</p>
+    <div id="credit">
+    <a href="https://www.pexels.com/photo/pink-white-black-purple-blue-textile-web-scripts-97077/">Image source</a>
+    <br>
+    <a href="https://elevenwater975.github.io">Home</a>
+</div>
     <style>
+        body {
+            background-color: lime;
+        }
         img {
            width: 20%;
            left: 100%;
@@ -21,14 +30,40 @@
         }
         #about {
             font-size: 20px;
+            color: blue;
             font-family: sans-serif;
             position: relative;
             text-align: center;
         }
+
+        #credit {
+            font-size: 24px;
+            position: relative;
+            font-family: sans-serif;
+            top: -100px;
+            left: 330px;
+            padding: 14px 25px;
+        }
+        a {
+            color: red;
+        }
+        a:hover {
+            color: blue;
+            text-shadow: 1px 2px 1px;
+        }
     </style>
     <div id="about">
-    <h1>About this site</h1>
-    <p>This site was made by a programmer named (by the alias) ElevenWater975.</p>
+    <em><h1>About this site</h1></em>
+    <p>This site was made by a programmer named (by the alias) <strong>ElevenWater975</strong>.</p>
+    <h2>Who is ElevenWater975?</h2>
+    <p>ElevenWater975 is a teenage programmer who has been programming since July (or so) 2020</p>
+    <p>Eleven has been actually taking so many courses on freecodecamp and other sites.</p>
+    <h2>Why did he make this site?</h2>
+    <p>ElevenWater975 made this site just for a blog but he is thinking of adding more functionality to it</p>
+    <div id="functionality">
+    <button class="btn" onclick="button()" id="newButton">Kind of like this</button>
+</div>
+
     
 </div>
 </body>
