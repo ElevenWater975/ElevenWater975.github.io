@@ -4,6 +4,7 @@
     <meta name="viewport" content="width-device-width, initial-scale-1.0">
     <title>My first published site!</title>
 <body>
+    <!--Maybe I should add a responsive image? Also make this site more responsive for mobile users-->
     <style>
         body {
             background-color: lime; 
@@ -65,6 +66,7 @@
         background-color: cyan;
         text-decoration: none;
         float: down;
+        padding: 2px 20px;
     }
     
     #repository {
@@ -73,21 +75,22 @@
         color: blue;
         /*A text shadow with a blue color on the small text would be nice!*/
         text-shadow: -3px 3px 3px #999;
-        position: relative;
+        position: fixed;
         top: -95px;
         background-color: lime;
         font-style: bold;
         top: 80;
         left: 2;
+        padding: 2px 10px; 
     }
     li {
         background-color: purple;
         float: left;
         display: block;
-        position: relative; 
+        position: relative;
         left: -50px; 
         top: 2px;
-    }
+        padding: 2px 10px;
     
     #myBtn {
         background-color: red;
@@ -134,6 +137,7 @@
     Thats it... just a line.
     -->
     <script>
+        // Just a line (it has a bug) but it stopped working when I added some extra code.
         function line() {
             const canvas = document.querySelector('canvas');
 
@@ -157,15 +161,22 @@
     </script>
     <div id="otherStuff">
    <h1>Other stuff</h1>
-   <p>Information down here coming soon.</p><p>Hosted with <a href="https://github.com">Github</a></p>
+   <p>Expecting to go out of alpha within 6 months.</p><p>Hosted with <a href="https://github.com">Github</a></p>
+   <a href="https://github.com/ElevenWater975/ElevenWater975.github.io/blob/main/SECURITY.md">Security policy (please read)</a>
    <p>Website made by ElevenWater975</p>
 </div>
-<canvas id="newCanvas" height="400" width="1920">
-
+<canvas id="newCanvas" height="50" width="1920">
+<p>Dont mind this big gap</p>
+<p>Its gonna be cleared by this text</p>
+<p>Should I leave now?</p>
+<p>no?</p>
+<p>Alright I am leaving CYA!</p>
 </canvas>
 <div id="externalLinks">
    <a id="repository" href="https://github.com/ElevenWater975/ElevenWater975.github.io/blob/main/index.html" rel="noopener noreferrer" target="_blank">Github repo</a>
     <p>We will not collect any personal information without explicit permission</p>
+    <p>Version 1.1.0-Alpha</p>
+    <p>Goodbye now. Well I might add some more to this site soon.</p>
 </div>
    
 </body>
