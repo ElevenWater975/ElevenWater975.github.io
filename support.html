@@ -7,13 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Support page</title>
 </head>
-<a href="https://elevenwater975.github.io">Home</a>
-<a href="https://github.com/ElevenWater975/ElevenWater975.github.io">Github</a>
-<a href="#">Social media (adding soon)</a>
-<a href="#">About (adding soon)</a>
+<ul>
+<li><a href="https://elevenwater975.github.io">Home</a></li>
+<li><a href="https://github.com/ElevenWater975/ElevenWater975.github.io">Github</a></li>
+<li><a href="#">Social media (adding soon)</a></li>
+<li><a href="#">About (adding soon)</a></li>
+</ul>
 <body>
     <!--CSS below this comment-->
     <style>
+        li {
+            float: left;
+            text-decoration: none;
+            padding: 2px 10px;
+            background: purple;
+            left: -50px;
+            top: 2px;
+            display: block;
+        }
         a {
             color: red;
             font-size: 24px;
@@ -35,9 +46,30 @@
         p {
             font-size: 20px;
         }
+
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 80;
+            background-color: lime;
+            border: none;
+            outline: none;
+            border-radius: 10px;
+            font-size: 18px;
+            color: white;
+            padding: 15;
+            cursor: pointer;
+        }
+        
+        #backToTop:hover {
+            background-color: darkgray;
+        }
     </style>
     <!--CSS ends here-->
     <div class="header">
+        <br>
+        <br>
     <h1>Welcome to the support page!</h1>
     <p>We will answer questions you have with our QNA</p>
     <h1>QNA</h1>
@@ -49,10 +81,45 @@
     <p>A: Right now, it is for a blog. But we will add more functionality to it.</p>
     <br>
     <p>Q: What version is the site in?</p>
-    <p>A: Right now, the website is in v1.0.2-Alpha</p>
-
+    <p>A: Right now, the website is in v1.1.0-Alpha</p>
+    <br>
+    <p>Q: Will there be a login screen?</p>
+    <p>A: Probably, we are thinking about it.</p>
+    <br>
+    <p>Q: Will there be more bug fixes?</p>
+    <p>A: Absolutely! we are always fixing bugs on this site. (There are a lot)</p>
     <h1>Can't see what you are looking for?</h1>
     <p>Contact me at nje.eleven34@outlook.com or go back <a href="https://elevenwater975.github.io"> To the homepage</a></p>
+    <p>Goodbye now!</p>
     </div>
+    <div id="backToTop">
+    <button onclick="topFunction()" id="myBtn" title="Go to top">To the Top</button>
+</div>
+    <script>
+        //Thanks to w3schools for the tutorial on how to make a back to top button
+        
+        mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+        mybutton.style.display = "none";
+     }
+    }
+
+
+            function topFunction() {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+            
+        
+        //I think I did something wrong in this code :( but I will fix it beacuse as I said there are so many bugs on my site. 
+        // I fixed the bug :)
+    </script>
+
+
 </body>
 </html>
