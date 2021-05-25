@@ -5,19 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <a href="https://elevenwater975.github.io">Home</a>
-    <br>
-    <a href="https://elevenwater975.github.io/support.html">Support page</a>
-    <br>
-    <a href="#">YouTube (adding soon)</a>
-    <a href='#'>Twitter (adding soon)</a>
+<ul>
+    <li><a href="https://elevenwater975.github.io">Home</a></li>
+    <li><a href="https://elevenwater975.github.io/support.html">Support page</a></li>
+    <li><a href="#">YouTube (adding soon)</a></li>
+    <li><a href='#'>Twitter (adding soon)</a></li>
+</ul>
+<br>
     <title>About Me</title>
 </head>
 <body>
     <script src="aboutButton.js"></script>
     <style>
+        
         body {
             background-color: lime;
+        }
+        li {
+            background-color: gray;
+            float: left;
+            display: block;
+            position: relative;
+            left: -50px;
+            top: 2px;
+            padding: 2px 10px;
         }
         img {
            width: 20%;
@@ -49,11 +60,18 @@
             text-shadow: 1px 1px 2px gray;
             text-decoration: underline; 
         }
+        #newCanvas {
+            background-color: lime;
+        }
+        #final-link {
+            font-size: 12px;
+            font-family: sans-serif;
+            
+        }
     </style>
-    <div id="about">
-        <strong><h1>ElevenWater975's site!</h1></strong>
-        <br>
-        <br>
+    <br>
+<div id="about">
+    <strong><h1>ElevenWater975's site!</h1></strong>
     <em><h1>About this site</h1></em>
     <p>This site was made by a programmer named (by the alias) <strong>ElevenWater975</strong>.</p>
     <h2>Who is ElevenWater975?</h2>
@@ -65,8 +83,36 @@
     <p><em>This site was made in April 2021 by ElevenWater975 on github.</em></p>
     <div id="functionality">
 </div>
+<canvas id="newCanvas" height="100" width="1920">
+   
+ </canvas>
+ <script>
+     function newLine() {
+         const newCanvas = document.querySelector('newCanvas');
+        
+         const ctx = newCanvas.getContext('2d');
 
-    
+         ctx.strokeStyle = 'red';
+         ctx.lineWidth = 3;
+
+         ctx.beginPath();
+         ctx.moveTo(1, 10);
+         ctx.lineTo(9000, -50);
+         ctx.stroke();
+     }
+
+     newLine();
+</script>
+    <p>Theres supposed to be a line above this text</p>
+    <p>Not sure where it is but it might be here soon</p>
+    <br>
+    <p>Please do not make a copy of this website</p>
+    <p>We will not ask for information without explicit permission</p>
+    <p>Version 1.1.0-Alpha</p>
+    <p>Goodbye now</p>
+<div id="final-link">
+<a href="https://elevenwater975.github.io">home page</a>
+</div>
 </div>
 </body>
 </html>
