@@ -63,7 +63,6 @@
         text-align: center;
         position: relative;
         top: -100px;
-        background-color: cyan;
         text-decoration: none;
         float: down;
         padding: 2px 20px;
@@ -107,14 +106,20 @@
         padding: 10px;
     }
     hr {
+        position: relative;
+        top: -18px;
         border-top: 10px dotted red;
         border-radius: 5px;
         border-color: rebeccapurple;
     }
+    .secondHr {
+        position: relative; 
+        top: -25px;
+    }
     /*
     FINALLY A LINE! THIS TIME I WONT HAVE TO CODE A LOT OF JAVASCRIPT!! YAY!
     */
-    anotherBtn {
+    #anotherBtn {
         position: fixed;
         bottom: 20px;
         right: 30px;
@@ -131,6 +136,7 @@
 <li><a href="support.html" rel="noopener noreferrer" target="_blank">Support</a></li>
 <li><a href="#">Social Media (soon)</a></li>
 <li><a href="#">About (soon)</a></li>
+<li><a href="#">Contact me (soon) (really excited about this one)</a></li>
 
 </ul>
 <br>
@@ -178,19 +184,20 @@
         //After that line was made, there were a few bugs including text being way below the line on the website. 
     </script>
     <div id="otherStuff">
+        <hr class="firstHr">
    <h1>Other stuff</h1>
    <p>Expecting to go out of alpha within 6 months.</p><p>Hosted with <a href="https://github.com">Github</a></p>
-   <a href="https://github.com/ElevenWater975/ElevenWater975.github.io/blob/main/SECURITY.md">Security policy (please read)</a>
+   <a href="https://github.com/ElevenWater975/ElevenWater975.github.io/blob/main/SECURITY.md" rel="noopener referrer" target="_blank">Security policy (please read)</a>
    <p>Website made by ElevenWater975</p>
 </div>
 <div id="externalLinks">
-    <hr>
+    <hr class="secondHr">
    <a id="repository" href="https://github.com/ElevenWater975/ElevenWater975.github.io/blob/main/index.html" rel="noopener noreferrer" target="_blank">Github repo</a>
    
     <p>We will not collect any personal information without explicit permission</p>
     <p>Version 1.1.0-Alpha</p>
     <p>Goodbye now. Well I might add some more to this site soon.</p>
-    <a href="#">Pointless link (not a rickroll)</a>
+    <a href="pointlessLink.html" rel="noopener noreferrer" target="_blank">Pointless link (not a rickroll)</a>
 </div>
    <div id="newTop">
        <button onclick="newBtnFunc()" id="anotherBtn" title="Back to Top">To the Top</button>
