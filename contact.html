@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="contact.js"></script>
+    <link rel="stylesheet" type="text/css" href="contact.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="#information">
+        <button type="submit" class="btn-open" onclick="openForm()">Open form!</button>
+        <br>
+    <h1>Please enter information here to contact me.</h1>
+    <p>Note: if you are under the age of 13, please do not send any information to me. Get a parent or a guardian to do it for you</p>
+    <p>If you somehow found this page before it was released, umm take a look around you will see I am still working on it.</p>
+</div>
+<div class="container">
+    <div class="form-popup" id="openForm">
+    <form id="contact-form" action="action_page.php">
+        <label for="firstname">First Name</label>
+        <input type="text" id="firstname" placeholder="Your name: " required>
+        <br>
+        <br>
+        <label for="lastname">Last Name</label>
+        <input type="text" id="firstname" placeholder="Last name: " required>
+        <br>
+        <br>
+        <label for="email">Email address</label>
+        <input type="text" id="email" placeholder="Email address: " required>
+        <br>
+        <br>
+        <label for="age">Date of birth</label>
+        <input type="number" size="4" name="age" min="13" id="age" placeholder="Date of Birth: " required>
+        <br>
+        <br>
+        <label for="problem">What problems are you having?</label>
+        <button id="problem" onclick="openText()" class="bugs-option">Bugs/Glitches</button>
+        <button id="problem" onclick="openText()" class="security-option">Security issues</button>
+        <br>
+        <button type="submit" onclick="openText()" class="submitBtn"><i class="fa fa-mail"></i> Contact</button>
+        <br>
+        <br>
+        <button type="submit" class="btn-cancel" onclick="closeForm()"><i class="fa fa-close"></i> Close</button>
+        <br>
+        <br>
+            <label for="paragraph" id="paragraph-form">What seems to be the problem?</label>
+        <input type="text" id="paragraph">
+    </form>
+</div>
+    </div>
+</div>
+</body>
+</html>
