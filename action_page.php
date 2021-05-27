@@ -1,0 +1,1 @@
+Thank you for contacting us! We are sure to contact you within 1 business day
