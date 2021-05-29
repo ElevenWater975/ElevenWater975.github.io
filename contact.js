@@ -11,6 +11,7 @@ document.querySelector('#container').appendChild(input)
 
 function openForm() {
     document.getElementById("openForm").style.display = "block";
+    document.getElementById("openButton").style.display = "none";
     console.log("A user has opened the contact form")
 }
 
@@ -24,8 +25,8 @@ function contact() {
 }
 //Thanks to w3schools! Their tutorial pages are helpful. 
 
-//Stackoverflow helps lol.
-//Users under the age of 13 cannot contact me. They need a parent or guardian to do so for them
+//Stackoverflow helps too.
+//Users under the age of 13 cannot contact me.
 
 function requiredAge(bday) {
 var dateString = bday.value;
@@ -35,15 +36,19 @@ var dateOfBirth = new Date(now.getFullYear(),parts[1]-1,parts[0]);
 var age = now.getFullYear()-parts[2];
 if(now<birthday) age--;
 if(age<13) {
-    alert("You must be age 13 or over to contact me. Get a parent or guardian to contact me for you.");
-    console.log("A user under 13 has been blocked from contacting us.");
+    alert("You must be age 13 or over to contact me.");
     return false
 }
 return true;
 }
 
 function openText() {
-    document.getElementById("paragraph-form").style.display = none;
+    document.getElementById("paragraph-form").style.display = "none";
     console.log("A user selected an option");
+}
+
+function openTheButton() {
+    document.getElementById("openButton").style.display = "block";
+    document.getElementById("agreement").style.display = "none"
 }
 
