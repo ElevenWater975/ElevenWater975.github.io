@@ -1,1 +1,1 @@
-Thank you for contacting us! We are sure to contact you within 1 business day
+Yeah I dont really know how to do php so this page is pointless (for now)
