@@ -1,3 +1,62 @@
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #fff;
+        color: #000;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    body.dark {
+        background: #000;
+        color: #fff;
+    }
+}
+
+.title-text {
+    position: relative;
+    right: -200px;
+    text-align: center;
+    background-color: #09A7A1;
+    padding: 0.25em;
+    width: 1000px;
+}
+
+.title-text h1 {
+    color: white;
+}
+.title-text li {
+    font-size: 20px;
+    font-family: sans-serif;
+    position: center;
+    display: block;
+    background-color: purple;
+    background-position: relative;
+    float: left;
+    position: relative;
+    top: 3px;
+    right: -270px;
+    padding: 2px 10px;
+    border-color: lime;
+    
+}
+
+a {
+    color: red;
+    font-size: 20px;
+    font-family: sans-serif;
+ 
+}
+
+a:hover {
+    color: blue;
+    font-size: 20px;
+    font-family: sans-serif;
+    border-color: lime;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 10%
+}
+
 h1 {
     font-family: sans-serif;
     font-size: 24px;
@@ -14,6 +73,7 @@ p {
     padding: 16px 20px;
     border: none;
     font-size: 20px;
+    cursor: pointer;
 }
 
 #openButton {
@@ -26,6 +86,15 @@ color: black;
 padding: 16px 10px;
 border: none;
 font-size: 20px;
+animation-name: blink-animation;
+position: relative;
+right: -20px;
+}
+
+@keyframes blink-animation {
+    50% {
+        background-color: palevioletred;
+    }
 }
 
 .submitBtn {
@@ -35,6 +104,10 @@ font-size: 20px;
     border: none;
     font-size: 20px;
     box-shadow: 2px 1px 2px gray;
+    animation-duration: 10ms;
+    position: relative;
+    top: -5px;
+    right: -20px;
 }
 
 #firstname {
@@ -60,6 +133,8 @@ font-size: 20px;
 #email-base {
     font-size: 20px;
     font-family: sans-serif;
+    float: left;
+    position: fixed;
 }
 
 #age {
@@ -72,13 +147,12 @@ font-size: 20px;
 font-family: sans-serif;
 }
 .form-popup {
-    display: none;
+    background-color: rgb(204, 238, 255);
     margin: auto;
     float: center;
     font-size: 20px;
     position: fixed;
     border: 3px solid #f1f1f1;
-    z-index: 9;
     border-radius: 10%;
     border-color: gray;
     box-shadow: 2px 2px lightgray;
@@ -90,6 +164,31 @@ font-family: sans-serif;
     right: 15;
 }
 
+#agreement {
+    display: block;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    cursor: pointer
+}
+
+#agreement:hover {
+display: block;
+background-color: gray;
+color: white;
+font-size: 20px;
+cursor: pointer;
+}
+
+.legal {
+    border-color: black;
+    border-radius: 30%
+}
+
+#sideText {
+    background-color: rgb(204, 238, 255);
+
+}
 /*
 Thank you w3schools! Your tutorial pages are helpful!
 */
