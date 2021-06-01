@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="contact.js"></script>
-    <link rel="stylesheet" type="text/css" href="contact.css">
+    
+    <link id="darkMode" rel="stylesheet" type="text/css" href="contact.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
-    <h1>Please enter information here to contact me.</h1>
-    <p>Note: if you are under the age of 13, please do not send any information to me. I do not knowingly collect information from those under 13.</p>
+    <div class="title-text">
+    <h1>Contact Me</h1>
+
+    <ul>
+        <li><a href="https://ElevenWater975.github.io">Home</a></li>
+        <li><a href="https://ElevenWater975.github.io/support.html">Support</a></li>
+        <li><a href="#">About (coming soon)</a></li>
+    </ul>
+</div>
+    <br>
+    <br>
+    <br>
+    <script src="contactScript.js" type="text/javascript"></script>
+    <div id="legal">
+    <p>Note: if you are under the age of <strong>13</strong>, please do not send any information to me. I do not knowingly collect information from those under 13.</p>
     <p>If you somehow found this page before it was released, umm take a look around you will see I am still working on it.</p>
-    <button id="agreement" onclick="openTheButton()">
-    <span>I am 13 years of age or older.</span>
-    </button>
-    <div id="#information">
-        <button type="submit" id="openButton" class="btn-open" onclick="openForm()">Open form!</button>
+    </div>
         <br>
 </div>
 <div class="container">
     <div class="form-popup" id="openForm">
     <br>
+    <br>
+    <div id="notice">
+
+ 
     <form id="contact-form" action="action_page.php">
+        <h1>What seems to be the problem?</h1>
         <label for="firstname" id="firstname-base">First Name</label>
         <input type="text" id="firstname" placeholder="Your name: " required>
         <br>
@@ -31,27 +45,33 @@
         <input type="text" id="firstname" placeholder="Last name: " required>
         <br>
         <br>
-        <label for="email" id="email-base">Email address</label>
+        <label for="email" id="email-base">Email address (style bug)</label>
+        <br>
         <input type="text" id="email" placeholder="Email address: " required>
         <br>
         <br>
         <label for="age" id="age-base">Date of birth</label>
         <input type="number" size="4" name="age" min="13" id="age" placeholder="Date of Birth: " required>
         <br>
+
         <br>
-        <label for="problem" id="problem-base">What problems are you having?</label>
-        <button id="problem" onclick="openText()" class="bugs-option">Bugs/Glitches</button>
-        <button id="problem" onclick="openText()" class="security-option">Security issues</button>
-        <br>
-        <button type="submit" onclick="openText()" class="submitBtn"><i class="fa fa-mail"></i> Contact</button>
+        <a href="https://elevenwater975.github.io" button type="submit" id="closeButton" class="btn-cancel" onclick="closeForm() ;reOpenTheOpenButton()"><i class="fa fa-close"></i> Close</a>
+
         <br>
         <br>
-        <button type="submit" class="btn-cancel" onclick="closeForm()"><i class="fa fa-close"></i> Close</button>
+        <div id="sideText">
+            <h1>What seems to be the problem?</h1>
+            <ul>
+                <li><button type="button" id="security-issues" onclick="securityIssues()">Security Issues</button></li>
+                <li><button type="button" id="bugs-issues" onclick="bugsIssues()">Bugs/Glitches</button></li>
+            </ul>
+        </div>
+        <div id="bugs">
+            
+        </div>
         <br>
-        <br>
-            <label for="paragraph" id="paragraph-form">What seems to be the problem?</label>
-        <input type="text" id="paragraph" placeholder="Please type in your problem here" width="200px">
-        <br>
+    </div>
+    <button type="submit" onclick="openText()" class="submitBtn"><i class="fa fa-mail"></i> Contact</button>
     </form>
 </div>
     </div>
