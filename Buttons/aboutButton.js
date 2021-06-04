@@ -7,3 +7,4 @@ const button = event => {
     para.innerText = "See? I am making this site more functional";
     document.quertSelector('#functionality').appendChild(para);
 }
+
