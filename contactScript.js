@@ -73,3 +73,10 @@ const bugsIssues = event => {
         document.querySelector('#sideText').appendChild(input);
     })
 }
+
+function darkMode() {
+    var darkTheme = document.body;
+    darkTheme.classList.toggle("dark-theme");
+    document.getElementById("darkmode").value="Light Mode";
+}
+
