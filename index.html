@@ -1,10 +1,32 @@
 <!--Programmed by ElevenWater975 (Known as NJE Eleven) and hosted using Github pages-->
 <!DOCTYPE html>
 <html>
-    <script src="script.js"></script>
+    
     <meta name="viewport" content="width-device-width, initial-scale-1.0">
     <title>My first published site!</title>
 <body>
+    <div id="darktheme">
+    <div id+"lighttheme">
+    <script>
+        function darkMode() {
+            var darkTheme = document.body;
+            darkTheme.classList.toggle("darktheme");
+        }
+
+        var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+        
+        //Why did I add this? What am I doing?
+        //I am kinda crazy
+        function lightMode() {
+            var lightTHEME = document.body;
+            lightTHEME.classList.toggle("lighttheme");
+            console.log("Some person pressed the light mode button. Are they ok?")
+            const p = document.createElement('p');
+            p.innerText = "What the-";
+            document.getElementById('lighttheme').appendChild(p);
+        }
+        </script>
     <!--Maybe I should add a responsive image? Also make this site more responsive for mobile users-->
     <style>
         body {
@@ -103,7 +125,8 @@
     #externalLinks {
         position: relative;
         top: -80;
-        background-color: rgb(115, 255, 115);
+        background-color: gray;
+        color: white; 
         padding: 10px;
     }
     hr {
@@ -131,7 +154,52 @@
         border-radius: 10px;
         font-size: 18px;
     }
+    .darktheme {
+        animation-name: background-change;
+        animation-duration: 2s;
+        background-color: #000;
+            color: white;
+        }
+        @keyframes background-change {
+           from {background-color: lime}
+           to {background-color: black}
+           from {color: black}
+           to {color: white}
+        }
+        /*
+        *I finally added dark mode to my website! YAY!
+        */
+        #darkModeHome {
+            display: block;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            border-color: blue;
+            border-width: 10px;
+        }
+    
+        .lighttheme {
+            animation-name: light-mode;
+            animation-duration: 2s;
+            background-color: white;
+            color: black;
+        }
+        @keyframes light-mode {
+            from {background-color: black}
+            to {background-color: white}
+            from {color: white}
+            to {color: black}
+        }
+        #lightModeHome {
+            display: block;
+            background-color: blue;
+            color: white;
+            font-size: 20px;
+            border-color: blue;
+            border-width: 10px;
+        }
    </style>
+   <main>
    <nav>
    <ul>
 <li><a href="https://github.com" rel="noopener noreferrer" target="_blank">Github</a></li>
@@ -141,6 +209,12 @@
 <li><a href="#">Contact me (soon) (really excited about this one)</a></li>
 </ul>
 </nav>
+</main>
+<br>
+<br>
+<p>Date/Time: <span id="datetime"></span></p>
+<button id="darkModeHome" onclick="darkMode()">Dark mode (work in progress)</button>
+<button id="lightModeHome" onclick="lightMode()">Bright mode (Idk why though)</button>
 <br>
 <br>
 <strong><h1 class="fix">Welcome!</h1></strong>
@@ -196,9 +270,9 @@
 <div id="externalLinks">
     <hr class="secondHr">
    <a id="repository" href="https://github.com/ElevenWater975/ElevenWater975.github.io/blob/main/index.html" rel="noopener noreferrer" target="_blank">Github repo</a>
-   
+
     <p>We will not collect any personal information without explicit permission</p>
-    <p>Version 1.1.0-Alpha</p>
+    <p>Version 1.1.1-Alpha</p>
     <p>Goodbye now. Well I might add some more to this site soon.</p>
     <a href="pointlessLink.html" rel="noopener noreferrer" target="_blank">Pointless link (not a rickroll)</a>
 </div>
@@ -223,6 +297,7 @@
                document.documentElement.scrollTop = 0;
            }
    </script>
+   </div>
+</div>   
 </body>
 </html>
-<!--End of this code for now I wonder what I will add next?-->
