@@ -16,7 +16,6 @@
 <li><a href="#">Contact me (soon) (really excited about this one)</a></li>
 </ul>
 <body>
-    <!--CSS below this comment-->
     <style>
         li {
             float: left;
@@ -74,12 +73,31 @@
         border-top: 2px dotted red;
         border-bottom: 1px dotted red;
         }
+
+        .darkmode {
+            animation-name: dark-mode;
+            animation-duration: 2s;
+            background-color: white;
+            color: black;
+        }
+        @keyframes dark-mode {
+            from {background-color: white}
+            to {background-color: black}
+            from {color: black}
+            to {color: white}
+        }
         /*
         I am going to add my logo into the website (probably)
         */
     </style>
+    <button id="darkModeSupport" onclick="dms()">Dark mode</button>
+    <br>
+    <br>
+    <!--CSS below this comment-->
+    
     <!--CSS ends here-->
     <div class="header">
+        <div class="darkmode">
         <br>
         <br>
     <h1>Welcome to the support page!</h1>
@@ -106,12 +124,17 @@
     <br>
     <p>Q: Is "ElevenWater975" a company?</p>
     <p>A: No this site is not a company. ElevenWater975 is a single person just programming this site.</p>
+    <br>
+    <p>Q: Will there be a dark mode option added to the site?</p>
+    <p>A: YES! There is already dark mode on the home page.</p>
+    <br>
+    <p>Q: Will there be a bright mode option added to the site?</p>
+    <p>A: Why the- *sigh* yes. That is also on the home page... smh</p>
     <hr>
     <h1>Can't see what you are looking for?</h1>
     <p>Contact me at nje.eleven34@outlook.com or go back <a href="https://elevenwater975.github.io"> To the homepage</a></p>
     <br>
-    <h1>Q: Will ther be a dark mode option added to the site?</h1>
-    <p>A: Probably! Eleven is thinking about that.</p>
+  
     <p>Goodbye now!</p>
     </div>
     <div id="backToTop">
@@ -137,11 +160,14 @@
                 document.documentElement.scrollTop = 0;
             }
             
-        
+        function dms() {
+            var darkMode = document.body;
+            darkMode.classList.toggle("darkmode");
+        }
         //I think I did something wrong in this code :( but I will fix it beacuse as I said there are so many bugs on my site. 
         // I fixed the bug :)
     </script>
     
-
+</div>
 </body>
 </html>
