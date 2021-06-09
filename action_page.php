@@ -1,1 +1,4 @@
-Yeah I dont really know how to do php so this page is pointless (for now)
+<?php $name = $contact-form['name'];
+$email = $_POST['email'];
+$message = $_POST('message');
+?>

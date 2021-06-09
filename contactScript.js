@@ -44,7 +44,7 @@ return true;
 function openTheButton() {
     document.getElementById("openButton").style.display = "block";
     document.getElementById("agreement").style.display = "none"
-}
+} 
 
 const reOpenTheOpenButton = event => {
     document.getElementById("closeButton").style.display = "block";
@@ -74,9 +74,15 @@ const bugsIssues = event => {
     })
 }
 
+// Darkmode button FINALLY
 function darkMode() {
     var darkTheme = document.body;
     darkTheme.classList.toggle("dark-theme");
-    document.getElementById("darkmode").value="Light Mode";
+    document.getElementById("darkmode").value="Dark Mode";
 }
 
+function brightMode() {
+    var brightTheme = document.body;
+    brightTheme.classList.toggle("bright-theme");
+    document.getElementById("brightmode").value="Bright Mode";
+}

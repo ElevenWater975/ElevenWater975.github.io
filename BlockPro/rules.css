@@ -1,0 +1,26 @@
+button {
+    display: block;
+    background-color: blue;
+    color: lightgray;
+}
+
+nav {
+    float: right;
+}
+
+ul {
+    display: none;
+    background-color: gray;
+    float: right;
+}
+
+a {
+    color: pink;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: lime;
+    font-family: sans-serif;
+}

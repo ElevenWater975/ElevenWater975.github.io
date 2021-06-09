@@ -190,10 +190,31 @@ cursor: pointer;
 .dark-theme {
     background-color: 	#585858;
     color: #fff;
+    animation-name: darkMode;
+    animation-duration: 2s;
+}
+
+@keyframes darkMode {
+    from {background-color: white;}
+    to {background-color: #585858}
 }
 
 .dark-theme .form-popup {
     color: #000;
+}
+
+.bright-theme {
+    color: #fff;
+    color: #000;
+    animation-name: brightMode;
+    animation-duration: 10000ms; 
+}
+
+@keyframes brightMode {
+    from {background-color: #585858}
+    to {background-color: #fff}
+    from {color: white}
+    to {color: black}
 }
 /*
 Thank you w3schools! Your tutorial pages are helpful!

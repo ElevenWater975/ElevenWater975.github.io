@@ -1,0 +1,24 @@
+body {
+    font-size: 24px; 
+    font-family: sans-serif;
+    background-color: lime;
+}
+
+hr {
+    border: 10px solid black;
+    position: relative;
+    top: 30px;
+}
+
+a {
+    display: block;
+    float: left;
+    color: red;
+    text-decoration: none; 
+    background-color: rebeccapurple; 
+}
+
+a:hover {
+    text-decoration: none; 
+    background-color: blue;
+}
