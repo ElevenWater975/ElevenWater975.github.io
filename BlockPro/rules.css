@@ -1,11 +1,44 @@
+.darkMode {
+animation-name: background-change;
+animation-duration: 2s;
+background-color: #000;
+color: white;
+}
+
+@keyframes background-change {
+    from {background-color: lime}
+    to {background-color: black}
+    from {color: black}
+    to {color: white}
+}
+
+
+
+
+#settingsBtn {
+    float: right;
+    position: relative;
+    top: 30px;
+}
+
+#settings {
+    display: none;
+    float: right;
+    position: relative;
+    top: -50px;
+}
+
 button {
     display: block;
     background-color: blue;
     color: lightgray;
 }
 
-nav {
+#popoutNav {
     float: right;
+    position: relative;
+    top: 15px;
+    right: -5px;
 }
 
 ul {

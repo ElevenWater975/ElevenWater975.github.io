@@ -6,15 +6,27 @@
     <link id="blockpro" rel="stylesheet" type="text/css" href="rules.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 <body>
+    <div id="darkMode">
+        <div id="lightMode">
+        
     <main id="Main">
     <button id="navBarPopout" onclick="popoutNav()">nav links</button>
+    <button id="settingsBtn" onclick="popoutSettings()">Settings</button>
+    <button id="closeSettings" onclick="closeSettings()">Close Settings</button>
     <nav>
-        <button id="closeNav" onclick="closeNav()">Close nav</button>
+        <ul id="settings">
+            <li><button id="darkMode" onclick="darkMode()">Dark mode!</button></li>
+            <li><button id="lightMode" onclick="lightMode()">Light Mode!</button></li>
+        </ul>
+    </nav>
+    <nav>
+        
         <ul id="popoutNav">
+            <li><button id="closeNav" onclick="closeNav()">Close nav</button></li>
             <li><a href="https://elevenwater975.github.io">Home</a></li>
             <li><a href="https://elevenwater975.github.io/support.html">Support page</a></li>
             <li><a href="https://elevenwater975.github.io/blockpro/blockpro.html">BlockPro news and more</a></li>
@@ -31,6 +43,7 @@
 <p>3. No cheating or hacking is allowed on the server. If you cheat you will be perma banned</p>
 <p>Don't log on to the server with multiple accounts just to break these rules</p>
 </div>
-
+</div>
+</div>
 </body>
 </html>
