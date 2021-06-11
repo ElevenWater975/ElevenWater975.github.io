@@ -5,6 +5,7 @@ function alert() {
     alert("this alert")
 }
 
+// Some of the code.
 const openForm = event => {
     document.getElementById("openForm").style.display = "block";
     document.getElementById("openButton").style.display = "none";
