@@ -87,3 +87,4 @@ function brightMode() {
     brightTheme.classList.toggle("bright-theme");
     document.getElementById("brightmode").value="Bright Mode";
 }
+    
