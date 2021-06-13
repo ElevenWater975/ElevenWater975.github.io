@@ -16,7 +16,6 @@
     font-family: sans-serif;
     position: center;
     display: block;
-    background-color: purple;
     background-position: relative;
     float: left;
     position: relative;
@@ -31,17 +30,21 @@ a {
     color: red;
     font-size: 20px;
     font-family: sans-serif;
- 
+    border-color: lime;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 10%
 }
 
 a:hover {
     color: blue;
     font-size: 20px;
     font-family: sans-serif;
-    border-color: lime;
-    border-width: 10px;
-    border-style: solid;
-    border-radius: 10%
+
+}
+
+a:click {
+    box-shadow: none;
 }
 
 h1 {
@@ -219,3 +222,12 @@ cursor: pointer;
 /*
 Thank you w3schools! Your tutorial pages are helpful!
 */
+
+ul {
+    border: 3px solid gray;
+    border-radius: 25px;
+}
+footer {
+    background-color: darkslateblue;
+    color: lightgrey;
+}

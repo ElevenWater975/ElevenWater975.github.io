@@ -12,10 +12,31 @@ header {
 
 body {
     background-color: lightgray;
+    font-family: Arial;
 }
 
 a {
     font-size: 20px;
     font-family: sans-serif;
     background-color: lightgray;
+}
+
+input {
+    border: 3px solid lightgray;
+    border-radius: 25px;
+}
+
+#username-field {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#email-field {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#password-field {
+    font-size: 20px;
+    font-family: sans-serif;
 }

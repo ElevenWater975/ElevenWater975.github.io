@@ -1,32 +1,40 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <link id="Blockpro" rel="stylesheet" type="text/css" href="BlockPro.css"></link>
     <script src="BlockPro.js"></script>
+    <script src="BlockProButtons.js"></script>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BlockPro News</title>
 </head>
 <body>
+    <header>
     <div class="container">
     <ul>
-       
         <li><a href="https://elevenwater975.github.io">HomePage</a></li>
         <li><a href="https://elevenwater975.github.io/support.html">Support page</a></li>
         <li><a href="rules.html"></a></li>
         <li><a href="staff.html">Staff</a></li>
     </ul>
-    <header>
+    <div class="Useful buttons">
+        <button id="serverip" onclick="serverIp()">Server Ip</button>
+        <button id="serverversion" onclick="serverVersion()">Server Version</button>
+    </div>
+    <button id="Ping" onclick="ping()">Ping</button>
         <div class="BlockPro-Title-and-information">
             <h1>BlockPro Minecraft</h1>
             <p>BlockPro is a 1.15.2 - 1.16.4 Minecraft server made by the person who made this site</p>
-            <hr>
+            <br>
         </div>
-    </header>
+    
     <!--I finally added a page for my minecraft server-->
         <div class="BP-news">
             <h1>BlockPro news</h1>
+            <br>
+            <h1 id="Blockpro-back-up">BlockPro is back online?</h1>
+            <p>On June 12, 2021 ElevenWater975 has opened the server back up for staff only and for 2 months is being hosted in the United States western region.</p>
             <br>
             <h1>6/7/2021: The server is down? (temporarily)</h1>
             <p>BlockPro is down right now but I am going to get it back up</p>
@@ -40,10 +48,25 @@
             <p>BlockPro is whitelisted? That can only mean one thing! Thats right, NEW STUFF!</p>
             <p>We take time at BlockPro and build new things.</p>
             <p>Blockpro is a good server people.</p>
+        </header>
         </div>
+        <div id="header2">
+            <h1>This page is a work in progress</h1>
+            <p>This site is still in alpha. If you need help, go to <a href='support.html'>Our support page</a></p>
+        </div>
+        <footer>
         <div class="home-button">
             <button id="home-page" onclick="location.href='ElevenWater975.github.io', homePage()" delay="10">Back to the home page</button>
         </div>
     </div>
+    <div id="external-links">
+        <h2>Can't find what you are looking for?</h2>
+        <p>Try these external links</p>
+        <a href="#">Security/Privacy policy</a>
+        <a href="#">Youtube</a>
+        <a href="#">Twitter</a>
+    </div>
+</footer>
+    
 </body>
 </html>

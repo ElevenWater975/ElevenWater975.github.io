@@ -38,11 +38,35 @@ darkmode {
     font-family: sans-serif;
 }
 
+input {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: blue;
+}
+
 a {
-    color: red;
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
 }
 
 a:hover {
     color: blue;
+    box-shadow: 2px 1px 2px gray;
 }
 
+a:click {
+    box-shadow: none;
+
+}
+
+nav {
+    display: none;
+    float: right;
+    background-color: violet;
+    border: 3px solid blue;
+    border-radius: 25px;
+
+}

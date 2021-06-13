@@ -46,7 +46,7 @@ function openTheButton() {
     document.getElementById("openButton").style.display = "block";
     document.getElementById("agreement").style.display = "none"
 } 
-
+//Some functions here
 const reOpenTheOpenButton = event => {
     document.getElementById("closeButton").style.display = "block";
     document.getElementById("openForm").style.display = "none"
@@ -87,4 +87,8 @@ function brightMode() {
     brightTheme.classList.toggle("bright-theme");
     document.getElementById("brightmode").value="Bright Mode";
 }
+    function pointlessAlert() {
+        alert("Some alert");
+    }
+
     

@@ -1,7 +1,43 @@
+.container {
+    background-color: black;
+    font-size: 20px;
+    font-family: Helvetica;
+    color: gradient(lime, lightblue); 
+}
+
 body {
     font-size: 24px; 
     font-family: sans-serif;
-    background-color: lime;
+    width: auto;
+    height: auto;
+}
+
+header {
+    background-color: darkgrey;
+    font-family: Helvetica;
+    font-size: 20px;
+    color: lightgray;
+}
+
+#serverip {
+    display: block;
+    background-color: hotpink;
+    font-size: 20px;
+    float: right;
+    position: relative;
+}
+
+#serverversion {
+    display: block;
+    float: right;
+    background-color: blue;
+    font-size: 20px;
+    position: relative;
+}
+
+#Blockpro-back-up {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 24px;
 }
 
 hr {
@@ -16,9 +52,23 @@ a {
     color: red;
     text-decoration: none; 
     background-color: rebeccapurple; 
+    position: relative;
+    left: 2px;
 }
 
 a:hover {
     text-decoration: none; 
     background-color: blue;
+    border-color: 3px solid lime;
+    border-radius: 25px;
+    border-width: 5px;
 }
+
+#external-links {
+    background-color: darkslateblue;
+    color: darkgray;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 15px;
+}
+

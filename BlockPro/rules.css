@@ -12,7 +12,11 @@ color: white;
     to {color: white}
 }
 
-
+a:hover {
+font-size: 20px;
+font-family: sans-serif;
+box-shadow: 2px 1px 2px gray;
+}
 
 
 #settingsBtn {

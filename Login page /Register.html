@@ -10,6 +10,7 @@
 </head>
 <body>
     <div id="darkmode">
+        <button id="navPop" onclick="navpop()">Nav bar</button>
         <nav id="registerNav">
             <ul>
                 <li><a href="https://ElevenWater975.github.io">Home</a></li>
@@ -20,6 +21,7 @@
     <header>
         <button id="dark-mode" onclick="darkMode()">Dark mode</button>
 <h1>Register here</h1>
+<h3>All users must be aged 13 years old or older to join this site.</h3>
 <p>Why you should register? You should register because all of your settings will be saved once you click on a settings button.</p>
 <form type="register_page.php" id="register">
     <input type="text" name="username" id="username-field" class="register-form-field" placeholder='Username' required><span>Please type in a username</span></input>
@@ -33,7 +35,7 @@
     <br>
     <p>By submitting, you agree to our <a href="#">Security policy (also used as a privacy policy)</a></p>
     <input type="checkbox" required>I agree to the <a href="https://github.com/ElevenWater975/ElevenWater975.github.io/blob/main/SECURITY.md" rel="noopener referrer" target="_blank">Security policy</a></input>
-    <button type="submit" id="submitBtn" location.href="elevenwater975.github.io">Submit</button>
+    <button type="submit" id="submitBtn" location.href="elevenwater975.github.io" onclick="minAge()">Submit</button>
     <p>Already have an account? <a href="#">Login</a></p>
 <!--End of the form-->
 </div>

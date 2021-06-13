@@ -16,3 +16,8 @@ function darkMode() {
     var darkTheme = document.body;
     darkTheme.classList.toggle("darkmode")
 }
+
+function navpop() {
+var nav = document.body;
+var navPop = document.getElementById("registerNav").style.display = "block";
+}
