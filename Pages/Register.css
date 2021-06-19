@@ -1,0 +1,21 @@
+body {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+input {
+    font-size: 20px;
+    font-family: sans-serif;
+    color: blue;
+    
+}
+
+button {
+    display: block;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: black;
+    background-color: lightgray;
+    text-align: center;
+}
