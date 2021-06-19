@@ -8,35 +8,36 @@
     top: 15px;
 }
 
-h1 {
-    text-align: inline;
-    width: 200px;
+#main-text {
     text-align: center;
-    font-size: 24px;
-    font-family: sans-serif;
 }
 
-p {
-    font-size: 18px;
+.container {
+    border-radius: 25px;
+   font-size: 38px;
     font-family: sans-serif;
+    text-align: center;
+    position: relative;
+}
+
+#submit {
+    border-radius: 25px;
+    font-size: 24px;
+}
+
+#checkbox {
+    font-size: 25px;
 }
 
 input {
-    font-size: 20px;
-    font-family: sans-serif;
-    color: black;
-    max-width: 20%;
+font-size: 24px;
+border-radius: 25px;
+color: blue;
 }
 
 nav {
     display: none;
-    float: left;
-    background-color: purple;
-    margin: 8px 2px;
-    position: relative;
-    text-decoration: none;
-    font-family: sans-serif;
-    font-size: 20px;
+ 
 }
 
 a {
@@ -59,8 +60,11 @@ a:hover {
 }
 
  body {
-     font-family: sans-serif;
-     font-size: 20px;
+    background-image: linear-gradient(purple, violet, blue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto;
+
  }
 
  .external-links {
