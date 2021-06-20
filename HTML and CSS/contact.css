@@ -1,0 +1,57 @@
+
+body {
+    background-image: linear-gradient(lime, blue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto;
+}
+
+p {
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+#contact-form {
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    background-color: lightblue;
+    border: 3px solid black;
+    border-radius: 25px;
+    width: 360px;
+    margin: 0 auto;
+}
+
+input {
+    color: blue;
+    background-color: lightgoldenrodyellow;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+a {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+button {
+    font-size: 20px;
+    font-family: sans-serif;
+    background-color: blue;
+    color: white;
+}
+
+.otherText {
+    color: white;
+}
+
