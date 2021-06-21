@@ -1,0 +1,39 @@
+body {
+    padding: 25px;
+background-image: linear-gradient(lime, lightblue);
+background-repeat: no-repeat;
+background-attachment: fixed;
+text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 20px;
+    font-family: sans-serif; 
+}
+
+.darkmode {
+    background-image: linear-gradient(black, black);
+    color: white;
+}
+
+#settings-btn {
+    display: block;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#dark-mode {
+    float: right;
+    display: none;
+    background-color: blue;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+}

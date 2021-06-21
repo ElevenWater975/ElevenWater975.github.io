@@ -1,0 +1,58 @@
+body {
+    background-image: linear-gradient(pink, violet, lightblue);
+    text-align: center;
+}
+h1 {
+
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+hr {
+    border: 3px dotted red;
+}
+
+#more-links {
+    background-color: lightgray;
+    color: black;
+}
+
+#about {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+button {
+    display: block;
+    background-color: blue;
+    color: white;
+    font-size: 18px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+a {
+    /*a element css program*/
+display: block;
+font-size: 20px;
+text-decoration: none;
+font-family: sans-serif;
+border: 3px solid gray;
+border-radius: 25px;
+padding: 8px;
+background-color: violet;
+}
