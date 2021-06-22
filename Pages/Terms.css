@@ -17,6 +17,7 @@ body {
 li {
     background-color: black;
     max-width: 180px;
+    color: white;
 }
 
 a {
@@ -44,4 +45,8 @@ a {
     color: black;
     font-size: 20px;
     text-decoration: none; 
+}
+
+button:hover {
+    cursor: pointer;
 }

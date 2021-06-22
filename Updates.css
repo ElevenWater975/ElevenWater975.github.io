@@ -16,10 +16,6 @@ p {
     font-family: sans-serif; 
 }
 
-.darkmode {
-    background-image: linear-gradient(black, black);
-    color: white;
-}
 
 #settings-btn {
     display: block;
@@ -36,4 +32,18 @@ p {
     font-size: 20px;
     font-family: sans-serif;
     color: white;
+}
+
+#home {
+    display: block;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    float: left;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: violet;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
 }

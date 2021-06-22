@@ -3,7 +3,7 @@
 <html>
     
     <meta name="viewport" content="width-device-width, initial-scale-1.0">
-    <title>My first published site!</title>
+    <title>Eleven's Site</title>
 <body>
     <div id="darktheme">
     <div id="lighttheme">
@@ -48,6 +48,13 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
             border-radius: 20px; 
         position: relative;
         left: 20px; 
+        }
+
+        #button-nothing {
+            display: block;
+            border: 3px solid black;
+            border-radius: 25px;
+            background-color: yellow;
         }
     
     .information {
@@ -105,16 +112,29 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
         left: 2;
         padding: 2px 10px; 
     }
-    li {
-        background-color: purple;
-        float: left;
-        display: block;
-        position: relative;
-        left: -50px; 
-        top: 2px;
-        padding: 2px 10px;
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
     }
 
+    li {
+        float: left;
+        display: block;
+        font-size: 20px;
+        text-decoration: none;
+        font-family: sans-serif;
+        border: 3px solid gray;
+        border-radius: 25px;
+        padding: 8px;
+        background-color: violet;
+    }
+
+    li a {
+        color: black;
+    }
     #myBtn {
         background-color: red;
         position: fixed;
@@ -123,11 +143,10 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
     }
 
     #externalLinks {
-        position: relative;
-        top: -80;
-        background-color: gray;
-        color: white; 
-        padding: 10px;
+      display: block;
+      height: auto;
+      font-family: sans-serif;
+      font-size: 18px;
     }
     hr {
         position: relative;
@@ -163,6 +182,8 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
         @keyframes background-change {
            from {background-color: lime}
            to {background-color: black}
+           from {background-color: white} 
+           to {background-color: black}
            from {color: black}
            to {color: white}
         }
@@ -171,6 +192,9 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
         */
         #darkModeHome {
             display: block;
+            float: right; 
+            margin: 0;
+            padding: 0;
             background-color: blue;
             color: white;
             font-size: 20px;
@@ -192,6 +216,9 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
         }
         #lightModeHome {
             display: block;
+            float: right;
+            margin: 0;
+            padding: 0;
             background-color: blue;
             color: white;
             font-size: 20px;
@@ -199,6 +226,7 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
             border-width: 10px;
         }
    </style>
+   <div class="container">
    <main>
    <nav>
    <ul>
@@ -212,6 +240,8 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
 </main>
 <br>
 <br>
+<br>
+<br>
 <button id="darkModeHome" onclick="darkMode()">Dark mode (work in progress)</button>
 <button id="lightModeHome" onclick="lightMode()">Bright mode (Idk why though)</button>
 <br>
@@ -222,11 +252,11 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
 <button id="button-nothing" onclick='nothingButton()'>This button does nothing</button>
 </div>
 <p>Yes it is me ElevenWater975 (or known as NJE_Eleven)</p>
-<p>This site is currently W.I.P (Work in progress) I am not sure what I am going to use it for</p>   
+<p>This site is in alpha which means it is not completely finished. Right now, this site is basically just a blog about me.</p>   
     <div class="Information">
     <h1>More information about this site</h1>
-        <p>Currently, there is no information for this site.</p>
-    <p>Soon, we will display information here</p>
+        <p>This site will have many pages</p> 
+    <p>Eleven is working on pages like support, login, register, contact, etc.</p>
     </div>
 
     <canvas id="canvas" height="100" width="1920"></canvas>
@@ -236,33 +266,10 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
     In the script below, I made a line.
     Thats it... just a line.
     -->
-    <script>
-        // Just a line (it has a bug) but it stopped working when I added some extra code.
-        function line() {
-            const canvas = document.querySelector('canvas');
-
-            if (!canvas.getContext) {
-                return;
-            }
-
-            const ctx = canvas.getContext('2d');
-
-            //Change line style
-            ctx.strokeStyle = 'red';
-            ctx.lineWidth = 5;
-
-            //Draw the line
-            ctx.beginPath();
-            ctx.moveTo(1, 10);
-            ctx.lineTo(9000, -50);
-            ctx.stroke()
-        }
-        //After that line was made, there were a few bugs including text being way below the line on the website. 
-    </script>
+    </div>
     <div id="otherStuff">
-        <hr class="firstHr">
    <h1>Other stuff</h1>
-   <p>Expecting to go out of alpha within 6 months.</p><p>Hosted with <a href="https://github.com">Github</a></p>
+   <p>Expecting to go out of alpha within 6 months.</p>
    <a href="https://github.com/ElevenWater975/ElevenWater975.github.io/blob/main/SECURITY.md" rel="noopener referrer" target="_blank">Security policy (please read)</a>
    <p>Website made by ElevenWater975</p>
 </div>
@@ -271,13 +278,15 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
    <a id="repository" href="https://github.com/ElevenWater975/ElevenWater975.github.io/blob/main/index.html" rel="noopener noreferrer" target="_blank">Github repo</a>
 
     <p>We will not collect any personal information without explicit permission</p>
-    <p>Version 1.1.1-Alpha</p>
-    <p>Goodbye now. Well I might add some more to this site soon.</p>
-    <a href="pointlessLink.html" rel="noopener noreferrer" target="_blank">Pointless link (not a rickroll)</a>
+    <a href="https://elevenwater975.github.io/Pages/updates">Updates</a>
+    <p>Version 1.1.2-Alpha</p>
 </div>
    <div id="newTop">
        <button onclick="newBtnFunc()" id="anotherBtn" title="Back to Top">To the Top</button>
    </div> 
+   <div class="hosted">
+       <p>This site was hosted using <a href="https://github.com">Github</a></p>
+   </div>
    <!--Some stuf here-->
    <script>
        newbutton = document.getElementById("anotherBtn");
@@ -295,6 +304,10 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
            function newBtnFunc() {
                document.body.scrollTop = 0;
                document.documentElement.scrollTop = 0;
+           }
+
+           function nothingButton() {
+               alert("Well, except for this");
            }
    </script>
    </div>

@@ -91,4 +91,6 @@ function brightMode() {
         alert("Some alert");
     }
 
+
+
     

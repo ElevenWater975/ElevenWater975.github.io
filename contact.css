@@ -34,7 +34,21 @@ input {
     font-family: sans-serif;
 }
 
+ul {
+    float: left;
+}
+
+li {
+    float: left;
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+}
+
 a {
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color:violet;
     font-size: 20px;
     font-family: sans-serif;
     text-decoration: none;
