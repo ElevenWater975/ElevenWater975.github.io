@@ -25,3 +25,27 @@ button {
     border-radius: 25px;
     font-size: 24px;
 }
+
+li {
+    list-style-type: none;
+}
+
+ a {
+     float: left;
+     border: 3px solid black;
+     border-radius: 25px;
+     background: pink;
+     font-size: 20px;
+     font-family: sans-serif;
+     text-decoration: none;
+    }
+
+    a:hover {
+        color: blue;
+        text-decoration: none;
+    }
+
+    a:click {
+        color: lime;
+        text-decoration: none;
+    }

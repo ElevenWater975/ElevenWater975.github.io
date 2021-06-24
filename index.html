@@ -1,8 +1,10 @@
 <!--Programmed by ElevenWater975 (Known as NJE Eleven) and hosted using Github pages-->
 <!DOCTYPE html>
 <html>
-    
-    <meta name="viewport" content="width-device-width, initial-scale-1.0">
+    <!--Trying to make the site respond better for mobile users-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Eleven's Site</title>
 <body>
     <div id="darktheme">
@@ -13,8 +15,6 @@
             darkTheme.classList.toggle("darktheme");
         }
 
-        var dt = new Date();
-document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
         
         //Why did I add this? What am I doing?
         //I am kinda crazy
@@ -30,14 +30,23 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
     <!--Maybe I should add a responsive image? Also make this site more responsive for mobile users-->
     <style>
         body {
-            background-color: lime; 
+            background: linear-gradient(purple, blue, violet);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
+
+        easteregg {
+            display: block;
+            color: lime;
+            size: 50px;
+        }
+        
         h1{
-            color: blue;
+            color: white;
             font-size: 28px;
+            font-weight: bold;
             text-align: center;
             font-family: Arial;
-            text-shadow: -2px 2px 2px #999;
         }
         .btn {
         border: 10px;
@@ -62,7 +71,8 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
     }
         
      p {
-        font-size: 16px;
+        font-size: 20px;
+        color: lightgray;
         font-family: sans-serif;
          text-align: center;
          position: relative;
@@ -101,7 +111,7 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
     #repository {
         font-family: sans-serif;
         font-size: 16px;
-        color: blue;
+        color: gray;
         /*A text shadow with a blue color on the small text would be nice!*/
         text-shadow: -3px 3px 3px #999;
         position: fixed;
@@ -176,15 +186,15 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
     .darktheme {
         animation-name: background-change;
         animation-duration: 2s;
-        background-color: #000;
+        background: #000;
             color: white;
         }
         @keyframes background-change {
-           from {background-color: lime}
+           from {background: linear-gradient(purple, blue, violet) no-repeat}
+           from {background-repeat: no-repeat}
            to {background-color: black}
-           from {background-color: white} 
            to {background-color: black}
-           from {color: black}
+           from {color: gray}
            to {color: white}
         }
         /*
@@ -205,12 +215,11 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
         .lighttheme {
             animation-name: light-mode;
             animation-duration: 2s;
-            background-color: white;
+            background: white;
             color: black;
         }
         @keyframes light-mode {
-            from {background-color: black}
-            to {background-color: white}
+           background-color: white;
             from {color: white}
             to {color: black}
         }
@@ -230,11 +239,13 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
    <main>
    <nav>
    <ul>
+       <header>
 <li><a href="https://github.com" rel="noopener noreferrer" target="_blank">Github</a></li>
 <li><a href="support.html" rel="noopener noreferrer" target="_blank">Support</a></li>
-<li><a href="#">Social Media (soon)</a></li>
+<li><a href="https://youtube.com/nyrangerfan88">Youtube</a></li>
 <li><a href="#">About (soon)</a></li>
 <li><a href="#">Contact me (soon) (really excited about this one)</a></li>
+</header>
 </ul>
 </nav>
 </main>
@@ -246,12 +257,12 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
 <button id="lightModeHome" onclick="lightMode()">Bright mode (Idk why though)</button>
 <br>
 <br>
-<strong><h1 class="fix">Welcome!</h1></strong>
-<em><p>Welcome to my new website!</p></em>
 <div id="button">
-<button id="button-nothing" onclick='nothingButton()'>This button does nothing</button>
-</div>
-<p>Yes it is me ElevenWater975 (or known as NJE_Eleven)</p>
+    <button id="button-nothing" onclick='nothingButton()'>This button does nothing</button>
+    </div>
+<strong><h1 class="fix">Welcome!</h1></strong>
+<em><p>I like to code and stuff</p></em>
+
 <p>This site is in alpha which means it is not completely finished. Right now, this site is basically just a blog about me.</p>   
     <div class="Information">
     <h1>More information about this site</h1>
@@ -267,39 +278,16 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
     Thats it... just a line.
     -->
     </div>
-    <div id="otherStuff">
-   <h1>Other stuff</h1>
-   <p>Expecting to go out of alpha within 6 months.</p>
-   <a href="https://github.com/ElevenWater975/ElevenWater975.github.io/blob/main/SECURITY.md" rel="noopener referrer" target="_blank">Security policy (please read)</a>
-   <p>Website made by ElevenWater975</p>
 </div>
-<div id="externalLinks">
-    <hr class="secondHr">
-   <a id="repository" href="https://github.com/ElevenWater975/ElevenWater975.github.io/blob/main/index.html" rel="noopener noreferrer" target="_blank">Github repo</a>
-
-    <p>We will not collect any personal information without explicit permission</p>
-    <a href="https://elevenwater975.github.io/Pages/updates">Updates</a>
-    <p>Version 1.1.2-Alpha</p>
-</div>
-   <div id="newTop">
-       <button onclick="newBtnFunc()" id="anotherBtn" title="Back to Top">To the Top</button>
-   </div> 
    <div class="hosted">
        <p>This site was hosted using <a href="https://github.com">Github</a></p>
+       <p>Version 1.2.0-alpha</p>
    </div>
    <!--Some stuf here-->
    <script>
        newbutton = document.getElementById("anotherBtn");
        window.onscroll = function() {scrollFunction()};
 
-       function scrollFunction() {
-           if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-               newbutton.style.display = "block";
-           } else {
-            mybutton.style.display = "none";
-           }
-           
-        }
     
            function newBtnFunc() {
                document.body.scrollTop = 0;
@@ -309,7 +297,12 @@ document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
            function nothingButton() {
                alert("Well, except for this");
            }
+
+         function easteregg() {
+             alert("A pointless easter egg")
+         }
    </script>
+   <button id="easteregg" onclick="easteregg()" href="#"></button>
    </div>
 </div>   
 </body>

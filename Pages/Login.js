@@ -35,3 +35,7 @@ function showNav() {
     document.querySelector('container');
 document.getElementById('navPopout').style.display = "block";
 }
+
+function welcomeBack() {
+    alert("Welcome back to your account!")
+}

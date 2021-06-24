@@ -45,12 +45,14 @@ body {
 
 h2 {
     font-weight: bold;
+    font-family: 'Lato';
     font-size: 2rem;
 }
 
 p {
     font-family: 'Reenie Beanie';
-    font-size: 1rem; 
+    font-size: 1rem;
+    font-weight: ligher; 
 }
 
 ul,li {
@@ -72,6 +74,7 @@ ul li a {
     width: 10em;
     padding: 1em;
     box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+    transition: all 1s; 
 }
 
 ul li:nth-child(even) a {
@@ -79,6 +82,7 @@ ul li:nth-child(even) a {
     position: relative;
     top: 5px;
     background: rgb(217, 125, 253);
+    transition: all 1s;
 }
 
 ul li:nth-child(5n) a {
@@ -86,6 +90,7 @@ ul li:nth-child(5n) a {
     position: relative;
     top: -10px;
     background: lightblue;
+    transition: all 1s;
 }
 
 ul li:nth-child(5n) a {
@@ -118,4 +123,30 @@ ul li {
 ul li p a:hover {
 font-family: sans-serif;
 font-size: 18px;
+}
+
+#col-xs-6 {
+    display: block;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.5em;
+}
+
+#more-links {
+    display: block;
+    font-family: sans-serif;
+    font-size: 1.4em;
+    position: relative;
+    top: 100px;
+    text-align: center;
+    text-decoration: none;
+    color: blue;
+}
+
+#more-links a:hover {
+    color: blue;
+}
+
+#more-links a:onclick {
+    color: blue;
+    text-indent: 5px;
 }
