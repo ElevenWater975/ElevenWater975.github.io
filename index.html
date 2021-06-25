@@ -33,6 +33,7 @@
             background: linear-gradient(purple, blue, violet);
             background-repeat: no-repeat;
             background-attachment: fixed;
+            height: 800px;
         }
 
         easteregg {
@@ -64,6 +65,8 @@
             border: 3px solid black;
             border-radius: 25px;
             background-color: yellow;
+            position: relative;
+            left: 45%;
         }
     
     .information {
@@ -123,24 +126,13 @@
         padding: 2px 10px; 
     }
     
-    ul {
+    li {
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
     }
 
-    li {
-        float: left;
-        display: block;
-        font-size: 20px;
-        text-decoration: none;
-        font-family: sans-serif;
-        border: 3px solid gray;
-        border-radius: 25px;
-        padding: 8px;
-        background-color: violet;
-    }
 
     li a {
         color: black;
@@ -218,11 +210,7 @@
             background: white;
             color: black;
         }
-        @keyframes light-mode {
-           background-color: white;
-            from {color: white}
-            to {color: black}
-        }
+
         #lightModeHome {
             display: block;
             float: right;
@@ -234,21 +222,59 @@
             border-color: blue;
             border-width: 10px;
         }
+      .nav div {
+          height: 4px;
+          background-color: white;
+          margin: 5px 0px;
+      }
+
+      #one {
+          width: 30px;
+      }
+      #two {
+          width: 30px;
+      }
+      #three {
+          width: 30px;
+      }
+
+      #links {
+          display: none;
+          border: 3px solid black;
+          border-radius: 25px;
+          background-color: violet;
+          max-width: 650px;
+          position: relative;
+          text-align: center;
+          top: -130px;
+          left: 30%;
+      }
+
+      #links a:hover {
+          text-shadow: 2px 2px 1px #000;
+          font-family: sans-serif;
+          font-size: 2.4em;
+          transform: scale(1.25);
+          position: relative;
+          z-index: 5;
+      }
    </style>
+   <br>
+   <br>
+   
    <div class="container">
-   <main>
-   <nav>
-   <ul>
-       <header>
-<li><a href="https://github.com" rel="noopener noreferrer" target="_blank">Github</a></li>
-<li><a href="support.html" rel="noopener noreferrer" target="_blank">Support</a></li>
-<li><a href="https://youtube.com/nyrangerfan88">Youtube</a></li>
-<li><a href="#">About (soon)</a></li>
-<li><a href="#">Contact me (soon) (really excited about this one)</a></li>
-</header>
-</ul>
-</nav>
-</main>
+    <a href="#" id="three-lines" class="nav" onclick="appear()">
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+    <div id="links">
+    <a href="https://elevenwater975.github.io/support">Support page</a>
+    <a href="https://github.com/ElevenWater975/ElevenWater975.github.io">Github repo</a>
+    <a href="https://https://youtube.com/nyrangerfan88">YouTube</a>
+</div>
+
+ </a>
+
 <br>
 <br>
 <br>
@@ -268,21 +294,15 @@
     <h1>More information about this site</h1>
         <p>This site will have many pages</p> 
     <p>Eleven is working on pages like support, login, register, contact, etc.</p>
+    <div class="hosted">
+        <p>This site was hosted using <a href="https://github.com">Github</a></p>
+        <p>Version 1.2.0-alpha</p>
     </div>
-
-    <canvas id="canvas" height="100" width="1920"></canvas>
-
-    </canvas>
-    <!--
-    In the script below, I made a line.
-    Thats it... just a line.
-    -->
+    </div>
+ 
     </div>
 </div>
-   <div class="hosted">
-       <p>This site was hosted using <a href="https://github.com">Github</a></p>
-       <p>Version 1.2.0-alpha</p>
-   </div>
+  
    <!--Some stuf here-->
    <script>
        newbutton = document.getElementById("anotherBtn");
@@ -300,6 +320,9 @@
 
          function easteregg() {
              alert("A pointless easter egg")
+         }
+         function appear() {
+             document.getElementById("links").style.display = "block";
          }
    </script>
    <button id="easteregg" onclick="easteregg()" href="#"></button>

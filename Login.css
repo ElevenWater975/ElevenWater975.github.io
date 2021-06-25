@@ -40,14 +40,32 @@ nav {
  
 }
 
-a {
-    color: skyblue;
-    text-decoration: none;
+
+#one {
+    width: 30px;
+}
+#two {
+    width: 30px;
+}
+#three {
+    width: 30px;
 }
 
+.nav div {
+    height: 5px;
+    background-color: white;
+    margin: 5px 0px;
+}
 a:hover {
     color: red;
     text-decoration: none;
+}
+
+#links {
+    display: none;
+    background-color: skyblue;
+    font-size: 20px;
+    font-family: sans-serif;
 }
 
 #show-nav {

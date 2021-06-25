@@ -26,20 +26,6 @@ button {
     font-size: 24px;
 }
 
-li {
-    list-style-type: none;
-}
-
- a {
-     float: left;
-     border: 3px solid black;
-     border-radius: 25px;
-     background: pink;
-     font-size: 20px;
-     font-family: sans-serif;
-     text-decoration: none;
-    }
-
     a:hover {
         color: blue;
         text-decoration: none;
@@ -48,4 +34,31 @@ li {
     a:click {
         color: lime;
         text-decoration: none;
+    }
+    #one {
+        width: 30px;
+    }
+    #two {
+        width: 30px;
+    }
+    #three {
+        width: 30px;
+    }
+
+    #links {
+        display: none;
+        text-align: center;
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: sans-serif;
+        border: 3px solid black;
+        border-radius: 25px;
+        max-width: 360px;
+        background-color: violet;
+    }
+    .nav div {
+        height: 4px;
+        background-color: white;
+        margin: 5px 0px;
     }

@@ -39,3 +39,7 @@ document.getElementById('navPopout').style.display = "block";
 function welcomeBack() {
     alert("Welcome back to your account!")
 }
+
+function appear() {
+    document.getElementById("links").style.display = "block";
+}

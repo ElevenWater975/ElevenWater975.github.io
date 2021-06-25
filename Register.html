@@ -9,13 +9,22 @@
     <title>Register</title>
 </head>
 <body>
-    <main>
-        <ul>
-            <li><a href="https://elevenwater975.github.io">Home</a></li>
-            <li><a href="https://elevnewater975.github.io/support">Support page</a></li>
-            <li><a href="https://youtube.com/nyrangerfan88">YouTube</a></li>
-        </ul>
-    </main>
+    <script>
+        function appear(){
+        document.getElementById("links").style.display = "block";
+    }
+        </script>
+    <a href="#" class="nav" onclick="appear()">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        <div id="links">
+            <a href="https://elevenwater975.github.io">Home</a></li>
+            <a href="https://elevnewater975.github.io/support">Support page</a>
+            <a href="https://youtube.com/nyrangerfan88">YouTube</a>
+            </div>
+    </a>
+
     <br>
     <br>
     <div class="container">
@@ -29,6 +38,7 @@
         <br>
         <input id="register3" type="password" placeholder="Create a Password" required></input>
         <br>
+        <!--Must be 13 years old or older to sign up-->
        <input id='agreement' type="checkbox" required>I am 13 years old or older</button>
        <br>
        <input id='agreement2' type="checkbox" required>I have read and agreed to the terms of service and privacy policy</button>
@@ -40,12 +50,15 @@
 </div>
 <!--Some external links down here-->
 <footer>
+    <!--Updated for 1.2.0-alpha!-->
 <div class="external-links">
     <p>Can't find what you are looking for? Try one of our external links!</p>
     <a href="https://ElevenWater975.github.io">Homepage</a>
     <a href="https://ElevenWater975.github.io/Html/support.html">Support page</a>
     <a href="https://youtube.com/users/nyrangerfan88">YouTube</a>
     <a href="#">Twitter</a>
+    <a href="https://github.com/ElevenWater975/ElevenWater975.github.io">Github Repo</a>
+    <p>Version 1.2.0-alpha</p>
 </div>
 </footer>
 </body>

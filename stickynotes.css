@@ -134,19 +134,27 @@ font-size: 18px;
 #more-links {
     display: block;
     font-family: sans-serif;
-    font-size: 1.4em;
+    font-size: 16.5px;
     position: relative;
     top: 100px;
     text-align: center;
     text-decoration: none;
-    color: blue;
+    color: black;
+    background-color: rgb(148, 141, 141);
 }
 
 #more-links a:hover {
     color: blue;
 }
 
-#more-links a:onclick {
+#more-links a:click {
     color: blue;
     text-indent: 5px;
+}
+
+#more-links a:visited {
+    color: black;
+    text-indent: 5px;
+    text-decoration: none;
+    
 }
