@@ -5,13 +5,6 @@ background-color: #000;
 color: white;
 }
 
-@keyframes background-change {
-    from {background-color: lime}
-    to {background-color: black}
-    from {color: black}
-    to {color: white}
-}
-
 a:hover {
 font-size: 20px;
 font-family: sans-serif;
@@ -58,6 +51,6 @@ a {
 }
 
 body {
-    background-color: lime;
+    background: inline-gradient(.25turn, skyblue, lime);
     font-family: sans-serif;
 }

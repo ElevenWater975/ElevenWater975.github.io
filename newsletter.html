@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="newsletter.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Website newsletter</title>
+</head>
+<body>
+    <a href="#" class="nav" onclick="appear()">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+        <div id="links">
+            <a href="https://youtube.com/nyrangerfan88">YouTube</a>
+            <a href="https://elevenwater975.github.io">Home page</a>
+            <a href="https://github.com/ElevenWater975/ElevenWater975.github.io">Github repo</a>
+            <a href="https://elevenwater975.github.io/support">Support page</a>
+            <button id="closenav" onclick="closeNav()">Close Navigation (because I dont know how to close navigation when the 3 lines button is clicked again)</button>
+        </div>
+        </a>
+    <div class="container">
+        <h1>Official website newsletter</h1>
+        <p>This newsletter here is for us to tell you what is happening with the website</p>
+        <br>
+        <div id="newsletter-start">
+            <h2>6/25/2021 Newsletter page created</h2>
+            <p>Eleven created the newsletter page.</p>
+
+            <h2>6/24/2021 1.2.1-alpha was released</h2>
+            <p>Eleven has released 1.2.1-alpha and added some new features such as the 3 lines button Which is basically just what you see on other websites to open something like a navigation bar or menu.
+                We also fixed some bugs.
+            </p>
+        </div>
+        <script>
+            //Functions working normally
+            function showNav() {
+                document.getElementById("links").style.display = "block";
+            }
+
+            function closeNav() {
+                document.getElementById("links").style.display = "none";
+            }
+        </script> 
+        <footer>
+            <br>
+            <br>
+            <div class="more-links">
+                <a href="https://reddit.com/r/BlockPro">BlockPro reddit</a>
+                <a href="github.com">Hosted with github</a>
+                <a href="https://youtube.com/nyrangerfan88"></a>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
