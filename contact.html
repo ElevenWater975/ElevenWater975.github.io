@@ -11,18 +11,21 @@
 <div class="dark-theme">
     <div class="bright-theme">
 <body>
-    <main>
-        <header>
-        <nav>
-        <ul>
-            <li><a href="https://elevenwater975.github.io">Back to homepage</a></li>
-            <li><a href="https://elevenwater975.github.io/support.html">Support page</a></li>
-            <li><a href="https://youtube.com/nyrangerfan88">YouTube</a></li>
-            <li><a href="#">Discord (adding soon)</a></li>
-        </header>
-        </ul>
-        </nav>
-    </main>
+    <a href="#" class="nav" onclick="appear()">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+
+        <div id="hidenav">
+        <a href="https://elevenwater975.github.io">Home page</a>
+        <a href="https://github.com/ElevenWater975/ElevenWater975.github.io">Github repository</a>
+        <a href="https://elevenwater975.github.io/support">Support page</a>
+        <a href="https://discord.gg/QXJJ9x2K7c">Discord</a>
+        <a href="https://reddit.com/r/Blockpro">Blockpro reddit</a>
+        <button id="hidenav" onclick="hideNav()">Hide navigation</button>
+    </div>
+    </a>
+
     <br>
     <br>
     <br>
@@ -37,12 +40,17 @@
         <br>
 </div>
 <div class="container">
+    <div class="notice">
+        <strong><p>If this page is not working properly, manually contact me at <a href="#">nje.eleven34@icloud.com or nje.eleven34@outlook.com</a></p></strong>
+    </div>
     <div class="form-popup" id="openForm">
     <br>
     <br>
     <div id="notice">
 
  <!--Just removing some things-->
+ <p>If you are under 13, your parent must contact me about what your problems are with the site.</p>
+ <p>If you are a parent or guardian of a child under 13 and contacting us on their behalf, you must contact us with YOUR information only. Not the child's, yours.</p>
     <form id="contact-form" action="action_page.php">
         <h1>What seems to be the problem?</h1>
         <label for="firstname" id="firstname-base"></label>

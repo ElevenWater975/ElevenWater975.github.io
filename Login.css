@@ -101,3 +101,14 @@ a:hover {
      margin: 0 auto;
  }
 
+ /* just a little notice if the site isnt working properly */
+ #notice-1 {
+     color: red;
+     border: 3px solid black;
+     border-radius: 25px;
+ }
+
+ .notice {
+     font-family: sans-serif;
+     font-size: 18px;
+ }

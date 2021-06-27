@@ -23,11 +23,6 @@ p {
     text-align: center;
 }
 
-#newsletter-start { 
-    border: 3px solid black;
-    border-radius: 25px;
-}
-
 #one {
     width: 50px;
 }
@@ -82,4 +77,23 @@ a:hover {
      text-decoration: none;
      font-family: sans-serif;
      font-size: 28px;
+}
+
+.news-1 {
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+.news-2 {
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+.news-3 {
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+#notice {
+    color: red;
 }

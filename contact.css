@@ -69,3 +69,28 @@ button {
     color: white;
 }
 
+#one {
+    width: 30px;
+}
+
+#two {
+    width: 30px;
+}
+
+#three {
+    width: 30px;
+}
+
+.nav div {
+    height: 4px;
+    background: white;
+    margin: 5px 0px;
+}
+
+#hidenav {
+    display: none;
+}
+
+.notice {
+    color: red;
+}

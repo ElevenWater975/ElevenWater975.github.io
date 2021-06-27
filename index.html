@@ -44,7 +44,7 @@
         
         h1{
             color: white;
-            font-size: 28px;
+            font-size: 38px;
             font-weight: bold;
             text-align: center;
             font-family: Arial;
@@ -128,8 +128,8 @@
     
     li {
         list-style-type: none;
-        margin: 0;
-        padding: 0;
+        margin: 0px;
+        padding: 0px;
         overflow: hidden;
     }
 
@@ -199,9 +199,12 @@
             padding: 0;
             background-color: blue;
             color: white;
-            font-size: 20px;
+            font-size: 16px;
+            border: 3px solid black;
             border-color: blue;
-            border-width: 10px;
+            border-radius: 25px;
+            position: relative;
+            top: -10px;
         }
     
         .lighttheme {
@@ -218,9 +221,10 @@
             padding: 0;
             background-color: blue;
             color: white;
-            font-size: 20px;
+            font-size: 16px;
+            border: 3px solid black;
             border-color: blue;
-            border-width: 10px;
+            border-radius: 25px;
         }
       .nav div {
           height: 4px;
@@ -258,16 +262,33 @@
           position: relative;
           z-index: 5;
       }
+      img {
+          width: 65px;
+          height: auto;
+      }
+      #about-soon { 
+        position: relative;
+        left: 40%;
+    }
+    #main-logo {
+        width: 100px;
+        border: 2px solid black;
+        border-radius: 25px;
+    }
    </style>
    <br>
    <br>
    
    <div class="container">
+       <div class="img-wrap">
+       <img id="main-logo" src="New Project.jpg">
+    </div>
     <a href="#" id="three-lines" class="nav" onclick="appear()">
     <div id="one"></div>
     <div id="two"></div>
     <div id="three"></div>
     <div id="links">
+        <img src="New Project.jpg">
     <a href="https://elevenwater975.github.io/support">Support page</a>
     <a href="https://github.com/ElevenWater975/ElevenWater975.github.io">Github repo</a>
     <a href="https://https://youtube.com/nyrangerfan88">YouTube</a>
@@ -284,21 +305,14 @@
 <button id="lightModeHome" onclick="lightMode()">Bright mode (Idk why though)</button>
 <br>
 <br>
-<div id="button">
-    <button id="button-nothing" onclick='nothingButton()'>This button does nothing</button>
-    </div>
 <strong><h1 class="fix">Welcome!</h1></strong>
-<em><p>I like to code and stuff</p></em>
-
-<p>This site is in alpha which means it is not completely finished. Right now, this site is basically just a blog about me.</p>   
-    <div class="Information">
-    <h1>More information about this site</h1>
-        <p>This site will have many pages</p> 
-    <p>Eleven is working on pages like support, login, register, contact, etc.</p>
+<em><h1>ElevenWater975: Gamer, Meme Maker, Programmer</h1></em>
+<strong><p>If this page is not working properly, please contact nje.eleven34@icloud.com</p></strong>
+<a href="#" id="about-soon" onclick="soon">About Eleven (coming soon)</a>
+<p>Home page is almost finished! We are in 1.2.1-alpha. I am pretty sure after 1.4.2-alpha or 1.5.2-alpha, we might be finished with support, index, about, and newsletter. Which means this site will be in beta</p>   
     <div class="hosted">
         <p>This site was hosted using <a href="https://github.com">Github</a></p>
         <p>Version 1.2.0-alpha</p>
-    </div>
     </div>
  
     </div>
@@ -308,16 +322,15 @@
    <script>
        newbutton = document.getElementById("anotherBtn");
        window.onscroll = function() {scrollFunction()};
-
+           function soon() {
+               alert("Coming soon");
+           }
     
            function newBtnFunc() {
                document.body.scrollTop = 0;
                document.documentElement.scrollTop = 0;
            }
 
-           function nothingButton() {
-               alert("Well, except for this");
-           }
 
          function easteregg() {
              alert("A pointless easter egg")

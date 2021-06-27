@@ -91,6 +91,6 @@ function brightMode() {
         alert("Some alert");
     }
 
-
-
-    
+    const appear = () => {
+        document.getElementById("hidenav").style.display = "flex";
+    }
