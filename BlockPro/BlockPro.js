@@ -29,3 +29,7 @@ function lightMode() {
     var lightTheme = document.body;
     lightTheme.classList.toggle("lightMode");
 }
+
+function appear() { 
+document.getElementById("links").style.display = "block";
+}

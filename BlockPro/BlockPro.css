@@ -1,74 +1,166 @@
-.container {
-    background-color: black;
-    font-size: 20px;
-    font-family: Helvetica;
-    color: gradient(lime, lightblue); 
-}
-
-body {
-    font-size: 24px; 
+h1 {
+    font-size: 32p;
     font-family: sans-serif;
+}
+
+P {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.background-image-1 {
+    background-image: url("2021-06-27_19.13.38.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     width: auto;
-    height: auto;
+    height: 1090px;
 }
 
-header {
-    background-color: darkgrey;
-    font-family: Helvetica;
-    font-size: 20px;
-    color: lightgray;
-}
-
-#serverip {
-    display: block;
-    background-color: hotpink;
-    font-size: 20px;
-    float: right;
+img {
     position: relative;
+    width: 400px;
+    left: 50px;
 }
 
-#serverversion {
-    display: block;
-    float: right;
-    background-color: blue;
-    font-size: 20px;
+img:nth-child(even) {
+    transform:rotate(5deg);
+    border: 3px solid black;
+    border-radius: 30px;
+    transform: all 1s;
+}
+
+img:hover, img:focus {
+    box-shadow: 10px 10px 7px #000;
+    transform: scale(1.05);
+    animation-name: scaleup;
+    animation-duration: 2s;
+    z-index: 5;
+    transform: all 1s;
     position: relative;
+}   
+
+@keyframes scaleup {
+    to {transform: scale(1.05)};
 }
 
-#Blockpro-back-up {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 24px;
+#g1 {
+    font-size: 30px;
+    font-family: sans-serif;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: yellow;
+    text-align: center;
+    width: 200px;
 }
 
-hr {
-    border: 10px solid black;
-    position: relative;
-    top: 30px;
+#g2  {
+    font-size: 30px;
+    font-family: sans-serif;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: yellow;
+    text-align: center;
+    width: 200px; 
+}
+
+button {
+    display: block; 
+    background-color: yellow;
+    font-size: 18px;
+    font-family: sans-serif;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 a {
-    display: block;
-    float: left;
-    color: red;
-    text-decoration: none; 
-    background-color: rebeccapurple; 
+    font-family: sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+.main-text {
+    background: gray;
+}
+
+#notice {
+    background-color: yellow;
+    border: 3px solid black;
+    border-radius: 25px;
+    width: 300px;
+}
+
+#Lobby-Credit {
+    text-align: center;
+    font-size: 32px;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: red;
+    color: white;
+    width: 600px;
     position: relative;
-    left: 2px;
+    left: 650px;
+    top: -50px;
+}
+
+/* 3 lines button */
+#one {
+    width: 30px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+#two {
+    width: 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+#three {
+    width: 30px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+.nav div {
+    height: 4px;
+    background-color: white;
+    margin: 5px 0px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+#links {
+    display: none;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: violet;
+    max-width: 650px;
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+    left: 35%;
+}
+
+/* The text is not being enlarged hmmm */
+#links:hover {
+    font-size: 32px;
+    color: blue;
+    font-family: sans-serif;
+}
+a {
+    text-align: right;
+    text-decoration: none;
+    font-family: Arial;
+    font-size: 20px;
 }
 
 a:hover {
-    text-decoration: none; 
-    background-color: blue;
-    border-color: 3px solid lime;
-    border-radius: 25px;
-    border-width: 5px;
-}
-
-#external-links {
-    background-color: darkslateblue;
-    color: darkgray;
-    font-size: 20px;
+    color: blue;
     font-family: sans-serif;
-    padding: 15px;
 }
-
