@@ -1,0 +1,35 @@
+body {
+    background-image: url("2021-06-27_19.15.35.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 28px;
+    font-family: sans-serif
+}
+
+p {
+    font-size: 20p;
+    font-family: sans-serif;
+}
+
+.page-title {
+    font-size: 32px;
+    font-family: sans-serif;
+    display: block;
+}
+
+#information {
+    float: right;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: yellow;
+    width: 400px;
+    text-align: center; 
+}
+
+#tips {
+    display: block;
+    font-weight: bold;
+}

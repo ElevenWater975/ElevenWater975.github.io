@@ -54,3 +54,9 @@ body {
     background: inline-gradient(.25turn, skyblue, lime);
     font-family: sans-serif;
 }
+
+#rules-start {
+    font-weight: bold;
+    border: 3px solid black;
+    border-radius: 25px;
+}

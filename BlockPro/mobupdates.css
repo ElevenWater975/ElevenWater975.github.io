@@ -1,6 +1,11 @@
+body {
+    background-color: black;
+}
+
 h1 {
-    font-size: 28px;
+    font-size: 38px;
     font-family: sans-serif;
+    text-align: center;
 }
 
 p {
@@ -11,4 +16,90 @@ p {
 #main-text {
     text-align: center;
     position: relative;
+}
+
+#information {
+font-weight: lighter;
+float: right;
+max-width: 300px;
+border: 3px solid black;
+border-radius: 25px;
+background-color: yellow;
+font-family: Impact;
+color: black;
+position: relative;
+left: -15px;
+}
+#strategies {
+    display: block;
+    float: right;
+    font-family: sans-serif;
+}
+
+a {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: red;
+    text-indent: 15px;
+}
+
+.image-wrap {
+    background-image: url("2021-06-27_19.14.23.png");
+    background-size: cover;
+    width: 1920px;
+    height: 1060px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#main-text {
+    background-color: black;
+    background-size: cover;
+    padding: 15px;
+    margin: 0px;
+    align-items: center;
+    color: white;
+}
+
+#pvp {
+    width: 300px;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+#lobby {
+    width: 300px;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+#more-stuff p {
+    font-size: 28px;
+    border: 3px solid black;
+    border-radius: 25px;
+    width: 200px;
+    text-align: center;
+    background-color: yellow;
+}
+
+#more-stuff img:hover {
+    transform: scale(1.07);
+    box-shadow: 10px 10px 7px #000;
+}
+
+#more-stuff {
+    position: relative;
+    left: 15px;
+}
+
+#external-links {
+    text-align: center;
+}
+
+a:hover {
+    font-size: 28px;
+    text-shadow: 2px 2px 1px #000;
+    font-family: sans-serif;
+    color: blue; 
 }
