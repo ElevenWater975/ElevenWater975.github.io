@@ -5,58 +5,77 @@ background-color: #000;
 color: white;
 }
 
-a:hover {
-font-size: 20px;
-font-family: sans-serif;
-box-shadow: 2px 1px 2px gray;
-}
-
-
-#settingsBtn {
-    float: right;
-    position: relative;
-    top: 30px;
-}
-
-#settings {
-    display: none;
-    float: right;
-    position: relative;
-    top: -50px;
+body {
+    background-color: lightgray;
 }
 
 button {
+    float: right;
     display: block;
     background-color: blue;
-    color: lightgray;
+    color: white;
+    font-size: 24px;
 }
 
-#popoutNav {
-    float: right;
-    position: relative;
-    top: 15px;
-    right: -5px;
+#one {
+    width: 30px;
+    background-color: black;
 }
 
-ul {
+#two {
+    width: 20px;
+    background-color: black;
+}
+
+#three {
+    width: 30px;
+    background-color: black;
+}
+
+.nav div {
+    height: 5px;
+    background-color: black;
+    margin: 5px 0px;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+#hidenav {
     display: none;
-    background-color: gray;
-    float: right;
-}
-
-a {
-    color: pink;
     font-size: 20px;
     font-family: sans-serif;
 }
 
-body {
-    background: inline-gradient(.25turn, skyblue, lime);
+h1 {
+    font-size: 28px;
     font-family: sans-serif;
+    text-align: center;
 }
 
-#rules-start {
-    font-weight: bold;
+p {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#links {
+    display: none;
+    float: left;
     border: 3px solid black;
     border-radius: 25px;
+    background-color: pink;
+    font-size: 24px;
+    font-family: Arial;
+    color: red;
+    text-decoration: none;
 }
+
+#external-links {
+    color: blue;
+    font-size: 16px;
+    font-family: Impact, 'Arial Narrow Bold', sans-serif;
+    background-color: gray;
+    text-indent: 5px;
+    z-index: 5;
+}
+

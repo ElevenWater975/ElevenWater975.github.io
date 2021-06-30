@@ -33,3 +33,41 @@ p {
     display: block;
     font-weight: bold;
 }
+
+img:hover {
+    border: 3px solid lightblue;
+    border-width: 10px;
+    border-radius: 35px;
+    animation-name: zoom-in;
+    animation-duration: 2s;
+}
+
+@keyframes zoom-in{
+    50% {
+transform: scale(1.15);
+}
+}
+
+#credit { 
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+img {
+    width: 300px;
+    border: 3px solid black;
+    border-radius: 25px;
+    transform: rotate(5deg);
+}
+
+#other-worlds p {
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: yellow;
+    font-size: 20px;
+    max-width: 250px;
+    text-align: center;
+}
