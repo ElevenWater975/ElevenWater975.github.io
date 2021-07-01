@@ -1,9 +1,15 @@
 
   
 body {
-    background-image: linear-gradient(violet, purple);
+    background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    width: 1920px;
+    height: auto; 
+  
+    border: 3px solid white;
+    border-radius: 25px;
+    color: white;
 }
 
 .container {
@@ -24,6 +30,21 @@ input {
 button {
     border-radius: 25px;
     font-size: 24px;
+    display: block;
+}
+
+button:hover {
+    
+    animation: zoom-in-and-out 2s infinite;
+    box-shadow: 10px 10px 7px #000;
+    background-color: purple;
+    color: white;
+}
+
+@keyframes zoom-in-and-out {
+     50% {
+         transform: scale(1.06);
+     }
 }
 
     a:hover {
@@ -62,3 +83,33 @@ button {
         background-color: white;
         margin: 5px 0px;
     }
+
+    .main-wrap {
+        background-color: lightgray;
+        color: black;
+        font-size: 24px;
+        text-align: center;
+        border: 3px solid white;
+        border-radius: 25px;
+        max-width: 540px;
+        position: relative; 
+        left: 35%;
+    }
+
+    #bluemode {
+        animation-name: blue-transition;
+        animation-duration: 2s;
+        background-color: lightskyblue;
+        color: black;
+    }
+
+    @keyframes blue-transition {
+        from {background-color: black}
+        to {background-color: lightskyblue}
+    }
+
+img {
+    width: 200px;
+    border: 3px solid black;
+    border-radius: 25px; 
+}

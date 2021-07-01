@@ -22,22 +22,15 @@ img {
     left: 50px;
 }
 
-img:nth-child(even) {
-    transform:rotate(5deg);
-    border: 3px solid black;
-    border-radius: 30px;
-    transform: all 1s;
+img:hover {
+animation: zoom 2s infinite;
 }
 
-img:hover, img:focus {
-    box-shadow: 10px 10px 7px #000;
-    transform: scale(1.05);
-    animation-name: scaleup;
-    animation-duration: 2s;
-    z-index: 5;
-    transform: all 1s;
-    position: relative;
-}   
+@keyframes zoom {
+    50% { 
+        transform: scale(1.07);
+    }
+}
 
 @keyframes scaleup {
     to {transform: scale(1.05)};
