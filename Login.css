@@ -35,9 +35,11 @@ border-radius: 25px;
 color: blue;
 }
 
+@media screen and (max-width: 375) {
 nav {
-    display: none;
- 
+    float: none;
+    width: 100px;
+}
 }
 
 
@@ -71,22 +73,39 @@ a:hover {
 #show-nav {
     display: block;
     float: right;
-    background-color: black;
+    background-color: violet;
     color: white;
     font-weight: bold;
     font-size: 1.2em;
 }
-
+@media screen and (max-width: 1920px) {
+    body {
+    background-color: black;
+    }
+}
+@media screen and (max-width: 375px) {
  body {
     background-color: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: auto;
-    border: 3px solid white;
-    color: white;
+    height: auto; 
     border-radius: 25px;
-
  }
+ }
+
+@media screen and (min-width: 1920px) {
+    form {
+        position: relative;
+        left: 500px;
+    }
+    button {
+    position: relative;
+    left: 10px;
+    width: 300px;
+    background-color: green;
+    color: white;
+    }
+}
 
  .external-links {
       background-color: darkgray;
@@ -99,11 +118,24 @@ a:hover {
      font-size: 20px;
      font-family: sans-serif;
      background-color: lightblue;
-     border: 3px solid black;
-     border-radius: 25px;
-     margin: 0 auto;
+     text-align: center;
  }
-
+@media screen and (min-width: 375px) {
+ button {
+    width: 200px;
+    height: auto;
+    background-color: green;
+    color: white;
+    position: relative;
+    left: 5px;
+ }
+ input {
+     border: 3px solid black; 
+     border-width: auto;
+     border-radius: 10px;
+     
+ }
+}
  /* just a little notice if the site isnt working properly */
  #notice-1 {
      color: red;
@@ -116,27 +148,25 @@ a:hover {
      font-size: 18px;
  }
 
+@media screen and (min-width: 375px) {
 form {
-    background-color: lightgray;
+    background-color: black;
     max-width: 800px;
     border: 3px solid white;
     border-radius: 25px;
-    color: black;
+    color: white;
     font-family: sans-serif;
-    width: 1920;
-    height: 1080;
-    position: relative;
-    left: 540px;
+    align-items: center;
+    position: relative; 
+}
 }
 
 img {
     width: 100px;
     height: auto;
 } 
-
-button {
-    display: block;
-    background-color: lightgray;
-    font-size: 22px;
-    font-family: sans-serif;
+footer {
+    background-color: blue;
+    padding: 50px;
+    margin: 0px auto;
 }

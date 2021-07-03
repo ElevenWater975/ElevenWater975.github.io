@@ -1,5 +1,13 @@
+@media screen and (max-width: 375px) {
+body {
+font-family: sans-serif;
+font-size: 32px;
+width: auto;
+height: auto;
+}
+}
 h1 {
-    font-size: 32p;
+    font-size: 32px;
     font-family: sans-serif;
 }
 
@@ -8,12 +16,23 @@ P {
     font-family: sans-serif;
 }
 
-.background-image-1 {
+
+@media screen and(max-width: 375px) {
+#background-image-1 img  {
+    background-image: url("2021-06-27_19.13.38.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+}
+
+@media screen and (max-width: 1920px) {
+    #background-image-1 {
     background-image: url("2021-06-27_19.13.38.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
-    height: 1090px;
+    height: 1090;
+    }
 }
 
 img {
@@ -157,3 +176,4 @@ a:hover {
     color: blue;
     font-family: sans-serif;
 }
+

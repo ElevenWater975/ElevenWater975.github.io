@@ -1,5 +1,13 @@
-
-  
+@media screen and (max-width: 375px) {
+body {
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto; 
+    border-radius: 25px;
+}
+}
+@media screen and (max-width: 1920px) {
 body {
     background-color: black;
     background-repeat: no-repeat;
@@ -10,6 +18,7 @@ body {
     border: 3px solid white;
     border-radius: 25px;
     color: white;
+}
 }
 
 .container {
@@ -112,4 +121,18 @@ img {
     width: 200px;
     border: 3px solid black;
     border-radius: 25px; 
+}
+
+@media screen and (max-width: 375px) {
+    form {
+        background-color: black;
+        max-width: 375px;
+        border: 3px solid white;
+        border-radius: 25px;
+        color: white;
+        font-family: sans-serif;
+        align-items: center;
+        position: relative; 
+        left: 50px;
+    }
 }
