@@ -94,3 +94,34 @@ function brightMode() {
     const appear = () => {
         document.getElementById("hidenav").style.display = "flex";
     }
+
+    function dropButton() {
+        document.getElementById("dropContent").classList.toggle("show");
+    }
+
+
+    //Thanks to w3schools again
+    window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+
+      function hideDropdown() {
+          document.getElementById("dropContent").classList.toggle("show");
+      }
+
+      function explainBugs() {
+          document.getElementById("bugs-explain").toggle.display = "block";
+      }
+
+      function explainSecurity() {
+          document.getElementById("security-explain").toggle.display = "block";
+      }

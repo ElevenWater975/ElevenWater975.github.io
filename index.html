@@ -99,6 +99,11 @@
          position: relative;
      }
     
+     #swapT {
+        color: lightgray;
+        text-decoration: none;
+        cursor: pointer;
+     }
     /*For this, I jsust made the links have a larger font size and a red color. And some other stuff*/
     a {
         text-align: right;
@@ -332,10 +337,14 @@
 <br>
 <strong><h1 class="fix">Welcome!</h1></strong>
 <em><h1>ElevenWater975: Gamer, Meme Maker, Programmer</h1></em>
-<strong><p>If this page is not working properly, please contact nje.eleven34@icloud.com</p></strong>
+<strong><a id="swapT" href="#">If this page is not working properly, please contact nje.eleven34@icloud.com</a></strong>
 <div id="notice">
 <a href="#" id="about-soon" onclick="soon">About Eleven (coming soon)</a>
-<p>Home page is almost finished! We are in 1.2.1-alpha. I am pretty sure after 1.4.2-alpha or 1.5.2-alpha, we might be finished with support, index, about, and newsletter. Which means this site will be in beta</p>   
+<p>Home page is almost finished! We are in 1.2.1-alpha. I am pretty sure after 1.4.2-alpha or 1.5.2-alpha, we might be finished with support, index, about, and newsletter. Which means this site will be in beta</p>  
+ <div id="site-sponsors">
+     <h1><strong>Site Sponsors</strong></h1>
+     <p>We do not have any sponsors yet, but we might be able to have some (I don't even know)</p>
+ </div>
     <div class="hosted">
         <p>This site was hosted using <a href="https://github.com">Github</a></p>
         <p>Version 1.2.1-alpha</p>
@@ -346,8 +355,14 @@
   
    <!--Some stuf here-->
    <script>
+       function swap() {
+        var x = document.getElementById("swapT");
+  if (x.innerHTML === "If this page is not working properly, please contact nje.eleven34@icloud.com") {
+    x.innerHTML = "Swapped text!";
        newbutton = document.getElementById("anotherBtn");
        window.onscroll = function() {scrollFunction()};
+  }
+}
            function soon() {
                alert("Coming soon");
            }

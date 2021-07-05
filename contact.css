@@ -229,3 +229,60 @@ button {
     margin: 5px 0px;
 
 }
+
+.dropbtn {
+    display: block;
+    background-color: wheat;
+    color: black; 
+    padding: 14px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: violet;
+    min-width: 180px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #000;
+    padding: 14px 18px;
+    text-decoration: none;
+    display: block;
+    border: none;
+}
+
+#bugs-explain {
+    display: none;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+#security-explain {
+    display: none;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+.show {
+    display: block;
+    animation-name: fade-out;
+    animation-duration: 2s;
+}
+
+@keyframes fade-out {
+    from {display: block;}
+    to {display: none;}
+
+    from {display: none;}
+    to {display: block;}
+}
