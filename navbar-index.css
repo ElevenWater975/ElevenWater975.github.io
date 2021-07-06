@@ -1,0 +1,108 @@
+.nav div {
+    height: 4px;
+    background-color: white;
+    margin: 5px 2px;
+}
+
+#one {
+    width: 30px;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: white;
+    size: 60px;
+}
+#two {
+    width: 20px;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: white;
+}
+#three {
+    width: 30px;
+    border: 2px solid black;
+    border-radius: 25px;
+    background-color: white;
+}
+
+#links {
+    display: none;
+    max-width: 650px;
+    position: relative;
+    text-align: center;
+    top: -130px;
+    left: 30%;
+}
+
+.navClose {
+    animation-name: fade-in-out;
+    animation-duration: 2s;
+}
+
+@keyframes fade-in-out {
+    from {display: block}
+    to {display: none}
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 500px;
+}
+
+li {
+    float: right;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    font-family: sans-serif;
+    font-weight: 500px;
+    font-size: 18px;
+    color: white;
+    text-decoration: none;
+}
+
+header {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 5%;
+}
+
+button {
+    display: block;
+    background-color: #2192;
+    border: 3px solid #2192;
+    border-radius: 25px;
+    font-size: 20px;
+    font-family: sans-serif;
+    cursor: pointer;
+    color: white;
+}
+
+#links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#links li {
+    display: block;
+    padding: 0px 20px;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+#links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: auto;
+}
+
