@@ -7,6 +7,11 @@ function buttonNewsletter() {
 }
 
 function closeNav() {
-    document.getElementById("links").style.display = "none";
-    document.querySelector("links").className = "navClose";
+    document.getElementById("sidebar").style.width = "0px";
+    document.getElementById("main").style.marginLeft = "0px";
+}
+
+function openNav() {
+    document.getElementById("sidebar").style.width = "250px";
+    document.getElementById("main").style.marginLeft = "250px";
 }
