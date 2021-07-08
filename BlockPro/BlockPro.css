@@ -43,17 +43,12 @@ img {
 
 img:hover {
 animation: zoom 2s infinite;
+position: relative;
+z-index: 1;
+transform: scale (1.07);
+transition: 1.5s;
 }
 
-@keyframes zoom {
-    50% { 
-        transform: scale(1.07);
-    }
-}
-
-@keyframes scaleup {
-    to {transform: scale(1.05)};
-}
 
 #g1 {
     font-size: 30px;
@@ -177,3 +172,168 @@ a:hover {
     font-family: sans-serif;
 }
 
+/* Thanks to w3schools for a tutorial page on how to make a sidebar */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    color: #38383a;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 1s;
+}
+
+.sidenav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 38px;
+    border: 2px solid black;
+    text-align: center;
+    color: limegreen; /*The text looks hackerman green */
+    display: block;
+    transition: 0.5s;
+}
+
+.sidenav a:hover {
+    color: rgb(81, 139, 156);
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sidenav .closeNav {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 48px;
+    margin-left: 50px;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+@media screen and (max-height: 500px) {
+    .sidenav a {font-size: 18px;}
+    .sidenav {
+        height: 0;
+        width: 100%;
+        padding-top: 15px;
+        position: fixed; 
+        z-index: 1;
+        top: 0;
+        left: 0;
+        color: #38383a;
+        background-color: black;
+        overflow-x: hidden;
+        padding-top: 60px;
+        transition: 1s;
+    }
+    }
+
+    @media screen and (max-height: 1024px) {
+        .sidenav a {
+        padding: 10px 10px 10px 30px;
+        text-decoration: none;
+        font-size: 38px;
+        color: limegreen;
+        display: block;
+        transition: 0.5s;
+    } 
+    }
+#one {
+    width: 40px;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: white;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+#two {
+    width: 40px;
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: white;
+}
+
+#three {
+    width: 40px;
+    border: 3px solid black;
+    border-radius: 25px; 
+    background-color: white;
+}
+
+.open div {
+    background-color: white;
+    margin: 5px 0px;
+    height: 4px;
+    cursor: pointer;
+}
+
+.closeNav a {
+    border: none;
+}
+
+a.closeNav:hover {
+color: white;
+background-color: red;
+border: 3px solid black;
+border-radius: 50px;
+font-size: 34px;
+background-attachment: fixed;
+background-repeat: no-repeat;
+}
+
+#open {
+font-size: 28px;
+color: white;
+
+font-family: sans-serif;
+margin: 0;
+padding: 0;
+text-decoration: none;
+}
+
+span#open:hover {
+    color:rgb(0, 195, 255);
+    background-color: black;
+    font-family: monospace;
+    font-size: 24px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+span#open::selection {
+    cursor: pointer;
+}
+
+img {
+    transform: rotate(5deg)scale(0.87);
+    border: 3px solid black;
+    border-radius: 15px;
+    margin: 5px 0px;
+    padding: 0;
+}
+img:hover {
+transform: scale(1.07);
+transform: rotate(0deg);
+transition: 1s;
+animation: zoom-in-out 1s infinite;
+}
+
+@keyframes zoom-in-out {
+    50% {
+        transform: scale(1.10);
+    }
+}

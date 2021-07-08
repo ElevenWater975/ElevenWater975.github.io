@@ -13,21 +13,25 @@
     <header>
         <div class="main-text">
     <div class="container">
-        <a href="#" class="nav" onclick="appear()">
-            <div id="one"></div>
-            <div id="two"></div>
-            <div id="three"></div>
-            <div id="links">
-                <a href="https://elevenwater975.github.io">Home page</a>
-                <a href="https://elevenwater975.github.io/support">Main page support</a>
-                <a href="https://elevenwater975.github.io/newsletter">Main page newsletter</a>
+        <a id="open-nav" onclick="openNav()">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+    </a>
+        <div id="sidebar" class="sidenav">
+            <a href='javascript:void(0)' class="closeNav" onclick="closeNav()">&times;</a>
+            <a href="https://elevenwater975.github.io/BlockPro/kitpvp">KitPVP</a>
+            <a href="https://elevenwater975.github.io/mobupdates">Mob arena</a>
+            <a href="https://elevenwater975.github.io/BlockPro/rules">BlockPro's official rules</a>
+            <a href="https://elevenwater975.github.io/BlockPro/staff">Staff list</a>
+            <a href="https://elevenwater975.github.io">HomePage</a>
+            <button id="serverip" onclick="serverIp()">Server Ip</button>
+            <button id="serverversion" onclick="serverVersion()">Server Version</button>
+            <br>
+            <p>Contact nje.eleven34@icloud.com for help if you need it.</p>
             </div>
-            <button id="hidenav" onclick="hideNav()">Hide navigation</button>
         </a>
-    <div class="Useful buttons">
-        <button id="serverip" onclick="serverIp()">Server Ip</button>
-        <button id="serverversion" onclick="serverVersion()">Server Version</button>
-    </div>
+       
     <button id="Ping" onclick="ping()">Ping</button>
 </div>
         <div class="BlockPro-Title-and-information">
@@ -84,6 +88,8 @@
         <a href="#">Youtube</a>
         <a href="#">Twitter</a>
         <a href="https://reddit.com/r/BlockPro">Reddit</a>
+        <a href="https://elevenwater975.github.io">Homepage</a>
+        <a href="https://elevenwater975.github.io/support">Main page newsletter</a>
     </div>
 </footer>
     

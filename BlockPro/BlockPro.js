@@ -1,13 +1,19 @@
 function homePage() {
-    alert("Ok. Bye Bye!");
+    confirm("Ok. Bye Bye!");
 }
 
 function popoutNav() {
     document.getElementById("popoutNav").style.display = "block";
 }
 
+function openNav() {
+    document.getElementById("sidebar").style.width = "250px";
+    document.getElementById("main").style.width = "250px";
+}
+
 function closeNav() {
-    document.getElementById("popoutNav").style.display = "none";
+    document.getElementById("sidebar").style.width = "0";
+    document.getElementById("main").style.width = "0";
 }
 
 function popoutSettings() {

@@ -73,19 +73,19 @@
     } 
     }
 #one {
-    width: 30px;
+    width: 40px;
     border: 3px solid black;
     border-radius: 25px;
 }
 
 #two {
-    width: 20px;
+    width: 40px;
     border: 3px solid black;
-    border-radius: 25px;
+    border-radius: 10px;
 }
 
 #three {
-    width: 30px;
+    width: 40px;
     border: 3px solid black;
     border-radius: 25px; 
 }

@@ -33,43 +33,34 @@
         <br>
 </div>
 <div class="container">
-    <div class="notice">
-        <strong><p>If this page is not working properly, manually contact me at <a href="#">nje.eleven34@icloud.com or nje.eleven34@outlook.com</a></p></strong>
-    </div>
-    <div class="form-popup" id="openForm">
-    <br>
-    <br>
-    <div id="notice">
-
- <!--Just removing some things-->
- <p>If you are under 13, your parent must contact me about what your problems are with the site.</p>
- <p>If you are a parent or guardian of a child under 13 and contacting us on their behalf, you must contact us with YOUR information only. Not the child's, yours.
-     </p>
     <form id="contact-form">
+        
         <h1>What seems to be the problem?</h1>
-        <label for="firstname" id="firstname-base"></label>
+        <br>
+        <br>
+        <br>
+        <label for="firstname"></label>
         <input type="text" id="firstname" placeholder="First name: "required>
         <br>
-        <label for="lastname" id="lastname-base"></label>
-        <input type="text" id="firstname" placeholder="Last Name (optional)">
+        <label for="lastname"></label>
+        <input type="text" id="lastname" placeholder="Last Name (optional)">
         <br>
-        <label for="email" id="email-base"></label>
-        <br>
+        <label for="email"></label>
         <input type="email" id="email" placeholder="Enter your email" required>
         <br>
         <label for="age" id="age-base" placeholder="age" required></label>
         <input type="number" size="4" name="age" min="13" id="age" placeholder="Date of Birth: " required>
         <br>
+  
 
         <br>
         
 
         <br>
         <br>
-        
+    
         <!--Dropdown button-->
         <div id="sideText">
-            <h1>What seems to be the problem?</h1>
             <div class="dropdown">
                 <button class="dropbtn" onclick="dropButton()">
                     <div id="dropContent" class="dropdown-content">
@@ -82,6 +73,7 @@
                 <input id="security-explain" type="text" placeholder="Tell us what is happening with security"></input>
             </div>
         </div>
+    </div>
         <!--End of dropdown element-->
         </div>
         <button type="submit" onclick="openText()" class="submitBtn"><i class="fa fa-mail"></i> Contact</button>

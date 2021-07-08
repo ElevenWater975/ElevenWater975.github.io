@@ -34,12 +34,13 @@ var parts = dateString.split("/");
 var now = new Date();
 if(now<birthday) age--;
 if(age<13) {
+
 var dateOfBirth = new Date(now.getFullYear(),parts[1]-1,parts[0]);
 var age = now.getFullYear()-parts[2];
-    alert("You must be age 13 or over to contact me.");
     return false
 }
 return true;
+alert("You cannot contact me right now");
 }
 
 function openTheButton() {

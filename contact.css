@@ -1,288 +1,47 @@
-
 body {
-    background: gray;
+    background-color: white;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: auto;
 }
-
-@media screen and (max-width: 375px) {
-    body {
-        background: gray;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        height: auto;
-    }
-    
-    h1 {
-        font-size: 28px;
-        font-family: sans-serif;
-    }
-    p {
-        font-size: 28px;
-        font-family: sans-serif;
-        color: white;
-    }
-
-    button { 
-        display: block;
-        background-color: green;
-        font-size: 24px;
-    }
-
-    .footer-color {
-        padding: 20px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    body {
-        background: gray;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        height: auto;
-        width: 310px;
-    }
-
-    h1 {
-        font-size: 26px;
-        font-family: sans-serif;
-        color: white;
-    }
-
-    p {
-        font-family: 20px;
-        font-family: sans-serif;
-        color: white;
-    }
-
-    form p {
-        font-size: 20px;
-        font-family: sans-serif;
-        color: black;
-    }
-
-    form h1 {
-        font-size: 26px;
-        font-family: sans-serif;
-        color: black;
-    }
-
-    input {
-        border: 2px solid black;
-        border-radius: 25px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    body {
-       background: gray;
-       background-repeat: no-repeat;
-       background-attachment: fixed;
-       height: auto; 
-       width: 750px;
-    }
-
-    h1 {
-        font-size: 32px;
-        font-family: sans-serif;
-        color: white;
-    }
-    
-    p {
-        font-size: 24px;
-        font-family: sans-serif;
-        color: white;
-    }
-
-    form p {
-        color: black;
-    }
-
-    form h1 {
-        color: black;
-    }
-
-}
-
-@media screen and (max-width: 1024px) {
-    body {
-        background: gray;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        height: auto;
-    }
-
-    h1 {
-        font-size: 32px;
-        font-family: sans-serif;
-        color: white;
-    }
-
-    p {
-        font-size: 24px;
-        font-family: sans-serif;
-        color: white;
-    }
-
-    form h1 {
-        color: black;
-    }
-    
-    form p {
-        color: black;
-    }
-}
-
 p {
-    font-size: 18px;
     font-family: sans-serif;
+    font-size: 20px;
 }
 
 h1 {
-    font-size: 24px;
     font-family: sans-serif;
+    font-size: 28px;
 }
 
-#contact-form {
-    text-align: center;
-    font-size: 20px;
-    font-family: sans-serif;
-    background-color: lightblue;
-    border: 3px solid black;
-    border-radius: 25px;
-    width: 360px;
-    margin: 0 auto;
-}
-
-input {
-    color: blue;
-    background-color: lightgoldenrodyellow;
-    font-size: 20px;
-    font-family: sans-serif;
-}
-
-ul {
-    float: left;
-}
-
-li {
-    float: left;
-    list-style-type: none; 
-    padding: 0;
-    margin: 0;
-}
-
-a {
-    border: 3px solid black;
-    border-radius: 25px;
-    background-color:violet;
-    font-size: 20px;
-    font-family: sans-serif;
-    text-decoration: none;
-}
-
-a:hover {
-    color: red;
-}
-
-button {
-    font-size: 20px;
-    font-family: sans-serif;
-    background-color: blue;
-    color: white;
-}
-
-.otherText {
-    color: white;
-}
-
-#one {
-    width: 30px;
-}
-
-#two {
-    width: 30px;
-}
-
-#three {
-    width: 30px;
-}
-
-.nav div {
-    height: 4px;
-    background: white;
-    margin: 5px 0px;
-}
-
-#hidenav {
-    display: none;
-}
-
-.notice {
-    color: red;
-}
-
-.footer-color {
-    padding: 20px;
-    background: blue;
-    margin: 5px 0px;
-
-}
-
-.dropbtn {
-    display: block;
-    background-color: wheat;
-    color: black; 
-    padding: 14px;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.dropdown {
-    position: relative;
+label {
+    padding: 12px 12px 12px 0;
     display: inline-block;
 }
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: violet;
-    min-width: 180px;
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+
+input[type=submit] {
+    background-color: skyblue;
+    color: black;
+    padding: 12px 20px;
+    border: 3px solid black; 
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+.container {
+    border-radius: 5px;
+    background-color: lightskyblue;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 20px;
 }
 
-.dropdown-content a {
-    color: #000;
-    padding: 14px 18px;
-    text-decoration: none;
-    display: block;
-    border: none;
-}
-
-#bugs-explain {
-    display: none;
+.container input {
     border: 3px solid black;
     border-radius: 25px;
-}
-
-#security-explain {
-    display: none;
-    border: 3px solid black;
-    border-radius: 25px;
-}
-
-.show {
-    display: block;
-    animation-name: fade-out;
-    animation-duration: 2s;
-}
-
-@keyframes fade-out {
-    from {display: block;}
-    to {display: none;}
-
-    from {display: none;}
-    to {display: block;}
+    background-color: #fff;
+    font-family: sans-serif;
+    color: blue;
+    font-size: 20px;
+    width: 50%;
 }
