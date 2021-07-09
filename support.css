@@ -1,0 +1,186 @@
+body {
+    background-image: linear-gradient(.25turn, violet, blue, purple);
+}
+li {
+    float: left;
+    text-decoration: none;
+    padding: 2px 10px;
+    background: lime;
+    border: 3px solid black;
+    border-radius: 25px;
+    left: -50px;
+    top: 2px;
+    display: block;
+}
+a {
+    color: lime;
+    font-size: 24px;
+    font-style: bold;
+    border: 3px solid black;
+    border-radius: 25px;
+    font-family: sans-serif;
+    font-stretch: expanded;
+    padding: 10px, 20px;
+}
+a:hover {
+    font-size: 24px;
+    color: blue;
+}
+.header {
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+}
+p {
+    font-size: 20px;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 80;
+    background-color: orange;
+    border: 3px solid black;
+    border-radius: 25px;
+    outline: none;
+    border-radius: 10px;
+    font-size: 18px;
+    color: white;
+    padding: 15;
+    cursor: pointer;
+}
+
+#backToTop:hover {
+    background-color: darkgray;
+}
+hr {
+    /*
+    Some dotted lines
+    */
+border-top: 2px dotted red;
+border-bottom: 1px dotted red;
+}
+
+
+/*
+I am going to add my logo into the website (probably)
+*/
+
+button {
+    display: block;
+    background-color: goldenrod;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+#ee {
+    color: white;
+    text-decoration: none;
+}
+
+/* Thanks to dev.to for showing me how to make these fade in transitions */
+.fade-in {
+  animation: fadein 1s ease-in forwards;
+}
+
+.QNA {
+    opacity: 0;
+    font-family: sans-serif;
+    font-size: 24px;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+}
+
+@keyframes fadein {
+0% { opacity: 0; }
+50% { opacity:0.5; }
+100% { opacity:1; }
+}
+#fade-in.is-visible {
+    opacity: 1;
+    transform: none;
+    visibility: visible;
+}
+.enable-qna {
+    font-family: Arial;
+    display: block;
+    font-family: sans-serif;
+    font-size: 24px;
+    text-align: center;
+    background-color: yellow;
+    border: 3px solid black;
+    border-radius: 25px; 
+    position: relative;
+    left: 45%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed; 
+    z-index: 1;
+    top: 0;
+    left: 0;
+    color: #38383a;
+    background-color: black;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 1s;
+}
+
+.sidenav a {
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 38px;
+    border: 2px solid black;
+    text-align: center;
+    color: limegreen; /*The text looks hackerman green */
+    display: block;
+    transition: 0.5s;
+}
+
+.sidenav a:hover {
+    color: rgb(81, 139, 156);
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#sidebar {
+    width: 0px; 
+    height: 0px;
+}
+.sidenav .closeNav {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 48px;
+    margin-left: 50px;
+}
+
+#one {
+    width: 30px;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+#two {
+    width: 20px;
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+#three {
+    width: 30px;
+    border: 3px solid black; 
+    border-radius: 25px;
+}
+
+.nav div {
+    height: 4px;
+    margin: 5px 0px; 
+    background-color: white;
+}
