@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0; 
+}
+
 body {
     background-color: #2a2c2a;
     color: white;
@@ -34,7 +39,10 @@ a:hover {
 #emails {
     display: none;
     font-size: 20px;
-    font-family: sans-serif
+    font-family: sans-serif;
+    background-color: white;
+    text-align: center;
+    color: black;
 }
 
 header {
@@ -56,6 +64,11 @@ button {
     display: none;
 }
 
+#discord-function {
+    position: relative;
+    top: 200px;
+}
+
 #navbar img{
 width: 100px;
 height: 100px;
@@ -66,24 +79,17 @@ position: relative;
 }
 
 #navbar a {
+    display: block;
     color: white;
+    padding: 8px;
     text-align: center;
     font-family: sans-serif;
     font-size: 28px;
     text-shadow: 2px 1px 2px black;
-    position: relative;
-    top: 10px;
 }
 
 #navbar a:hover {
-    color: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 32px;
-    border: 3px solid black;
-    border-radius: 10px;
-    background-color: white;
-    transition: 0.5s;
-    height: 100px;
+    background-color: green;
 }
 
 #navbar {
@@ -126,6 +132,13 @@ position: relative;
     background-color: white;
     margin: 5px 0px;
 }
+
+#navbar a {
+    display: block;
+    padding: 8px;
+    color: white;
+}
+
 header {
     background-color: gray; 
 }
@@ -134,18 +147,19 @@ header::after {
     display: table;
     clear: both;
 }
-
+li:last-child {
+    border:none;
+}
 ul {
     list-style: none;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 li {
     float: left;
-    display: block;
-    margin-left: 70px;
-    padding-top: 25px;
+    border-right: 2px solid lightgray;
 }
 
 #start {
@@ -173,9 +187,10 @@ color: white;
     border: 3px solid red;
     border-radius: 2px;
     background-color: red;
+    text-align: center;
     position: relative;
     width: 100px;
-    height: 50px;
+    height: 20px;
 }
 
 .animation {
@@ -185,4 +200,48 @@ color: white;
 @keyframes fade-out {
     from {display:block;}
     to {dispaly:none;}
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+button:hover {
+    box-shadow: 2px 2px 2px black;
+    font-size: 34px;
+}
+
+
+#easter-egg {
+    display: none;
+    font-size: 38px;
+    font-family: sans-serif;
+}
+
+#easter-two {
+    display: block;
+    background-color: yellow;
+}
+
+#easter-two:hover {
+    animation: loop-color 1s infinite
+}
+
+@keyframes loop-color {
+    from {background-color: yellow}
+    to {background-color: lime}
+    from {background-color: lime} 
+    to {background-color: skyblue}
+    from {background-color: skyblue} 
+    to {background-color: blue} 
+    from {background-color: blue}
+    to {background-color: purple}
+
+    50% {
+        transform: scale(1.25);
+    }
 }

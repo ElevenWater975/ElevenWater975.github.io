@@ -1,11 +1,27 @@
 function emailFunction() {
-    document.addEventListener('click', function(){
-document.getElementById("emails").style.display='block';
+    count++;
+    if (count === 10) {
+        document.getElementById("easter-egg").style.display = "block";
+        document.getElementById("email-function").style.display = "none";
+    }
+        document.addEventListener('click', function(){
+document.getElementById("emails").style.display = 'block';
     
     })
 }
-
+function easterEggTwo() {
+    document.getElementById("email-function").style.display = "block";
+}
+var count = 0;
 function discordFunction() {
+    count++;
+    if (count === 10) {
+        alert("You clicked the button 10 times!");
+    } else if (count === 20) {
+        alert("You clicked the button 20 times! so many clicks!");
+    } else if (count === 21) {
+        alert("Whats 9 + 10? 21! Thats how many times you clicked");
+    }
 document.addEventListener('click', function(){
     document.getElementById("discord").style.display='block';
 })
