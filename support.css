@@ -3,6 +3,7 @@ body {
 }
 li {
     float: left;
+    list-style-type: none;
     text-decoration: none;
     padding: 2px 10px;
     background: lime;
@@ -11,6 +12,10 @@ li {
     left: -50px;
     top: 2px;
     display: block;
+}
+ul {
+    margin: 0;
+    padding: 0;
 }
 a {
     color: lime;
@@ -163,18 +168,21 @@ button {
 
 #one {
     width: 30px;
+    background-color: white;
     border: 3px solid black;
     border-radius: 25px;
 }
 
 #two {
     width: 20px;
+    background-color: white;
     border: 3px solid black;
     border-radius: 25px;
 }
 
 #three {
     width: 30px;
+    background-color: white;
     border: 3px solid black; 
     border-radius: 25px;
 }

@@ -8,6 +8,8 @@
     <title>Website newsletter</title>
 </head>
 <body>
+    <div id="lime-mode">
+        <div id="dark-mode">
     <a href="#" class="nav" onclick="appear()">
         <div id="one"></div>
         <div id="two"></div>
@@ -25,8 +27,14 @@
         <h1>Official website newsletter</h1>
         <p>Read our official newsletter to keep you updated on what is happening with the website!</p>
         <p>If the page is not working properly, please contact <a id="notice" href="#">nje.eleven34@icloud.com</a></p>
+        <button id="limemode" onclick="limeModeFunction()">Lime Mode</button>
+        <button id="darkmode" onclick="darkModeFunction()">Internets best friend, internet heaven aka Dark mode</button>
         <br>
         <div id="newsletter-start">
+            <div class="informative">
+                <h2>Bugs and the site</h2>
+                <p>The site may be buggy because we are still in v1.2.2-alpha. If you are experiencing any bugs, contact me at nje.eleven34@icloud.com or nje.eleven34@outlook.com</p>
+            </div>
             <div class="more-news">
                 <h2>More updates?</h2>
                 <p>There will be more updates coming your way!</p>
@@ -66,6 +74,15 @@
             function closeNav() {
                 document.getElementById("links").style.display = "none";
             }
+            
+            function limeModeFunction() {
+                document.getElementById("lime-mode").style.background = "lime";
+            }
+
+            function darkModeFunction() {
+                document.getElementById("dark-mode").style.background = "black";
+                document.getElementById("dark-mode").style.color = white;
+            }
         </script> 
         <footer>
             <br>
@@ -77,5 +94,7 @@
             </div>
         </footer>
     </div>
+</div>
+</div>
 </body>
 </html>

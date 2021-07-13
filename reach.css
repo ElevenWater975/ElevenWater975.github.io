@@ -2,12 +2,47 @@
     margin: 0;
     padding: 0; 
 }
+@media screen and (max-height: 812px) {
+    h2 {
+        font-size: 52px;
+        font-family: sans-serif;
+        text-align: center;
 
+    }
+}
+@media only screen and (min-width: 375px) {
+    button {
+        font-family: sans-serif;
+        font-size: 25px;
+        font-weight: lighter;
+        background-color: white;
+        border: 3px solid black;
+        border-radius: 25px;
+        position: relative;
+        left: -225px;
+
+    }
+}
 body {
     background-color: #2a2c2a;
     color: white;
 }
+@media only screen and (max-width: 375px) {
+    body {
+        background-color: rgb(80, 78, 78);
+    }
+}
 
+@media only screen and (max-width: 375px) {
+.nav-top {
+    float: right;
+    width: 100%;
+    font-size: 48px;
+}
+a {
+    font-size: 48px;
+}
+}
 * {
     text-align: center;
 }
@@ -16,11 +51,14 @@ p {
     font-size: 25px;
     font-family: sans-serif;
     font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
 
 h2 {
     font-size: 48px; 
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 a {
     font-size: 20px;
@@ -95,6 +133,8 @@ position: relative;
 #navbar {
     float: right;
     display: none;
+    animation-name: nav-animation;
+    animation-duration: 1s;
     background-color: gray;
     overflow: hidden;
     position: fixed;
@@ -102,6 +142,12 @@ position: relative;
     width: 100%;
     height: 100px;
     z-index: 1;
+    transition: 1s;
+}
+
+@keyframes nav-animation{
+    from {display: none}
+    to {display: block}
 }
 
 #one {
@@ -142,6 +188,41 @@ position: relative;
 header {
     background-color: gray; 
 }
+
+#discord p{
+    display: none;
+color: white;
+font-size: 34px;
+}
+
+
+#discord a {
+    color: black;
+    font-size: 28px; 
+    font-family: sans-serif;
+    border: 3px solid black;
+    border-radius: 25px;
+    background-color: white;
+    position: relative;
+    top: 200px;
+}
+
+#youtube-function {
+    display: block;
+    position: relative;
+    top: 100px;
+}
+
+#youtube {
+    display: none;
+    font-size: 32px;
+    font-family: sans-serif;
+}
+
+.transition{ 
+    transition: 1s;
+}
+
 header::after {
     content: '';
     display: table;
@@ -213,6 +294,7 @@ li a {
 button:hover {
     box-shadow: 2px 2px 2px black;
     font-size: 34px;
+    font-family: Arial; 
 }
 
 
@@ -240,8 +322,11 @@ button:hover {
     to {background-color: blue} 
     from {background-color: blue}
     to {background-color: purple}
-
+    0% {
+        transform: scale(0);
+    }
     50% {
         transform: scale(1.25);
     }
+
 }

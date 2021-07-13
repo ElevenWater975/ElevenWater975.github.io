@@ -22,11 +22,9 @@ function discordFunction() {
     } else if (count === 21) {
         alert("Whats 9 + 10? 21! Thats how many times you clicked");
     }
-document.addEventListener('click', function(){
     document.getElementById("discord").style.display='block';
-})
+    document.getElementById("youtube-function").style.top = "-20px";
 }
-
 function enableNav() {
     document.getElementById("navbar").style.display = "block";
 }
@@ -36,4 +34,8 @@ function closeNav() {
 document.addEventListener('click', function(){
     close.classList.add = "animation";
 })
+}
+
+function youtubeFunction() {
+    document.getElementById("youtube").style.display = "block";
 }
