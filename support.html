@@ -11,6 +11,7 @@
 <!--There is some sort of problem with the border-->
 
 <body>
+    <div id="darkmode">
     <div class="container">
        <section id="navbar">
     <div id="sidebar" class="sidenav">
@@ -28,7 +29,7 @@
         </div>
     </section>
         </div>
-        <a id="open" class="open-sidebar" onclick="openNav()">
+        <a id="open" class="nav" onclick="openNav()">
         <div id="one"></div>
         <div id="two"></div>
         <div id="three"></div>
@@ -48,15 +49,16 @@
     
     <!--CSS ends here-->
     <div class="header">
-        <div class="darkmode">
+       
         <br>
         <br>
-     
+            <div id="informative">
             <button class="dropbtn">Informative things</button>
         
     <h1>Welcome to the support page!</h1>
     <p>We will answer questions you have with our QNA</p>
-    
+    <p>This page is a bit buggy. If you are having any problems, please contact me at my preferred email: nje.eleven34@outlook.com</p>
+        </div>
     <button class="enableQna">Enable QNA</button>
     <div class="QNA">
     <!--Answering users questions here-->
@@ -80,6 +82,10 @@
     <p>A: No this site is not a company. ElevenWater975 is a single person just programming this site.</p>'
     <p>Q: How long does it take for Eleven to come up with new ideas for the site?</p>
     <p>A: Eleven takes a while to find out what to add to the site. Sit back and relax whilt I come up with new things</p>
+    <div id="security">
+    <p>Q: Does Eleven have a security policy for the website</p>
+    <p>A: Yes, the site does have a security policy.</p>
+</div>
     </div>
 </div>
 </div>
@@ -103,22 +109,42 @@
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
             mybutton.style.display = "block";
         } else {
+            //Not working
         mybutton.style.display = "none";
      }
     }
 
     function openNav() {
-        document.getElementById("sidebar").style.width = "250px";
+        document.getElementById("sidebar").style.width = "250px" 
+        document.getElementById("sidebar").style.height = "100%"
         document.getElementById("Main").style.marginLeft = "250px";
+        // Just in case some bug happens
+        if (document.getElementById("sidebar").style.width < "250px") {
+            document.getElementById("sidebar").style.width = "250px";
+        } else if (document.getElementById("sidebar").style.height < "100%") {
+            document.getElementById("sidebar").style.height = "100%";
+        }
     }
+
+    function closeNav() {
+        // Close the sidebar
+        document.getElementById("sidebar").style.height = "0";
+        document.getElementById("sidebar").style.width = "0";
+        document.getElementById("Main").style.height = "0";
+        document.getElementById("Main").style.width = "0";
+    }
+
             function topFunction() {
                 document.body.scrollTop = 0;
                 document.documentElement.scrollTop = 0;
             }
             
         function dms() {
-            var darkMode = document.body;
-            darkMode.classList.toggle("darkmode");
+            document.getElementById("darkmode").style.background = "black";
+            if(clicked) {
+            dma = document.body;
+            dma.classList.toggle("darkanimation");
+            }
         }
         var count = 0;
         var div = document.querySelector(".QNA");

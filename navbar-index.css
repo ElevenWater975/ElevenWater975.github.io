@@ -1,5 +1,44 @@
 /* Thanks to w3schools for a tutorial page on how to make a sidebar */
 
+.navtop {
+    background-color: rgb(77, 74, 74);
+    overflow: hidden;
+    width: 100%;
+    height: 25%;
+}
+
+li {
+    list-style: none;
+    position: relative;
+    top: 0;
+}
+
+.navtop a {
+    float: left;
+    font-size: 20px;
+    font-family: sans-serif;
+    color: skyblue;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navtop a:hover {
+    background-color: hotpink;
+    font-weight: bold;
+}
+
+.navtop a.active {
+    background-color: white;
+    color: black;
+}
+
+.navtop img {
+    float: left;
+}
+
+#top {
+    display: none;
+}
 .sidenav {
     height: 100%;
     width: 0;

@@ -302,6 +302,9 @@ button:hover {
     display: none;
     font-size: 38px;
     font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
 #easter-two {
@@ -329,4 +332,9 @@ button:hover {
         transform: scale(1.25);
     }
 
+}
+
+/* add javascript to this css element */
+#hint {
+    display: block
 }

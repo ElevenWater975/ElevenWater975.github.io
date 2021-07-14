@@ -45,3 +45,13 @@ x.innerHTML = "Swapped text!";
          // Easter egg. Also I bet you are seeing this file through github so this egg may be easy.
          document.getElementById("egg") = document.body.innerHTML.repalce("p", "hello im an easter egg");
      }
+
+     function opentop() {
+         document.getElementById("top").style.display = "block";
+         document.getElementById("sidebar").style.width = "0";
+     }
+
+     function moveside() {
+         document.getElementById("top").style.display = "none";
+         document.getElementById("sidebar").style.width = "250px";
+     }
