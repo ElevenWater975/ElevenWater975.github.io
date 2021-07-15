@@ -52,6 +52,8 @@ x.innerHTML = "Swapped text!";
      }
 
      function moveside() {
+         // Move navigation bar back to the side.`
          document.getElementById("top").style.display = "none";
          document.getElementById("sidebar").style.width = "250px";
+         document.getElementById('sidebar').style.width = "0px";
      }

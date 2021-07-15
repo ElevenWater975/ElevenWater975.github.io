@@ -37,5 +37,28 @@ document.addEventListener('click', function(){
 }
 
 function youtubeFunction() {
+    count++;
+    if (count === 5) {
+        alert("that tickles!");
+    } else if (count === 10) {
+        confirm("that tickled a bit less");
+    } else if (count === 20) {
+        alert("its starting to pinch a little bit...");
+    } else if (count === 30) {
+        alert("OW it hurts!");
+    } else if (count === 40) {
+        alert("I beg you, stop clicking!");
+    }
     document.getElementById("youtube").style.display = "block";
+} 
+
+
+function easterHint() {
+    confirm("Clicking buttons is fun right?");
+}
+
+function twitchFunction() {
+    document.getElementById("ttv").style.display = "block";
+    document.getElementById("youtube").style.margin = "10px";
+    document.getElementById("discord").style.margin = "10px";
 }
