@@ -1,3 +1,5 @@
+var count = 1;
+
 function buttonSupport() {
     var x = location.href = "https://elevenwater975.github.io/support";
 }
@@ -38,8 +40,12 @@ x.innerHTML = "Swapped text!";
          alert("A pointless easter egg")
      }
      function appear() {
+         count++;
          document.getElementById("links").style.display = "block";
-     }
+         if (count === 20) {
+             alert("Bro do u really need to click that many times?");
+         }   
+        }
 
      function textStuff() {
          // Easter egg. Also I bet you are seeing this file through github so this egg may be easy.
@@ -52,8 +58,20 @@ x.innerHTML = "Swapped text!";
      }
 
      function moveside() {
-         // Move navigation bar back to the side.`
+         // Move navigation bar back to the side.
          document.getElementById("top").style.display = "none";
          document.getElementById("sidebar").style.width = "250px";
-         document.getElementById('sidebar').style.width = "0px";
+         document.getElementById('top').style.width = "0px";
+         document.getElementById("bugbutton").style.display = "block";
+     }
+
+     function bugFix() {
+         document.getElementById("top").style.width = "100%";
+         document.getElementById("sidebar").style.width = "0";
+         document.getElementById("top").style.display = "block";
+     }
+
+     function closeTop() {
+         document.getElementById("top").style.display = "none";
+         document.getElementById("top").style.width = "0px";
      }
