@@ -32,16 +32,150 @@ input[type=submit] {
     border-radius: 5px;
     background-color: lightskyblue;
     background-repeat: no-repeat;
+    border: 2px solid black;
+    border-radius: 10px;
     background-attachment: fixed;
-    padding: 20px;
+    padding: 30px 20px;
 }
 
 .container input {
-    border: 3px solid black;
-    border-radius: 25px;
     background-color: #fff;
     font-family: sans-serif;
     color: blue;
     font-size: 20px;
     width: 50%;
+}
+
+#country {
+    font-size: 24px;
+    font-family: sans-serif;
+    box-shadow: 10px 10px 10px black;
+    text-align: center;
+    cursor: pointer;
+    font-weight: lighter;
+}
+
+#country option {
+    display: block;
+    font-size: 22px;
+    font-family: sans-serif;
+    background-color: lightgray;
+    box-shadow: 6px 10px 6px black;
+}
+
+#bugs-button {
+    display: none;
+    font-size: 18px;
+    font-family: sans-serif;
+    position: relative;
+    z-index: 1;
+}
+
+#security-button {
+    display: none;
+    font-size: 18px;
+    font-family: sans-serif;
+    position: relative;
+    z-index: 1; 
+}
+
+#languages {
+    display: none;
+    font-size: 18px;
+    font-family: sans-serif;
+}
+
+#security-explain {
+    display: none; 
+}
+
+#security-explain-espanol {
+    display: none;
+}
+
+#bugs-explain {
+    display: none;
+}
+
+#bugs-explain-espanol {
+    display: none;
+}
+
+button {
+    display: block;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: relative;
+    width: 150px;
+    height: auto;
+}
+
+.submitBtn {
+    display: block;
+    font-size: 32px;
+    font-family: sans-serif;
+    border: 2px solid black;
+    background-color: green;
+    color: white;
+    box-shadow: 10px 10px 10px black;
+    position: relative;
+    left: 40%;
+    width: 400px;
+}
+
+button:active {
+    display: block;
+    border: none;
+    box-shadow: none;
+    font-size: 24px;
+}
+
+#bugs-button {
+    background-color: red;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+#bugs-espanol {
+    background-color: red;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+#security-button {
+    background-color: blue;
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+#security-espanol {
+    background-color: blue;
+    color: white;
+    position: relative;
+    z-index: 1; 
+}
+
+#extras-text {
+    display: none;
+    position: relative;
+    z-index: 1;
+}
+
+#security-explain-francias {
+    display: none;
+    font-size: 20px;
+    font-size: sans-serif;
+    position: relative;
+    z-index: 1; 
+}
+
+#bugs-explain-francias {
+    display: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: relative;
+    z-index: 1;
 }

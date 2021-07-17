@@ -125,3 +125,40 @@ function brightMode() {
       function explainSecurity() {
           document.getElementById("security-explain").toggle.display = "block";
       }
+
+      function moveText() {
+          var move = document.body;
+          move.classList.toggle("")
+      }
+
+      function openLanguageUS() {
+          document.getElementById("languages").style.display = "block";
+      }
+      
+      function openEnglish() {
+          document.getElementByid("bugs-button").style.display = "block";
+          document.getElementById("security-button").style.display = "block";
+      }
+
+      function openSpanish() {
+    document.getElementById("bugs-espanol").style.display = "block";
+    document.getElementById("security-explain").style.display = "block";
+    } 
+    // I added some spanish options
+    function explainSecurityEspanol() {
+        document.getElementById("security-explain-espanol").style.display = "block";
+    }
+
+    function explainBugsEspanol() {
+        document.getElementById("bugs-explain-espanol").style.display = "block";
+    }
+    // And French options
+    function explainSecurityFrancias() {
+        document.getElementById("security-explain-francias").style.display = 'block';
+    }
+
+    function explainBugsFrancias() {
+        document.getElementById("bugs-explain-francias").style.display = "block";
+    }
+
+    functiokn

@@ -51,7 +51,27 @@
         <label for="age" id="age-base" placeholder="age" required></label>
         <input type="number" size="4" name="age" min="13" id="age" placeholder="Date of Birth: " required>
         <br>
-  
+        <select id="country">
+            <label for="country-select" id="country-selection" required></label>
+        <option id="country-selection-dropdown" disabled selected value required onclick="moveText()"> -- Select a country -- </option>
+        <option value="USA" onclick="openLanguageUS()">United Sates</option>
+           
+     
+        <option value="UK" onclick="openLanguageUK()">United Kingdom</option>
+        <option value="Australia" onclick="openLanguageAustralia()">Australia</option>
+        <option value="CA" onclick="openLanguageCA()">Canada</option>
+        <div id="languages-canada">
+            <button id="english-canada" onclick="englishCanada()">English</button>
+            <button id="french-canada" onclick="frenchCanada()">français</button>
+        </div>
+        <option value="Mexico" onclick="openIssuesMexico()">Mexico</option>
+        <option value="Spain" onclick="openIssuesSpain()">Spain</option>
+        <br>
+    </select>
+    <p>What is your preferred language</p>
+    <button id="en-us" onclick="openEnglish()">English</button>
+    <button id="spanish-us" onclick="openSpanish()">español</button>
+    <button id="other-us" onclick="openOther()">Other</button>
 
         <br>
         
@@ -62,15 +82,26 @@
         <!--Dropdown button-->
         <div id="sideText">
             <div class="dropdown">
-                <button class="dropbtn" onclick="dropButton()">
                     <div id="dropContent" class="dropdown-content">
-                <a class="content-bugs" onclick="explainBugs(), hideDropdown()">Bugs and glitches</a>
-                
-                <a class="content-security" onclick="explainSecurity(), hideDropdown()">Security issues</a>
-               
-                </button>
+                <button id="bugs-button" class="content-bugs" onclick="explainBugs(), hideDropdown()">Bugs and glitches</button>
+                <button id="bugs-espanol" class="content-bugs-espanol" onclick="explainBugsEspanol()">Errores / fallas</button>
+                <button id="security-button" class="content-security" onclick="explainSecurity(), hideDropdown()">Security issues</button>
+                <button id="security-espanol" class="content-security-espanol" onclick="explainSecurityEspanol()">Problemas de seguridad</button>
+                <button id="bugs-francias" class="content-security-francias" onclick="explainSecurityFrancias">Les problèmes de sécurité</button>
+                <button id="security-francias" class="content-security-francias" onclick="explainSecurityFrancias">Bugs et glitches</button>
+                <br>
+                <br>
                 <input id="bugs-explain" type="text" placeholder="Tell us what is going on with the site"></input>
                 <input id="security-explain" type="text" placeholder="Tell us what is happening with security"></input>
+                <input id="bugs-explain-espanol" type='text'></input>
+                <input id="security-explain-espanol" type="text"></input>
+                <input id="security-explain-francias" type="text"></input>
+                <input id="bugs-explain-francias" type="text"></input>
+                <br>
+                <label for="extras" id="any-extras"></label>
+                <input id="extras-text" type="text" class="extras-input">Anything else you would like to tell us? (optional)</div> 
+                <p>We will try to get back to you within 1 day</p>
+                <p>Please consider checking out <a href="https://twitch.tv/elevenplayz12">My twitch channel</a></p>
             </div>
         </div>
     </div>
@@ -94,6 +125,7 @@
     <p>If you want to check out the repository for this website, go to <a href="https://github.com/ElevenWater975/ElevenWater975.github.io"></a></p>
     <a href="https://ElevenWater975.github.io">Back to homepage</a>
     <a href="https://youtube.com/nyrangerfan88">Check out Eleven's youtube!</a>
+    <a href="https://twitch.tv/elevenplayz12">Check out Eleven's twitch channel</a>
 </div>
 <div class="footer-color">
     <br>
