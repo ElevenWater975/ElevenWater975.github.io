@@ -6,6 +6,8 @@ body {
 
 .container {
     text-align: center;
+    position: relative;
+    z-index: 1;
 }
 
 h1 {
@@ -114,6 +116,8 @@ image {
 #external-links a:hover {
     color: red;
     background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
     font-size: 24px;
     font-family: sans-serif;
 }
