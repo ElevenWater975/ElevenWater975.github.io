@@ -5,9 +5,12 @@ body {
 }
 
 .container {
-    text-align: center;
     position: relative;
     z-index: 1;
+}
+
+.container a {
+    text-decoration: none;
 }
 
 h1 {
@@ -80,30 +83,29 @@ li:hover {
 display: none;
 }
 
-image {
-    width: 1280px;
-    height: 720px;
-}
-
 #external-links {
     padding: 150px;
-    background-color: blue;
+    text-indent: 15px;
+    text-decoration: none;
     position: relative;
-    bottom: -100px;
+    bottom: -50px;
 }
 
 #external-links a {
     font-size: 24px;
     font-family: sans-serif;
-    color: red;
+    color: skyblue;
     position: relative;
     top: -220px;
      left: -220px;
     z-index: 4;
     float: left;
+    background-color: black;
+     text-decoration: none;
     list-style-type: none;
     position: relative;
     bottom: -150px;
+    left: 100px;
 }
 
 #move-side {
@@ -121,3 +123,78 @@ image {
     font-size: 24px;
     font-family: sans-serif;
 }
+
+.image-wrap {
+    display: flex; 
+}
+
+.image-wrap image {
+    width: 200px;
+    height: auto;
+}
+
+#NJE-N {
+    border: 3px solid white;
+    border-radius: 25px;
+    width: 500px;
+    text-align: center;
+    position: relative;
+    left: 40%;
+}
+
+#NJE-J {
+border: 3px solid white;
+border-radius: 25px;
+width: 500px;
+text-align: center;
+position: relative;
+left: 40%;
+}
+
+#NJE-E {
+    border: 3px solid white;
+    border-radius: 25px;
+    width: 500px;
+    text-align: center;
+    position: relative;
+    left: 40%;
+}
+
+#NJE-E a {
+    text-decoration: none;
+    color: skyblue;
+}
+
+.image-wrap {
+    font-size: 22px;
+    font-family: sans-serif;
+}
+
+.image-wrap image {
+    object-fit: fill;
+    width: 337px;
+}
+
+.founders {
+    background-color: black;
+    color: white;
+    border: 5px solid black;
+    border-radius: 25px;
+}
+
+.heading-1 p {
+    text-indent: -1px;
+}
+
+.image-wrap p {
+    text-indent: 1px;
+    margin: 1px;
+    padding: 0;
+}
+
+.image-wrap > p {
+    border-spacing: 10px;
+    letter-spacing: 10px;
+}
+
+
