@@ -28,6 +28,19 @@
 </a>
 <br>
 <button id="settingsbutton" onclick="openSettings()">Settings (Note: text changing buttons will dissappear when clicked in light mode)</button> 
+<script>
+    // due to a bug.
+    function openSettings() {
+    var button = document.body;
+    document.getElementById("settings").style.display = "block";
+    if (document.getElementById("links").style.display === "block") {
+        alert("Please close the navigation / links bar");
+        document.getElementById("settings").style.display = "none";
+    } else if (document.getElementById("links").style.display === "none") {
+        document.getElementById("settings").style.display = "block";
+    }
+}
+</script>
 <div id="settings" class="settings-nav">
     <button id="darkbutton" onclick="darkMode(), buttonColor(), borderChange()">Dark Mode</button>
     <button id="greentext" onclick="changeText()">Lime Text (used for dark mode only)</button>

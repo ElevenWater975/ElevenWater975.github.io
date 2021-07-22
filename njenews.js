@@ -74,4 +74,4 @@ function buttonsappeared() {
     document.addEventListener("click", function() {
     document.getElementById("skybluetext").style.display = "block";
 }
-});
+    )}
