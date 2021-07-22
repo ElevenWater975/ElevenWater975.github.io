@@ -62,24 +62,27 @@ h1 {
 }
 
 body {
-    background-color: white;
+    background: white;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
 .darkmode {
-    background-color: black;
+    background: black;
     color: white;
     animation-name: fade-dark;
     animation-duration: 2s;
     transition: 2s;
 }
 
-
+.darkMode #splitgate {
+    border: 3px solid white;
+    border-radius: 25px;
+}
 
 @keyframes fade-dark {
-    from {background-color: white;}
-    to {background-color: black;}
+    from {background: white;}
+    to {background: black;}
     from {color: black;}
     to {color: white;}
 }
@@ -136,7 +139,7 @@ h2 {
 }
 
 #splitgate {
-    border: 3px solid black;
+    border: 3px solid lime;
     border-radius: 25px;
 }
 
@@ -157,4 +160,47 @@ h2 {
     text-align: center;
     font-family: Arial;
     font-size: 24px;
+}
+
+#settings {
+    display: none;
+    background-color: gray;
+    color: lime;
+}
+
+.changeToGreen {
+    color: lime;
+    font-weight: normal;
+}   
+
+#external-links {
+    background-color: gray;
+}
+
+#external-links a {
+    color: lime;
+    text-indent: 10px;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+
+#external-links a:hover {
+    color: rgb(16, 192, 16);
+}
+
+#NJE-Image {
+    width: 150px;
+    float: left;
+    position: relative;
+    top: 0;
+}
+
+#settingsbutton {
+    float: left;
+    position: relative;
+    left: -0%;
+}
+
+.skytext {
+    color: skyblue;
 }

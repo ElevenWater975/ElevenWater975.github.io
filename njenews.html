@@ -9,6 +9,7 @@
     <title>Gaming News</title>
 </head>
 <body>
+    <div id="greentext">
     <div id="darkmode">
     <a id="navbaropen" class="nav" onclick="openNav()">
     <div id="one"></div>
@@ -21,17 +22,27 @@
             <li><a href="https://elevenwater975.github.io/nje">NJE home page</a></li>
             <li><a href="https://elevenwater975.github.io">Main home page</a></li>
             <li><a href="#">BlockPro page (coming soon)</a></li>
+            <li><button onclick="closeNav()">Close links</button></li>
         </ul>
     </div>
-</a> 
+</a>
+<br>
+<button id="settingsbutton" onclick="openSettings()">Settings (Note: text changing buttons will dissappear when clicked in light mode)</button> 
+<div id="settings" class="settings-nav">
+    <button id="darkbutton" onclick="darkMode(), buttonColor(), borderChange()">Dark Mode</button>
+    <button id="greentext" onclick="changeText()">Lime Text (used for dark mode only)</button>
+    <button id="skybluetext" onclick="skyBlueText()">Sky Blue text. (Again use only on dark mode)</button>
+    <button id="move-image" onclick="moveImage()">Move image to corner</button>
+    <button id="getbuttonsback" onclick="buttonsappeared()">Get text changing buttons back</button>
+    <button id="closesettings" onclick="closeSettings()">Close Settings</button>
+</div>
     <div class="container">
-        <button id="darkbutton" onclick="darkMode(), buttonColor()">Dark Mode</button>
         <h1>NJE Gaming news</h1>
         <div class="image-wrap">
-            <image src="unnamed.jpg" style="width: 560px;"></image>
+            <image id="NJE-Image" src="unnamed.jpg" style="width: 560px;"></image>
         <br>
         <br>
-        <p>Welcome to NJE gaming news. Here we post news about NJE and gaming.</p>
+        <p id="moveable">Welcome to NJE gaming news. Here we post news about NJE and gaming. Here, you will find news on games and the NJE Gaming group. To learn more, check out our <a href="https://twitter.com/GamingNje" style="background-color: black; color: skyblue;">Offical Twitter.</a>
         </div>
         <br>
         <br>
@@ -57,11 +68,19 @@
 </div>
 
 <div id="legal-notice">
-    <h2>Note: If your content is in here and you don't want it in, please contact us at <em>nje.gaming1@gmail.com or at nje.eleven34@outlook.com</em></h2>
+    <h2>Note: If your content is in here and you don't want it in, please contact us at <em>nje.gaming1@gmail.com or at nje.eleven34@outlook.com and we will have it gone ASAP.</em></h2>
 </div>
 
+<footer>
 <div id="external-links">
     <a href="https://elevenwater975.github.io/nje">NJE home</a>
+    <a href="https://elevenwater975.github.io">Main home</a>
+    <a href="https://elevenwater975.github.io/support">Support page</a>
+    <a href="https://twitter.com/GamingNje">NJE Twitter</a>
+    <a href="https://twitch.tv/elevenplayz12">Twitch Channel</a>
+    <div id="License-tag" style="float: right; color: white;">&copy; ElevenWater975 and Team 3 NJE</div>
 </div>
+</div>
+</footer>
 </body>
 </html>
