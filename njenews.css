@@ -204,3 +204,12 @@ h2 {
 .skytext {
     color: skyblue;
 }
+
+
+.appearVideo {
+    display: block;
+}
+
+.disnone {
+    display: none;
+}

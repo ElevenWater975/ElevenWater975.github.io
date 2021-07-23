@@ -55,7 +55,7 @@ function closeSettings() {
 
 function skyBlueText() {
     var skyblue = document.body;
-    
+    skyblue.classList.toggle("skytext");
 
     do {
         document.getElementById("skybluetext").style.display = "block";
@@ -75,3 +75,17 @@ function buttonsappeared() {
     document.getElementById("skybluetext").style.display = "block";
 }
     )}
+    var onscroll = function() {scrollFunction};
+    function closeVid() {
+        if (document.body.onclick === 1) {
+        document.getElementById("video").className = "disnone";
+    }
+}
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 50 || document.body.scrollTop > 50) {
+            document.getElementById("video").className = "appearVideo";
+        } else {
+            document.getElementById('video').className = "";
+        }
+    }

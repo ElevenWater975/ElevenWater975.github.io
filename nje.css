@@ -93,19 +93,17 @@ display: none;
 
 #external-links a {
     font-size: 24px;
+    float: left;
+    text-indent: 5px;
+    word-spacing: 5px;
     font-family: sans-serif;
     color: skyblue;
-    position: relative;
-    top: -220px;
-     left: -220px;
-    z-index: 4;
     float: left;
     background-color: black;
      text-decoration: none;
     list-style-type: none;
-    position: relative;
-    bottom: -150px;
-    left: 100px;
+    position: fixed;
+    z-index: 4;
 }
 
 #move-side {
@@ -198,3 +196,64 @@ left: 40%;
 }
 
 
+#latest-video {
+    border: 3px solid black;
+    border-radius: 25px;
+}
+
+.darkmode {
+    background-color: black;
+    color: white;
+    animation-name: fade-dark;
+    animation-duration: 2s;
+}
+
+@keyframes fade-dark {
+    from {background-color: white}
+    to {background-color: black}
+    from {color: white}
+    to {color: black}
+}
+
+.impactfont {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 24px;
+}
+
+#settingsbutton {
+    display: block;
+    background-color: lightgray;
+    width: 120px;
+    height: auto;
+    padding: 0;
+    margin: 5px;
+}
+
+.settingschange {
+    background-color: skyblue;
+}
+
+#settings {
+    display: none;
+}
+
+.settingsshow {
+    display: block;
+}
+
+#full-dark {
+    background-color: black;
+    color: white;
+    font-size: 15px;
+}
+
+#impact-font {
+    background-color: white;
+    color: black;
+    font-size: 15px;
+}
+
+.settingsbackground {
+    background-color: skyblue;
+    color: black;
+}
