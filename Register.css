@@ -1,6 +1,6 @@
 @media screen and (max-width: 375px) {
 body {
-    background-color: black;
+    background-color: lightgray;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: auto; 
@@ -9,40 +9,28 @@ body {
 }
 @media screen and (max-width: 1920px) {
 body {
-    background-color: black;
+    background-color: lightgray;
     background-repeat: no-repeat;
     background-attachment: fixed; 
   
     border: 3px solid white;
     border-radius: 25px;
-    color: white;
+    color: black;
 }
 }
 
 @media screen and (max-width: 320px) {
 body {
-    background-color: black;
+    background-color: lightgray;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
     border: 3px solid white;
     border-radius: 25px;
-    color: white;
+    color: black;
 }
 
-@media screen and(max-width: 375px) {
-h1 {
-    font-family: sans-serif;
-    font-size: 30px;
-    color: white;
-}
 
-p {
-    font-family: sans-serif;
-    font-size: 24px;
-    color: white;
-}
-}
 }
 
 h1 {
@@ -134,23 +122,9 @@ button:hover {
         color: black;
         font-size: 24px;
         text-align: center;
-        border: 3px solid white;
-        border-radius: 25px;
         max-width: 540px;
         position: relative; 
         left: 35%;
-    }
-
-    #bluemode {
-        animation-name: blue-transition;
-        animation-duration: 2s;
-        background-color: lightskyblue;
-        color: black;
-    }
-
-    @keyframes blue-transition {
-        from {background-color: black}
-        to {background-color: lightskyblue}
     }
 
 img {
@@ -161,14 +135,169 @@ img {
 
 @media screen and (max-width: 375px) {
     form {
-        background-color: black;
-        max-width: 375px;
-        border: 3px solid white;
-        border-radius: 25px;
-        color: white;
+        background-color: lightgray;
+        color: black;
         font-family: sans-serif;
         align-items: center;
         position: relative; 
         left: 50px;
+    }
+}
+
+.darkmode {
+    background-color: rgb(68, 65, 65);
+    color: white;
+}
+
+#submit {
+    display: block;
+    position: relative;
+    left: 150px;
+}
+
+@media screen and (max-width: 375px) { 
+    body {
+        border: none;
+    }
+
+    #register-form {
+        display: block;
+        position: relative;
+        left: -100px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    header  {
+        margin: 0;
+        height: auto;
+        padding: 10px;
+        position: relative;
+        top: 50%;
+    }
+    image {
+        width: 100px;
+        position: relative;
+        top: -25%;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+}
+
+li a {
+    padding: 14px 16px;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+button:active {
+    animation-name: burst;
+    animation-duration: 0.5s;
+}
+
+@keyframes burst {
+    button {
+        padding: 40px;
+    }
+}
+
+.displayIt {
+    display: block;
+}
+
+.external-links {
+    float: left; 
+    font-family: Arial;
+    background-color: gray;
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+}
+
+button {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+    #notice {
+        position: relative; 
+        bottom: -1000px;
+    }
+
+    form {
+        position: relative;
+        top: 50%;
+    }
+
+    image {
+        width: 50px;
+    }
+
+    header {
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        width: 270;
+        height: 360;
+        position: relative;
+        left: -10%;
+     
+    }
+
+    form {
+        background-color: transparent;
+    }
+
+    img {
+        position: relative;
+        left: 50px;
+    }
+
+    h4 {
+        text-align: center;
+        position: relative;
+        left: -50px;
+        width: auto;
+        height: auto;
+    }
+    
+    #main h1 {
+        text-align: center;
+        position: relative;
+        left: -10px;
+        width: auto;
+        height: auto;
+    }
+
+    #main p {
+        margin-left: 10px;
+        text-align: center;
+        position: relative;
+        left: -10px;  
+        width: auto;
+        height: auto;      
     }
 }

@@ -3,19 +3,23 @@
 <head>
     <link rel="stylesheet" type="text/css" href="Register.css">
     <script src="Register.js"></script>
+    <script src="app.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
 </head>
 <body>
+    <div id="darkmode">
+        <button id="enabledark" onclick="enableDark()">Dark mode</button>
     <div id="bluemode">
     <script>
-        function appear(){
-        document.getElementById("links").style.display = "block";
+        function appearFunction(){
+        var appear = document.getElementById("links");
+        appear.classList.toggle('displayIt');
     }
         </script>
-    <a href="#" class="nav" onclick="appear()">
+    <a href="#" class="nav" onclick="appearFunction()">
         <div id="one"></div>
         <div id="two"></div>
         <div id="three"></div>
@@ -24,7 +28,6 @@
             <a href="https://elevnewater975.github.io/support">Support page</a>
             <a href="https://youtube.com/nyrangerfan88">YouTube</a>
             <a href="https://github.com/ElevenWater975/ElevenWater975.github.io">Github repository</a>
-            <img src="New Project.jpg">
             <button id="blue-mode" onclick="blueMode">Blue background</button>
             <button id="bright-mode" onclick="brightMode">Bright mode (but why?)</button>
             </div>
@@ -34,33 +37,41 @@
     <br>
     <div class="container">
         <div id="notice">
-            <p>This page is not currently intended for mobile users or anyone with small displays.</p>
+            <p style="color: black;">This page is not currently intended for mobile users or anyone with small displays.</p>
         </div>
         <div class="main-wrap">
+            <header>
     <h4>Warning: This page is not ready yet. If you somehow found this page well, take a look around and see how well I designed it.</h2>
-    <h1>Register here</h1>
-    <p>Sign up for better experience!</p>
-    <div id="register">
+        <div id="main">
+    <h1 style="color: black;">Register here</h1>
+    <p style="color: black;">Sign up for better experience!</p>
+</div>
+    <div id="register-form">
     <img src="New Project.jpg">
     <form id="register">
-        <input id="register1" type="email" placeholder="Email" required></input>
+        <input id="email-check" type="email" placeholder="Email" required></input>
         <br>
-        <input id="register2" type="text" placeholder="Create a Username" required></input>
+        <input id="username" type="text" placeholder="Create a Username" required></input>
         <br>
-        <input id="register3" type="password" placeholder="Create a Password" required></input>
+        <input id="password" type="password" placeholder="Create a Password" required></input>
         <br>
-        <!--Must be 13 years old or older to sign up-->
-       <input id='agreement' type="checkbox" required>I am 13 years old or older</button>
+        <input id="confirm-password" type="password" placeholder="Confirm Password";
+        <br>
+        <!-- Must be 13 years old or older to sign up-->
+        <br>
+        <br>
+       <input style="font-weight: bold;" id='agreement' type="checkbox" required>I am 13 years old or older</button>
        <br>
        <input id='agreement2' type="checkbox" required>I have read and agreed to the terms of service and privacy policy</button>
        <br>
-       <button type="submit" id='submit'>Create new account!</button>
+       <button type="submit" id='submit' onclick="notice()">Create new account!</button>
     </form>
 </div>
 </div>
     <h3>Why you should sign up:</h3>
-    <p>All of your settings will be saved</p>
+    <p style="color: black">All of your settings will be saved</p>
 </div>
+</header>
 <!--Some external links down here-->
 <footer>
     <!--Updated for 1.2.0-alpha!-->
@@ -72,9 +83,12 @@
     <a href="#">Twitter</a>
     <a href="https://github.com/ElevenWater975/ElevenWater975.github.io">Github Repo</a>
     <a href="https://reddit.com/r/BlockPro">BlockPro reddit</a>
-    <p>Version 1.2.1-alpha</p>
+    <a href="https://twitch.tv/elevenplayz12">Eleven's twitch</a>
+    <a href="#">NJE page</a>
+    <p>Version 1.2.2-alpha</p>
 </div>
 </footer>
+</div>
 </div>
 </body>
 </html>
