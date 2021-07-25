@@ -279,3 +279,8 @@ a:hover#sidetwitch {
     font-family: sans-serif;
     color: white;
 }
+
+.sidenoanimation .sidenav {
+    display: block;
+    transition: 0s;
+}

@@ -11,11 +11,18 @@ function buttonNewsletter() {
 function closeNav() {
     document.getElementById("sidebar").style.width = "0px";
     document.getElementById("main").style.marginLeft = "0px";
+    document.getElementById("")
 }
 
 function openNav() {
-    document.getElementById("sidebar").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    var hide = document.body;
+    hide.classList.toggle("hideall");
+    document.getElementById("sidebar").style.width = "100%";
+    document.getElementById("main").style.marginLeft = "100%";
+    document.getElementById("sidebar").style.height = "100%";
+    document.getElementById('about-soon').style.display = 'none';
+    document.getElementById('responsivebug').style.display = "none";
+
 }
 
 function swap() {
@@ -75,3 +82,16 @@ x.innerHTML = "Swapped text!";
          document.getElementById("top").style.display = "none";
          document.getElementById("top").style.width = "0px";
      }
+
+     function dimmedMode() {
+         var dim = document.body; 
+         dim.classList.toggle('dimmedtheme');
+     }
+
+function removeAnimation() {
+    document.getElementById("sidebar").style.width = "100%";
+    document.getElementById("main").style.marginLeft = "100%";
+    document.getElementById("sidebar").style.height = "100%";
+    document.getElementById("main").style.transition = '0s';
+    document.getElementById('sidebar').style.transition = "0s";
+}

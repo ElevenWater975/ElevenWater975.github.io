@@ -174,3 +174,8 @@ footer {
     padding: 50px;
     margin: 0px auto;
 }
+
+#sidetext {
+    border: none;
+    background-color: black;
+}

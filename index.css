@@ -384,8 +384,7 @@ a:hover#github-repo-info {
     display: block;
     font-size: 38px;
     font-family: sans-serif;
-    border: 3px solid black;
-    border-radius: 25px;
+    border: none;
     background-color: rgb(35, 98, 214);
     position: relative;
     left: 42%;
@@ -394,6 +393,7 @@ a:hover#github-repo-info {
 
 #sidetext strong {
     color: black;
+    font-weight: lighter;
 }
 
 @supports (display: block) {
@@ -441,4 +441,82 @@ a {
     position: relative;
     height: auto;
     z-index: 1;
+}
+
+@media screen and (max-width: 812px) {
+    p {
+        font-size: 24px;
+        font-family: sans-serif;
+        font-weight: lighter;
+    } h1 {
+        font-size: 28px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    p {
+        font-size: 28px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    h1 {
+        font-size: 32px;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .wrapper {
+        text-align: center;
+        left: -2px;
+    }
+    .wrapper p {
+        position: relative;
+        left: -5px;
+    }
+    #responsivebutton button {
+        position: relative;
+        top: -35px;
+    }
+}
+
+.dimmedtheme {
+    background: rgb(65, 63, 63);
+    color: white;
+}
+
+.twitch-information {
+    background-color: black;
+    border: none;
+    border-radius: 0px;
+}
+
+.hideall p{
+    display: none;
+}
+
+.hideall h1 {
+    display: none; 
+}
+
+.hideall #external-links {
+    display: none;
+}
+
+#textdemo {
+    display: none;
+}
+
+#main {
+    font-size: 24px;
+    font-family: sans-serif;
+    background-color: black;
+    border: 3px solid white;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
 }

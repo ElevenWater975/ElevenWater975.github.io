@@ -12,6 +12,7 @@
 <body>
     <div id="darktheme">
     <div id="lighttheme">
+        <div id="dimmedtheme">
     <script>
         function darkMode() {
             var darkTheme = document.body;
@@ -65,25 +66,29 @@
 </div>
 </div>
 
-
-<span class="open" onclick='openNav()'>
+<section id="responsivefix">
+<span class="open">
 <div id="one"></div>
 <div id="two"></div>
 <div id="three"></div>
 </span>
 
 <div id="main">
-    Why is this even here?
+    If everything dissappears when you exit navigation / links bar, go back into the navigation bar and exit again so everything appears visible. 
 </div>
+
+<p id="bugsnotice">There are bugs for users with a screen width of 1024px and lower. There are minor bugs for 1920px width screens.</p>
 <!--Main header-->
 </header>
 <br>
 <br>
 <br>
 <br>
-<section>
+<section id="responsivebutton">
 <button id="darkModeHome" onclick="darkMode()">Dark mode (work in progress)</button>
 <button id="lightModeHome" onclick="lightMode()">Bright mode (Idk why though)</button>
+<button id="dimmedmodehome" onclick="dimmedMode()">Dimmed background (WIP)</button>
+<button id="animationremove" onclick="removeAnimation(), opanNav()">Open sidebar without animation (not working)</button>
 </section>
 <br>
 <br>
@@ -91,6 +96,7 @@
 <header>
 <section id="welcome-title" contenteditable="false">
     <div class="wrapper">
+        <div id="responsivebug">
 <strong><h1 class="fix">Welcome!</h1></strong>
 <em><h1>ElevenWater975: Gamer, Meme Maker, Programmer</h1></em>
 <strong><p>If this page is not working properly, please contact nje.eleven34@icloud.com</p></strong>
@@ -151,7 +157,10 @@
        <a href="https://twitch.tv/elevenplayz12">Twitch channel</a>
    </div>
    </div>
+</div>
 </div>   
+</div>
+</section>
 </footer>
 </section>
 </body>
