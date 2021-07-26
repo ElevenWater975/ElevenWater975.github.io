@@ -41,8 +41,10 @@ function impactFont() {
 var setcount = 0;
 function settingsFunction() {
     // I want to add more functionality to my site
+    // One of the functions are not working
     var sb = document.getElementById("settingsbutton");
     sb.classList.toggle("settingschange");
+    document.getElementById("settingsbutton").style.width;
     var fd = document.getElementById("full-dark");
     var settingsshow = document.getElementById("settings");
     settingsshow.classList.toggle("settingsbackground");

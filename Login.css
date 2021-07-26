@@ -80,17 +80,13 @@ a:hover {
     font-weight: bold;
     font-size: 1.2em;
 }
-@media screen and (max-width: 1920px) {
-    body {
-    background-color: black;
-    }
-}
 @media screen and (max-width: 375px) {
  body {
-    background-color: black;
+    background: black;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: auto; 
+    width: 375px;
     border-radius: 25px;
  }
  }
@@ -178,4 +174,18 @@ footer {
 #sidetext {
     border: none;
     background-color: black;
+}
+
+@media only screen and (max-width: 684px) {
+    body {
+        background: black;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+    }
+}
+
+.darktheme {
+    background-color: black;
+    color: white;
 }

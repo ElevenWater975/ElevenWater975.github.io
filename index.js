@@ -22,7 +22,7 @@ function openNav() {
     document.getElementById("sidebar").style.height = "100%";
     document.getElementById('about-soon').style.display = 'none';
     document.getElementById('responsivebug').style.display = "none";
-
+    document.getElementById('sidebar').style.display = "block";
 }
 
 function swap() {
@@ -51,6 +51,11 @@ x.innerHTML = "Swapped text!";
          document.getElementById("links").style.display = "block";
          if (count === 20) {
              alert("Bro do u really need to click that many times?");
+             if (count == 30) {
+                 alert("clickity clackity clack");
+             } else if (count === 40) {
+                 alert("that is a lot of clicks. does ur mouse even click bro?")
+             }
          }   
         }
 
@@ -86,6 +91,7 @@ x.innerHTML = "Swapped text!";
      function dimmedMode() {
          var dim = document.body; 
          dim.classList.toggle('dimmedtheme');
+         document.getElementById("dimmedModeHome");
      }
 
 function removeAnimation() {
@@ -94,4 +100,5 @@ function removeAnimation() {
     document.getElementById("sidebar").style.height = "100%";
     document.getElementById("main").style.transition = '0s';
     document.getElementById('sidebar').style.transition = "0s";
+    document.getElementById("sidebar");
 }
