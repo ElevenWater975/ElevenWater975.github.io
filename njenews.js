@@ -9,12 +9,12 @@ function darkMode() {
     v.classList.toggle("darkmode");
     var x = document.getElementById("darkbutton");
     if (x.innerHTML === "Dark Mode") {
-    x.innerHTML = "Light Mode";
-} else if (x.innerHTML === "Light Mode") {
+        x.innerHTML = "Light Mode";
+    } else if (x.innerHTML === "Light Mode") {
         v.onclick = v.classList.toggle("lightmode");
         x.innerHTML = "Dark Mode";
         v.onclick = alert("Good luck out there in light mode soldier.");
-}
+    }
 }
 
 function buttonColor() {
@@ -35,8 +35,8 @@ function openSettings() {
 }
 
 function changeText() {
-var green = document.body; 
-green.classList.toggle("changeToGreen");
+    var green = document.body;
+    green.classList.toggle("changeToGreen");
 }
 
 function moveImage() {
@@ -63,29 +63,31 @@ function skyBlueText() {
     } while (document.body.background === "black") {
         do {
             document.getElementById("skybluetext").style.display = "none";
-        skyblue.classList.remove("skytext");
+            skyblue.classList.remove("skytext");
         } while (document.body.background === "white") {
-    
+
         }
     }
 }
 
 function buttonsappeared() {
-    document.addEventListener("click", function() {
-    document.getElementById("skybluetext").style.display = "block";
+    document.addEventListener("click", function () {
+        document.getElementById("skybluetext").style.display = "block";
+    }
+    )
 }
-    )}
-    var onscroll = function() {scrollFunction};
-    function closeVid() {
-        if (document.body.onclick === 1) {
+var onscroll = function () { scrollFunction };
+function closeVid() {
+    if (document.body.onclick === 1) {
         document.getElementById("video").className = "disnone";
     }
 }
+v
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 50 || document.body.scrollTop > 50) {
-            document.getElementById("video").className = "appearVideo";
-        } else {
-            document.getElementById('video').className = "";
-        }
+function scrollFunction() {
+    if (document.body.scrollTop > 50 || document.body.scrollTop > 50) {
+        document.getElementById("video").className = "appearVideo";
+    } else {
+        document.getElementById('video').className = "";
     }
+}

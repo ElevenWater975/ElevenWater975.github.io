@@ -1,5 +1,11 @@
 function openNav() {
-    document.getElementById("navtop").style.display = "block";
+    document.getElementById('navtop').style.display = 'block';
+    document.getElementById('navtop').style.width = "100%";
+    document.getElementById('navtop').style.height = "40%";
+    document.getElementById('navtop').style.transition = "1s";
+    if (document.body.background === black ) {
+        document.getElementById('navtop').style.background = "gray";
+    }
 }
 
 var count = 0;
@@ -42,15 +48,24 @@ var setcount = 0;
 function settingsFunction() {
     // I want to add more functionality to my site
     // One of the functions are not working
-    var sb = document.getElementById("settingsbutton");
-    sb.classList.toggle("settingschange");
-    document.getElementById("settingsbutton").style.width;
-    var fd = document.getElementById("full-dark");
-    var settingsshow = document.getElementById("settings");
-    settingsshow.classList.toggle("settingsbackground");
-    settingsshow.document.getElementById("settings").toggle.style.display = 'block';
+    var change = document.getElementById("settingsbutton");
+    change.classList.add("settingschange");
     document.getElementById('settings').style.display = "block";
-    for (let i = 0; setcount < 1; i++) {
-        document.getElementById("settingsbutton").style.background = "skyblue";
+    if (document.getElementById("settingsbutton").style.background === "white") {
+        document.getElementById('settingsbutton').style.background = "skyblue";
+    } else {
+        document.getElementById('settings').style.display = " none";
+        document.getElementById("settingsbutton").style.background = "white";
     }
+}
+
+function dimmedMode() {
+    var dim = document.body;
+    dim.classList.toggle('dimmedMode'); 
+}
+
+function showVideo() {
+    var show = document.getElementById("latest-video");
+    show.classList.toggle('showvideo');
+document.getElementById('latest-video').style.display = 'block';
 }

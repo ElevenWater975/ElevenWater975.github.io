@@ -30,18 +30,14 @@ p {
 }
 
 ul {
-    border: 3px solid black;
-    border-radius: 25px;
-    border: 2px solid black;
-    border-radius: 10px;
-    background-color: gray;
+    background: black;
     padding: 20px;
 }
 
 li {
     list-style-type: none;
     float: left;
-    padding: 0;
+    text-indent: 5px;
 }
 
 li a {
@@ -49,10 +45,8 @@ li a {
     font-family: sans-serif;
     font-size: 22px;
     margin: 0;
-    padding: 14px 16px;
     text-decoration: none;
-    margin-top: 10px;
-    margin: 10px;
+    text-indent: 5px;
     position: relative;
     top: -10px;
 }
@@ -61,26 +55,29 @@ li:hover {
  color: red;
 }
 
+
 #one {
     width: 30px;
+    position: relative;
+    bottom: -20%;
 }
 
 #two {
     width: 30px;
+    position: relative;
+    bottom: -15%;
 }
 
 #three {
     width: 30px;
+    position: relative;
+    bottom: -10%;
 }
 
 #nav div {
     height: 4px;
     background-color: black;
     margin: 5px;
-}
-
-#navtop {
-display: none;
 }
 
 #external-links {
@@ -126,7 +123,7 @@ display: none;
     display: flex; 
 }
 
-.image-wrap image {
+.image-wrap img {
     height: auto;
 }
 
@@ -201,10 +198,15 @@ left: 40%;
 }
 
 .darkmode {
-    background-color: black;
+    background: black;
     color: white;
     animation-name: fade-dark;
     animation-duration: 2s;
+}
+
+.darkmode ul {
+    background: gray;
+    color: skyblue;
 }
 
 @keyframes fade-dark {
@@ -221,7 +223,7 @@ left: 40%;
 
 #settingsbutton {
     display: block;
-    background-color: lightgray;
+    background: white;
     width: 120px;
     height: auto;
     padding: 0;
@@ -230,6 +232,10 @@ left: 40%;
 
 .settingschange {
     background-color: skyblue;
+}
+
+.settingsopen {
+    display: block;
 }
 
 #settings {
@@ -257,16 +263,6 @@ left: 40%;
     color: black;
 }
 
-@media only screen and (max-width: 375px) {
-#heading-image image {
-    position: relative;
-    width: 300px;
-}
-image {
-    height: auto;
-}
-}
-
 @media screen and (max-width: 420px) {
     h1 {
         text-align: center;
@@ -274,3 +270,128 @@ image {
         
     }
 } 
+
+#padding-background {
+    background: linear-gradient(skyblue, blue, skyblue);
+    padding: 100px; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#navtop {
+    display: none;
+}
+
+.topnav {
+    height: 20%;
+    width: 0;
+    padding: 20px;
+    padding-top: 20px;
+    position: relative;
+    top: -35px;
+    left: -20px;
+    z-index: 1;
+}
+
+.topnav a {
+    float: left;
+    text-indent: 10px;
+    border: none;
+    text-decoration: none;
+    position: relative;
+    transition: 0.5;
+}
+
+.navopen {
+    display: block;
+    width: 100%;
+    height: 20%;
+    transition: 1s;
+}
+
+button {
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 16px;
+}
+
+#navtop #rightfloat {
+    float: right;
+    border: 3px solid rgb(44, 44, 44);
+    border-radius: 0px;
+    position: relative;
+    right: 0px;
+}
+
+#settings {
+    border: 3px solid black;
+    border-radius: 10px;
+    width: 340px;
+    height: auto;
+}
+
+@media screen and (min-width: 1919px) {
+    img {
+        display: none;
+    }
+
+    #logobugnotice {
+        display: block;
+    }
+
+    #padding-background {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    img {
+        display: block;
+    }
+    #logobugnotice {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 375px) {
+    #padding-background {
+        width: 110%;
+    }
+
+    #founders {
+        width: 100%;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+.dimmedMode {
+    background-color: rgb(83, 83, 83);
+    color: white;
+}
+
+#latest-video {
+    display: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+.showvideo {
+    display: block;
+    animation: 1s ease-in fadevideo
+}
+
+
+@keyframes fadevideo {
+    from {display: none;}
+    to {display: block;}
+}
+
+#redsubscribe {
+    background-color: black;
+    color: red;
+}
