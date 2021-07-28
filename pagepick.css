@@ -1,0 +1,210 @@
+#page1 {
+    float: left;
+    display: flex;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    animation-name: fade;
+    animation-duration: 1s;
+    position: relative;
+    left: 20%;
+}
+
+@keyframes fade {
+    from {display: none}
+    to {display: flex}
+}
+
+#page2 {
+    float: left;
+    display: none;
+    text-align: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    position: relative;
+    bottom: -50%;
+}
+
+#window1 {
+    display: flex;
+    width: 360px;
+    height: 240px;
+   border: 3px solid black;
+    border-radius: 1px;
+    position: relative;
+    bottom: -50%;
+}
+
+#window2 {
+    display: flex;
+    width: 360px;
+    height: 240px;
+    border: 3px solid black;
+    border-radius: 1px;
+}
+
+#window3 {
+    display: flex;
+    width: 360px;
+    height: 240px;
+    border: 3px solid black;
+    border-radius: 1px;
+}
+
+#window4 {
+    display: flex;
+    width: 360px;
+    height: 240px;
+    border: 3px solid black;
+    border-radius: 1px;
+}
+
+#window5 {
+    display: flex;
+    width: 360px;
+    height: 240px;
+    border: 3px solid black;
+    border-radius: 1px;
+}
+
+#window6 {
+    display: flex;
+    width: 360px;
+    height: 240px;
+    border: 3px solid black;
+    border-radius: 1px;
+}
+
+#window p {
+    font-family: sans-serif;
+    position: relative;
+}
+
+#next-page {
+    display: block;
+    background-color: lime;
+    width: 100px;
+    height: 100px;
+}
+
+button {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    width: 100px;
+    height: 100px;
+    position: relative;
+    left: 400px;
+}
+
+#go-back {
+    float: left;
+    display: none;
+    background-color: skyblue;
+    width: 100px;
+    height: 100x;
+    position: relative; 
+}
+
+div #window1:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 2px gray;
+}
+
+div #window2:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 2px gray;
+}
+
+div #window3:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 2px gray;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 28px;
+    text-align: center; 
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+       width: 375px; 
+       height: 600px;
+    }
+    h1 {
+        font-size: 40px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+        transform: scale(1.25);
+        position: relative;
+        left: 50%;
+    }
+
+    p {
+        font-size: 30px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (min-width: 1920) {
+    h1 {
+        font-size: 28px;
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+    p {
+        font-size: 24px;
+        font-family: sans-serif;
+        text-align: center;
+    }
+}
+
+.dimmedmode {
+    background-color: rgb(51, 51, 51);
+    color: white;    
+    animation-name: fadedark;
+    animation-duration: 2s;         
+}
+
+.lightmode {
+    animation-name: fadebright;
+    animation-duration: 2s;
+    background-color: white;
+    color: black;
+}
+
+@keyframes fadebright {
+    from {background-color:rgb(51, 51, 51)}
+    to {background-color: white}
+    from {color: white}
+    to {color: black}
+}
+
+#dimmedthemebtn {
+    display: none;
+   
+    width: 100px;
+    height: 60px;
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+@keyframes fadedark {
+    from {background-color: white}
+    to {background-color:rgb(51, 51, 51)}
+    from {color: black}
+    to {color: white}
+}
+
+#settingsbutton {
+
+}
