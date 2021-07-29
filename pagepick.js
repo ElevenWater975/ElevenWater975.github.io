@@ -1,7 +1,12 @@
 function nextPage() {
+    var hide = document.getElementById("page1");
+    hide.classList.toggle('hideanimation');
+    var show = document.getElementById("page2");
+    show.classList.toggle('showanimation');
     document.getElementById("page2").style.display = "flex";
     document.getElementById("page1").style.display = "none";
     document.getElementById("go-back").style.display = "block";
+    document.getElementById('go-back').style.left = "400px";
   document.getElementById('next-page').style.display = "none";
 }
 
@@ -19,18 +24,38 @@ if (count <= 9 || count === 9) {
     alert("Sorry, this feature is not available yet.")
 } else if (count === 10) {
     alert("Seriously, turn back the feature is not ready.")
+} else if (count === 20) {
+    alert("Are you just clicking to see what happens? Gullible, very very gullible.")
 }
 }
 
 function dimmedMode() {
     var dim = document.body;
     dim.classList.toggle("dimmedmode");
-    if (document.body.background-color === "black") {
-        document.body.background = "white";
-        document.body.color = "black";
-    }
 }
 
 function showSettings() {
-    document.getElementById("dimmedthemebtn").style.display = "block";
+    document.getElementById("settings").style.display = "block";
+} 
+
+function changeMobileBackground() {
+var change = document.body;
+change.classList.toggle('changebackground');
+}
+
+function enableTextSettings() {
+    document.getElementById('textsettings').style.display = "block";
+}
+
+// This code is not working
+function changeToImpact() {
+    var impact = document.body;
+    impact.classList.add('change-impact');
+    // Due to a bug, I have to add in this code:
+    document.body.font = "Impact";
+}
+
+function lightMode() {
+    var light = document.body;
+    light.classList.toggle('lightmode');
 }

@@ -6,16 +6,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="HandheldFriendly" content="true">
-    <title>Welcome!</title>
+    <title>Choose a page</title>
 </head>
 <body>
 <header>
     <div id="dimmedtheme"> 
     <div class="container">
-        <h1>Welcome to my site</h1>
+            <h1>Welcome to my site</h1>
         <p>To begin, pick a page that you would like to go to.</p>
-        <button id="settings" onclick="showSettings()">Settings</button>
+        <p id="notice">Note: this feature is not ready yet, if you already clicked the link on the <a href="https://elevenwater975.github.io/newsletter">For early access, you may experince bugs on this page.</a></p>
+        <p id="notice2">As said in the newsletter page, this page may have full mobile support.</p>
+        <p>If you need help, please contact me at nje.eleven34@icloud.com or check out my <a href="https://github.com/elevenwater975/elevenwater975.github.io">Github repository</a></p>
+        <div id="settings-wrap">
+        <button id="settingsbutton" onclick="showSettings()">Settings</button>
+        <div id="settings">
+        <button id="lightmodebtn" onclick="lightMode()">Light Mode (just dont)</button>
         <button id="dimmedthemebtn" onclick="dimmedMode()">Dimmed mode</button>
+        <button id="bluebackground" onclick="changeMobileBackground()">Sky blue background (Mobile users only)</button>
+        <button id="textsettingsbtn" onclick="enableTextSettings()">Mess around with the text (not working)</button>
+        <div id="textsettings">
+            <button id="impact-font" onclick="changeToImpact()">Change text font to <span id="impactfont">Impact</span></button>
+        </div>
+    </div>
+</div>
         <br>
         <br>
         <br>
@@ -29,7 +42,7 @@
             <div id="page2" class="pages-2">
                 <div id="window4" class="window-about" onclick="soonEgg()">coming soon</div>
                 <div id="window5" class="window-nje" onclick="soonEgg()">coming soon</div>
-                <div id="window6" class="window-nje" onclick="soonEgg()">coming soon</div>
+                <div id="window6" class="window-njenews" onclick="soonEgg()">coming soon</div>
         </div>
     </div>
     <div id="background-line">
@@ -37,6 +50,10 @@
     <button id="go-back" onclick="goBack()">Go back</button>
 </div>
 </div>
+
+<div id="bottom-line">
+<p>If you need any help, feel free to contact me at nje.eleven34@outlook.com</p>
+    </div>
 </header>
 </body>
 </html>
