@@ -2,6 +2,7 @@ body {
     background: linear-gradient(skyblue, blue, skyblue);
     background-repeat: no-repeat;
     background-attachment: fixed;
+    height: auto;
 }
 
 #page1 {
@@ -311,8 +312,9 @@ body {
     background: linear-gradient(skyblue, blue, skyblue);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    color: white;
+    color: white
 }
+
 }
 
 #bluebackground {
@@ -358,4 +360,156 @@ width: 300px;
 @keyframes light-mode-animation {
     from {background: linear-gradient(skyblue, blue, skyblue)}
     to {background: white}
+}
+
+@media screen and (max-width: 375px) {
+    body {
+        color: white;
+        width: 375px;
+        height: auto;
+    }
+    .site-welcoming p {
+        font-size: 24px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .site-welcoming h1{
+        font-size: 34px;
+        text-align: center;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    #page1 {
+        float: left;
+        display: flex;
+        text-align: center;
+        font-size: 20px;
+        font-family: sans-serif;
+        animation-name: fade;
+        animation-duration: 1s;
+        position: inherit;
+        right: 4px;
+    }
+    #window1 {
+        border: 3px solid white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+    #window2 {
+        border: 3px solid white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    #window3 {
+        border: 3px solid white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    #window4 {
+        border: 3px solid white;
+        justify-content: center; 
+        align-items: center;
+        text-align: center;
+         width: 1000px;
+         height: 240px;
+         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+
+    #window5 {
+        border: 3px solid white;
+        justify-content: center; 
+        align-items: center;
+        text-align: center;
+         width: 1000px;
+         height: 240px;
+         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+    }
+    #window6 {
+        border: 3px solid white;
+        justify-content: center; 
+        align-items: center;
+        text-align: center;
+         width: 1000px;
+         height: 240px;
+         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    button {
+        float: left;
+        position: inherit;
+        right: 3px;
+    }
+
+    #settings button{
+        float: none;
+        position: inherit;
+        right: 20px;
+    }
+}
+
+.snapeverthingout {
+    display: none;
+animation-name: fade-out;
+animation-duration: 2s;
+}
+
+@keyframes fade-out {
+    from {display: block;}
+    to {display: none;}
+    from {display: flex;}
+    to {display: none;}
+    from {display: inline;}
+    to {display: none;}
+}
+
+#hmm {
+    display: block;
+    float: left;
+    width: 50px;
+    height: 50px;
+    font-size: 12px;
+    color: black;
+    background-color: transparent;
+    font-family: Times;
+    position: relative;
+    bottom: -2em;
+}
+
+p {
+    font-family: Arial;
+    text-align: center; 
+}
+
+#external-text {
+    font-family: 16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center; 
+}
+
+#external-text h2 {
+    font-family: sans-serif;
+    font-size: 16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: inherit;
+    left: 0;
+}
+
+#MITLicense {
+font-size: 14px;
+font-family: sans-serif;
+float: left;
+}
+
+@media screen and (max-width: 375px) {
+    #MITLicense {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    float: left;
+}
 }

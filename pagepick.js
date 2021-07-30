@@ -11,6 +11,7 @@ function nextPage() {
 }
 
 function goBack() {
+    // Go back to the last page
     document.getElementById("page1").style.display = 'flex';
     document.getElementById('page2').style.display = 'none';
     document.getElementById('go-back').style.display = 'none';
@@ -36,6 +37,9 @@ function dimmedMode() {
 
 function showSettings() {
     document.getElementById("settings").style.display = "block";
+    document.getElementById("settings").style.float = "none";
+    document.getElementById("settings").style.right = "30px"; 
+    document.getElementById("settingsbutton").style.display = "none";
 } 
 
 function changeMobileBackground() {
@@ -59,3 +63,20 @@ function lightMode() {
     var light = document.body;
     light.classList.toggle('lightmode');
 }
+
+function closeSettings() {
+    document.getElementById("settingsbutton").style.display = "block";
+    document.getElementById("settings").style.display = "none";
+}
+
+function maybeSoon() {
+    if (count === 2) {
+        document.getElementById('hmm').style.display = 'block';
+    }
+}
+    function everythingAway() {
+        var x = document.body;
+        x.classList.toggle('snapeverythingout');
+        document.getElementById("literally-everthing").style.display = "none";
+    }
+    

@@ -22,6 +22,9 @@ function notice() {
         alert("gullible");
     } else if (count === 12) {
         alert("go away");
+    } else if (count === 17) {
+        alert("enjoy a lifetime of cringe!")
+        .then(location.href="https://youtube.com/nyrangerfan88");
     }
 }
 

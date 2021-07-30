@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <script src="pagepick.js"></script>
     <link rel="stylesheet" href="pagepick.css">
@@ -8,53 +9,101 @@
     <meta name="HandheldFriendly" content="true">
     <title>Choose a page</title>
 </head>
+
 <body>
-<header>
-    <div id="dimmedtheme"> 
-    <div class="container">
-            <h1>Welcome to my site</h1>
-        <p>To begin, pick a page that you would like to go to.</p>
-        <p id="notice">Note: this feature is not ready yet, if you already clicked the link on the <a href="https://elevenwater975.github.io/newsletter">For early access, you may experince bugs on this page.</a></p>
-        <p id="notice2">As said in the newsletter page, this page may have full mobile support.</p>
-        <p>If you need help, please contact me at nje.eleven34@icloud.com or check out my <a href="https://github.com/elevenwater975/elevenwater975.github.io">Github repository</a></p>
-        <div id="settings-wrap">
-        <button id="settingsbutton" onclick="showSettings()">Settings</button>
-        <div id="settings">
-        <button id="lightmodebtn" onclick="lightMode()">Light Mode (just dont)</button>
-        <button id="dimmedthemebtn" onclick="dimmedMode()">Dimmed mode</button>
-        <button id="bluebackground" onclick="changeMobileBackground()">Sky blue background (Mobile users only)</button>
-        <button id="textsettingsbtn" onclick="enableTextSettings()">Mess around with the text (not working)</button>
-        <div id="textsettings">
-            <button id="impact-font" onclick="changeToImpact()">Change text font to <span id="impactfont">Impact</span></button>
-        </div>
-    </div>
-</div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div id="page1" class="pages-1">
-            <div id='window1' class="window-home" onclick='location.href="https:\\elevenwater975.github.io/index"'>Home</div>
-            <div id='window2' class="window-support" onclick='location.href="https:\\elevenwater975.github.io/support"'>Support</div>
-            <div id='window3' class="window-newsletter" onclick='location.href="https:\\elevenwater975.github.io/newsletter"'>newsletter</div>
-            
-            </div>
-            <div id="page2" class="pages-2">
-                <div id="window4" class="window-about" onclick="soonEgg()">coming soon</div>
-                <div id="window5" class="window-nje" onclick="soonEgg()">coming soon</div>
-                <div id="window6" class="window-njenews" onclick="soonEgg()">coming soon</div>
-        </div>
-    </div>
-    <div id="background-line">
-    <button id="next-page" onclick="nextPage()">next page</button>
-    <button id="go-back" onclick="goBack()">Go back</button>
-</div>
-</div>
+    <header>
+        <section id="literally-everything">
+            <div id="dimmedtheme">
+                <div id="lightmtheme">
+                    <div class="container">
+                        <div class="site-welcome">
+                            <button href="#" id="hmm"
+                                onclick="everythingAway()">hghgdfhfsghfddfghdhdfhdfghdfghdfghfghf</button>
+                            <h1>Welcome to my site</h1>
 
-<div id="bottom-line">
-<p>If you need any help, feel free to contact me at nje.eleven34@outlook.com</p>
-    </div>
-</header>
+                            <p>To begin, pick a page that you would like to go to.</p>
+                            <div class="site-notices">
+                                <p id="notice">Note: this feature is not ready yet, if you already clicked the link on
+                                    the
+                                    <a href="https://elevenwater975.github.io/newsletter">For early access, you may
+                                        experince bugs on this page.</a>
+                                </p>
+                                <p id="notice2">As said in the newsletter page, this page may have full mobile support.
+                                </p>
+                                <p id="notice3">But until this page is fully released and out of open-beta mode, this
+                                    page is <strong>Not intended for mobile users. or users with a screen with of
+                                        375px</strong></p>
+                            </div>
+                        </div>
+                        <p>If you need help, please contact me at nje.eleven34@icloud.com or check out my <a
+                                href="https://github.com/elevenwater975/elevenwater975.github.io">Github repository</a>
+                        </p>
+                        <div id="settings-wrap">
+                            <button id="settingsbutton" onclick="showSettings()">Settings</button>
+                            <div id="settings">
+                                <a id="close-settings" href="#" onclick="closeSettings()">&times;</a>
+                                <button id="lightmodebtn" onclick="lightMode()">Light Mode (just dont)</button>
+                                <button id="dimmedthemebtn" onclick="dimmedMode()">Dimmed mode</button>
+                                <button id="bluebackground" onclick="changeMobileBackground()">Sky blue background
+                                    (Mobile
+                                    users only)</button>
+                                <button id="textsettingsbtn" onclick="enableTextSettings()">Mess around with the text
+                                    (not
+                                    working)</button>
+                                <button id="maybesoon" onclick="maybeSoon()">Coming Soon</button>
+                                <div id="textsettings">
+                                    <button id="impact-font" onclick="changeToImpact()">Change text font to <span
+                                            id="impactfont">Impact</span></button>
+                                    <p>Text settings are not working at the moment.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <div id="page1" class="pages-1">
+                            <div id='window1' class="window-home"
+                                onclick='location.href="https:\\elevenwater975.github.io/index"'>Home</div>
+                            <div id='window2' class="window-support"
+                                onclick='location.href="https:\\elevenwater975.github.io/support"'>Support</div>
+                            <div id='window3' class="window-newsletter"
+                                onclick='location.href="https:\\elevenwater975.github.io/newsletter"'>newsletter</div>
+
+                        </div>
+                        <div id="page2" class="pages-2">
+                            <div id="window4" class="window-github"
+                                onclick='loaction.href="https:\\github.com/elevenwater975/elevenwater975.github.io"'>
+                                Github
+                                repository (source code)</div>
+                            <div id="window5" class="window-nje" onclick="soonEgg()">coming soon</div>
+                            <div id="window6" class="window-njenews" onclick="soonEgg()">coming soon</div>
+                            <p><em>Page 3</em> coming soon</p>
+                            <div id="window6" class="window-reach" onclick="soonEgg()">Coming Soon</div>
+                        </div>
+                    </div>
+                    <div id="background-line">
+                        <button id="next-page" onclick="nextPage()">next page</button>
+                        <button id="go-back" onclick="goBack()">Go back</button>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div id="external-text">
+                    <p>Contact: nje.eleven34@icloud.com, nje.eleven34@outlook.com <em>We will reach out to you within 24-48 hours.</em></p>
+                    <div id="MITLicense">&copy; 2021 ElevenWater975</div>
+                </div>
+    </header>
+    </section>
 </body>
-</html>
+</div>
 
+</html>
