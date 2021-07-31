@@ -6,7 +6,7 @@ function nextPage() {
     document.getElementById("page2").style.display = "flex";
     document.getElementById("page1").style.display = "none";
     document.getElementById("go-back").style.display = "block";
-    document.getElementById('go-back').style.left = "400px";
+    document.getElementById('go-back').style.left = "300px";
   document.getElementById('next-page').style.display = "none";
 }
 
@@ -80,3 +80,12 @@ function maybeSoon() {
         document.getElementById("literally-everthing").style.display = "none";
     }
     
+    function borderRemove() {
+        var y = document.getElementById("settingsbutton");
+        if (y.style.display === "block") {
+            document.getElementById("settingswrap").style.border = "none";
+        }
+    }
+function nextPage2() {
+
+}

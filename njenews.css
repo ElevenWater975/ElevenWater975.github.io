@@ -213,3 +213,52 @@ h2 {
 .disnone {
     display: none;
 }
+
+@media (max-width: 600px){
+    p {
+        font-size: 2em;
+        font-family: sans-serif;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 4em;
+        font-family: sans-serif;
+        position: relative;
+    }
+    header {
+        position: relative;
+        left: 50%;
+    }
+
+    #image-wrap {
+        float: left;
+        position: relative;
+        left: 0;
+        right: 0;
+        z-index: 1;
+    }
+    
+}
+
+@media (max-width: 375px) {
+    #greentext {
+        width: 375px;
+        height: auto;
+    }
+
+    header {
+        width: 400px;
+        height: auto;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer {
+        width: 400px;
+        height: auto;
+    }
+    
+}
+

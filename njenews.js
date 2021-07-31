@@ -82,7 +82,6 @@ function closeVid() {
         document.getElementById("video").className = "disnone";
     }
 }
-v
 
 function scrollFunction() {
     if (document.body.scrollTop > 50 || document.body.scrollTop > 50) {
