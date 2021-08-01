@@ -91,7 +91,7 @@ x.innerHTML = "Swapped text!";
      function dimmedMode() {
          var dim = document.body; 
          dim.classList.toggle('dimmedtheme');
-         document.getElementById("dimmedModeHome");
+         document.getElementById('everything').style.background = "rgb(71, 71, 71);"
      }
 
 function removeAnimation() {
@@ -101,4 +101,10 @@ function removeAnimation() {
     document.getElementById("main").style.transition = '0s';
     document.getElementById('sidebar').style.transition = "0s";
     document.getElementById("sidebar");
+}
+
+function addBorderIfDarkMode() {
+    if (document.body.background === "black") {
+        document.getElementById("sidetext").style.border = "3px solid white";
+    }
 }

@@ -4,53 +4,14 @@
         margin: 0;
         padding: 0;
     }
-    body {
-        background: linear-gradient(purple, blue, violet);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        height: 800px;
     }
+
+    h1 {
+        color: black;
     }
-    body {
-    background: linear-gradient(purple, blue, violet);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        font-size: 1.5em;
-        height: 800px;
-    }
-    @media screen and (max-width: 1024px) {
-        body {
-            background: linear-gradient(purple, blue, violet);
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            font-size: 2em;
-        }
-    }
-    
-    @media screen and (max-width: 1024px) {
-        h1 {
-            font-size: 1em;
-            font-family: sans-serif;
-            color: lightgray;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            left: 50%;
-            z-index: 1;
-        }
-        p {
-            font-size: 1.5em;
-            font-family: sans-serif;
-            color: lightgray;
-            text-align: center;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            text-indent: 2px;
-            left: 50%;
-            z-index: 1;
-        }
+
+    a {
+        color: black;
     }
 
     @media screen and (max-width: 375px) {
@@ -69,15 +30,6 @@
         display: none;
         color: lime;
         size: 50px;
-    }
-    @media screen and (min-width: 350px) {
-        h1 {
-            color: white;
-            font-size: 2.5em;
-            font-weight: bold;
-            text-align: center;
-            font-family: sans-serif;
-        }
     }
     h1{
         color: white;
@@ -115,23 +67,7 @@
     text-decoration: none;
     cursor: pointer;
  }
-/*For this, I jsust made the links have a larger font size and a red color. And some other stuff*/
-a {
-    text-align: right;
-    font-size: 32px;
-    font-family: Arial; 
-    color: red; 
-    font-stretch: expanded;
-    text-decoration: none;
-    padding: 8px;
-    
-}  
 
-a:hover {
-    color: blue; 
-    font-style: bold; 
-    text-shadow: -5px 5px 3px #999
-}
 
 /*
 *The code below is for the small link below the red line.
@@ -223,20 +159,6 @@ button {
     border-radius: 10px;
     font-size: 18px;
 }
-.darktheme {
-    animation-name: background-change;
-    animation-duration: 2s;
-    background: #000;
-        color: white;
-    }
-    @keyframes background-change {
-       from {background: linear-gradient(purple, blue, violet) no-repeat}
-       from {background-repeat: no-repeat}
-       to {background-color: black}
-       to {background-color: black}
-       from {color: gray}
-       to {color: white}
-    }
     /*
     *I finally added dark mode to my website! YAY!
     */
@@ -268,15 +190,11 @@ button {
       width: 65px;
       height: auto;
   }
-  #about-soon { 
-    position: relative;
-    left: 40%;
-}
+
 
 #github {
     font-size: 20px;
     font-family: sans-serif;
-    color: black;
 }
 
 #main-logo {
@@ -396,13 +314,7 @@ p {
     font-weight: lighter;
 }
 
-#external-links p {
-    border: 3px solid white;
-    border-radius: 25px;
-    background-color: black;
-    text-align: center;
-    position: relative;
-}
+
 
 a {
     font-size: 24px;
@@ -472,36 +384,15 @@ a {
     font-weight: bold;
 }
 
-@media screen and (min-width: 680) {
-body {
-    width: 680px;;
-    height: auto;
-}
-
 hr {
     width: 680px;
     display: none;
 
 }
 
-.twitch-information {
-    border: 3px solid black;
-    border-radius: 15px;
-    width: 300px;
-}
+
 
 @media only screen and (max-width: 680px) {
-#sidetext {
-display: block;
-font-size: 38px;
-font-family: sans-serif;
-border: 3px solid black;
-border-radius: 25px; 
-background: none;
-position: relative;
-left: 45%;
-width: 300px;
-}
 
 
 .twitch-information p{
@@ -524,133 +415,6 @@ p {
     font-family: sans-serif;
 }
 
-}
-
-@media screen and (max-width: 375px) {
-    button {
-        font-size: 15px;
-        background-color: black;
-    }
-
-    button #lightModeHome {
-        background-color: white;
-        color: black;
-    }
-    
-     #dimmedmodehome button{
-        background-color: gray;
-        color: white;
-    }
-    
-    #external-links a {
-        float: left;
-        list-style: none;
-        border: none;
-        border-radius: 0px;
-        text-align: center;
-    }
-    a {
-        text-align: center;
-    }
-    hr {
-        display: none;
-    }
-    p.twitch-information {
-        font-size: 16px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    }
-
-    .container {
-        text-align: center;
-    }
-    #box {
-        width: 375px;
-        height: auto;
-        position: relative;
-        left: -1px;
-        font-size: 1.5em;
-    }
-
-    #box p {
-        position:initial;
-        left: -45%;
-    }
-
-    #sponsores {
-        box-sizing: border-box;
-        position: relative; 
-        left: -1px;
-    }
-    p {
-        font-size: 38px;
-        font-family: sans-serif;
-        line-height: 50px;
-    }
-
-    #about-soon p {
-        position: fixed;
-        left: 45%;
-    }
-
-    #main-logo {
-        position: relative; 
-        float: left;
-        width: 300px;
-        z-index: 10px;
-    }
-
-    #one {
-        width: 30px;
-        position: relative;
-    }
-
-    #two {
-        width: 30px;
-    }
-    
-    #three {
-        width: 30px;
-    } 
-
-    #box {
-        position: relative;
-        bottom: -10em;
-    }
-
-    #box-2 {
-        position: relative;
-        bottom: -10em;
-        text-align: center;
-    }
-
-    #sponsores {
-        position: relative;
-        bottom: -3em;
-    }
-
-    #sponsores p {
-        line-height: 100px;
-    }
-
-    #box-2 p {
-        position: relative;
-        left: 30%;
-    }
-
-    p {
-        font-weight: lighter;
-        font-family: sans-serif;
-        justify-content:left;
-    }
-    
-    #external-links {
-        display: block;
-        position: relative;
-        bottom: -400px;
-        height: auto;
-        width: auto;
-    }
-}
 
 #darkmodehome {
 border: 3px solid black;
@@ -666,4 +430,169 @@ font-weight: lighter;
 #external-links {
     background-color: transparent;
     border: none;
+}
+
+#external-links p {
+    font-size: 20px;
+    font-family: Arial;
+}
+
+@media (min-width: 1920px) {
+    p {
+        text-align: center;
+    }
+
+    h1 {
+        text-align: center;
+    }
+}
+
+#main {
+    width: 500px;
+    font-size: 24px;
+}
+
+@media (max-width: 600px) {
+    p {
+    font-size: 1em;
+    font-family: sans-serif;
+} 
+
+h1 {
+    position: relative;
+}
+}
+
+twitch-information {
+    border: 3px solid black;
+    border-radius: 25px;
+    font-size: 24px;
+}
+
+.darktheme {
+    color: white;
+    background: black;
+    font-weight: normal;
+}
+
+.darktheme p {
+    color: white;
+}
+
+.darktheme h1 {
+    color: white;
+}
+
+darktheme a {
+    color: purple; 
+}
+
+@supports (display: block) {
+@media (max-width: 375px) {
+    head {
+        width: 375px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+    
+    #sidetext {
+        justify-content: center;
+        float: left;
+        background-color: rgb(35, 98, 214);
+        position: relative;
+        right: -40%;
+    }
+    
+    #sidetext a {
+        position: relative;
+        }
+    
+        p {
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            position: initial;
+            right: -45%;
+        }
+
+        p#noticetext {
+            position: absolute;
+        }
+
+        h1 {
+            text-align: center;
+            justify-content: center;
+            align-items: center;  
+        }
+        h1#main-title {
+            width: 543px;
+            height: 75px;
+            font-size: 30px;
+            position: absolute;
+        }
+
+        p#bugsnotice {
+            width: 543px;
+    }
+    #site-volunteers {
+        width: 550px;
+        height: auto;
+        }
+
+        #site-volunteers p {
+            font-size: 24px;
+            font-family: sans-serif;
+        }
+        
+        #sponsores {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #site-sponsors p {
+            font-size: 24px;
+            width: 543px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #site-sponsors h1 {
+            position: relative;
+            right: -100px;
+        }  
+        
+        #sidetext a {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        section#githubhosting {
+            display: block;
+        }
+
+        section#githubhosting a {
+            color: purple;
+        }
+
+        a#github-repo-info {
+            color: purple;
+        }
+
+        #main-repository {
+            font-size: 24px;
+        }
+    }
+}
+
+#sidetext {
+    position: relative;
+    right: -45%;
+    border: 3px solid black;
+    border-radius: 25px;
 }

@@ -1,0 +1,17 @@
+a {
+    color: purple;
+}
+
+a:hover {
+    color: blue;   
+    text-shadow: 2px 2px 2px black;
+}
+
+h1 {
+    color: black;
+    font-family: sans-serif;
+}
+
+p {
+    color: black;
+}
