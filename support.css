@@ -1,5 +1,6 @@
 body {
     background-image: linear-gradient(.25turn, violet, blue, purple);
+    color: black;
 }
 li {
     float: left;
@@ -39,6 +40,8 @@ a:hover {
 }
 p {
     font-size: 20px;
+    color: black;
+    display: block;
 }
 
 #backToTop {
@@ -246,6 +249,7 @@ button:active {
 }
 
 .darkanimation {
+    background: black;
     animation-name: fade;
     animation-duration: 1s;
 }
@@ -262,3 +266,21 @@ to {background: black}
     border: 3px solid black;
     border-radius: 25px;
 }
+
+@media (max-width: 375px) {
+button.dropbtn {
+    display: none;
+}
+
+button.enableNJEQna {
+    margin-left: -50px;
+    position: relative;
+}
+
+button#myBtn {
+text-align: center;
+border: none;
+border-radius: 1px;
+}
+}
+

@@ -110,11 +110,10 @@
                     }
 
                     function darkModeFunction() {
-                        document.getElementById("dark-mode").style.background = "black";
-                        document.getElementById("dark-mode").style.color = white;
-                        if (document.getElementById("dark-mode").style.background = "white") {
-                            document.getElementById("dark-mode").style.background = "black";
-                        }
+                        document.getElementById('dark-mode').style.background = "black";
+                       var dark = document.body;
+                       dark.classList.toggle('darkmode');
+
                     }
                 </script>
                 <footer>

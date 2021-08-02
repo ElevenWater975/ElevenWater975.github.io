@@ -379,3 +379,42 @@ color: white;
 position: relative;
 left: 50%;
 }
+
+@media (max-width: 375px) {
+  h2 {
+      font-size: 5em;
+      font-family: sans-serif;
+      position: relative;
+      right: -5%;
+  }
+
+  p {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      width: 700px;
+      font-size: 3em;
+      font-family: sans-serif;
+      position: relative;
+      right: -20%;
+  }
+
+  body {
+      width: 1000px;
+  }
+
+  button {
+      font-size: 2em;
+      display: block;
+      position: relative;
+      left: 10px;
+      margin: 0px;
+  }
+
+  button#youtube-function {
+      position: relative;
+      button: -40px;
+  }
+
+
+}

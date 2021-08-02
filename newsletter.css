@@ -116,3 +116,22 @@ a:hover {
     color: red;
 }
 
+.darkmode {
+    background: black;
+    color: white;
+}
+#dark-mode {
+    color: black;
+}
+
+@media all {
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    #dark-mode {
+        background-color: black;
+        color: white;
+    }
+}
