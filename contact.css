@@ -179,3 +179,26 @@ button:active {
     position: relative;
     z-index: 1;
 }
+
+@media (max-width: 375px) {
+    #basicinputs {
+    width: 480px;
+    height: auto;
+    }
+
+    #countries {
+        width: 480px;
+        height: auto;
+    }
+
+
+    #languages {
+        width: 480px;
+        height: auto;
+    }
+
+    button.submitBtn {
+        position: relative;
+        left: -10px;
+    }
+}

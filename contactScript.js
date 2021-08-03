@@ -160,5 +160,3 @@ function brightMode() {
     function explainBugsFrancias() {
         document.getElementById("bugs-explain-francias").style.display = "block";
     }
-
-    functiokn

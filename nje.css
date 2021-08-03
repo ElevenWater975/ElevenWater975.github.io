@@ -427,6 +427,114 @@ button {
         height: 100%;
         color: white;
         background-color: black;
-        paddoing: 10px;
+        padding: 10px;
     }
+}
+
+@media (max-width: 375px) {
+    p {
+        font-size: 2em;
+        font-family: sans-serif;
+        font-weight: lighter; 
+    }
+
+    .title {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        font-size: 4em;
+        font-family: sans-serif;
+        font-weight: bold; 
+        position: relative;
+    }
+
+
+    div.heading-1 {
+        width: 543px;
+        height: auto;
+        position: relative;
+        right: -150px;
+    }
+
+    button {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 2em;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    div.founders {
+        width: 920px;
+        position: relative;
+    }
+
+    #NJE-N {
+        position: relative;
+        left: 200px;
+    }
+
+    #NJE-J {
+        position: relative;
+        left: 200px;
+    }
+
+    #NJE-E {
+        position: relative;
+        left: 200px;
+    }
+
+    #MITLicense {
+        width: 543px;
+        height: auto; 
+        float: left; 
+        font-size: 2em;
+        font-family: serif;
+    }
+
+    #Subscribe {
+        text-decoration: none;
+        font-size: 2em;
+        font-family: sans-serif;
+    }
+
+    #Subscribe strong {
+        background-color: red;
+        color: white;
+    }
+
+    #external-links {
+        width: 650px;
+        background-color: gray;
+        font-family: sans-serif;
+        font-weight: lighter;
+        font-size: 2em;
+    }
+
+    #external-links table {
+        font-size: 2em;
+    }
+
+    div#License-tag {
+        font-size: 2em;
+    }
+    
+    div#external-links {
+        width: 600px;
+        font-size: 2em;
+    }
+}
+
+#external-links {
+    background-color: gray; 
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+#external-links table {
+    font-size: 28px;
+    font-family: sans-serif;
+    font-weight: lighter;
 }

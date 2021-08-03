@@ -260,5 +260,84 @@ h2 {
         height: auto;
     }
     
+    div#gamenews {
+        width: 600px;
+        height: auto;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        right: 10px;
+    }
+
+    h2 {
+        width: 590px;
+        height: auto;
+        font-size: 2em;
+        font-family: sans-serif;
+    }
+
+    #section1 {
+        position: relative;
+        left: -25%;
+    }
+
+    iframe {
+        border: 3px solid black;
+        border-radius: 10px;
+    }
+
+    #twitter-paragraph {
+        font-size: 1.50em;
+    }
+
+    a {
+        font-size: 1.50em;
+    }
+
+    div#settings.settings-nav {
+        font-size: 2em;
+    }
 }
 
+@media (max-width: 599px) {
+    img {
+        display: none;
+    }
+}
+
+@media (max-width: 414px) {
+    section#section1 {
+        width: 700px;
+        position: relative;
+        left: 39px;
+    }
+
+    h1#section1 {
+        font-size: 1.50em;
+        font-family: sans-serif;
+        position: relative;
+        left: 39px; 
+    }
+
+    iframe {
+        border: 3px solid black;
+        border-radius: 15px;
+    }
+}
+
+#showvideo {
+    display: none;
+}
+
+#settings {
+    border: 3px solid black;
+    border-radius: 25px;
+    animation-name: fadein;
+    animation-duration: 2s;
+}
+
+@keyframes fadein {
+    from {display: none}
+    to {display: block}
+}

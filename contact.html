@@ -39,6 +39,7 @@
         <br>
         <br>
         <br>
+        <div id="basicinputs">
         <label for="firstname"></label>
         <input type="text" id="firstname" placeholder="First name: "required>
         <br>
@@ -51,6 +52,8 @@
         <label for="age" id="age-base" placeholder="age" required></label>
         <input type="number" size="4" name="age" min="13" id="age" placeholder="Date of Birth: " required>
         <br>
+    </div>
+    <div id="countries">
         <select id="country">
             <label for="country-select" id="country-selection" required></label>
         <option id="country-selection-dropdown" disabled selected value required onclick="moveText()"> -- Select a country -- </option>
@@ -60,6 +63,7 @@
         <option value="UK" onclick="openLanguageUK()">United Kingdom</option>
         <option value="Australia" onclick="openLanguageAustralia()">Australia</option>
         <option value="CA" onclick="openLanguageCA()">Canada</option>
+    </div>
         <div id="languages-canada">
             <button id="english-canada" onclick="englishCanada()">English</button>
             <button id="french-canada" onclick="frenchCanada()">français</button>
@@ -68,11 +72,13 @@
         <option value="Spain" onclick="openIssuesSpain()">Spain</option>
         <br>
     </select>
+    <div id="languages">
     <p>What is your preferred language</p>
     <button id="en-us" onclick="openEnglish()">English</button>
     <button id="spanish-us" onclick="openSpanish()">español</button>
+    <button id="french" onclick="openFrench()">Francias</button>
     <button id="other-us" onclick="openOther()">Other</button>
-
+</div>
         <br>
         
 

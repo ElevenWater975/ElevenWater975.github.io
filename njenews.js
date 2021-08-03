@@ -78,9 +78,13 @@ function buttonsappeared() {
 }
 var onscroll = function () { scrollFunction };
 function closeVid() {
-    if (document.body.onclick === 1) {
-        document.getElementById("video").className = "disnone";
-    }
+    document.getElementById("video").style.display = "none";
+    document.getElementById('showvideo').style.display = "block";
+}
+
+function showVideo() {
+    document.getElementById("video").style.display = "block";
+    document.getElementById("showvideo").style.display = "none";
 }
 
 function scrollFunction() {

@@ -4,9 +4,9 @@ function emailFunction() {
         document.getElementById("easter-egg").style.display = "block";
         document.getElementById("email-function").style.display = "none";
     }
-        document.addEventListener('click', function(){
-document.getElementById("emails").style.display = 'block';
-    
+    document.addEventListener('click', function () {
+        document.getElementById("emails").style.display = 'block';
+
     })
 }
 function easterEggTwo() {
@@ -22,7 +22,7 @@ function discordFunction() {
     } else if (count === 21) {
         alert("Whats 9 + 10? 21! Thats how many times you clicked");
     }
-    document.getElementById("discord").style.display='block';
+    document.getElementById("discord").style.display = 'block';
     document.getElementById("youtube-function").style.top = "-20px";
 }
 function enableNav() {
@@ -30,17 +30,29 @@ function enableNav() {
 }
 
 function closeNav() {
+
     var close = document.getElementById("navbar");
-document.addEventListener('click', function(){
-    close.classList.add = "animation";
-})
+
+    document.addEventListener('click', function () {
+
+        close.classList.add = "animation";
+
+    })
 }
 
 function youtubeFunction() {
+
     count++;
+
     if (count === 5) {
+
+
         alert("that tickles!");
+
+
     } else if (count === 10) {
+
+
         confirm("that tickled a bit less");
     } else if (count === 20) {
         alert("its starting to pinch a little bit...");
@@ -50,7 +62,7 @@ function youtubeFunction() {
         alert("I beg you, stop clicking!");
     }
     document.getElementById("youtube").style.display = "block";
-} 
+}
 
 
 function easterHint() {

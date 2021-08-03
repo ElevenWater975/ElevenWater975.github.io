@@ -53,6 +53,7 @@
             </div>
             <div class="container">
                 <header>
+                    <section id="section1">
                     <h1>NJE Gaming news</h1>
                     <div class="image-wrap">
                         <image id="NJE-Image" src="unnamed.jpg" style="width: 560px;"></image>
@@ -60,7 +61,7 @@
                         <br>
                         <p id="moveable">Welcome to NJE gaming news. Here we post news about NJE and gaming. Here, you
                             will find news on games and the NJE Gaming group. To learn more, check out our <a
-                                href="https://twitter.com/GamingNje"
+                                href="https://twitter.com/GamingNje" id="twitter-paragraph"
                                 style="background-color: black; color: skyblue;">Offical Twitter.</a>
                     </div>
                     <br>
@@ -71,17 +72,18 @@
                             <strong>Splitgate</strong></p>
                         <p>We play games like <em>Minecraft, Splitgate, Fortnite, and more.</em></p>
 
-
+                    </section>
                     </div>
             </div>
             <br>
             <br>
             <br>
             <br>
+            <button id="showvideo" onclick="showVideo()">Latest NJE video</button>
             <div id="video">
                 <p>Check out our latest video</p>
-                <button id="closevideo" onclick="closeVid">Close video</button>
-                <iframe id="nje-video" display="block" width="560" height="315"
+                <button id="closevideo" onclick="closeVid()">Close video</button>
+                <iframe id="nje-video" class="video-display-1" display="block" width="560" height="315"
                     src="https://www.youtube.com/embed/G8dMKgrCNFo" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
@@ -110,12 +112,12 @@
         </div>
 
         <footer>
-            <div id="external-links">
-                <a href="https://elevenwater975.github.io/nje">NJE home</a>
-                <a href="https://elevenwater975.github.io">Main home</a>
-                <a href="https://elevenwater975.github.io/support">Support page</a>
-                <a href="https://twitter.com/GamingNje">NJE Twitter</a>
-                <a href="https://twitch.tv/elevenplayz12">Twitch Channel</a>
+            <div id="external-links" style="width: 600px">
+                <a href="https://elevenwater975.github.io/nje" style="font-size: 1.50em;">NJE home</a>
+                <a href="https://elevenwater975.github.io" style="font-size: 1.50em;">Main home</a>
+                <a href="https://elevenwater975.github.io/support" style="font-size: 1.50em;">Support page</a>
+                <a href="https://twitter.com/GamingNje" style="font-size: 1.50em;">NJE Twitter</a>
+                <a href="https://twitch.tv/elevenplayz12" style="font-size: 1.50em;">Twitch Channel</a>
                 <a href=#>Security policy</a>
                 <div id="License-tag" style="float: right; color: white;">&copy; ElevenWater975 and Team 3 NJE</div>
             </div>
