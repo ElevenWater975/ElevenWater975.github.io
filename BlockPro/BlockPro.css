@@ -337,3 +337,132 @@ animation: zoom-in-out 1s infinite;
         transform: scale(1.10);
     }
 }
+
+@media (width: 375px) {
+    p {
+        font-size: 2em;
+        color: black;
+        font-weight: bold; 
+    }
+
+    body {
+        width: 1250px;
+        height: 812px;
+    }
+
+    img {
+        width: 500px;
+        height: 500px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    button {
+        font-size: 72px;
+    }
+
+    p#g2 {
+        font-size: 48px;
+    }
+
+    p#g1 {
+        font-size: 48px;
+    }
+
+    a {
+        font-size: 52px;
+    }
+
+    div#one {
+        width: 100px;
+        height: 20px;
+    }
+
+    div#two {
+        width: 100px;
+        height: 20px;
+    }
+
+    div#three {
+        width: 100px; 
+        height: 20px;
+    }
+
+}
+
+@media (width: 414px) {
+    body {
+        width: 1290px;
+        height: 812px; 
+    }
+    
+    p {
+        font-size: 2em;
+        font-family: sans-serif;
+    }
+
+    h1 {
+        font-size: 2em;
+        font-size: sans-serif;
+    }
+
+    #title {
+        width: 1180px;
+        text-align: center;
+        font-size: 6em;
+        font-family: sans-serif;
+    }
+
+    #subtitle {
+        width: 1180px; 
+        text-align: center;
+        font-size: 4em;
+        font-family: sans-serif;
+    }
+    div#one {
+        width: 100px;
+        height: 20px;
+    }
+
+    div#two {
+        width: 100px;
+        height: 20px;
+    }
+
+    div#three {
+        width: 100px; 
+        height: 20px;
+    }
+
+    button {
+        font-size: 2em;
+    }
+
+    #about-blockpro {
+        text-align: center;
+        font-size: 2em;
+        font-family: sans-serif;
+    }
+
+    #blendcolor {
+        text-align: center;
+        color: white;
+    }
+
+    #about-blockpro h2 {
+        font-size: 1.90em;
+        font-family: sans-serif;
+    }
+
+    div#notice {
+        font-size: 2em;
+    }
+
+    button#Ping {
+        font-size: 2em;
+        font-family: sans-serif;
+        text-align: center;
+    }
+}

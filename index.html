@@ -35,6 +35,15 @@
                 <!--Maybe I should add a responsive image? Also make this site more responsive for mobile users-->
 
                 <img id="main-logo" src="New Project.jpg">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
                 <div id="box">
                     <br>
                     <br>
@@ -54,7 +63,7 @@
 
 
                             <div id="sidebar" class="sidenav">
-                                <a href='javascript:void(0)' class="closeNav" onclick="closeNav()">&times;</a>
+                                <a href='javascript:void(0)' id="close-nav" class="closeNav" onclick="closeNav()">&times;</a>
                                 <button id="opentop" onclick="opentop()">Move navigation to top</button>
                                 <p>Please wait until the sidebar fully opens up so you won't accidentally click on the
                                     wrong thing.</p>
@@ -74,16 +83,16 @@
                             </div>
                         </div>
 
+                        <a id="open-nav" onclick="openNav()">
                         <section id="responsivefix">
                             <span class="open">
                                 <div id="one"></div>
                                 <div id="two"></div>
                                 <div id="three"></div>
                             </span>
-
-                            <div id="main">
-                                If everything dissappears when you exit navigation / links bar, go back into the
-                                navigation bar and exit again so everything appears visible.
+                        </a>
+                            <div id="main" style="position: relative; right: -40%;">
+                                Navbar successfully fixed.
                             </div>
 
                             <p id="bugsnotice">There are bugs for users with a screen width of 1024px and lower. There
@@ -141,6 +150,13 @@
                     <br>
                     <br>
                     <br>
+                    <div id="brfor320pxdisplay">
+                        <br>
+                        <br>
+                        <br>
+                    </div>
+                    <div id="box2">
+                    <div id="iphone678plus-responsive">
                     <section id="sponsores">
                         <div id="site-sponsors">
                             <h1>Site Sponsors</h1>
@@ -169,7 +185,7 @@
                                 <br>
                                 <br>
                                 <a id="egg" contenteditable="true" onclick="textStuff()">p</a>
-                                <p>This site was hosted using<a id="github" href="https://github.io">Github pages. <a
+                                <p>This site was hosted using<br><a id="github" href="https://github.io">Github pages.<br> <a
                                             id="main-repository" ref="https://github.com/elevenwater975/elevenwater975.github.io">Main
                                             repo</a>
                                 </p>
@@ -201,8 +217,9 @@
                     <a href="https://youtube.com/nyrangerfan88">YouTube</a>
                     <a href="https://github.com/ElevenWater975/ElevenWater975.github.io">Site repository</a>
                     <a href="https://twitch.tv/elevenplayz12">Twitch channel</a>
-                    <p>This page is not currently intended for mobile users</p>
-                    &copy 2021 Elevenwater975
+                    <br>
+                    <br>
+                    <div id="license">&copy 2021 Elevenwater975</div>
                 </div>
     </div>
     </div>
@@ -210,9 +227,10 @@
     </div>
     </section>
     </footer>
+</div>
     </section>
     </div>
     </div>
+</div>
 </body>
-
 </html>

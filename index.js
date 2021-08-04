@@ -15,14 +15,7 @@ function closeNav() {
 }
 
 function openNav() {
-    var hide = document.body;
-    hide.classList.toggle("hideall");
-    document.getElementById("sidebar").style.width = "100%";
-    document.getElementById("main").style.marginLeft = "100%";
-    document.getElementById("sidebar").style.height = "100%";
-    document.getElementById('about-soon').style.display = 'none';
-    document.getElementById('responsivebug').style.display = "none";
-    document.getElementById('sidebar').style.display = "block";
+    document.getElementById("sidebar").style.width = "250px";
 }
 
 function swap() {
@@ -68,7 +61,6 @@ x.innerHTML = "Swapped text!";
          document.getElementById("top").style.display = "block";
          document.getElementById("sidebar").style.width = "0";
      }
-
      function moveside() {
          // Move navigation bar back to the side.
          document.getElementById("top").style.display = "none";
@@ -94,17 +86,9 @@ x.innerHTML = "Swapped text!";
          document.getElementById('everything').style.background = "rgb(71, 71, 71);"
      }
 
-function removeAnimation() {
-    document.getElementById("sidebar").style.width = "100%";
-    document.getElementById("main").style.marginLeft = "100%";
-    document.getElementById("sidebar").style.height = "100%";
-    document.getElementById("main").style.transition = '0s';
-    document.getElementById('sidebar').style.transition = "0s";
-    document.getElementById("sidebar");
-}
-
 function addBorderIfDarkMode() {
     if (document.body.background === "black") {
         document.getElementById("sidetext").style.border = "3px solid white";
     }
 }
+
