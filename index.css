@@ -831,3 +831,142 @@ darktheme a {
         right: 1920px;
     }
 }
+
+#navigation-settings {
+    position: relative;
+    top: -100px;
+}
+
+#original-size {
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    display: none; 
+}
+
+.brightnavigation {
+    background: white;
+    color: black;
+}
+
+.brightnavigation a {
+    color: green;
+    border: 3px solid transparent;
+}
+
+div#license {
+    font-size: 28px;
+    font-family: Arial;
+    float: left;
+}
+#external-links a {
+    width: 500px;
+    word-spacing: 10px;
+    border: none;
+    border-radius: 0px;
+    background-color: gray;
+    font-size: 20px;
+    font-family: sans-serif;;
+}
+
+#external-links {
+    background-color: gray;
+    padding: 10px;
+}
+
+div#box2 {
+    position: relative;
+    right: -170px;
+}
+
+img#main-logo {
+    float: left;
+    width: 300px;
+    height: 250px;
+}
+
+div#box {
+    position: relative;
+    bottom: -200px;
+}
+
+a#main {
+    font-size: 22px;
+    font-family: sans-serif;
+    background-color: red;
+}
+
+.closeinfo {
+    display: none;
+    animation-name: fade-out-information;
+    animation-duration: 2s;
+}
+
+#redbutton {
+    width: 30px;
+    background-color: red;
+    color: white;
+    font-family: sans-serif;
+}
+
+.dimmedtheme {
+    background: rgb(71, 71, 71);
+    color: white;
+}
+
+@media (width: 414px) {
+    div#box {
+        width: 414px;
+        text-align: center;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    div#box2 {
+        width: 414px;
+        position: relative;
+        left: 0.50%;
+    }
+
+    #external-links {
+        list-style-type: none;
+        width: 720px;
+    }
+
+    #external-links a {
+        font-size: 1.12em;
+        text-align: center;
+        float: left;
+        width: 720px;
+    }
+
+    h1#main-title {
+        position: relative;
+        right: -100px;
+    }
+
+    p#noticetext {
+        width: 700px;
+        position: relative;
+        left: -2px;
+    }
+
+    p#main-logo {
+        width: 400px;
+    }
+
+    div#main {
+        width: 414px;
+        height: auto;
+        border: 3px solid gray;
+    }
+}
+
+@media (width: 375px) {
+    #welcome {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

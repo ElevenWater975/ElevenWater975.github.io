@@ -11,11 +11,13 @@ function buttonNewsletter() {
 function closeNav() {
     document.getElementById("sidebar").style.width = "0px";
     document.getElementById("main").style.marginLeft = "0px";
-    document.getElementById("")
+    document.getElementById("sidetext").style.display = "block";
 }
 
 function openNav() {
     document.getElementById("sidebar").style.width = "250px";
+    document.getElementById("sidetext").style.display = "none";
+    document.getElementById('external-links').style.display = "none";
 }
 
 function swap() {
@@ -83,7 +85,6 @@ x.innerHTML = "Swapped text!";
      function dimmedMode() {
          var dim = document.body; 
          dim.classList.toggle('dimmedtheme');
-         document.getElementById('everything').style.background = "rgb(71, 71, 71);"
      }
 
 function addBorderIfDarkMode() {
@@ -92,3 +93,24 @@ function addBorderIfDarkMode() {
     }
 }
 
+function fullScreenNav() {
+    document.getElementById("sidebar").style.width = "100%";
+    document.getElementById("sidebar").style.height = "105%"; 
+    document.getElementById("original-size").style.display = "block";
+}
+
+function originalSize() {
+    document.getElementById("sidebar").style.width = "250px";
+    document.getElementById("original-size").style.display = "none";
+    document.getElementById("navigation-settings").style.top = "50px";
+}
+
+function brightNav() {
+    var brightnav = document.getElementById('sidebar');
+    brightnav.classList.toggle("brightnavigation");
+}
+
+function closeInformation() {
+    document.getElementById("main").style.display = "none";
+    document.getElementById("bugsnotice").style.display = "none";
+}

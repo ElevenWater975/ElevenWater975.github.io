@@ -301,3 +301,23 @@ button {
         height: auto;      
     }
 }
+
+@media (width: 414px) {
+    div.container {
+        position: relative;
+        left: -150px;
+    }
+
+    #reasons {
+        position: relative;
+        right: -150px;
+    }
+
+    
+    p#noticemobile {
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 150px;
+    }
+}
