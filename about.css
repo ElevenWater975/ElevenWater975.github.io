@@ -1,19 +1,17 @@
 body {
-    background-image: linear-gradient(.25turn, red, orange);
+    background: white;
     text-align: center;
 }
 h1 {
     text-align: center;
     font-size: 24px;
     font-family: sans-serif;
-    color: white;
 }
 
 p {
     font-size: 20px;
     text-align: center;
     font-family: sans-serif;
-    color: lightgray;
 }
 
 hr {
@@ -32,9 +30,14 @@ hr {
 
 button {
     display: block;
-    background-color: blue;
+    background: blue;
     color: white;
     font-size: 18px;
+}
+
+#darkmode {
+    background: black;
+    color: white;
 }
 
 ul {
@@ -54,8 +57,109 @@ display: block;
 font-size: 20px;
 text-decoration: none;
 font-family: sans-serif;
-border: 3px solid gray;
-border-radius: 25px;
 padding: 8px;
-background-color: violet;
+}
+
+.darktheme {
+    background: black;
+    color: white;
+}
+
+.lighttheme {
+    background: white;
+    color: black;
+}
+
+@media (width: 375px) {
+    body {
+        width: 600px;
+    }
+
+    html {
+        width: 600px;
+        height: 3169;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 4em;
+    }
+
+    p {
+        text-align: center;
+        font-size: 2em;
+        width: 543px;
+    }
+}
+
+#one {
+    border: 3px solid black;
+    border-radius: 25px;
+    width: 30px;
+    height: 4px;
+}
+
+#two {
+    border: 3px solid black;
+    border-radius: 25px;
+    width: 30px;
+    height: 4px;
+}
+
+#three {
+    border: 3px solid black;
+    border-radius: 25px;
+    width: 30px;
+    height: 4px;
+}
+
+.nav div {
+    height: 4px;
+    margin: 0;
+    background-color: white;
+    cursor: pointer;
+}
+
+#navigation {
+    display: none;
+    background-color: black;
+}
+
+#navigation a {
+    color: white;
+}
+
+#navigation a:hover {
+    border: 3px solid black;
+    border-radius: 15px;
+    background-color: green;
+    color: white;
+}
+
+.navigation {
+    display: block;
+}
+
+#close-nav {
+    float: right; 
+    position: relative;
+    right: -50%;
+}
+
+#close {
+    position: relative;
+    right: -50%;
+}
+
+#close a:hover {
+    background-color: red;
+}
+
+.darktheme #navigation {
+    background-color: white;
+    color: black;
+}
+
+.darktheme #navigation a {
+    color: black;
 }

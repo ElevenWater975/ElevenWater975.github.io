@@ -2,22 +2,38 @@
 <html lang="en">
     
 <head>
+    <script src="about.js"></script>
     <link rel="stylesheet" type="text/css" href="about.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandHeldFriendly" content="true">
-<ul>
-    <li><a href="https://elevenwater975.github.io">Home</a></li>
-    <li><a href="https://elevenwater975.github.io/support.html">Support page</a></li>
-    <li><a href="https://youtube.com/nyragerfan88">YouTube (adding soon)</a></li>
-    <li><a href='#'>Twitter (adding soon)</a></li>
-</ul>
-<br>
+
     <title>About Me</title>
 </head>
 <body>
     <script src="aboutButton.js"></script>
-    
+    <a class="nav" id="nav" onclick="openNav()">
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+</a>
+
+<div id="navigation">
+    <ul>
+        <li><a href="https://elevenwater975.github.io">Home</a></li>
+        <li><a href="https://elevenwater975.github.io/support.html">Support page</a></li>
+        <li><a href="https://youtube.com/nyragerfan88">YouTube (adding soon)</a></li>
+        <li><a href='#'>Twitter (adding soon)</a></li>
+        <div id="close">
+        <li><a id="close-nav" href="javascript:void(0)" onclick="closeNav()">X</a></li>
+    </div>
+        </ul>
+</div>
+    <br>
+    <button id="darkmode" onclick="enableDark()">Dark mode</button>
+    <br>
+    <button id="lightmode" onclick="enableLight()">Light mode</button>
+    <br>
     <br>
 <div class='question'>
    <strong><em><p>Eleven's Site</p></em></strong>
@@ -27,13 +43,14 @@
 </div>
    <div id="about">
    <h1><strong>Gamer</strong></h1>
-   <p>ElevenWater975 LOVES video games. Their main platform is PC. Their main platform used to be console but they prefered PC the best.</p>
-   <p>Eleven plays games like CS:GO, VALORANT, Minecraft, Geometry Dash, Roblox, Among us, and so much more. </p>
+   <p>I really like gaming. My favorite games are Valorant, Minecraft, CS:GO, and Splitgate.</p>
    <h1><strong>Programmer</strong></h1>
    <p>Eleven programs every day because they are doing the 100 days of code challenge</p>
    <p>Eleven's main programming languages are JavaScript, HTML, CSS</p>
    <p>What is the <strong>100 Days of Code challenge you might ask?</strong></p>
    <p>It is where you program for 1 hour every day for 100 days.</p>
+    <h1><strong>Memer</strong></h1>
+    <p>I have a really strong interest in memes <strong>DEM SPICY MEMES BOI</strong> How does one simply not like memes. I don't like tiktok <em>"memes"</em></p>
 </div>
 <canvas id="newCanvas" height="100" width="1920">
    
@@ -45,7 +62,7 @@
     <br>
     <p>Please do not make a copy of this website</p>
     <p>We will not ask for information without explicit permission</p>
-    <p>Version: 1.1.2-alpha</p>
+    <p>Version: 1.2.3-alpha</p>
     <p>Goodbye now</p>
 <div id="final-link">
 <a href="https://elevenwater975.github.io">home page</a>

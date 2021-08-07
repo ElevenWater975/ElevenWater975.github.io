@@ -1,8 +1,12 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+
 @media screen and (min-width: 375px) {
     * {
         margin: 0;
         padding: 0;
+        font-family: 'Ubuntu Mono', monospace;
     }
     }
 
@@ -17,7 +21,7 @@
     @media screen and (max-width: 375px) {
         p {
             font-size: 1em;
-            font-family: sans-serif;
+            font-family: 'Ubunto Mono', monospace;
         }
 
         h1 {
@@ -969,4 +973,62 @@ a#main {
         justify-content: center;
     }
 
+    #sidetext {
+        width: 543px;
+        height: auto;
+    }
+
+    h1#main-title {
+        font-family: 'Ubuntu';
+        font-size: 4em;
+    }
+
+    #box2 {
+        position: relative;
+        bottom: -100px;
+    }
+
+    #box2 h1 {
+        text-align: center;
+        position: relative;
+        left: -50px;
+    }
+
+    div#site-volunteers {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    #sidetext {
+        display: none;
+        position: relative;
+        bottom: -100px;
+    }
+    
+    .twitch-information {
+        position: relative;
+        bottom: -100px;
+    }
+
+    p#noticetext {
+        width: 800px;
+        position: relative;
+        bottom: -100px;
+    }
+
+    #welcome {
+        width: 543px;
+        height: 200px;
+        position: relative;
+        right: -50%;
+    }
+}
+
+@media (width: 1900px) {
+    #box2 {
+        position: relative;
+        right: -50%;
+    }
 }
