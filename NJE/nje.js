@@ -29,6 +29,7 @@ function notice() {
 }
 
 function darkMode() {
+  
     var dark = document.body;
     dark.classList.toggle("darkmode");
     var x = document.getElementById("full-dark");
@@ -36,6 +37,8 @@ function darkMode() {
         x.innerHTML = "Light Mode"
         x.style.background = "white";
         x.style.color = "black";
+        x.background = "skyblue";
+        
     } else {
         x.innerHTML = "Dark Mode";
         x.style.background = "black";
@@ -45,6 +48,8 @@ function darkMode() {
 function impactFont() {
     var impact = document.body;
     impact.classList.toggle("impactfont");
+    var x = document.getElementById('impact-font');
+    x.innerHTML = "error while trying to use this";
 }
 
 var setcount = 0;
@@ -63,12 +68,19 @@ function settingsFunction() {
 }
 
 function dimmedMode() {
+    document.getElementById('dimmedtheme').style.background = "skyblue";
     var dim = document.body;
-    dim.classList.toggle('dimmedMode'); 
+    dim.classList.add('dimmedMode'); 
+   
 }
 
 function showVideo() {
     var show = document.getElementById("latest-video");
     show.classList.toggle('showvideo');
 document.getElementById('latest-video').style.display = 'block';
+document.getElementById("showvideo").style.display = "none";
+}
+
+function closeNav() {
+    document.getElementById('navtop').style.display = "none"; 
 }

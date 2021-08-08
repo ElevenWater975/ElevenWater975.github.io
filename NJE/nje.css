@@ -128,30 +128,30 @@ li:hover {
 }
 
 #NJE-N {
+    width: 920px;
     border: 3px solid white;
     border-radius: 25px;
-    width: 500px;
     text-align: center;
     position: relative;
-    left: 40%;
+    left: 29%;
 }
 
 #NJE-J {
 border: 3px solid white;
 border-radius: 25px;
-width: 500px;
+width: 920px;
 text-align: center;
 position: relative;
-left: 40%;
+left: 29%;
 }
 
 #NJE-E {
     border: 3px solid white;
     border-radius: 25px;
-    width: 500px;
+    width: 920px;
     text-align: center;
     position: relative;
-    left: 40%;
+    left: 29%;
 }
 
 #NJE-E a {
@@ -369,8 +369,12 @@ button {
 }
 
 .dimmedMode {
-    background-color: rgb(83, 83, 83);
+    background: rgb(83, 83, 83);
     color: white;
+}
+
+.changecolor {
+    background: skyblue;
 }
 
 #latest-video {
@@ -537,4 +541,77 @@ button {
     font-size: 28px;
     font-family: sans-serif;
     font-weight: lighter;
+}
+
+div.heading-1 {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+@media (min-width: 1920px) {
+    iframe {
+        width: 500px;
+    }
+}
+
+div#padding-background {
+    display: none;
+}
+
+#close-nav {
+    float: right;
+    background-color: red;
+    color: white;
+position: relative;
+top: -10px;
+right: -200px;
+}
+
+#navtop a {
+    font-size: 18px; 
+}
+
+#navtop button {
+    float: right;
+}
+
+a#Subscribe {
+    font-family: monospace;
+    font-size: 20px; 
+    font-weight: lighter;
+}
+
+
+#navtop a:hover {
+    border: 3px solid white;
+    border-radius: 10px; 
+    padding: 5px;
+    margin-top: -8px;
+background-color: green;
+color: white; 
+}
+
+table {
+    float: left;
+    list-style-type: none;
+}
+
+div#contact-me {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    float: left;
+    list-style-type: none;
+    position: relative;
+    top: -100px;
+}
+
+#mit-license {
+    float: left;
+    position: relative;
+    bottom: -50px;
 }

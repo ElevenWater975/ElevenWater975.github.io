@@ -341,3 +341,65 @@ h2 {
     from {display: none}
     to {display: block}
 }
+
+@media (width: 1920px) {
+    image {
+        display: block;
+    }
+}
+
+h1 {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+h1#Title {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -20%;
+}
+
+@media (width: 1024px) {
+button#settingsbutton {
+    position: relative;
+    top: -30px;
+}
+}
+
+@media (width: 598px) {
+    p#moveable {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -20%;
+    }
+
+    div#news {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: -20%;
+    }
+
+    p {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div#gamenews {
+        position: relative;
+        right: -20%;
+    }
+
+    h2 {
+        position: relative;
+        right: -20%;
+    }
+
+}
