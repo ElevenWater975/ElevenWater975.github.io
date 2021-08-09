@@ -23,15 +23,16 @@
                             <button id="settingsbutton" onclick="showSettings()">Settings</button>
                             <div id="settings">
                                 <a id="close-settings" href="#" onclick="closeSettings()">&times;</a>
-                                <button id="lightmodebtn" onclick="lightMode()">Light Mode (just dont)</button>
-                                <button id="dimmedthemebtn" onclick="dimmedMode()">Dimmed mode</button>
-                                <button id="bluebackground" onclick="changeMobileBackground()">Sky blue background
+                                <ul>
+                                <li><button id="lightmodebtn" onclick="lightMode()">Light Mode (just dont)</button></li>
+                                <li><button id="dimmedthemebtn" onclick="dimmedMode()">Dimmed mode</button></li>
+                                <li><button id="bluebackground" onclick="changeMobileBackground()">Sky blue background
                                     (Mobile
-                                    users only)</button>
-                                <button id="textsettingsbtn" onclick="enableTextSettings()">Mess around with the text
+                                    users only)</button></li>
+                                <li><button id="textsettingsbtn" onclick="enableTextSettings()">Mess around with the text
                                     (not
-                                    working)</button>
-                                <button id="maybesoon" onclick="maybeSoon()">Coming Soon</button>
+                                    working)</button></li>
+                            </ul>
                             </div>
                         </div>
                         <br>
@@ -42,13 +43,13 @@
                             <div id='window1' class="window-home"
                                 onclick='location.href="https:\\elevenwater975.github.io/index"'>Home</div>
                             <div id='window2' class="window-support"
-                                onclick='location.href="https:\\elevenwater975.github.io/support"'>Support</div>
+                                onclick='location.href="https:\\elevenwater975.github.io/main/support"'>Support</div>
                             <div id='window3' class="window-newsletter"
                                 onclick='location.href="https:\\elevenwater975.github.io/newsletter"'>newsletter</div>
 
                         </div>
                         <div id="page2" class="pages-2">
-                            <div id="window4" class="window-github"
+                            <div id="window4" class="window-github" style="width: 360; height: 240;"
                                 onclick='loaction.href="https:\\github.com/elevenwater975/elevenwater975.github.io"'>
                                 Github
                                 repository (source code)</div>
@@ -78,8 +79,15 @@
                 <br>
                 <br>
                 <div id="external-text">
-                    <p>Contact: nje.eleven34@icloud.com, nje.eleven34@outlook.com We will reach out to you within 24-48 hours.</p>
-                    <div id="MITLicense">&copy; 2021 ElevenWater975</div>
+                    <p id="contact-information" style="position: relative; bottom: -100px; color: white; width: 543px;">Contact: nje.eleven34@icloud.com, nje.eleven34@outlook.com We will reach out to you within 24-48 hours.</p>
+                    <br>
+                    <p id="Under-800" style='font-size: 60px;'>You are using a handheld device with a width <em>800px or less</em></p>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <p>Version 1.2.3-Alpha check <a href="https://github.com/ElevenWater975/ElevenWater975.github.io">Github repo</a></p>
+                    <div id="MITLicense" style="font-size: 20px; color: white;"><p>&copy; 2021 ElevenWater975</p</div>
                 </div>
     </header>
     </section>

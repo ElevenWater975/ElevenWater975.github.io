@@ -5,7 +5,7 @@ function nextPage() {
     show.classList.toggle('showanimation');
     document.getElementById("page2").style.display = "flex";
     document.getElementById("page1").style.display = "none";
-    document.getElementById("go-back").style.display = "block";
+        document.getElementById("go-back").style.display = "block";
     document.getElementById('go-back').style.left = "300px";
   document.getElementById('next-page').style.display = "none";
 }
@@ -62,6 +62,11 @@ function changeToImpact() {
 function lightMode() {
     var light = document.body;
     light.classList.toggle('lightmode');
+
+    var x = document.getElementById('lightmodebtn'); 
+    if (x.innerHTML === "Light Mode (just don't)") {
+        x.innerHTML = "Change it back, change it back!"
+    }
 }
 
 function closeSettings() {
@@ -88,4 +93,12 @@ function maybeSoon() {
     }
 function nextPage2() {
 
+}
+
+function changeBorderColor() {
+    if (document.body.background === "white") {
+        document.getElementById('window1').style.border = "3px solid black";
+        document.getElementById('window2').style.border = "3px solid black";
+        document.getElementById('window3').style.border = "3px solid black";
+    }
 }

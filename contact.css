@@ -202,3 +202,9 @@ button:active {
         left: -10px;
     }
 }
+
+form#contact-form {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
