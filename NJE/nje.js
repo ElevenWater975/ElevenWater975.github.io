@@ -1,11 +1,22 @@
+let settingsMenu = document.getElementById('settings'); /* To define the settings menu */
+let settingsButton = document.getElementById("settingsbutton"); /* To define the button to open settings */
+settingsMenu = false; 
+//For navigation above
+
+let menu = document.getElementById('navtop');
+menu = false;
+
+
 function openNav() {
     document.getElementById('navtop').style.display = 'block';
     document.getElementById('navtop').style.width = "100%";
     document.getElementById('navtop').style.height = "40%";
     document.getElementById('navtop').style.transition = "1s";
-    if (document.body.background === black ) {
+    if (document.body.background === "black") {
         document.getElementById('navtop').style.background = "gray";
     }
+    menu = true;
+    console.log(menu);
 }
 
 var count = 0;
@@ -24,12 +35,12 @@ function notice() {
         alert("go away");
     } else if (count === 17) {
         alert("enjoy a lifetime of cringe!")
-        .then(location.href="https://youtube.com/nyrangerfan88");
+            .then(location.href = "https://youtube.com/nyrangerfan88");
     }
 }
 
 function darkMode() {
-  
+
     var dark = document.body;
     dark.classList.toggle("darkmode");
     var x = document.getElementById("full-dark");
@@ -38,49 +49,53 @@ function darkMode() {
         x.style.background = "white";
         x.style.color = "black";
         x.background = "skyblue";
-        
+
     } else {
         x.innerHTML = "Dark Mode";
         x.style.background = "black";
         x.style.color = "white";
-}
-}
-function impactFont() {
-    var impact = document.body;
-    impact.classList.toggle("impactfont");
-    var x = document.getElementById('impact-font');
-    x.innerHTML = "error while trying to use this";
-}
-
-var setcount = 0;
-function settingsFunction() {
-    // I want to add more functionality to my site
-    // One of the functions are not working
-    var change = document.getElementById("settingsbutton");
-    change.classList.add("settingschange");
-    document.getElementById('settings').style.display = "block";
-    if (document.getElementById("settingsbutton").style.background === "white") {
-        document.getElementById('settingsbutton').style.background = "skyblue";
-    } else {
-        document.getElementById('settings').style.display = " none";
-        document.getElementById("settingsbutton").style.background = "white";
     }
 }
+function impactFont() {
+    document.querySelector("h1").style.cssText = "font-family: Impact";
+    document.querySelector(".heading-1").style.cssText = "font-family: Impact";
+    document.getElementById("select-all").setAttribute("font-family: Impact;");
+}
+
+// Count variable
+var setcount = 0;
+function settingsFunction() {
+    // Settings menu function
+    var change = document.getElementById("settingsbutton"); /*change variable*/
+        document.getElementById("settings").style.display = "block";
+        change.classList.toggle("settingschange");
+        settingsMenu = true;
+        console.log(settingsMenu);
+} 
+// I didn't know If I Was doing something right so this took me a while
 
 function dimmedMode() {
     document.getElementById('dimmedtheme').style.background = "skyblue";
     var dim = document.body;
-    dim.classList.add('dimmedMode'); 
-   
+    dim.classList.add('dimmedMode');
+
 }
 
 function showVideo() {
     var show = document.getElementById("latest-video");
     show.classList.toggle('showvideo');
-document.getElementById('latest-video').style.display = 'block';
-document.getElementById("showvideo").style.display = "none";
+    document.getElementById('latest-video').style.display = 'block';
+    document.getElementById("showvideo").style.display = "none";
 }
 
 function closeNav() {
-    document.getElementById('navtop').style.display = "none"; 
+    document.getElementById('navtop').style.display = "none";
+    menu = false;
+    console.log(menu);
+}
+
+function closeMenu1() {
+    document.getElementById("settings").style.display = "none";
+    settingsMenu = false;
+    console.log(settingsMenu);
 }

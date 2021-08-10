@@ -12,6 +12,7 @@
 
 <body>
     <header>
+        <div id="select-all">
         <div id="darkmode">
             <p id="mobilenotice">Note: this site is not intended for mobile users or users with a screen with lower than
                 1280px</p>
@@ -44,11 +45,12 @@
                 <br>
                 <br>
                 <button id="settingsbutton" onclick="settingsFunction()">Settings</button>
-                <div id="settings">
+                <div id="settings" class="settingsmenu">
+                    <button id="closeSettings" onclick="closeMenu1()">X</button>
                     <button id="move-side" onclick="notice()">Hol up real quick</button>
                     <button id="full-dark" onclick="darkMode()">Dark Mode</button>
                     <button id="dimmedtheme" onclick="dimmedMode()">Dimmed mode</button>
-                    <button id="impact-font" onclick="impactFont()">Change font to impact (not working)</button>
+                    <button id="impact-font" onclick="impactFont()">Change font to impact (not working)</button>        
                 </div>
                 <h1 class="title">Team 3 NJE</h1>
 
@@ -154,6 +156,7 @@
     <div id="MITLicense">
 
     </div>
+</div>
 </body>
 
 </html>
