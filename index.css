@@ -1030,5 +1030,96 @@ a#main {
     #box2 {
         position: relative;
         right: -50%;
+        float: left;
+    }
+}
+
+#external-links a {
+    background-color: transparent;
+    word-spacing: normal;
+}
+
+#external-links {
+    height: 10%;
+}
+
+div#license {
+    float: left; 
+    position: relative;
+    left: -52%;
+}
+
+#settings {
+    display: none;
+    background: black;
+    border: 3px solid white;
+    border-radius: 10px;
+    float: right;
+    width: 320px;
+    position: relative;
+    bottom: -31px;
+    right: -323px;
+}
+
+#settings-btn {
+    width: 320px;
+    background: white;
+    float: right;
+}
+
+.open-close-settings {
+    display: block;
+}
+
+#settings button {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.changeborders .open-close-settings {
+    background-color: white;
+}
+
+#exit-settings {
+    font-family: 'Ubuntu', monospace;
+    background-color: red;
+    color: White;
+    width: 30px;
+    float: left;
+}
+
+button#darkmodehome {
+    font-family: Arial;
+    float: left; 
+    position: relative;
+    left: -30px;
+}
+
+@media (width: 375px) {
+    #settings {
+        float: left;
+        font-size: 32px;
+        width: 100%;
+        position: relative;
+    }
+
+    #settings li {
+        width: 100%; 
+    }
+
+    #settings button {
+        font-size: 32px
+    }
+
+    button#settings-btn {
+        font-size: 50px;
+        float: right; 
+        position: relative;
+        right: -450px;
+    }
+
+    #main {
+        height: 124px;
     }
 }

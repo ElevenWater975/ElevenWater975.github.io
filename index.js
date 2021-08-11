@@ -1,4 +1,13 @@
 var count = 1;
+let topnav = document.getElementById("top");
+topnav = false;
+
+let settings = document.getElementById("settings");
+settings = true;
+
+const errorCatch = (error) => {
+console.error("An internal error has occured");
+}
 
 function buttonSupport() {
     var x = location.href = "https://elevenwater975.github.io/support";
@@ -12,12 +21,24 @@ function closeNav() {
     document.getElementById("sidebar").style.width = "0px";
     document.getElementById("main").style.marginLeft = "0px";
     document.getElementById("sidetext").style.display = "block";
+    topnav = false;
+    console.log(topnav);
+    if (document.getElementById("sidebar").style.width === "250px" || document.getElementById("sidebar").style.width === "100%") {
+        console.error("Could not close navigation");
+    }
 }
 
 function openNav() {
     document.getElementById("sidebar").style.width = "250px";
     document.getElementById("sidetext").style.display = "none";
     document.getElementById('external-links').style.display = "none";
+    topnav = true;
+    console.log(topnav);
+    if (document.getElementById("sidebar").style.width === "0" || document.getElementById("sidebar").style.display === "none") {
+        console.error("Could not open navbar");
+        topnav = false;
+        console.log(topnav);
+    } 
 }
 
 function swap() {
@@ -90,7 +111,8 @@ x.innerHTML = "Swapped text!";
 function addBorderIfDarkMode() {
     if (document.body.background === "black") {
         document.getElementById("sidetext").style.border = "3px solid white";
-    }
+        document.getElementById("settings").style.border = "3px solid white";
+    } 
 }
 
 function fullScreenNav() {
@@ -113,4 +135,25 @@ function brightNav() {
 function closeInformation() {
     document.getElementById("main").style.display = "none";
     document.getElementById("bugsnotice").style.display = "none";
+}
+
+
+function openSettings() {
+    document.getElementById("settings-btn").style.background = "skyblue";
+    document.getElementById("settings").style.display = "block";
+    document.getElementById("main").style.display = "none";
+    settings = true;
+    console.log(settings + " For settings");
+
+    if (document.body.width === "375px") {
+        document.getElementById("main-logo").style.display = "none";
+    }
+}
+
+function closeSettings() {
+document.getElementById("settings-btn").style.background = "white";
+document.getElementById("settings").style.display = "none";
+document.getElementById("main").style.display = "block";
+settings = false;
+console.log(settings + " For settings");
 }

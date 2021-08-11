@@ -15,6 +15,17 @@
     <div id="everything" style="text-align: center;">
         <div id="lighttheme">
             <div id="dimmedtheme">
+                <button id="settings-btn" onclick="openSettings()">Settings</button>
+                <div id="settings">
+                    <ul>
+                    <li><button id="exit-settings" onclick="closeSettings()">X</button></li>
+                    <br>
+                    <li><button id="darkModeHome" style="width: 266px;" onclick="darkMode()">Dark mode (work in progress)</button></li>
+                    <li><button id="lightModeHome" style="border: none; width: 266px;" onclick="lightMode()">Bright mode (Idk why though)</button></li>
+                    <li><button id="dimmedmodehome" onclick="dimmedMode()" style="float: left;">Dimmed background
+                        (WIP)</button></li>
+                    </ul>
+                </div>
                 <script>
                     function darkMode() {
                         var dark = document.body;
@@ -101,7 +112,7 @@
                             </span>
                         </a>
                             <div id="main" style="position: relative; right: -40%;">
-                                Navbar successfully fixed. <button id="redbutton" onclick="closeInformation()">x</a> 
+                                Problems? Contact me at nje.eleven34@outlook.com <button id="redbutton" onclick="closeInformation()">x</a> 
                             </div>
 
                             <p id="bugsnotice">There are bugs for users with a screen width of 1024px and lower. There
@@ -113,10 +124,7 @@
                     <br>
                     <br>
                     <section id="responsivebutton">
-                        <button id="darkModeHome" onclick="darkMode()">Dark mode (work in progress)</button>
-                        <button id="lightModeHome" onclick="lightMode()">Bright mode (Idk why though)</button>
-                        <button id="dimmedmodehome" onclick="dimmedMode()" style="float: left;">Dimmed background
-                            (WIP)</button>
+                       
                     </section>
                     <br>
                     <br>
@@ -247,9 +255,13 @@
     </div>
     </div>
     </div>
-    <div id="license">&copy 2021 Elevenwater975</div>
+    
     </section>
-    </footer>
+    <br>
+    <br>
+    <br>
+    
+</footer>
 </div>
     </section>
     </div>
