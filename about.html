@@ -12,6 +12,24 @@
 </head>
 <body>
     <script src="aboutButton.js"></script>
+    <div id="sidebar" class="side-bar">
+    <ul id="sidenavigation">
+        <li><a href="https://elevenwater975.github.io">Home page</a></li>
+        <li><a href="https://elevenwater975.github.io/main/newsletter" id="hyperlink-newsletter">newsletter</a></li>
+        <li><a href="https://reddit.com/r/BlockPro" id="hyperlink-reddit">BlockPro Reddit</a></li>
+        <li><a href="https://youtube.com/nyrangerfan88" id="hyperlink-youtube">Youtube channel</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <button id="full-sidebar" onclick="fullNavigation()">Full navigation (bugs when using this)</button>
+        <button id="regular-size-navi" onclick="regularSize()">Regular size navigation</button>
+        <button id="crush-sidebar" onclick="crushSidebar()">Crush sidebar (but why?)</button>
+        <button id="CHANGE-IT-BACK" onclick="CHANGEITBACK()">AAAAAA CHANGE IT BACK, CHANGE IT BACK</button>
+    </ul>
+</div>
     <a class="nav" id="nav" onclick="openNav()">
     <div id="one"></div>
     <div id="two"></div>
@@ -29,12 +47,16 @@
     </div>
         </ul>
 </div>
+<div id="settings"> 
     <br>
     <button id="darkmode" onclick="enableDark()">Dark mode</button>
     <br>
     <button id="lightmode" onclick="enableLight()">Light mode</button>
     <br>
+    <button id="close-sidebar" onclick="closeSidebar()">Show/hide sidebar</button>
     <br>
+</div>
+    <div class="full-page">
 <div class='question'>
    <strong><em><p>Eleven's Site</p></em></strong>
    <h1>Who is ElevenWater975 anyways?</h1>
@@ -74,7 +96,7 @@
 <a href="https://twitch.tv/elevenplayz12">Twitch</a>
 </div>
 <br>
-
+</div>
 </div>
 </div>
 </body>
