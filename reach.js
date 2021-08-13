@@ -24,20 +24,15 @@ function discordFunction() {
     }
     document.getElementById("discord").style.display = 'block';
     document.getElementById("youtube-function").style.top = "-20px";
+    document.getElementById("twitch-function").style.top = "-20px";
 }
 function enableNav() {
     document.getElementById("navbar").style.display = "block";
+    document.getElementById("navbar").style.width = "100%";
 }
 
 function closeNav() {
-
-    var close = document.getElementById("navbar");
-
-    document.addEventListener('click', function () {
-
-        close.classList.add = "animation";
-
-    })
+    document.getElementById("navbar").style.width = "0";
 }
 
 function youtubeFunction() {
@@ -74,3 +69,18 @@ function twitchFunction() {
     document.getElementById("youtube").style.margin = "10px";
     document.getElementById("discord").style.margin = "10px";
 }
+
+function lightMode() {
+    var x = document.body;
+    x.classList.toggle("light-mode");
+}
+
+function showDark() {
+    document.getElementById("dark-mode").style.display = "block";
+}
+
+function darkMode() {
+    var x = document.body;
+    x.classList.toggle("dark-mode");
+}
+

@@ -2,11 +2,6 @@ function enableDark() {
     var x = document.body;
     x.classList.add('darktheme');
     x.classList.remove("lighttheme");
-    document.getElementById("sidebar").style.background = "black";
-    document.querySelector("li").style.color = "black";
-    if (document.getElementById("sidebar").style.color === "white") {
-        document.getElementById("sidebar").style.color = "black";
-    }
 }
 
 function enableLight() { 
@@ -14,9 +9,11 @@ function enableLight() {
     document.getElementById("darkmode").style.color = "white";
     document.getElementById('lightmode').style.background = "skyblue";
     document.getElementById("lightmode").style.color = "black";
+
     var y = document.body;
     y.classList.add("lighttheme");
     x.classList.remove("darktheme");
+    x.classList.remove("dimmed-theme");
 }
 
 function openNav() {
@@ -32,6 +29,7 @@ function closeSidebar() {
     x.classList.toggle("close-sidebar");
     var y = document.getElementById("close-sidebar");
     y.classList.toggle = "change-background";
+    document.getElementById("sidebar").style.height = 0;
 }
 
 function fullNavigation() {
@@ -71,4 +69,9 @@ function CHANGEITBACK() {
     }
     y.innerHTML = "Thank God it's back to normal";
     document.getElementById("sidebar").style.height = "100%";
+}
+
+function dimmedBackground() {
+    var x = document.body;
+    x.classList.toggle('dimmed-background');
 }

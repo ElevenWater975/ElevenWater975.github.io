@@ -134,6 +134,7 @@ position: relative;
 
 #navbar a {
     display: block;
+    height: 70px;
     color: white;
     padding: 8px;
     text-align: center;
@@ -148,16 +149,16 @@ position: relative;
 
 #navbar {
     float: right;
-    display: none;
     animation-name: nav-animation;
     animation-duration: 1s;
     background-color: gray;
     overflow: hidden;
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 0%;
     height: 100px;
     z-index: 1;
+    transform: width("100%");
     transition: 1s;
 }
 
@@ -417,4 +418,31 @@ left: 50%;
   }
 
 
+}
+
+.light-mode {
+    background: white;
+    color: black;
+}
+
+#dark-mode {
+    display: none;
+}
+
+.dark-mode {
+    background: rgb(44, 44, 44);
+    color: white;
+}
+
+p {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+#start button {
+    width: 300px;
+    position: relative;
 }
