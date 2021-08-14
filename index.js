@@ -38,7 +38,9 @@ function openNav() {
         console.error("Could not open navbar");
         topnav = false;
         console.log(topnav);
-    } 
+    } else if (document.body.width === "3840px") {
+        document.getElementById("sidebar").style.width = "500px";
+    }
 }
 
 function swap() {
@@ -133,7 +135,9 @@ function brightNav() {
 }
 
 function closeInformation() {
-    document.getElementById("main").style.display = "none";
+    var x = document.getElementById("main");
+    x.style.height = "0px";
+    x.style.display = "none";
     document.getElementById("bugsnotice").style.display = "none";
 }
 

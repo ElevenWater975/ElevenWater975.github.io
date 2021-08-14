@@ -355,3 +355,19 @@ padding: 8px;
     color: white;
     position: relative;
 }
+
+@media (max-width: 500px) {
+    p {
+        font-size: 2em;
+        font-family: monospace;
+        float: left;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 4em;
+        font-family: monospace;
+        float: left;
+        position: relative;
+    }
+}

@@ -601,114 +601,6 @@ darktheme a {
     border-radius: 25px;
 }
 
-@media (width: 414px) {
-    h1#main-title {
-        width: 543px;
-        height: auto;
-        position: relative;
-        bottom: -70px;
-    }
-
-    p#noticetext {
-        width: 543px;
-        height: auto;
-    }
-    
-    #sidetext {
-        display: block;
-    }
-
-    #sidetext a {
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        text-decoration: none;
-        color: white;
-    }
-
-    #iphone678plus-responsive {
-        width: 543px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #iphone678plus-responsive p {
-        font-size: 2em;
-        font-family: sans-serif;
-    }
-
-    #external-links {
-        font-size: 1.50em;
-        width: 543px;
-        text-align: center;
-    }
-
-    div#license {
-        font-family: sans-serif;
-    }
-
-    #external-links a {
-        border: none;
-        border-radius: 1px;
-    }
-
-    #top {
-        width: 543px;
-        margin: 0;
-        padding: 0;
-    }
-
-    #close-nav {
-        width: 50px;
-        height: 50px;
-        color: white;
-        background: red;
-        text-align: center;
-    }
-    
-    img#main-logo {
-        display: block;
-        float: left;
-        width: 150px;
-        height: 150px;
-    }
-
-    p#bugsnotice {
-        width: 543px;
-        font-family: sans-serif;
-        font-size: 1.50em;
-    }
-}
-
-@media (width: 320px) {
-    p {
-        font-size: 1.20em;
-    }
-
-    img#main-logo {
-        width: 320px;
-        height: 320px;
-    }
-
-    #box {
-        position: relative;
-        top: 50px;
-    }
-
-    #sidetext {
-        width: 543px;
-        height: 150px;
-        position: relative;
-        bottom: -100px;
-    }
-    #iphone678plus-responsive p {
-        width: 520px;
-        position: relative;
-        bottom: -200px;
-    }
-    
-}
 
 @media (min-width: 350px) {
     #brfor320pxdisplay {
@@ -918,53 +810,6 @@ a#main {
     color: white;
 }
 
-@media (width: 414px) {
-    div#box {
-        width: 414px;
-        text-align: center;
-        align-items: center;
-        justify-content: center; 
-    }
-
-    div#box2 {
-        width: 414px;
-        position: relative;
-        left: 0.50%;
-    }
-
-    #external-links {
-        list-style-type: none;
-        width: 720px;
-    }
-
-    #external-links a {
-        font-size: 1.12em;
-        text-align: center;
-        float: left;
-        width: 720px;
-    }
-
-    h1#main-title {
-        position: relative;
-        right: -100px;
-    }
-
-    p#noticetext {
-        width: 700px;
-        position: relative;
-        left: -2px;
-    }
-
-    p#main-logo {
-        width: 400px;
-    }
-
-    div#main {
-        width: 414px;
-        height: auto;
-        border: 3px solid gray;
-    }
-}
 
 @media (width: 375px) {
     #welcome {
@@ -1121,5 +966,345 @@ button#darkmodehome {
 
     #main {
         height: 124px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 4em;
+        font-family: 'Ubuntu' monospace;
+    }
+
+    p {
+        font-size: 3em;
+        font-family: 'Ubuntu' monospace;
+    }
+
+    div#main {
+        font-size: 2em;
+    }
+
+    p#bugsnotice {
+        position: relative;
+        left: 33%;
+    }
+
+    #box2 {
+        font-size: 2em;
+    }
+
+    #box2 p {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    div#main {
+        height: 150px;
+        transition: 1s;
+    }
+
+    #sidebar a {
+        top: -200px;
+    }
+
+    #sidebar #settings-sidebar {
+        position: relative;
+        top: -50px;
+    }
+
+    #box2 p {
+        font-size: 2em;
+    }
+
+    h1#main-title {
+        font-size: 72px;
+        width: 500px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        right: -100px;
+    }
+
+    p#sidetext {
+        display: none;
+        margin-bottom: 100px;
+        position: relative;
+    }
+
+    div#iphone678plus-responsive {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: -150px;
+    }
+
+    button#settings-btn {
+        font-family: sans-serif;
+        float: right;
+        position: relative;
+        right: -20%;
+    }
+
+    a {
+        font-family: sans-serif;
+        font-size: 2em;
+    }
+
+    a#github-repo-info {
+        font-family: Arial;
+        font-size: 48px;
+    }
+}
+
+@media (width: 768px) {
+    #box2 {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 0.50%;
+    }
+
+    h1#main-title {
+        position: relative;
+        top: -50px;
+        font-size: 48px;
+    }
+
+    a#github {
+        font-size: 32px;
+    }
+
+    a#github-repo-info {
+        font-size: 32px;
+    }
+
+    div#hosted a {
+        font-size: 32px;
+    }
+
+    div#external-links {
+        display: none;
+    }
+}
+
+@media (width: 1024px) {
+    h1 {
+        font-size: 72px;
+        font-family: 'Ubuntu' monospace;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 54px;
+        font-family: 'Ubuntu' monospace;
+        font-weight: lighter;
+    }
+
+    #box2 {
+        position: relative;
+        left: -26%;
+    }
+
+    a.hosted {
+        font-size: 54px;
+        font-family: 'Ubuntu' monospace;
+    }
+
+    a#github {
+        font-size: 54px;
+        font-family: 'Ubuntu' monospace;
+    }
+
+    a#main-repository {
+        font-size: 54px;
+        font-family: 'Ubuntu' monospace; 
+    }
+
+    a#github-repo-info {
+        font-size: 54px;
+        font-family: 'Ubuntu' monospace;
+    }
+
+    h1#main-title {
+        font-size: 85px;
+        font-family: 'Ubuntu' monospace;
+    }
+
+    button#settings-btn { 
+        font-size: 54px;
+        font-family: 'Ubuntu' monospace;
+    }
+
+    div#settings {
+        position: relative;
+        bottom: -40px;
+    }
+}
+
+@media (width: 414px) {
+    h1 {
+        font-size: 72px;
+        font-family: 'Ubuntu' monospace;
+        font-weight: bold;
+    }
+
+    p {
+        font-size: 54px;
+        font-family: 'Ubuntu' monospace;
+        font-weight: lighter;
+    }
+
+    #box2 {
+        position: relative;
+        right: -26%;
+    }
+
+    a.hosted {
+        font-size: 54px;
+        font-family: 'Ubuntu' monospace;
+    }
+
+    a#github {
+        font-size: 54px;
+        font-family: 'Ubuntu' monospace;
+    }
+
+    a#main-repository {
+        font-size: 54px;
+        font-family: 'Ubuntu' monospace; 
+    }
+
+    a#github-repo-info {
+        font-size: 54px;
+        font-family: 'Ubuntu' monospace;
+    }
+
+    h1#main-title {
+        font-size: 85px;
+        font-family: 'Ubuntu' monospace;
+    }
+
+    button#settings-btn { 
+        font-size: 54px;
+        font-family: 'Ubuntu' monospace;
+    }
+
+    div#settings {
+        position: relative;
+        bottom: -40px;
+    }
+
+    div#iphone678plus-responsive {
+        margin-right: 100px;
+        position: relative;
+        right: -50%;
+    }
+
+    div#external-links {
+        display: none;
+        width: 100%; 
+    }
+}
+
+@media (width: 800px) {
+    #box2 {
+        position: relative;
+        left: -0.0005%;
+    }
+
+    p#sidetext {
+        display: none;
+    }
+
+    p {
+        font-size: 2em;
+    }
+
+    h1#main-title {
+        font-size: 64px;
+        font-family: 'Ubuntu' monospace;
+    }
+
+    a#github {
+        font-size: 32px;
+    }
+
+    a#main-repository {
+        font-size: 32px;
+    }
+
+    a#github-repo-info {
+        font-size: 32px;
+    }
+}
+
+@media (width: 3840px) {
+    p {
+        width: 3000px;
+        font-size: 4em;
+        font-family: Arial;
+        position: relative;
+        right: -20%;
+    }
+
+    h1 {
+        width: 3000px;
+        font-size: 6em;
+        font-family: Arial;
+        position: realtive;
+        right: -20%;
+    }
+
+    h1#main-title {
+        font-size: 8em;
+        font-family: Arial;
+    }
+
+    a {
+        font-family: sans-serif;
+        font-size: 2em;
+    }
+
+    a#github-repo-info {
+        font-size: 2em;
+        font-family: sans-serif;
+    }
+
+    a#github {
+        font-size: 2em;
+        font-family: sans-serif;
+    }
+    
+    button#settings-btn {
+        font-size: 4em;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    div#settings {
+        font-size: 4em;
+    }
+
+    button#darkmodehome {
+        font-size: 4em;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    button#lightmodehome {
+        font-size: 4em;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    button#dimmedmodehome {
+        font-size: 4em;
+        font-family: sans-serif;
+        font-weight: bold;
     }
 }
