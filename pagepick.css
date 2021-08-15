@@ -67,7 +67,7 @@ p {
     justify-content: center;
     text-align: center;
     position: relative;
-    bottom: -50%;
+    bottom: -10%;
 }
 
 #window2 {
@@ -139,13 +139,125 @@ p {
     position: relative;
 }
 
-#next-page {
+#winone {
+    margin-right: 900px;
+    color: white;
     display: block;
+    position: relative;
+    right: -20%;
+}
+
+#wintwo {
+    margin-right: 900px;
+    color: white;
+    display: none;
+    position: relative;
+    right: -20%;
+}
+
+#winthree {
+    margin-right: 900px;
+    color: white;
+    display: none;
+    position: relative;
+    right: -20%;
+}
+
+#winfour {
+    display: none;
+    color: white;
+    position: relative;
+    right: -20%;
+}
+
+#winfive {
+    display: none;
+    color: white;
+    position: relative;
+    right: -20%;
+}
+
+#winsix {
+    display: none;
+    color: white;
+    position: relative;
+    right: -20%;
+}
+
+
+#next-page {
+    display: none;
     background-color: lime;
     width: 100px;
     height: 100px;
     position: relative;
     right: 100px;
+}
+
+button#next-window-1 {
+    font-family: monospace;
+    background-color: lime;
+    color: black;
+}
+
+button#next-window-2 {
+    font-family: monospace;
+    background-color: lime;
+    color: black;
+    display: none;
+    position: relative;
+}
+
+button#next-window-3 {
+    font-family: monospace;
+    width: 150px;
+    background-color: lime;
+    color: black;
+    position: relative;
+}
+
+button#next-window-4 {
+    font-family: monospace;
+    background-color: lime;
+    color: black;
+    position: relative;
+}
+
+button #go-back-1 {
+font-family: monospace;
+color: white;
+background-color: red;
+display: none;
+position: relative;
+}
+
+button#go-back-2 {
+    font-family: monospace;
+    color: white;
+    background-color: red;
+    display: none;
+    position: relative;
+}
+
+button#go-back-3 {
+    font-family: monospace;
+    color: white;
+    background-color: red;
+    position: relative;
+}
+
+button#go-back-4 {
+    font-family: monospace;
+    color: white;
+    background-color: red;
+    position: relative;
+}
+
+button#next-window-5 {
+    font-family: monospace;
+    color: white;
+    background-color: red;
+    position: relative;
 }
 
 button {
@@ -182,6 +294,14 @@ div #window2:hover {
 }
 
 div #window3:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 2px gray;
+    background-color: darkgrey;
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+div#window4:hover {
     cursor: pointer;
     box-shadow: 2px 2px 2px gray;
     background-color: darkgrey;
@@ -1034,4 +1154,33 @@ p#contact-information {
         font-family: 2em;
         font-family: sans-serif;
     }
+}
+
+#next-back-button {
+    width: 30px;
+    height: 20px;
+}
+
+button {
+    width: 70px;
+    height: 30px;
+}
+
+#window4 {
+    width: 360px;
+}
+
+#winfour {
+    margin-right: 900px;
+    display: none;
+    position: relative;
+    right: -20%;
+}
+
+#window5 {
+    width: 360px;
+}
+
+.window-njenews {
+    width: 360px;
 }

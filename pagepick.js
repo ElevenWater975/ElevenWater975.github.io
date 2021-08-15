@@ -27,6 +27,8 @@ if (count <= 9 || count === 9) {
     alert("Seriously, turn back the feature is not ready.")
 } else if (count === 20) {
     alert("Are you just clicking to see what happens? Gullible, very very gullible.")
+} else if (count === 1) {
+    alert("It's a secret");
 }
 }
 
@@ -101,4 +103,59 @@ function changeBorderColor() {
         document.getElementById('window2').style.border = "3px solid black";
         document.getElementById('window3').style.border = "3px solid black";
     }
+}
+
+function goNextOne() {
+    document.getElementById("winone").style.display = "none";
+    document.getElementById("wintwo").style.display = "block";
+}
+
+function goBackOne() {
+    document.getElementById("winone").style.display = "block";
+    document.getElementById("wintwo").style.display = "none";
+}
+
+function goNextTwo() {
+    document.getElementById("wintwo").style.display = "none";
+    document.getElementById("winthree").style.display = "block";
+}
+
+function goBackTwo() {
+    document.getElementById("winthree").style.display = "none";
+    document.getElementById("wintwo").style.display = "block";
+    document.getElementById("winone").style.display = "none";
+}
+
+function goNextThree () {
+    document.getElementById("winthree").style.display = "none";
+    document.getElementById("page2").style.display = "block";
+    document.getElementById("page1").style.display = "none";
+    document.getElementById("winfour").style.display = "block";
+}
+
+function goBackThree() {
+    document.getElementById("winfour").style.display = "none";
+    document.getElementById("page2").style.display = "none";
+    document.getElementById("page1").style.display = "block";
+    document.getElementById("winthree").style.display = "block";
+}
+
+function goNextFour() {
+    document.getElementById("winfour").style.display = "none";
+    document.getElementById("winfive").style.display = "block";
+}
+
+function goNextFive() {
+    document.getElementById("winfive").style.display = "none";
+    document.getElementById("winsix").style.display = "block";
+}
+
+function goBackFour() { 
+    document.getElementById("winfive").style.display = "none";
+    document.getElementById("winfour").style.display = "block";
+}
+
+function goBackFive() {
+    document.getElementById("winsix").style.display = "none";
+    document.getElementById("winfive").style.display = "block";
 }

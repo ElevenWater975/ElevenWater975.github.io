@@ -13,81 +13,121 @@
 <body>
     <header>
         <section id="literally-everything">
-                    <div class="container">
-                        <div class="site-welcome" id="title-subtitle">
-                            <h1 class="title" id="edit-title" style="text-align: center;">Welcome to my site</h1>
-                            <p class="subtitle" id="edit-subtitle" style="text-align: center;">To begin, pick a page that you would like to go to.</p>
-                        </div>
-                        </p>
-                        <div id="settings-wrap">
-                            <button id="settingsbutton" onclick="showSettings()">Settings</button>
-                            <div id="settings">
-                                <a id="close-settings" href="#" onclick="closeSettings()">&times;</a>
-                                <ul>
-                                <li><button id="lightmodebtn" onclick="lightMode()">Light Mode (just dont)</button></li>
-                                <li><button id="dimmedthemebtn" onclick="dimmedMode()">Dimmed mode</button></li>
-                                <li><button id="bluebackground" onclick="changeMobileBackground()">Sky blue background
+            <div class="container">
+                <div class="site-welcome" id="title-subtitle">
+                    <h1 class="title" id="edit-title" style="text-align: center;">Welcome to my site</h1>
+                    <p class="subtitle" id="edit-subtitle" style="text-align: center;">To begin, pick a page that you
+                        would like to go to.</p>
+                </div>
+                </p>
+                <div id="settings-wrap">
+                    <button id="settingsbutton" onclick="showSettings()">Settings</button>
+                    <div id="settings">
+                        <a id="close-settings" href="#" onclick="closeSettings()">&times;</a>
+                        <ul>
+                            <li><button id="lightmodebtn" onclick="lightMode()">Light Mode (just dont)</button></li>
+                            <li><button id="dimmedthemebtn" onclick="dimmedMode()">Dimmed mode</button></li>
+                            <li><button id="bluebackground" onclick="changeMobileBackground()">Sky blue background
                                     (Mobile
                                     users only)</button></li>
-                                <li><button id="textsettingsbtn" onclick="enableTextSettings()">Mess around with the text
+                            <li><button id="textsettingsbtn" onclick="enableTextSettings()">Mess around with the text
                                     (not
                                     working)</button></li>
-                            </ul>
-                            </div>
-                        </div>
-                        <br>
-                        <br>
-                        <br>
-                        <br>
-                        <div id="page1" class="pages-1">
-                            <div id='window1' class="window-home"
-                                onclick='location.href="https:\\elevenwater975.github.io/index"'>Home</div>
-                            <div id='window2' class="window-support"
-                                onclick='location.href="https:\\elevenwater975.github.io/main/support"'>Support</div>
-                            <div id='window3' class="window-newsletter"
-                                onclick='location.href="https:\\elevenwater975.github.io/newsletter"'>newsletter</div>
-
-                        </div>
-                        <div id="page2" class="pages-2">
-                            <div id="window4" class="window-github" style="width: 360; height: 240;"
-                                onclick='loaction.href="https:\\github.com/elevenwater975/elevenwater975.github.io"'>
-                                Github
-                                repository (source code)</div>
-                            <div id="window5" class="window-nje" onclick="soonEgg()">coming soon</div>
-                            <div id="window6" class="window-njenews" onclick="soonEgg()">coming soon</div>
-                        
-                            <p><em>Page 3</em> coming soon</p>
-                            <div id="page3">
-                            <div id="window7" class="window-reach" onclick="soonEgg()">Coming Soon</div>
-                        </div>
-                        </div>
+                        </ul>
                     </div>
-                        <button id="next-page" onclick="nextPage()">next page</button>
-                        <button id="go-back" onclick="goBack()">Go back</button>
-                        <button id="next-page2" onclick="nextPage2">Next page (coming soon)</button>
                 </div>
                 <br>
                 <br>
                 <br>
                 <br>
+                <div id="page1" class="pages-1">
+                    <div id="winone">
+                        <p>Want to go straight to the homepage?</p>
+                        <div id='window1' class="window-home"
+                            onclick='location.href="https:\\elevenwater975.github.io/index"'>Home</div>
+                        <button id="next-window-1 next-back-button" onclick="goNextOne()"
+                            style="background-color: lime; color: black;">next</button>
+                    </div>
+
+                    <div id="wintwo">
+                        <p>Need some help? Don't worry, we are here for you.</p>
+                        <div id='window2' class="window-support"
+                            onclick='location.href="https:\\elevenwater975.github.io/main/support"'>Support</div>
+                        <button id="next-window-2 next-back-button" onclick="goNextTwo()"
+                            style="background-color: lime; color: black;">next</button>
+                        <button id="go-back-1 next-back-button" onclick="goBackOne()"
+                            style="color: white; background-color: red;">back</button>
+                    </div>
+
+                    <div id="winthree">
+                        <p>Whats happening with the page? click below to find out!</p>
+                        <div id='window3' class="window-newsletter"
+                            onclick='location.href="https:\\elevenwater975.github.io/newsletter"'>newsletter</div>
+                        <button id="go-back-2 next-back-button" onclick="goBackTwo()"
+                            style="background-color: red; color: black;">Back</button>
+                        <button id="next-window-3" onclick="goNextThree()">Next page >>></button>
+                    </div>
+                </div>
+                <div id="page2" class="pages-2">
+                    <div id="winfour">
+                        <p>Check out the main repository for this page!</p>
+                        <div id="window4" class="window-github"
+                            onclick='location.href="https:\\github.com/ElevenWater975/ElevenWater975.github.io"'>
+                            Github
+                            repository (source code)</div>
+                        <button id="go-back-3" onclick="goBackThree()">Back</button>
+                        <button id="next-window-4" onclick="goNextFour()">Next</button>
+                    </div>
+                    <div id="winfive">
+                        <p>It's a secret</p>
+                        <div id="window5" class="window-nje" style="width: 360px;" onclick="soonEgg()">coming soon</div>
+                        <button id="go-back-4" onclick="goBackFour">Back</button>
+                        <button id="next-window-5" onclick="goNextFive()">Next</button>
+                    </div>
+                    <div id="winsix">
+                        <p>It's a secret</p>
+                        <div id="window6" class="window-njenews" onclick="soonEgg()">coming soon</div>
+                        <button id="go-back-5" onclick="goBackFive()">Back</button>
+                        <button id="next-window-6" onclick="goNextSix()"></button>
+                    </div>
+
+                    <p><em>Page 3</em> coming soon</p>
+                    <div id="page3">
+                        <div id="window7" class="window-reach" onclick="soonEgg()">Coming Soon</div>
+                    </div>
+                </div>
+            </div>
+            <button id="next-page" onclick="nextPage()">next page</button>
+            <button id="go-back" onclick="goBack()">Go back</button>
+            <button id="next-page2" onclick="nextPage2">Next page (coming soon)</button>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div id="external-text">
+                <p id="contact-information" style="position: relative; bottom: -100px; color: white; width: 543px;">
+                    Contact: nje.eleven34@icloud.com, nje.eleven34@outlook.com We will reach out to you within 24-48
+                    hours.</p>
+                <br>
+                <p id="Under-800" style='font-size: 60px;'>You are using a handheld device with a width <em>800px or
+                        less</em></p>
                 <br>
                 <br>
                 <br>
                 <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <div id="external-text">
-                    <p id="contact-information" style="position: relative; bottom: -100px; color: white; width: 543px;">Contact: nje.eleven34@icloud.com, nje.eleven34@outlook.com We will reach out to you within 24-48 hours.</p>
-                    <br>
-                    <p id="Under-800" style='font-size: 60px;'>You are using a handheld device with a width <em>800px or less</em></p>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <p>Version 1.2.3-Alpha check <a href="https://github.com/ElevenWater975/ElevenWater975.github.io">Github repo</a></p>
-                    <div id="MITLicense" style="font-size: 20px; color: white;"><p>&copy; 2021 ElevenWater975</p</div>
+                <p>Version 1.2.3-Alpha check <a href="https://github.com/ElevenWater975/ElevenWater975.github.io">Github
+                        repo</a></p>
+                <div id="MITLicense" style="font-size: 20px; color: white;">
+                    <p>&copy; 2021 ElevenWater975</p< /div>
                 </div>
     </header>
     </section>
