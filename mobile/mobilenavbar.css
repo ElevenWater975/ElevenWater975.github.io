@@ -1,0 +1,10 @@
+@media (width: 414px) {
+    #sidebar {
+        float: left;
+        width: 250px;
+        display: none;
+        height: 4323px;
+        background: black;
+        color: lime;
+    }
+}

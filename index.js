@@ -161,3 +161,8 @@ document.getElementById("main").style.display = "block";
 settings = false;
 console.log(settings + " For settings");
 }
+
+function siteContinue() {
+    document.getElementById("warning").style.display = "none";
+    document.getElementById("everything").style.display = "block";
+}

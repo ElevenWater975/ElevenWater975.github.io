@@ -1,0 +1,276 @@
+body {
+    background: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+p {
+    font-family: sans-serif;
+    font-size: 2em;
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 4em;
+}
+
+a {
+    font-size: 2em;
+}
+
+button {
+    font-family: sans-serif;
+    font-size: 2em;
+}
+
+@media (max-width: 400px) {
+    p {
+        width: 460px;
+        text-align: center;
+        justify-content: cetner;
+        align-items: center;
+        font-family: sans-serif;
+        font-size: 2em; 
+        position: relative;
+    }
+
+    h1 {
+        margin-left: -15px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 540px;
+        font-family: sans-serif;
+        font-size: 3.20em;
+        position: relative;
+        left: -3px;
+    }
+
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    a {
+        font-family: sans-serif;
+        font-size: 2em;
+    }
+
+    button#darkModeHome {
+        font-size: 1.50em;
+        font-family: sans-serif;
+        background: black;
+        color: white;
+        border: 3px solid white;
+    }
+
+    button#lightModeHome {
+        font-size: 1.50em;
+        font-family: sans-serif;
+        color: black;
+        background: lightgray;
+        border: 3px solid black;
+        border-radius: 10px;
+    }
+    
+    #settings {
+        display: none;
+    }
+
+    div#main {
+        font-size: 24px;
+        font-family: sans-serif;
+        background: black;
+        color: white;
+        position: relative;
+        left: -1px;
+    }
+
+    
+
+    #sidebar a {
+        color: lime;
+        text-decoration: none;
+
+    }
+
+    #sidetext {
+        display: none;
+    }
+
+    .hosted {
+        font-size: 18px;
+    }
+
+    a {
+        font-size: 32px;
+    }
+
+    a#egg {
+        display: none;
+    }
+
+}
+
+@media (height: 2400px ) {
+    h1 {
+    font-family: sans-serif;
+    font-size: 160px;
+    width: 1400px;
+    } 
+
+    p {
+        font-family: sans-serif;
+        font-size: 90px;
+        width: 1500px;
+    }
+
+    #sidebar {
+        display: none;
+        width: 250px;
+        background: black;
+    }
+
+    #sidebar a {
+        font-family: sans-serif;
+        font-size: 90px;
+        color: lime;
+        text-decoration: none;
+    }
+
+    #sidebar a:hover {
+        font-family: sans-serif;
+        font-size: 95px;
+        color: blue;
+    }
+
+    #sidebar button {
+        font-family: sans-serif;
+        font-size: 90px;
+    }
+
+    a {
+        font-family: sans-serif;
+        font-size: 90px;
+    }
+
+    a#open-nav {
+        font-size: 90px;
+    }
+
+    button {
+        font-size: 90px;
+    }
+
+    #darkModeHome {
+        font-size: 70px;
+        width: 1000px;
+    }
+
+    button#lightModeHome {
+        font-size: 70px;
+        width: 1000px;
+    }
+
+    img#main-logo {
+        float: left;
+        width: 500px;
+        height: 500px;
+    }
+
+}
+
+@media (width: 414px) {
+img#main-logo {
+    width: 300px;
+    height: 300px;
+}
+
+
+    h1 {
+        font-size: 72px;
+        font-family: 'Ubuntu' monospace;
+        font-weight: bold;
+        width: 550px;
+    }
+
+    p {
+        font-size: 54px;
+        font-family: 'Ubuntu' monospace;
+        font-weight: lighter;
+        width: 550px;
+    }
+
+    #sidebar-settings {
+        font-family: sans-serif;
+        font-size: 2em;
+    }
+
+    div#main {
+        font-size: 2em;
+        font-family: sans-serif;
+        background: black;
+        color: white;
+    }
+
+    button#redbutton {
+        background: red;
+        width: 70px;
+        height: 70px;
+        color: white;
+        font: monospace;
+    }
+
+a {
+    font-size: 32px;
+    font-family: sans-serif;
+}
+
+#sidebar {
+    display: none;
+    position: realtive;
+}
+
+
+}
+
+.darktheme {
+    background: rgb(44, 44, 44);
+    color: white;
+}
+
+.lighttheme {
+    background: white;
+    color: black;
+}
+
+li {
+    list-style-type: none;
+}
+
+#one {
+    width: 40px;
+    background: black;
+}
+
+#two {
+    width: 40px;
+    background: black;
+}
+
+#three {
+    width: 40px;
+    background: black;
+}
+
+.nav div {
+    height: 4px;
+}
+
+#top {
+    display: none;
+}
+
+#settings-btn {
+    float: right;
+}
