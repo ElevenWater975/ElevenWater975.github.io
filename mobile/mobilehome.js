@@ -18,7 +18,7 @@ function buttonNewsletter() {
 }
 
 function closeNav() {
-    document.getElementById("sidebar").style.width = "0px";
+    document.getElementById("sidebar").style.display = "none";
     document.getElementById("main").style.marginLeft = "0px";
     document.getElementById("sidetext").style.display = "block";
     topnav = false;

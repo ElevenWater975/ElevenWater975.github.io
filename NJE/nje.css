@@ -703,3 +703,29 @@ img {
     display: none;
 }
 }
+
+
+@media (max-width: 1300px) {
+#continue {
+    font-family: sans-serif;
+    font-size: 72px;
+    display: block;
+}
+
+#select-all {
+    display: none;
+}
+}
+
+@media (width: 1920px) {
+    #continue {
+        display: none;
+    }
+}
+
+
+@media (height: 2400px) {
+    #warning {
+        font-size: 72px;
+    }
+}

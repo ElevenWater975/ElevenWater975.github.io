@@ -1,0 +1,77 @@
+@media (width: 375px) {
+    p {
+        width: 520px;
+        font-size: 36px;
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+    h1 {
+        width: 520px;
+        font-size: 4em;
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+    h2 {
+        width: 520px;
+        font-size: 2em;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    
+    a { 
+        width: 520px;
+        font-size: 36px;
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+    button {
+        font-size: 36px;
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+    #settings {
+        display: none;
+    }
+}
+
+p {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+a {
+    font-family: sans-serif;
+    text-decoration: center;
+}
+body {
+    background: white;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+button#closesettings {
+    background: red;
+    color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul {
+    list-style-type: none;
+}

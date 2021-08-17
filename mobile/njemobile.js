@@ -99,8 +99,3 @@ function closeMenu1() {
     settingsMenu = false;
     console.log(settingsMenu);
 }
-
-function siteContinue() {
-    document.getElementById("select-all").style.display = "block";
-    document.getElementById("warning").style.display = "none";
-}
