@@ -360,3 +360,27 @@ li {
         color: white;
     }
 }
+
+@media (min-width: 1900px) {
+    #desktopnotice {
+        display: block;
+    }
+}
+
+@media (max-width: 1800px) {
+    #desktopnotice {
+        margin: 0;
+        padding: 0;
+        display: none;
+        position: relative;
+    }
+}
+
+#desktopnotice {
+    display: none;
+    position: relative;
+}
+
+#settings {
+    display: none;
+}

@@ -12,22 +12,26 @@
 
 <body>
     <header>
+        <button id="settingsbutton" onclick="settingsFunction()">Settings</button>
+        <div id="settings" class="settingsmenu">
+            <button id="closeSettings" onclick="closeMenu1()">X</button>
+            <br>
+            <button id="move-side" onclick="notice()">Hol up real quick</button>
+            <br>
+            <button id="full-dark" onclick="darkMode()">Dark Mode</button>
+            <br>
+            <button id="dimmedtheme" onclick="dimmedMode()">Dimmed mode</button>
+            <br>
+            <button id="impact-font" onclick="impactFont()">Change font to impact (not working)</button>        
+            <br>
+            <br>
+            <br>
+            <h2>Support center</h2>
+            <p>If you need help with any of these settings, feel free to contact me at nje.eleven34@outlook.com or go to the <a href="https://github.com/ElevenWater975/elevenwater975.github.io">Github repository</a></p>
+        </div>
         <div id="select-all">
         <div id="darkmode">
             <p id="mobilenotice">Note: you are seeing the mobile version of this page.</p>
-            <div id='padding-background'></div>
-            <div id="navtop" class="topnav">
-                <ul>
-                    <li><a href="https://twitch.tv/elevenplayz12">Eleven's twitch channel</a></li>
-                    <li><a href="https://youtube.com/nyrangerfan88">Eleven's YouTube channel</a></li>
-                    <li><a href="https://elevenwater975.github.io">Home page</a></li>
-                    <li><a href="https://elevenwater975.github.io/support">Support page</a></li>
-                    <li><a href="https://elevenwater975.github.io/newsletter">Newsletter</a>
-                    <li><a href="#">Apply to be a NJE Member (must be 13 years old or older)</a></li>
-                    <li><a id='rightfloat' href="#">About NJE (soon)</a></li>
-                    <li><button id="close-nav" onclick="closeNav()">X</a></li>
-                </ul>
-            </div>
             <br>
             <br>
             <br>
@@ -43,13 +47,18 @@
             <div class="container">
                 <br>
                 <br>
-                <button id="settingsbutton" onclick="settingsFunction()">Settings</button>
-                <div id="settings" class="settingsmenu">
-                    <button id="closeSettings" onclick="closeMenu1()">X</button>
-                    <button id="move-side" onclick="notice()">Hol up real quick</button>
-                    <button id="full-dark" onclick="darkMode()">Dark Mode</button>
-                    <button id="dimmedtheme" onclick="dimmedMode()">Dimmed mode</button>
-                    <button id="impact-font" onclick="impactFont()">Change font to impact (not working)</button>        
+              
+                <div id="navtop" class="topnav">
+                <ul>
+                    <li><a href="https://twitch.tv/elevenplayz12">Eleven's twitch channel</a></li>
+                    <li><a href="https://youtube.com/nyrangerfan88">Eleven's YouTube channel</a></li>
+                    <li><a href="https://elevenwater975.github.io">Home page</a></li>
+                    <li><a href="https://elevenwater975.github.io/support">Support page</a></li>
+                    <li><a href="https://elevenwater975.github.io/newsletter">Newsletter</a>
+                    <li><a href="#">Apply to be a NJE Member (must be 13 years old or older)</a></li>
+                    <li><a id='rightfloat' href="#">About NJE (soon)</a></li>
+                    <li><button id="close-nav" onclick="closeNav()">X</a></li>
+                </ul>
                 </div>
                 <h1 class="title">Team 3 NJE</h1>
 
@@ -94,6 +103,7 @@
                                 subscribers. He makes videos on minecraft and other various topics.</p>
                         </div>
                         <br>
+                        <div id="box2">
                         <!--All the NJE founders-->
                         <div id="NJE-J">
                             <h2><strong>Jake 104</strong></h2>
@@ -155,6 +165,8 @@
             </table>
         </div>
     </div>
+    </div>
+</div>
     <div id="MITLicense">
 
     </div>

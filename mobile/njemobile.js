@@ -12,6 +12,7 @@ function openNav() {
     document.getElementById('navtop').style.width = "100%";
     document.getElementById('navtop').style.height = "40%";
     document.getElementById('navtop').style.transition = "1s";
+
     if (document.body.background === "black") {
         document.getElementById('navtop').style.background = "gray";
     }
@@ -59,7 +60,8 @@ function darkMode() {
 function impactFont() {
     document.querySelector("h1").style.cssText = "font-family: Impact";
     document.querySelector(".heading-1").style.cssText = "font-family: Impact";
-    document.getElementById("select-all").setAttribute("font-family: Impact;");
+    document.querySelector("button").style.cssText = "font-family: Impact";
+    document.getElementById("select-all").style.cssText = "font-family: Impact";
 }
 
 // Count variable
@@ -68,10 +70,15 @@ function settingsFunction() {
     // Settings menu function
     var change = document.getElementById("settingsbutton"); /*change variable*/
         document.getElementById("settings").style.display = "block";
+        document.getElementById("box2").style.display = "none";
+        document.getElementById("select-all").style.display = "none";
+        document.getElementById("contact-me").style.display = "none";
+        document.getElementById("the-links").style.display = "none";
+        
         change.classList.toggle("settingschange");
         settingsMenu = true;
         console.log(settingsMenu);
-} 
+}
 // I didn't know If I Was doing something right so this took me a while
 
 function dimmedMode() {
@@ -96,6 +103,10 @@ function closeNav() {
 
 function closeMenu1() {
     document.getElementById("settings").style.display = "none";
+    document.getElementById("select-all").style.display = "block";
+    document.getElementById("box").style.display = "block";
+    document.getElementById("contact-me").style.display = "block";
+    document.getElementById("the-links").style.display = "block"; 
     settingsMenu = false;
     console.log(settingsMenu);
 }

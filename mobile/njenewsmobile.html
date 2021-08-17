@@ -11,12 +11,10 @@
 </head>
 
 <body>
+    
     <div id="greentext">
         <div id="darkmode">
-            <a id="navbaropen" class="nav" onclick="openNav()">
-                <div id="one"></div>
-                <div id="two"></div>
-                <div id="three"></div>
+            <a id="navbaropen" class="nav" onclick="openNav()">Open links</a>
 
                 <div id="links">
                     <ul>
@@ -41,6 +39,13 @@
                     } else if (document.getElementById("links").style.display === "none") {
                         document.getElementById("settings").style.display = "block";
                     }
+                    document.getElementById("select-all").style.display = "none";
+                    document.querySelector("iframe").style.display = "none";
+                    document.getElementById("box").style.display = "none";
+                    document.getElementById("showvideo").style.display = "none";
+                    document.querySelector("h2").style.display = "none";
+                    document.querySelector("a").style.display = "none";
+                    document.getElementById("settingsbutton").style.display = "none";
                 }
             </script>
             <div id="settings" class="settings-nav">
@@ -51,6 +56,7 @@
                 <button id="getbuttonsback" onclick="buttonsappeared()">Get text changing buttons back</button>
                 <button id="closesettings" onclick="closeSettings()">Close Settings</button>
             </div>
+            <div id="select-all" class="all-elements">
             <div class="container">
                 <header>
                     <section id="section1">
@@ -90,6 +96,7 @@
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
+            <div id="box">
             <div id="gamenews">
                 <h1>News about games</h1>
                 <p>Here, you will see gaming news. We will tell you what is going on with some trending games that we
@@ -124,6 +131,9 @@
                 <div id="License-tag" style="float: right; color: white;">&copy; ElevenWater975 and Team 3 NJE</div>
             </div>
     </div>
+</div>
+</div>
+</div>
     </header>
     </footer>
 </body>

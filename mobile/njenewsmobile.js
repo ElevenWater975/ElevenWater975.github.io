@@ -25,13 +25,17 @@ function buttonColor() {
 
 function openSettings() {
     var button = document.body;
+    document.getElementById("select-all").style.display = "none";
     document.getElementById("settings").style.display = "block";
     if (document.getElementById("links").style.display === "block") {
         alert("Please close the navigation / links bar");
         document.getElementById("settings").style.display = "none";
     } else if (document.getElementById("links").style.display === "none") {
         document.getElementById("settings").style.display = "block";
-    }
+    } else if (document.getElementById("select-all").style.display = "block") {
+    document.getElementById("select-all").style.display = "none";
+}
+document.getElementById("select-all").style.display = "none";
 }
 
 function changeText() {
@@ -51,6 +55,14 @@ function closeNav() {
 
 function closeSettings() {
     document.getElementById("settings").style.display = "none";
+    document.getElementById("select-all").style.display = "block";
+    document.getElementById("select-all").style.display = "block";
+    document.querySelector("iframe").style.display = "block";
+    document.getElementById("box").style.display = "block";
+    document.getElementById("showvideo").style.display = "block";
+    document.querySelector("h2").style.display = "block";
+    document.querySelector("a").style.display = "block";
+    document.getElementById("settingsbutton").style.display = "block";
 }
 
 function skyBlueText() {
@@ -94,3 +106,4 @@ function scrollFunction() {
         document.getElementById('video').className = "";
     }
 }
+

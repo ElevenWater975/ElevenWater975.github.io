@@ -21,6 +21,7 @@ function closeNav() {
     document.getElementById("sidebar").style.display = "none";
     document.getElementById("main").style.marginLeft = "0px";
     document.getElementById("sidetext").style.display = "block";
+    document.getElementById("everything-else").style.display = "block";
     topnav = false;
     console.log(topnav);
     if (document.getElementById("sidebar").style.width === "250px" || document.getElementById("sidebar").style.width === "100%") {
@@ -33,6 +34,7 @@ function openNav() {
     document.getElementById("sidebar").style.width = "600px";
     document.getElementById("sidebar").style.height = "100%";
     document.getElementById("sidetext").style.display = "none";
+    document.getElementById("everything-else").style.display = "none";
     document.getElementById('external-links').style.display = "none";
     topnav = true;
     console.log(topnav);
@@ -148,6 +150,11 @@ function openSettings() {
     document.getElementById("settings-btn").style.background = "skyblue";
     document.getElementById("settings").style.display = "block";
     document.getElementById("main").style.display = "none";
+    document.getElementById("everything-else").style.display = "none";
+    document.getElementById("box").style.display = "none";
+    document.getElementById("external-links").style.display = "none";
+    document.querySelector("p").style.display = "none";
+document.querySelector("h1").style.display = "none";
     settings = true;
     console.log(settings + " For settings");
 
@@ -160,6 +167,11 @@ function closeSettings() {
 document.getElementById("settings-btn").style.background = "white";
 document.getElementById("settings").style.display = "none";
 document.getElementById("main").style.display = "block";
+document.getElementById("everything-else").style.display = "block";
+document.getElementById("box").style.display = "block";
+document.getElementById("external-links").style.display = "block";
+document.querySelector("p").style.display = "block";
+document.querySelector("h1").style.display = "block";
 settings = false;
 console.log(settings + " For settings");
 }
