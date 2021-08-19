@@ -2,6 +2,7 @@ var count = 1;
 let topnav = document.getElementById("top");
 topnav = false;
 
+
 let settings = document.getElementById("settings");
 settings = true;
 
@@ -24,27 +25,28 @@ function closeNav() {
     document.getElementById("everything-else").style.display = "block";
     topnav = false;
     console.log(topnav);
-    if (document.getElementById("sidebar").style.width === "250px" || document.getElementById("sidebar").style.width === "100%") {
+    if (document.getElementById("sidebar").style.display === "block") {
         console.error("Could not close navigation");
+        alert("Could not close navigation");
     }
 }
 
 function openNav() {
-    document.getElementById("sidebar").style.display = "block";
-    document.getElementById("sidebar").style.width = "600px";
-    document.getElementById("sidebar").style.height = "100%";
-    document.getElementById("sidetext").style.display = "none";
-    document.getElementById("everything-else").style.display = "none";
-    document.getElementById('external-links').style.display = "none";
-    topnav = true;
-    console.log(topnav);
-    if (document.getElementById("sidebar").style.width === "0" || document.getElementById("sidebar").style.display === "none") {
-        console.error("Could not open navbar");
-        topnav = false;
-        console.log(topnav);
-    } else if (document.body.width === "3840px") {
-        document.getElementById("sidebar").style.width = "500px";
-    }
+    var x = document.getElementById("sidebar");
+    var y = document.querySelector("p");
+    var z = document.querySelector("h1");
+    z = document.querySelector("h1");
+x.style.display = "block";
+x.style.width = "100%";
+if (x.style.display = "block") {
+    document.querySelector("*").style.textAlign === "right";
+    x = true;
+console.log(x);
+} else if (x.style.display === "none") {
+    console.error("Could not open navigation");
+    alert("Could not open navigation");
+}
+
 }
 
 function swap() {
@@ -56,7 +58,13 @@ x.innerHTML = "Swapped text!";
 }
 }
        function soon() {
+           count++;
            alert("Coming soon");
+           if (count === 5) {
+            alert("Like I said, coming soon");
+           } else if (count === 10) {
+               alert("Nothing is gonna happen no matter how many times you click");
+           }
        }
 
        function newBtnFunc() {
@@ -149,18 +157,14 @@ function closeInformation() {
 function openSettings() {
     document.getElementById("settings-btn").style.background = "skyblue";
     document.getElementById("settings").style.display = "block";
-    document.getElementById("main").style.display = "none";
-    document.getElementById("everything-else").style.display = "none";
-    document.getElementById("box").style.display = "none";
-    document.getElementById("external-links").style.display = "none";
-    document.querySelector("p").style.display = "none";
-document.querySelector("h1").style.display = "none";
     settings = true;
     console.log(settings + " For settings");
 
     if (document.body.width === "375px") {
         document.getElementById("main-logo").style.display = "none";
     }
+    document.getElementById("main-logo").style.bottom = "-200px";
+
 }
 
 function closeSettings() {
@@ -172,6 +176,8 @@ document.getElementById("box").style.display = "block";
 document.getElementById("external-links").style.display = "block";
 document.querySelector("p").style.display = "block";
 document.querySelector("h1").style.display = "block";
+document.getElementById("settings").style.display = "none";
 settings = false;
 console.log(settings + " For settings");
 }
+

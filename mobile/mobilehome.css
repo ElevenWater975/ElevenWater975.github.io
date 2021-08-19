@@ -384,3 +384,208 @@ li {
 #settings {
     display: none;
 }
+
+@media (max-width: 800px) {
+    p {
+        font-size: 2em;
+        font-family: sans-serif;
+        font-weight: lighter;
+    }
+
+    h1 {
+        padding: 0;
+        margin: 0;
+        font-size: 4em;
+        text-align: center;
+        font-family: sans-serif;
+    }
+
+    
+
+    .container {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #sidebar {
+        display: none;
+        font-family: sans-serif;
+        font-size: 2em;
+    }
+
+    * {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #main-logo {
+        float: left;
+        width: 200px;
+        height: 200px;
+        position: static;
+    }
+
+    #sidebar {
+        display: none;
+    }
+
+    p {
+        text-align: center;
+        position: relative;
+    }
+
+    h1 {
+      text-align: center;  
+      position: relative;
+    }
+
+    #settings {
+        position: relative;
+        right: -300px;
+    }
+
+    #exit-settings {
+        float: right;
+        width: 50px;
+    }
+
+    #sidebar button {
+        font-size: 24px;
+        background: black; 
+        color: white;
+    }
+
+    #sidebar a {
+        font-size: 36px;
+        text-align: left;
+        color: lime;
+        text-decoration: none;
+    }
+    #sidebar {
+        margin: 12px;
+        padding: 0;
+        background: black;
+        color: lime;
+        width: 250px;
+        position: fixed;
+        top: -10px;
+        left: -0.50px;
+    
+        
+    }
+    #external-links {
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: lighter;       
+    }
+
+    #external-links a {
+        text-decoration: none;
+    }
+
+    a {
+        text-decoration: none;
+        font-family: sans-serif; 
+    }
+}
+
+#settings {
+    float: right;
+}
+
+#sidebar {
+    position: fixed;
+}
+
+a#close-nav {
+    float: right;
+    background: red;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    left: -100px;
+}
+
+@media screen and (max-width: 400px) {
+    #sidebar {
+        position: fixed;
+        top: -10px;
+        
+        z-index: 1;
+        display: none;
+    }
+
+    #settings {
+        display: none;
+        position: relative;
+    }
+
+    #main-logo {
+        float: left;
+        position: relative;
+        left: -179px;
+    }
+
+    hr {
+        width: 542px;
+        height: 400px;
+        background: blue; 
+        border: 3px solid skyblue;
+        position: relative;
+        left: -6px;
+    }
+
+    #footer {
+        border: 3px solid black;
+        border-radius: 0px;
+        background: rgb(58, 57, 57);
+        background-size: 543px;
+        width: 543px;
+    }
+
+    footer {
+        width: 543px;
+    }
+
+    #footer a {
+        color: white;
+    }
+}
+
+p#desktopnotice {
+    display: none;
+}
+
+#footer {
+    background: rgb(58, 57, 57);
+    width: 100%;
+    color: white;
+}
+
+#footer a {
+    color: white;
+}
+
+@media (max-width: 360px) {
+    #sidebar {
+        background: black;
+        display: none;
+        position: fixed;
+        top: -5px;
+    }
+
+    a {
+        text-decoration: none;
+        font-family: sans-serif;
+    }
+}
+
+@media (min-width: 1920px) {
+    * {
+        display: none;
+    }
+}
