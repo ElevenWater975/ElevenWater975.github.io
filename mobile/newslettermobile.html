@@ -1,0 +1,143 @@
+<!DOCTYPE html><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="newslettermobile.css">
+    <script src="newslettermobile.js">-+</script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Website newsletter</title>
+</head>
+
+<body>
+    <div id="lime-mode">
+        <div id="dark-mode">
+            <a href="#" id="nav" class="nav" onclick="appear(), egg()">Open navigation</a>
+            <p id="eggy">You clicked so many times the button poofed from existence</p>
+                <div id="links">
+                    <img src="New Project Copy.jpg">
+                    <ul>
+                    <li><a href="https://youtube.com/nyrangerfan88">YouTube</a></li>
+                    <li><a href="https://elevenwater975.github.io">Home page</a></li>
+                    <li><a href="https://github.com/ElevenWater975/ElevenWater975.github.io">Github repo</a></li>
+                    <li><a href="https://elevenwater975.github.io/support">Support page</a></li>
+                    <li><a href="https://discord.gg/jGhGjYW4UW">Discord</a></li>
+                    <li><a href="twitch.tv/elevenplayz12">twitch channel</a></li>
+                    <button id="closenav" onclick="closeNav()">Close Navigation (because I dont know how to close
+                        navigation when the 3 lines button is clicked again)</button>
+                    </ul>
+                </div>
+            <div class="container">
+                <h1>Official website newsletter <em>(Mobile version)</em></h1>
+                <p>Read our official newsletter to keep you updated on what is happening with the website!</p>
+                <p>If the page is not working properly, please contact <a id="notice"
+                        href="#">nje.eleven34@icloud.com</a></p>
+                <button id="limemode" onclick="limeModeFunction()">Lime Mode</button>
+                <button id="darkmode" onclick="darkModeFunction()">Internets best friend, internet heaven aka Dark
+                    mode</button>
+                <br>
+                <div id="newsletter-start">
+                    <div id="mobile version">
+                        <h2>Mobile version of the site</h2>
+                        <p>Eleven is working on a <em>Mobile version</em> of the site. Some pages of the mobile version will be released in <strong>version 1.3.0-Alpha</strong></p>
+                    </div>
+                    <div id="new-pre-release">
+                        <h2>v1.2.3-alpha released</h2>
+                        <p>v1.2.3-alpha released. Fixed some bugs and working on the about page.</p>
+                    </div>
+                    <div class="fixes">
+                        <h2>Bug fixes?</h2>
+                        <p>I am sorry that we haven't released a new release yet. We are currently fixing bugs.</p>
+                    </div>
+                    <div class="new-features">
+                        <h1>New features in version 1.3.0-Alpha</h1>
+                        <p>There will be a new page selection screen when 1.3.0-Alpha comes out. <a href="https://elevenwater975.github.io/pagepick">Click Here</a> for early access</p>
+                        <p>The new feature will have</p>
+                        <p id="picknotice">I am having trouble with the page picker page. I might soon allow <strong>Volunteer(s)</strong> help with the site</p>
+                        <ul id="list1">
+                            <li>A smooth hover animation</li>
+                            <li>A smooth skyblue linear gradient background</li>
+                            <li>Full mobile support (Not ready for it yet but working on it)</li>
+                            <li>And everyone's favorite, DARK MODE! Or dimmed mode.</li>
+                        </ul>
+                    </div>
+                    <div class="informative">
+                        <h2>Bugs and the site</h2>
+                        <p>The site may be buggy because we are still in v1.2.2-alpha. If you are experiencing any bugs,
+                            contact me at nje.eleven34@icloud.com or nje.eleven34@outlook.com</p>
+                    </div>
+                    <div class="more-news">
+                        <h2>More updates?</h2>
+                        <p>There will be more updates coming your way!</p>
+                    </div>
+                    <div class="news-1">
+                        <h2>
+                            <p>site has been officialy updated to v1.2.2-alpha. On the index page, we replaced the
+                                horizontal navbar with a sidebar and it is animated. I got help from a tutorial from
+                                w3schools (I didn't Ctrl C ctrl V the whole page tho)</p>
+                            <p>Thank you w3schools for helping me out with html, css, and javascript features. Have fun
+                                on v1.2.2-alpha everyone!</p>
+                        </h2>
+                        <h2>7/4/2021</h2>
+                        <p>Site is being updated to 1.2.2-Alpha soon</p>
+                    </div>
+                    <div class="news-2">
+                        <h2>6/26/2021 Almost done with alpha</h2>
+                        <p>Eleven says that we are almost done with alpha probably after 1.5.2-alpha, I wonder what
+                            awaits in the new beta version of the website.
+                            Today Eleven has even updated this page, support page, and index.html page.
+                        </p>
+                    </div>
+                    <br>
+                    <div class="news-3">
+                        <h2>6/25/2021 Newsletter page created</h2>
+                        <p>Eleven created the newsletter page.</p>
+                    </div>
+                    <div class="news-4">
+                        <h2>6/24/2021 1.2.1-alpha was released</h2>
+                        <p>Eleven has released 1.2.1-alpha and added some new features such as the 3 lines button Which
+                            is basically just what you see on other websites to open something like a navigation bar or
+                            menu.
+                            We also fixed some bugs.
+                        </p>
+                    </div>
+                </div>
+                <script>
+                    //Functions working normally
+                    function showNav() {
+                        document.getElementById("links").style.display = "block";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("links").style.display = "none";
+                    }
+
+                    function limeModeFunction() {
+                        document.getElementById("lime-mode").style.background = "lime";
+                    }
+
+                    function darkModeFunction() {
+                        document.getElementById('dark-mode').style.background = "black";
+                       var dark = document.body;
+                       dark.classList.toggle('darkmode');
+
+                    }
+                </script>
+                <footer>
+                    <br>
+                    <br>
+                    <div class="more-links">
+                        <a href="https://reddit.com/r/BlockPro">BlockPro reddit</a>
+                        <a href="github.com">Hosted with github</a>
+                        <a href="https://youtube.com/nyrangerfan88">Youtube chanel</a>
+                        <a href="twitch.tv/elevenplayz12">Twitch channel</a>
+                    </div>
+
+                </footer>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

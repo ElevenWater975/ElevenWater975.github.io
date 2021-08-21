@@ -1,0 +1,222 @@
+p {
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 400px) {
+    h1 {
+        width: 1080px;
+        font-size: 128px;
+        text-align: center;
+        font-family: sans-serif;
+        position: relative;
+        right: -60%;
+    }
+
+    p {
+        width: 1080px;
+        font-size: 78px;
+        text-align: center;
+        font-family: sans-serif;
+        position: relative;
+        right: -50%;
+    }
+
+    h2 {
+        font-size: 100px;
+        font-family: sans-serif;
+        text-align: center;
+        width: 1080px;
+    }
+    body {
+        width: 375px;
+        background: white;
+        color: black;
+    }
+
+    button {
+        font-size: 4em;
+        font-family: sans-serif; 
+    }
+
+    #MITLICENSE {
+        font-size: 78px;
+        font-family: sans-serif;
+    }
+}
+
+body {
+    background: white;
+    color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#settings {
+    display: none;
+}
+
+ul#sidenavigation {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+#navigation {
+    display: none;
+}
+
+.darktheme {
+    background: black;
+    color: white;
+}
+
+.lighttheme {
+    background: white;
+    color: black;
+}
+
+.dimmed-background {
+    background-color: rgb(69, 69, 69);
+    color: white;
+}
+
+a {
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 500px) {
+    p {
+        width: 1500px;
+        text-align: center;
+        font-size: 84px;
+        font-family: sans-serif;
+        position: relative;
+        right: -20%;
+    }
+
+    #nav {
+        font-size: 4em;
+        font-family: sans-serif;
+    }
+
+    #navigation {
+        font-size: 2em;
+        font-family: sans-serif;
+        float: left;
+        width: 100%;
+    }
+
+    #navigation a {
+        font-size: 64px;
+        font-family: sans-seriif;
+        float: left;
+        width: 100%;
+    }
+
+    #sidenavigation {
+        font-size: 84px;
+        font-family: sans-serif;
+    }
+
+    a {
+        width: 2000px;
+        font-size: 84px;
+        font-family: sans-serif;
+    }
+
+    #settings-button {
+        font-size: 84px;
+        font-family: sans-serif;
+        text-align: center;
+    }
+
+    #MITLICENSE {
+        margin: 0;
+        padding: 0;
+        font-size: 84px;
+        font-family: sans-serif;
+        text-align: center;
+        text-align: left;
+        position: relative;
+    }
+    h2 {
+        width: 1000px;
+        font-size: 3em;
+        font-family: sans-serif;
+        text-align: center;
+        position: relative;
+        right: -50%;
+    }
+
+    h1 {
+        width: 1000px;
+        font-size: 6em;
+        font-family: sans-serif;
+        text-align: center;
+        position: relative;
+        right: -50%;
+    }
+}
+
+@media (height: 2400px) {
+    p {
+        width: 1800px;
+        font-size: 98px;
+        font-family: sans-serif;
+        text-align: center;
+        position: relative;
+        left: -1px; 
+    }
+
+    h1 {
+        float: center;
+        font-size: 128px;
+        font-family: sans-serif;
+        text-align: center;
+        position: relative;
+    }
+
+    h2 {
+        font-size: 100px;
+        font-family: sans-serif;
+        text-align: center;
+    }
+    
+    a {
+        font-size: 98px;
+        font-family: monospace;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        position: relative;
+    }
+}
+
+.full-page {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
