@@ -159,3 +159,70 @@ function goBackFive() {
     document.getElementById("winsix").style.display = "none";
     document.getElementById("winfive").style.display = "block";
 }
+
+function threeByThree() {
+    var x = document.body; 
+    x.classList.toggle("gridstyle");
+    document.getElementById("window1").style.display = "grid";
+    document.getElementById("window2").style.display = "grid";
+    document.getElementById("window3").style.display = "grid";
+    document.getElementById("window4").style.display = "grid";
+    document.getElementById("window5").style.display = "grid";
+    document.getElementById("window6").style.display = "grid";
+    document.getElementById("window7").style.display = "grid";
+    document.getElementById("winone").style = "display: block; float: left;"
+    document.getElementById("wintwo").style = "display: block; float: left;"
+    document.getElementById("winthree").style = "display: block; float: left;"
+    document.getElementById("winfour").style = "display: block; float: left;"
+}
+
+function floatThreeLeft() {
+    var x = document.getElementById("next-back-button");
+    document.getElementById("window1").style = "float: left; display: grid;";
+    document.getElementById("window2").style = "float: left; display: grid;";
+    document.getElementById("window3").style = "float: left; display: grid;";
+    document.getElementById("winone").style = "display: block; float: left; position: relative; right: 0%";
+    document.getElementById("wintwo").style = "display: block; float: left; position: relative; right: 0%";
+    document.getElementById("winthree").style = "display: block; float: left; position: relative; right: 0%;";
+    document.getElementById("next-window-1").style.display = "none";
+    document.querySelector("button").style.display = "none";
+    document.getElementById("next-back-button").style.display = "none";
+    document.getElementById("next-window-1 next-back-button").style.display = "none";
+}
+
+function showAsCircle() {
+    document.getElementById("window1").style.borderRadius = "100%";
+    document.getElementById("window2").style.borderRadius = "100%";
+    document.getElementsById("window3").style.borderRadius = "100%";
+    document.getElementById("window4").style.borderRadius = "100%";
+    document.getElementById("window5").style.borderRadius = "100%";
+    document.getElementById("window6").style.borderRadius = "100%";
+    document.getElementById("window7").style.borderRadius = "100%";
+    document.getElementById("circle").style.display = "none";
+    document.getElementById("square").style.display = "block";
+}
+
+function showAsSquare() {
+    document.getElementById("window1").style.borderRadius = "0%";
+    document.getElementById("window2").style.borderRadius = "0%";
+    document.getElementById("window3").style.borderRadius = "0%";  
+    document.getElementById("window4").style.borderRadius = "0%";
+    document.getElementById("window5").style.borderRadius = "0%";
+    document.getElementById("window6").style.borderRadius = "0%";
+    document.getElementById("window7").style.borderRadius = "0%";
+}
+
+var click = 0;
+function soon() {
+click++;
+var x = document.body;
+if (click === 1) {
+    alert("click");
+} else if (click === 10) {
+    x.innerHTML = "You clicked so many times that this text is only visible";
+    x.style.fontSize = "50px";
+    x.style.color = "white";
+    x.style.fontFamily = "sans-serif";
+    x.style.background = "black"; 
+}
+}

@@ -15,9 +15,6 @@
         <section id="literally-everything">
             <div class="container">
                 <div class="site-welcome" id="title-subtitle">
-                    <h1 class="title" id="edit-title" style="text-align: center;">Welcome to my site</h1>
-                    <p class="subtitle" id="edit-subtitle" style="text-align: center;">To begin, pick a page that you
-                        would like to go to.</p>
                 </div>
                 </p>
                 <div id="settings-wrap">
@@ -33,6 +30,14 @@
                             <li><button id="textsettingsbtn" onclick="enableTextSettings()">Mess around with the text
                                     (not
                                     working)</button></li>
+                            <li><button id="gridsettings" onclick="gridSettings()">Customise grid format</button></li>
+                            <div id="gridformat">
+                                <li><button id="3x3-grid" onclick="threeByThree()">3x3 grid</button></li>
+                                <li><button id="float3left" onclick="floatThreeLeft()">Show 3 boxes W.I.P</button></li>
+                                <li><button id="circle" onclick="showAsCircle()">Show grids as circles.</button></li>
+                                <li><button id="square" onclick="showAsSquare()">Show grids as squares.</button></li>
+                                <li><button id="idkwhatnext" onclick="soon()">Idk what next</button></li>
+                            </div>
                         </ul>
                     </div>
                 </div>
@@ -43,15 +48,15 @@
                 <div id="page1" class="pages-1">
                     <div id="winone">
                         <p>Want to go straight to the homepage?</p>
-                        <div id='window1' class="window-home"
+                        <div id='window1' class="item1"
                             onclick='location.href="https:\\elevenwater975.github.io/index"'>Home</div>
-                        <button id="next-window-1 next-back-button" onclick="goNextOne()"
+                        <button id="next-window-1" onclick="goNextOne()"
                             style="background-color: lime; color: black;">next</button>
                     </div>
 
                     <div id="wintwo">
                         <p>Need some help? Don't worry, we are here for you.</p>
-                        <div id='window2' class="window-support"
+                        <div id='window2' class="item2"
                             onclick='location.href="https:\\elevenwater975.github.io/main/support"'>Support</div>
                         <button id="next-window-2 next-back-button" onclick="goNextTwo()"
                             style="background-color: lime; color: black;">next</button>
@@ -61,17 +66,18 @@
 
                     <div id="winthree">
                         <p>Whats happening with the page? click below to find out!</p>
-                        <div id='window3' class="window-newsletter"
+                        <div id='window3' class="item3"
                             onclick='location.href="https:\\elevenwater975.github.io/newsletter"'>newsletter</div>
                         <button id="go-back-2 next-back-button" onclick="goBackTwo()"
                             style="background-color: red; color: black;">Back</button>
-                        <button id="next-window-3" onclick="goNextThree()">Next page >>></button>
+                        <button id="next-window-3" class="item3-1" onclick="goNextThree()">Next page >>></button>
+                        <a class="item3-2" href="#" onclick="goNextThree()">next page</a>
                     </div>
                 </div>
                 <div id="page2" class="pages-2">
                     <div id="winfour">
                         <p>Check out the main repository for this page!</p>
-                        <div id="window4" class="window-github"
+                        <div id="window4" class="item4"
                             onclick='location.href="https:\\github.com/ElevenWater975/ElevenWater975.github.io"'>
                             Github
                             repository (source code)</div>
@@ -80,7 +86,7 @@
                     </div>
                     <div id="winfive">
                         <p>It's a secret</p>
-                        <div id="window5" class="window-nje" style="width: 360px;" onclick="soonEgg()">coming soon</div>
+                        <div id="window5" class="item5" style="width: 360px;" onclick="soonEgg()">coming soon</div>
                         <button id="go-back-4" onclick="goBackFour">Back</button>
                         <button id="next-window-5" onclick="goNextFive()">Next</button>
                     </div>
@@ -88,7 +94,7 @@
                         <p>It's a secret</p>
                         <div id="window6" class="window-njenews" onclick="soonEgg()">coming soon</div>
                         <button id="go-back-5" onclick="goBackFive()">Back</button>
-                        <button id="next-window-6" onclick="goNextSix()"></button>
+                        <button id="next-window-6" class="item6" onclick="goNextSix()"></button>
                     </div>
 
                     <p><em>Page 3</em> coming soon</p>
@@ -118,14 +124,10 @@
                     Contact: nje.eleven34@icloud.com, nje.eleven34@outlook.com We will reach out to you within 24-48
                     hours.</p>
                 <br>
-                <p id="Under-800" style='font-size: 60px;'>You are using a handheld device with a width <em>800px or
-                        less</em></p>
                 <br>
                 <br>
                 <br>
                 <br>
-                <p>Version 1.2.3-Alpha check <a href="https://github.com/ElevenWater975/ElevenWater975.github.io">Github
-                        repo</a></p>
                 <div id="MITLicense" style="font-size: 20px; color: white;">
                     <p>&copy; 2021 ElevenWater975</p< /div>
                 </div>

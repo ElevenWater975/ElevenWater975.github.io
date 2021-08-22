@@ -81,6 +81,11 @@ body {
         float: left;
         text-decoration: none;
     }
+
+    ul {
+        list-style-type: none;
+        float: left;
+    }
 }
 
 @media screen and (min-width: 400px) {

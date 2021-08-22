@@ -706,6 +706,8 @@ font-family: sans-serif;
 }
 
 #close-settings {
+    width: 80px;
+    height: 50px;
     float: left;
     font-size: 1em;
     background-color: red;
@@ -1183,4 +1185,22 @@ button {
 
 .window-njenews {
     width: 360px;
+}
+
+.gridstyle #window1 #window2 #window3 #window4 #window5 #window6 #window7 {
+    display: grid;
+    width: 360px;
+}
+
+.gridstyle #winone #wintwo #winthree #winfour {
+    display: grid;
+    width: 360px;
+}
+
+.gridstyle {
+    display: grid;
+}
+
+#square {
+    display: block;
 }
