@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" type="text/css" href="reach.css">
     <script src="reach.js"></script>
@@ -8,77 +9,100 @@
     <meta name="HandHeldFriendly" content="true">
     <title>Reach me</title>
 </head>
+
 <body>
-    <header></header>
+    <div id="background" style="background: skyblue; height: 200px; position: relative;">
+        <br>
+        <br>
+    </div>
     <div class="container">
         <a id="nav" onclick="enableNav()">
-        <div id="one"></div>
-        <div id="two"></div>
-        <div id="three"></div>
-    </a>
-    
-        <section id="top-nav">
-            <div id="navbar" class="nav-top">
-                <img class="thumbnail" src="New Project.jpg">
-                <ul>
-                <li><a href="https://elevenwater975.github.io">Home</a></li>
-                <li><a href="https://elevenwater975.github.io/support">Support</a></li>
-                <li><a href="https://elevenwater975.github.io">BlockPro page (coming soon)</a></li>
-                <li><a id="toptwitch" href="https://twitch.tv/elevenplayz12">Twitch</a></li>
-                <li><a id="youtube" href="https://youtube.com/nyrangerfan88">YouTube</a></li>
-                <li><a href="#">About (soon)</a></li>
-                <div id="close">
-                <li><a href='javascript:void(0)' id="closenav-top" onclick="closeNav()">&times;</a></li>
+            <div id="one"></div>
+            <div id="two"></div>
+            <div id="three"></div>
+        </a>
+        <tbody>
+            <section id="top-nav">
+                <div id="navigation-bar" style="background: red;">
+                    <table class="show-nav">
+                        <td id="navigation" class="t-nav" style="background-color: red; height: 23px; width: 1553px;">
+                            <a href="https://elevenwater975.github.io" id="home-link">Home</a>
+                            <a href="https://elevenwater975.github.io/main/support" id="support-link">Suppport</a>
+                            <a href="https://elevenwater975.github.io/newsletter" id="newsletter-link">newsletter</a>
+                            <a href="https://elevenwater975.github.io/about" id="about-link">About</a>
+                            <a href="#" onclick="closeNav()" id="close-link">X</a>
+                        </td>
+                    </table>
                 </div>
-            </ul>
-     
-            </div>
-        
-        </header>
+        </tbody>
         </section>
-    <section id="start">
-        <button id="light-mode" onclick="lightMode(), showDark()">Light mode</button>
-        <button id="dark-mode" onclick="darkMode()">Dark Mode</button>
-    <h2>Some ways you can reach me</h2>
-    <p id="notice">This page is a little buggy. If you notice anything, please refer to my preferred contact email nje.eleven34@outlook.com</p>
+        <section id="start">
+            <button id="light-mode" onclick="lightMode(), showDark()">Light mode <em>Please don't click this one.</em></button>
+            <button id="dark-mode" onclick="darkMode()">Dark Mode</button>
+            <h2>Some ways you can reach me</h2>
+            </a>
+            <div id="emails"
+                style="background: rgb(184, 129, 27); height: 478px; border: 3px solid black; border-radius: 0;">
+                <h1>Emails</h1>
+                <br>
+                <p>nje.eleven34@icloud.com</p>
+                <br>
+                <p>nje.eleven34@outlook.com</p>
+                <br>
+                <br>
+                <p id="emailsnotice"
+                    style="width: 2000px; text-align: center; position: relative; left: -200px; font-size: 36px;">Once
+                    you email me, I will try to reach out to you <strong>within 48 hours or less.</strong></p>
+            </div>
+    </div>
     <br>
     <br>
-    <p id="notice2">We do not recommend this page as it is buggy. If you want to contact me, please contact me at nje.eleven34@outlook.com or nje.eleven34@icloud.com</p>
     <br>
     <br>
-    <p id="notice3">Not supported for mobile users or users with a screen width smaller than the ipad</p>
-    <p>There are some easter eggs here. But I wont tell where they are ;)</p>
     <br>
     <br>
-    <button id="email-function" href="#" onclick="emailFunction()">Via emails</button>
-    </a>
-    <div id="emails">
-    <p>nje.eleven34@icloud.com</p>
-    <div id="easter-egg">
-    <p>You clicked so many times that the button poofed out of existince.</p>
-    <button id="easter-two" onclick="easterEggTwo()">Plz bring it back</button>
-</div>
-    <p>nje.eleven34@outlook.com</p>
-</div>
-</div>
-<br>
-<br>
-<button id="discord-function" onclick="discordFunction()">Via discord</button>
-<div id="discord" style="position: relative; bottom: -30px;">
-<a href="#">join my Discord server</a>
-<p id="egg">That is an easy easter egg</p>
-</div>
-<br>
-<br>
-<button id="twitch-function" onclick="twitchFunction()">Check me out on twitch</button>
-<div id="twitch">
-    <a id="ttv" href="twitch.tv/elevenplayz12">Twitch channel</a>
-</div>
+    <br>
+    <h1>There are even more ways to reach out to us.</h1>
+    <br>
+    <div id="discord" style="position: relative; bottom: -30px; background: rgb(67, 67, 185); height: 478px;">
+        <h1>Discord</h1>
+        <p id="dicsordnotice" style="display: block; position: relative; bottom: -30%;">We have a discord server you can
+            join to talk to friends or get support <a href="#"
+                style="position: relative; top: -30%; border-radius: 0px;">join here</a></p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="twitch" style="background: purple; height: 478px;">
+        <h1>Check me out on twitch</h1>
+        <p style="font-size: 36px; position: relative; bottom: -30%;">I might stream next week or so so <a
+                href="https://twitch.tv/elevenplayz12">Check me out</a> and consider donating <a
+                href="https://streamlabs.com/elevenplayz12/tips" style="color: skyblue; font-size: 24px;">here</a></p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="youtube" style="background: red; height: 478px;">
+        <h1>Check me out on youtube</h1>
+        <p style="position: relative; bottom: -30%; font-size: 36px; font-family: sans-serif;">I make cringe on youtube
+            so consider checking it out <a href="https://youtube.com/nyrangerfan88">here</a></p>
+    </div>
 
-<button id="youtube-function" onclick="youtubeFunction()">Via youtube</button>
-<a id="youtube" href="https://youtube.com/nyrangerfan88">My youtube</a>
-
-</section>
-<button id="hint" onclick="easterHint()">d</button>
+    </section>
 </body>
+
 </html>

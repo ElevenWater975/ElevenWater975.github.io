@@ -2,6 +2,14 @@
     margin: 0;
     padding: 0; 
 }
+
+h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 72px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
 @media screen and (max-height: 812px) {
     h2 {
         font-size: 52px;
@@ -51,9 +59,6 @@ a {
     font-family: sans-serif;
 }
 }
-* {
-    text-align: center;
-}
 
 p {
     font-size: 25px;
@@ -69,7 +74,7 @@ h2 {
     text-align: center;
 }
 a {
-    font-size: 20px;
+    font-size: 24px;
     font-family: sans-serif;
     text-decoration: none;
 }
@@ -82,14 +87,6 @@ a:hover {
     color: skyblue;
 }
 
-#emails {
-    display: none;
-    font-size: 20px;
-    font-family: sans-serif;
-    background-color: white;
-    text-align: center;
-    color: black;
-}
 
 header {
     position: relative;
@@ -108,12 +105,6 @@ button {
     border-radius: 25px;
     position: relative;
     left: 870px;
-}
-
-#discord {
-    display: none;
-    margin: 5px;
-    margin-left: 5px;
 }
 
 #discord-function {
@@ -238,11 +229,6 @@ button {
     margin-left: 5px;
 }
 
-#youtube {
-    display: none;
-    font-size: 32px;
-    font-family: sans-serif;
-}
 
 .transition{ 
     transition: 1s;
@@ -368,18 +354,6 @@ button:hover {
     background-color: white;
 }
 
-#ttv { 
-    display: none;
-    width: 120px;
-font-size: 32px;
-font-family: sans-serif;
-border: 3px solid white;
-border-radius: 20px;
-background-color: purple;
-color: white;
-position: relative;
-left: 50%;
-}
 
 @media (max-width: 375px) {
   h2 {
@@ -401,6 +375,8 @@ left: 50%;
   }
 
   body {
+      background-attachment: fixed;
+      background-repeat: no-repeat;
       width: 1000px;
   }
 
@@ -446,3 +422,77 @@ h1 {
     width: 300px;
     position: relative;
 }
+
+#navigation {
+    float: left;
+    background: red;
+    background-attachment: fixed;
+    display: none;
+    width: 1554px;
+    height: 72px;
+    word-spacing: 10px;
+}
+
+#navigaiton-bar {
+    border: 3px solid black;
+    background: red;
+    width: 100%;
+    height: 72px;
+}
+
+#home-link {
+    float: left;
+    border: 3px solid red;
+}
+
+#support-link {
+    border: 3px solid red;
+    float: left;
+    position: relative;
+    right: -5px;
+}
+
+#newsletter-link {
+    border: 3px solid red;
+    float: left;
+    position: relative;
+    right: -10px;
+}
+
+#about-link {
+    border: 3px solid red;
+    float: left;
+    position: relative;
+    right: -15px;
+}
+
+#close-link {
+    float: right;
+}
+
+#navigation a {
+    border: none;
+    position: relative;
+    top: -2px;
+}
+
+@media (width: 1920px) {
+    body {
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        max-width: 1920px;
+    }
+}
+
+@media (width: 2160px) {
+    body {
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        max-width: 2160px;
+    }
+}
+
+body {
+    max-width: 1920px;
+}
+

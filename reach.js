@@ -27,12 +27,13 @@ function discordFunction() {
     document.getElementById("twitch-function").style.top = "-20px";
 }
 function enableNav() {
-    document.getElementById("navbar").style.display = "block";
-    document.getElementById("navbar").style.width = "100%";
+    document.getElementById("navigation").style.display = "block";
+    document.getElementById("nav").style.display = "none";
 }
 
 function closeNav() {
-    document.getElementById("navbar").style.width = "0";
+    document.getElementById("navigation").style.display = "none"
+    document.getElementById("nav").style.display = "block";
 }
 
 function youtubeFunction() {
@@ -84,3 +85,6 @@ function darkMode() {
     x.classList.toggle("dark-mode");
 }
 
+if (document.body.style.background === "white") {
+    alert("CHANGE IT BACK");
+}
