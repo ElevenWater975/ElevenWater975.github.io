@@ -104,3 +104,26 @@ function siteContinue() {
     document.getElementById("select-all").style.display = "block";
     document.getElementById("warning").style.display = "none";
 }
+
+function turnSidebar() {
+    var y = document.querySelector(".container");
+    var x = document.querySelector(".alltext");
+    document.getElementById("sidebar").style.display = "block";
+    document.getElementById("navtop").style.display = "none";
+    document.querySelector("p").style.textAlign = "right";
+    document.getElementById("nav").style.display = "none"; 
+    if (document.getElementById("sidebar").style.display = "block") {
+        x.classList.add("movetext");
+        y.classList.add("movetext");
+} else {
+    x.classList.remove("movetext");
+    y.classList.remove("movetext");
+}
+}
+
+function closeSidebar() {
+    document.getElementById("sidebar").style.display = "none";
+    document.getElementById("nav").style.display = "block";
+    document.querySelector(".container").style = "margin-left: 0;";
+    document.querySelector(".alltext").style = "margin-left: 0;";
+}

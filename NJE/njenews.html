@@ -13,18 +13,20 @@
 <body>
     <div id="greentext">
         <div id="darkmode">
+            <h1 id="egg">You clicked so many times that everything dissappeared into the darkness except for this</h1>
             <a id="navbaropen" class="nav" onclick="openNav()">
                 <div id="one"></div>
                 <div id="two"></div>
                 <div id="three"></div>
 
-                <div id="links">
-                    <ul>
-                        <li><a href="https://elevenwater975.github.io/nje">NJE home page</a></li>
-                        <li><a href="https://elevenwater975.github.io">Main home page</a></li>
-                        <li><a href="#">BlockPro page (coming soon)</a></li>
-                        <li><button onclick="closeNav()">Close links</button></li>
-                    </ul>
+                <div id="links" style="background: linear-gradient(rgb(22, 22, 122), rgb(36, 36, 187), rgb(18, 18, 100)); height: 30px; color: white;">
+                    <table>
+                        <td><a href="https://elevenwater975.github.io">Home page</a></td>
+                        <td><a href="https://elevenwater975.github.io/NJE/nje">Home page for NJE</a></td>
+                        <td><a href="https://elevenwater975.github.io/main/support">Support page</a></td>
+                        <td><a href="https://elevenwater975.github.io/main/newsletter">Newsletter</a></td>
+                        <td><a href="#" id="close-nav" onclick="closeNav()">X</a></td>
+                    </table>
                 </div>
             </a>
             <br>
@@ -44,7 +46,7 @@
                 }
             </script>
             <div id="settings" class="settings-nav">
-                <button id="darkbutton" onclick="darkMode(), buttonColor(), borderChange()">Dark Mode</button>
+                <button id="darkbutton" onclick="darkMode(), buttonColor(), borderChange(), egg()">Dark Mode</button>
                 <button id="greentext" onclick="changeText()">Lime Text (used for dark mode only)</button>
                 <button id="skybluetext" onclick="skyBlueText()">Sky Blue text. (Again use only on dark mode)</button>
                 <button id="move-image" onclick="moveImage()">Move image to corner</button>

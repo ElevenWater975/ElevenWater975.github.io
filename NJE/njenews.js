@@ -94,3 +94,15 @@ function scrollFunction() {
         document.getElementById('video').className = "";
     }
 }
+
+function closeNav() {
+    document.getElementById("links").style.display = "none";
+}
+
+var click = 0;
+function egg() {
+    click++;
+    if (click === 20) {
+        document.querySelector("p").style.display = "none";
+    }
+}
