@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News 1</title>
+</head>
+<style>
+body {
+    font-family: sans-serif;
+    background: black;
+    color: white; 
+}
+
+h2 {
+    font-size: 4em;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+p {
+    font-size: 3em;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+#links {
+    display: grid;
+    color: lime;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.table-row-1 {
+    grid-column: 1 / 2;
+}
+
+a {
+    text-decoration: none;
+    color: lime;
+    font-family: sans-serif;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.light-mode {
+    background: white;
+    color: black;
+}
+
+.light-mode a {
+    color: purple;
+}
+
+.light-mode #lightmode {
+    background: skyblue;
+}
+
+.dark-mode {
+    background: black;
+    color: white;
+}
+
+.dark-mode #darkmode {
+    background: skyblue;
+}
+
+.dimmed-mode {
+    background: rgb(69, 69, 69);
+    color: white;
+}
+
+.dimmed-mode #dimmedmode {
+    background: skyblue;
+}
+
+html {
+    height: 900px;
+}
+
+footer {
+    background: gray;
+    color: black;
+    padding: 30px;
+    position: relative;
+    bottom: -500px;
+}
+
+#MITLICENSE {
+    float: right;
+    position: realtive;
+    right: -50%;
+}
+</style>
+<script>
+    function lightMode() {
+        var x = document.body;
+        x.classList.add("light-mode");
+        x.classList.remove("dark-mode");
+        x.classList.remove("dimmed-mode");
+    }
+
+    function darkMode() {
+        var x = document.body;
+            x.classList.add("dark-mode");
+            x.classList.remove("light-mode");
+            x.classList.remove("dimmed-mode");
+    }
+
+    function dimmedMode() {
+    var x = document.body;
+        x.classList.add("dimmed-mode");
+        x.classList.remove("dark-mode");
+        x.classList.remove("light-mode");
+    }
+</script>
+<body>
+    <header>
+        <tbody id="links">  
+            <tr class="lightmode"><button id="lightmode" onclick="lightMode()">Light Mode</button></tr>
+            <tr class="darkmode"><button id="darkmode" onclick="darkMode()">Dark Mode</button></tr>
+            <tr class="dimmedmode"><button id="dimmedmode" onclick="dimmedMode()">Dimmed Mode</button></tr>
+            <tr class="table-row-1"><a href="#">Newsletter #3</a></tr>
+            <tr class="table-row-2"><a href="#">Newsletter #4</a></tr>
+            <tr class="table-row-3"><a href="#">More updates</a></tr>
+        </tbody>
+    <div class="container">
+    <div class="news-3">
+        <h2>6/25/2021 Newsletter page created</h2>
+        <p>Eleven created the newsletter page. Find out what is happening with the site when you look on this page.</p>
+    </div>
+</header>
+<footer>
+    <tbody class="footer-a">
+    <table id="footer-1">
+    <td><a href="https://elevenwater975.github.io">Home page</a></td>
+    <td><a href="https://elevenwater975.github.io/main/support">Support</a></td>
+    <td><a href="https://elevenwater975.github.io/about">About</a></td>
+    <td id="MITLICENSE">&copy; 2021 ElevenWater975</td>
+    </table>
+</footer>
+</tbody>
+</div>
+</body>
+</html>

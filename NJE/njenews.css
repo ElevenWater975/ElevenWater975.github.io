@@ -429,3 +429,17 @@ footer {
     position: relative;
     z-index: 1;
 }
+
+#Minecraft {
+font-family: sans-serif;
+border: 3px solid black;
+border-radius: 15px;
+background-attachment: fixed;
+background-repeat: no-repeat;
+}
+
+body {
+    max-width: 1920px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}

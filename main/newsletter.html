@@ -16,18 +16,20 @@
                 <div id="one"></div>
                 <div id="two"></div>
                 <div id="three"></div>
-                <div id="links">
-                    <img src="New Project.jpg">
-                    <a href="https://youtube.com/nyrangerfan88">YouTube</a>
-                    <a href="https://elevenwater975.github.io">Home page</a>
-                    <a href="https://github.com/ElevenWater975/ElevenWater975.github.io">Github repo</a>
-                    <a href="https://elevenwater975.github.io/support">Support page</a>
-                    <a href="https://discord.gg/jGhGjYW4UW">Discord</a>
-                    <a href="twitch.tv/elevenplayz12">twitch channel</a>
-                    <button id="closenav" onclick="closeNav()">Close Navigation (because I dont know how to close
-                        navigation when the 3 lines button is clicked again)</button>
+                <div id="links" style="background: blue; color: white; width: 100%; height: 30px; float: left; position: relative;">
+                    <tbody>
+                    <table id="navigation" style="color: white; position: relative; top: -1px;">
+                        <td><a href="https://elevenwater975.github.io">Home</a></td>
+                        <td><a href="https://elevenwater975.github.io/main/support">Support page</a></td>
+                        <td><a href="https://elevenwater975.github.io/about">About</a></td>
+                        <td><a href="#" id="closenav" onclick="closeNav()" style="float: right; position: relative;">X</a></td>
+                    </table>
+                    </tbody>
                 </div>
             </a>
+            <br>
+            <br>
+            <br>
             <div class="container">
                 <h1>Official website newsletter</h1>
                 <p>Read our official newsletter to keep you updated on what is happening with the website!</p>
@@ -65,7 +67,7 @@
                     </div>
                     <div class="more-news">
                         <h2>More updates?</h2>
-                        <p>There will be more updates coming your way!</p>
+                        <p>There will be more updates coming your way! Stay tuned and check out the <a href="https://github.com/elevenwater975.github.io">Github repository</a> for more information.</p>
                     </div>
                     <div class="news-1">
                         <h2>
@@ -86,18 +88,8 @@
                         </p>
                     </div>
                     <br>
-                    <div class="news-3">
-                        <h2>6/25/2021 Newsletter page created</h2>
-                        <p>Eleven created the newsletter page.</p>
-                    </div>
-                    <div class="news-4">
-                        <h2>6/24/2021 1.2.1-alpha was released</h2>
-                        <p>Eleven has released 1.2.1-alpha and added some new features such as the 3 lines button Which
-                            is basically just what you see on other websites to open something like a navigation bar or
-                            menu.
-                            We also fixed some bugs.
-                        </p>
-                    </div>
+                    
+                   
                 </div>
                 <script>
                     //Functions working normally
@@ -119,16 +111,18 @@
                        dark.classList.toggle('darkmode');
 
                     }
+                    
+                    function appear() {
+                        document.getElementById("links").style.display = "block";
+                    }
+
+                    function closeNav() {
+                        document.getElementById("links").style.display = "none";
+                    }
                 </script>
                 <footer>
                     <br>
                     <br>
-                    <div class="more-links">
-                        <a href="https://reddit.com/r/BlockPro">BlockPro reddit</a>
-                        <a href="github.com">Hosted with github</a>
-                        <a href="https://youtube.com/nyrangerfan88">Youtube chanel</a>
-                        <a href="twitch.tv/elevenplayz12">Twitch channel</a>
-                    </div>
 
                 </footer>
             </div>
