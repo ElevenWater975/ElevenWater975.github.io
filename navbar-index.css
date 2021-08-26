@@ -13,6 +13,7 @@
     }
 }
 .navtop {
+    height: 60px;
     background-color: rgb(77, 74, 74);
     border: 3px solid gray;
     border-radius: 5px;
@@ -47,8 +48,10 @@ li {
 }
 
 .navtop a:hover {
-    background-color: hotpink;
+    background-color: green;
     font-weight: bold;
+    color: white;
+    transition: 1s;
 }
 
 .navtop a.active {
@@ -62,6 +65,7 @@ li {
 
 #top {
     display: none;
+    height: 60px;
 }
 .sidenav {
     height: 100%;

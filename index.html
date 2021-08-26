@@ -12,6 +12,20 @@
 <title>Eleven's Site</title>
 
 <body>
+    <div id="top" class="navtop">
+        <ul>
+            <button id="moveside" onclick="moveside()">Move navigation to the side</button>
+            <li><a href="javascript:void(0)" id="closetop" onclick="closeTop()">X</a></li>
+            <li><a href="https://elevenwater975.github.io/support">Support page</a></li>
+            <li><a class="twitchtop" href="https://twitch.tv/elevenplayz12">Twitch</a></li>
+            <li><a class="youtubetop" href="https://youtube.com/nyrangerfan88">Youtube</a></li>
+            <li><a href="https://elevenwater975.github.io/newsletter">Newsletter (Open alpha)</a></li>
+            <li><a href="#">About (coming soon)</a></li>
+        </ul>
+    </div>
+    <div id="alertdimmed">
+        <p>Warning: this function has bug(s). Continue anyways? <a href="#" onclick="dimmedMode()">Yes</a>|<a href="#" onclick="disableAlert()">No</a></p>
+    </div>
     <div id="warning">
         <h1>!</h1>
     <p>This page is not recommended for mobile users. Soon, we may have a mobile version out for mobile users.</p>
@@ -20,28 +34,31 @@
     <div id="everything" style="text-align: center;">
         <div id="lighttheme">
             <div id="dimmedtheme">
+                <div id="settings-wrap" class="settings-wrap">
                 <button id="settings-btn" onclick="openSettings()">Settings</button>
+            </div>
                 <div id="settings">
-                    <ul>
-                    <li><button id="exit-settings" onclick="closeSettings()">X</button></li>
-                    <br>
-                    <li><button id="darkModeHome" style="width: 266px;" onclick="darkMode()">Dark mode (work in progress)</button></li>
-                    <li><button id="lightModeHome" style="border: none; width: 266px;" onclick="lightMode()">Bright mode (Idk why though)</button></li>
-                    <li><button id="dimmedmodehome" onclick="dimmedMode()" style="float: left;">Dimmed background
-                        (WIP)</button></li>
-                    </ul>
+                    <table>
+                    <button id="exit-settings" onclick="closeSettings()">X</button>
+                    <button id="darkModeHome" style="width: 266px;" onclick="darkMode()">Dark mode (work in progress)</button>
+                    <button id="lightModeHome" style="border: none; width: 266px;" onclick="lightMode()">Bright mode (Idk why though)</button>
+                    <button id="dimmedmodehome" onclick="alertDimmed()" style="float: left;">Dimmed background
+                        (WIP)</button>
+                    </table>
                 </div>
                 <script>
                     function darkMode() {
                         var dark = document.body;
                         dark.classList.toggle('darktheme');
                         document.body.color = "white";
+                        dark.classList.remove("dimmedtheme");
                     }
                     //Why did I add this? What am I doing?
                     //I am kinda crazy
                     function lightMode() {
                         var lightTHEME = document.body;
                         lightTHEME.classList.toggle("lighttheme");
+                        lightTHEME.classList.remove("dimmedtheme");
                         console.log("Some person pressed the light mode button. Are they ok?")
                         const p = document.createElement('p');
                         p.innerText = "What the-";
@@ -63,17 +80,7 @@
                 <div id="box">
                     <br>
                     <br>
-                    <div id="top" class="navtop">
-                        <ul>
-                            <button id="moveside" onclick="moveside()">Move navigation to the side</button>
-                            <li><a href="javascript:void(0)" id="closetop" onclick="closeTop()">X</a></li>
-                            <li><a href="https://elevenwater975.github.io/support">Support page</a></li>
-                            <li><a class="twitchtop" href="https://twitch.tv/elevenplayz12">Twitch</a></li>
-                            <li><a class="youtubetop" href="https://youtube.com/nyrangerfan88">Youtube</a></li>
-                            <li><a href="https://elevenwater975.github.io/newsletter">Newsletter (Open alpha)</a></li>
-                            <li><a href="#">About (coming soon)</a></li>
-                        </ul>
-                    </div>
+
                     <header id="main-header">
                         <div class="container">
 
@@ -109,7 +116,7 @@
                                 </div>
                             </div>
                         </div>
-
+                        <div id="maintext">
                         <a id="open-nav" onclick="openNav()">
                         <section id="responsivefix">
                             <span class="open">
@@ -271,6 +278,15 @@
     </section>
     </div>
     </div>
+</div>
+    <footer class="external-text">
+        <table>
+            <td>nje.eleven34@icloud.com</td>
+            <br>
+            <td>nje.eleven34@outlook.com</td>
+            &copy; 2021 ElevenWater975 
+        </table>
+    </footer>
 </div>
 </body>
 </html>

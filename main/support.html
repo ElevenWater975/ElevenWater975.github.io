@@ -11,10 +11,22 @@
 <!--There is some sort of problem with the border-->
 
 <body>
+    <div id="top" class="navtop">
+        <ul>
+            <button id="moveside" onclick="moveside()">Move navigation to the side</button>
+            <li><a href="javascript:void(0)" id="closetop" onclick="closeTop()">X</a></li>
+            <li><a href="https://elevenwater975.github.io/about">About</a></li>
+            <li><a class="twitchtop" href="https://twitch.tv/elevenplayz12">Twitch</a></li>
+            <li><a class="youtubetop" href="https://youtube.com/nyrangerfan88">Youtube</a></li>
+            <li><a href="https://elevenwater975.github.io/newsletter">Newsletter (Open alpha)</a></li>
+            <li><a href="#">About (coming soon)</a></li>
+        </ul>
+    </div>
     <div id="darkmode">
         <div class="container">
             <section id="navbar">
                 <div id="sidebar" class="sidenav">
+                    <button id="movetop" onclick="moveTop()">Move navigation to the top</button>
                     <a href='javascript:void(0)' class="closeNav" onclick="closeNav()">&times;</a>
                     <a href="https://elevenwater975.github.io/support">Support page</a>
                     <a href="https://youtube.com/nyrangerfan88">Youtube</a>
@@ -62,11 +74,7 @@
             </div>
             <button class="enableQna">Enable QNA</button>
             <button class="enableNJEQna" onclick="NjeQna()">Enable NJE QNA</button>
-            <div class="QNA">
-                <div id="NJEQna">
-                    <h2>Q:</h2>
-                    <p>A:</p>
-                </div>
+            <div class="QNA" style="color: white;">
                 <!--Answering users questions here-->
                 <p>Q: When will the site go out of alpha?</p>
                 <p>A: Not sure, but I am thinking of going out of alpha in the next 5 months maybe.</p>
@@ -102,7 +110,7 @@
         <br>
     </div>
     <p>Goodbye now!</p>
-    <p>Running version 1.2.2-alpha learn more at <a
+    <p>Running version 1.2.3-alpha learn more at <a
             href="https://github.com/ElevenWater975/ElevenWater975.github.io">The original repository</a></p>
     </div>
     <div id="backToTop">
@@ -110,7 +118,10 @@
     </div>
     <script>
         //Thanks to w3schools for the tutorial on how to make a back to top button
-
+        function moveTop() {
+            document.getElementById("top").style.display = "block";
+            document.getElementById("sidebar").style.width = "0";
+        }
         mybutton = document.getElementById("myBtn");
         window.onscroll = function () { scrollFunction() };
 
@@ -166,7 +177,20 @@
         // I fixed the bug :)
 
         function enableNJEQna() {
-            document.getElementById("NJEQna").style.display = "block";
+            document.getElementById("NJEQna").style.display = "block"
+        }
+
+        function moveside() {
+            document.getElementById("top").style.display = "none";
+            document.getElementById("sidebar").style.width = "250px"
+            document.getElementById("sidebar").style.height = "100%"
+            document.getElementById("Main").style.marginLeft = "250px";
+            // Just in case some bug happens
+            if (document.getElementById("sidebar").style.width < "250px") {
+                document.getElementById("sidebar").style.width = "250px";
+            } else if (document.getElementById("sidebar").style.height < "100%") {
+                document.getElementById("sidebar").style.height = "100%";
+            }
         }
     </script>
 

@@ -21,6 +21,9 @@ function closeNav() {
     document.getElementById("sidebar").style.width = "0px";
     document.getElementById("main").style.marginLeft = "0px";
     document.getElementById("sidetext").style.display = "block";
+    document.getElementById("maintext").style = "margin-left: 0;";
+    document.getElementById("main-title").style = "margin-left: 0px; font-size: 4em;";
+    document.getElementById("main-logo").style = "position: relative; right: 0px;";
     topnav = false;
     console.log(topnav);
     if (document.getElementById("sidebar").style.width === "250px" || document.getElementById("sidebar").style.width === "100%") {
@@ -32,6 +35,9 @@ function openNav() {
     document.getElementById("sidebar").style.width = "250px";
     document.getElementById("sidetext").style.display = "none";
     document.getElementById('external-links').style.display = "none";
+    document.getElementById("maintext").style = "margin-left: 250px";
+    document.getElementById("main-title").style = "margin-left: 250px; font-size: 64px;";
+    document.getElementById("main-logo").style = "position: relative; right: -260px;";
     topnav = true;
     console.log(topnav);
     if (document.getElementById("sidebar").style.width === "0" || document.getElementById("sidebar").style.display === "none") {
@@ -40,6 +46,8 @@ function openNav() {
         console.log(topnav);
     } else if (document.body.width === "3840px") {
         document.getElementById("sidebar").style.width = "500px";
+    } else if (document.getElementById("navbar").style.width = "250px") {
+        document.getElementById("maintext").style = "margin-left: 250px";
     }
 }
 
@@ -85,6 +93,9 @@ x.innerHTML = "Swapped text!";
      function opentop() {
          document.getElementById("top").style.display = "block";
          document.getElementById("sidebar").style.width = "0";
+         document.getElementById("maintext").style = "margin-left: 0;";
+         document.getElementById("main-title").style = "margin-left: 0px; font-size: 4em;";
+         document.getElementById("main-logo").style = "position: relative; right: 0px;";
      }
      function moveside() {
          // Move navigation bar back to the side.
@@ -92,6 +103,9 @@ x.innerHTML = "Swapped text!";
          document.getElementById("sidebar").style.width = "250px";
          document.getElementById('top').style.width = "0px";
          document.getElementById("bugbutton").style.display = "block";
+         document.getElementById("maintext").style = "margin-left: 250px";
+         document.getElementById("main-title").style = "margin-left: 250px; font-size: 64px;";
+         document.getElementById("main-logo").style = "position: relative; right: -260px;";
      }
 
      function bugFix() {
@@ -107,7 +121,16 @@ x.innerHTML = "Swapped text!";
 
      function dimmedMode() {
          var dim = document.body; 
-         dim.classList.toggle('dimmedtheme');
+         dim.classList.add('dimmedtheme');
+         document.getElementById("alertdimmed").style.display = "none";
+     }
+
+     function alertDimmed() {
+         document.getElementById("alertdimmed").style.display = "block";
+     }
+
+     function disableAlert() {
+         document.getElementById("alertdimmed").style.display = "none";
      }
 
 function addBorderIfDarkMode() {

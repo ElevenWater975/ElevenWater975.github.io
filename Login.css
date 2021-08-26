@@ -189,3 +189,12 @@ footer {
     background-color: black;
     color: white;
 }
+
+#caps-warning {
+    display: none;
+}
+
+#login {
+    position: relative;
+    right: -30%;
+}

@@ -1,6 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
-
+body {
+    background: white;
+    transition: 1s;
+}
 
 @media screen and (min-width: 375px) {
     * {
@@ -906,10 +909,21 @@ div#license {
     right: -323px;
 }
 
-#settings-btn {
+.settings-wrap button {
+    opacity: 0.6;
     width: 320px;
-    background: white;
+    background: orange;
     float: right;
+    transition: 1s;
+}
+
+#settings-btn:active {
+   background: skyblue; 
+}
+
+.settings-wrap button:hover {
+    opacity: 1;
+    transition: 1; 
 }
 
 .open-close-settings {
@@ -1141,9 +1155,25 @@ button#darkmodehome {
     }
 
     div#settings {
+        margin-bottom: -100px;
         position: relative;
-        bottom: -40px;
+        bottom: -150px;
+        z-index: -5px;
     }
+}
+
+#settings {
+    position: relative;
+    bottom: -50px;
+}
+
+#settings button {
+    opacity: 0.6;
+    transition: 1s;
+}
+
+#settings button:hover {
+    opacity: 1;
 }
 
 @media (width: 414px) {
@@ -1333,3 +1363,16 @@ button#darkmodehome {
     }
 }
 
+#alertdimmed {
+    display: none;
+    width: 700px;
+    background: rgb(206, 206, 46);
+    opacity: 0.8;
+    padding: 24px 48px;
+    position: relative;
+    right: -30%;
+}
+
+#top {
+    position: fixed;
+}
