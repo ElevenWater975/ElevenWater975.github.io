@@ -73,7 +73,28 @@
                     nje.eleven34@outlook.com</p>
             </div>
             <button class="enableQna">Enable QNA</button>
+            <button class="enableProblems" onclick="enableProblem()">Problems and solutions</button>
+            <div id="problems">
+            <div class="problem-1">
+                <button id="closeproblems" onclick="closeProblems()">&times;</button>
+                <button class="security" id="security" onclick="enableSecurityIssues()">What do I do if I experience a security issue?</button>
+                <br>
+                <button class="bugs-and-issues" id="bugs-issues" onclick="bugsIssues()">Why are there bugs that I can easily spot but Eleven can't because Elevens is kinda bad at coding?</button>
+                <br>
+                <button class="mobile-help" id="mobile-help" onclick="enableMobileHelp()" style="opacity: 0.69; padding: 16px 32px; background: wheat; transition: 0.8s; transform: scale(0.90); position: relative; z-index: 1;">Why does most of the site look like garbage on mobile?</button>
+            </div>
+        </div>
             <button class="enableNJEQna" onclick="NjeQna()">Enable NJE QNA</button>
+            <div class="NJEQNA" style="color: white">
+                <p>Q: What is NJE</p>
+                <p>A: NJE is a gaming clan. Kinda like FaZe or TSM or other popular gaming clans out there</p>
+                <br>
+                <p>Q: What does NJE stand for?</p>
+                <p>A: NJE stands for: Robo<strong>Nick</strong> <strong>Jake</strong> <strong>Eleven (DAS ME!) </strong></p>
+                <br>
+                <p>Q: Do we have a youtube channel?</p>
+                <p>A: yes we do! We are trying to post a little more frequently then we used to.</p>
+            </div>
             <div class="QNA" style="color: white;">
                 <!--Answering users questions here-->
                 <p>Q: When will the site go out of alpha?</p>
@@ -112,6 +133,7 @@
     <p>Goodbye now!</p>
     <p>Running version 1.2.3-alpha learn more at <a
             href="https://github.com/ElevenWater975/ElevenWater975.github.io">The original repository</a></p>
+            <div id="MITLICENSE"><p></p>&copy; 2021 ElevenWater975</div>
     </div>
     <div id="backToTop">
         <button onclick="topFunction()" id="myBtn" title="Go to top">To the Top</button>
@@ -191,6 +213,28 @@
             } else if (document.getElementById("sidebar").style.height < "100%") {
                 document.getElementById("sidebar").style.height = "100%";
             }
+        }
+
+        function enableSecurityIssues() {
+            var y = document.getElementById("security");
+            if (y.innerHTML === "What do I do if I experience a security issue?") {
+                y.innerHTML = "Contact the owner of the page at nje.eleven34@outlook.com . We actually have a security policy over at our github repo";
+            }
+        }
+
+        function bugsIssues() {
+            var z = document.getElementById("bugs-issues");
+            z.innerHTML = "Contact me at nje.eleven34@outlook.com or post an issue over at the github repository."
+        }
+
+        function enableProblem() {
+            var x = document.getElementById("problems");
+            x.style.display = "block";
+        }
+
+        function enableMobileHelp() {
+            var w = document.getElementById("mobile-help");
+            w.innerHTML = "Wait you use mobil- I mean Well it looks bad because this site is not supported for mobile users. But we are making a mobile vesion of the site (suggested by Perf)"
         }
     </script>
 
