@@ -905,7 +905,7 @@ div#license {
     float: right;
     width: 320px;
     position: relative;
-    bottom: -31px;
+    bottom: -60px;
     right: -323px;
 }
 
@@ -1375,4 +1375,9 @@ button#darkmodehome {
 
 #top {
     position: fixed;
+}
+
+#box2 {
+    position: relative;
+    left: -25%;
 }

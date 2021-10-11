@@ -231,6 +231,13 @@ a#sideyoutube {
     font-family: sans-serif;
 }
 
+a#sidereddit {
+    background-color: orange;
+    color: black;
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
 a:hover#sideyoutube {
     background-color: red;
     color: white;

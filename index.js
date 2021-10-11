@@ -166,7 +166,7 @@ function closeInformation() {
 
 
 function openSettings() {
-    document.getElementById("settings-btn").style.background = "skyblue";
+    document.getElementById("settings-btn").style.display = "block";
     document.getElementById("settings").style.display = "block";
     document.getElementById("main").style.display = "none";
     settings = true;
@@ -178,7 +178,7 @@ function openSettings() {
 }
 
 function closeSettings() {
-document.getElementById("settings-btn").style.background = "white";
+document.getElementById("settings-btn").style.display = "block";
 document.getElementById("settings").style.display = "none";
 document.getElementById("main").style.display = "block";
 settings = false;
