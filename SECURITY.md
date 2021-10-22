@@ -7,11 +7,12 @@ Here are the supported versions:
 | -------       | ------------------ |
 | v1.2.3-alpha  | :white_check_mark: |
 | v1.2.2-alpha  | :white_check_mark: |
-| v1.1.0-alpha   | :white_check_mark:
+| v1.2.1-alpha   | :white_check_mark:|
+| v1.2.0-alpha   | :white_check_mark:
 | v1.0.0-alpha   | ❌ |
 | v1.0.1-alpha   | ❌ |
-| v1.1.0-alpha  |  :white_check_mark: |
-| V1.0.2-alpha   | :white_check_mark: |
+| v1.1.0-alpha  |  ❌ |
+| V1.0.2-alpha   | ❌ |
 
 
 ## Reporting a Vulnerability
