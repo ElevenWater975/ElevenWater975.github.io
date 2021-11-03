@@ -30,5 +30,5 @@ has ANY of your information while on this site, please contact me at: nje.eleven
 
 ## Children under 13
 
-This site is a general audience and is not targeted towards anyone under the age of thirteen (13) (12 and under). To contact, login, or share any information on the site or on this github repository. You must be aged thirteen (13) or over. If you are under the age of thirteen (13) Please do not use this site or share any information with me. I did not make this rule. I am legally required by COPPA (Children's Online Privacy Protection Act).
+This site is a general audience and is not targeted towards anyone under the age of thirteen (13) (12 and under). To contact, login, or share any information on the site or on this github repository. You must be aged thirteen (13) or over. If you are under the age of thirteen (13) Please do not use this site or share any information with me. I did not make this rule. I am legally required by COPPA (Children's Online Privacy Protection Act). If you see a person under the age of thirteen (13) share any infromation on this site or github repository, please contact me at nje.eleven34@icloud.com or nje.eleven34@outlook.com.
 
