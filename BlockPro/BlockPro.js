@@ -39,3 +39,8 @@ function lightMode() {
 function appear() { 
 document.getElementById("links").style.display = "block";
 }
+
+function itsjind() {
+    alert("Player: Jind")
+}
+

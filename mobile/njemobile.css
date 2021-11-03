@@ -308,3 +308,11 @@ iframe {
     color: white;
     background: red;
 }
+
+div.founders {
+    background-color: black;
+    color: white;
+    width: 500px;
+    position: relative;
+    left: -5px;
+}

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
     background-image: url("2021-06-27_19.15.35.png");
     background-repeat: no-repeat;
@@ -6,7 +8,7 @@ body {
 
 h1 {
     font-size: 28px;
-    font-family: sans-serif
+    font-family: 'Press Start 2P', cursive;
 }
 
 p {
@@ -16,7 +18,7 @@ p {
 
 .page-title {
     font-size: 32px;
-    font-family: sans-serif;
+    font-family: 'Press Start 2P', cursive;
     display: block;
 }
 
@@ -54,6 +56,8 @@ transform: scale(1.15);
     background-color: red;
     color: white;
     text-align: center;
+    position: relative;
+    bottom: -200px;
 }
 
 img {
@@ -69,5 +73,11 @@ img {
     background-color: yellow;
     font-size: 20px;
     max-width: 250px;
+    text-align: center;
+}
+
+#rules-of-kitpvp {
+    background-color: rgb(89, 89, 221);
+    color: white;
     text-align: center;
 }

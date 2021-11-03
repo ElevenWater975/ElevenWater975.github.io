@@ -17,6 +17,7 @@ li {
     font-family: sans-serif;
     color: black;
     text-align: center;
+    list-style-type: none;
 }
 
 #MIT-License {
