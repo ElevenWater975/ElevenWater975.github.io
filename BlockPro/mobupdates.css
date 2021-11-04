@@ -1,10 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 body {
-    background-color: black;
+    background-size: cover;
+    background-image: url("2021-06-27_19.14.23.png");
+    background-repeat: no-repeat;
+    height: 1080px;
 }
 
 h1 {
     font-size: 38px;
-    font-family: sans-serif;
+    font-family: 'Press Start 2P', cursive;
     text-align: center;
 }
 
@@ -14,21 +19,24 @@ p {
 }
 
 #main-text {
-    text-align: center;
     position: relative;
+    font-family: 'Press Start 2P', cursive;
+}
+
+#main-text p {
+    font-family: 'Press Start 2P', cursive;
 }
 
 #information {
 font-weight: lighter;
 float: right;
-max-width: 300px;
+max-width: 392px;
 border: 3px solid black;
 border-radius: 25px;
 background-color: yellow;
 font-family: Impact;
-color: black;
 position: relative;
-left: -15px;
+left: -20px;
 }
 #strategies {
     display: block;
@@ -45,7 +53,6 @@ a {
 }
 
 .image-wrap {
-    background-image: url("2021-06-27_19.14.23.png");
     background-size: cover;
     width: 1920px;
     height: 1060px;
@@ -55,6 +62,7 @@ a {
 
 #main-text {
     background-color: black;
+    width: 300px;
     background-size: cover;
     padding: 15px;
     margin: 0px;
@@ -83,10 +91,18 @@ a {
     background-color: yellow;
 }
 
-#more-stuff img:hover {
+img:hover {
     transform: scale(1.07);
-    box-shadow: 10px 10px 7px #000;
-}
+    transform: rotate(0deg);
+    transition: 1s;
+    animation: zoom-in-out 1s infinite;
+    }
+
+    @keyframes zoom-in-out {
+        50% {
+            transform: scale(1.10);
+        }
+    }
 
 #more-stuff {
     position: relative;
@@ -98,8 +114,7 @@ a {
 }
 
 a:hover {
-    font-size: 28px;
-    text-shadow: 2px 2px 1px #000;
+    text-shadow: 1px 1px 1px #000;
     font-family: sans-serif;
     color: blue; 
 }
