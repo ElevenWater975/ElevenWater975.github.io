@@ -97,14 +97,7 @@ li a {
     color: black;
 }
 
-footer a {
-    display: flex;
-    float: left;
-    text-align: center;
-    font-family: sans-serif;
-    background-attachment: fixed;
-    width: 400px;
-}
+
 #myBtn {
     background-color: red;
     position: fixed;
@@ -203,10 +196,6 @@ section {
     display: block;
 }
 
-footer {
-    color: #343534;
-    border: none;
-}
 #external a{
     color: white;
     text-align: center;
@@ -1349,4 +1338,27 @@ display: flex;
 
 .row div.col-md-4 {
     margin: 20px;
+}
+
+#footer-links {
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+#footer-links a {
+    margin: 20px;
+    color: black;
+}
+
+footer#external-links {
+    background-color: white;
+}
+
+#footer-links a:hover {
+color: black;
+text-shadow: none; 
+}
+
+#footer-links a:visited {
+    color: black;
 }
