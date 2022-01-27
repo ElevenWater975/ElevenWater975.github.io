@@ -1,6 +1,12 @@
 var count = 1;
+var audio = new Audio("Darkmode.mp3")
 let topnav = document.getElementById("top");
 topnav = false;
+audio.oncanplaythrough = function() {
+    audio.play();
+}
+
+audio.loop = false;
 
 let settings = document.getElementById("settings");
 settings = true;
@@ -9,6 +15,9 @@ const errorCatch = (error) => {
 console.error("An internal error has occured");
 }
 
+function disabled() {
+    alert("This feature is temporarily disabled.")
+}
 function buttonSupport() {
     var x = location.href = "https://elevenwater975.github.io/support";
 }
@@ -90,6 +99,10 @@ x.innerHTML = "Swapped text!";
          document.getElementById("egg") = document.body.innerHTML.repalce("p", "hello im an easter egg");
      }
 
+     function disableSounds() {
+         audio.pause();
+         button.disabled = true;
+     }
      function opentop() {
          document.getElementById("top").style.display = "block";
          document.getElementById("sidebar").style.width = "0";

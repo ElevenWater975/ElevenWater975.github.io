@@ -403,6 +403,10 @@ twitch-information {
     font-weight: normal;
 }
 
+.darktheme ul {
+    color: white;
+}
+
 .darktheme p {
     color: white;
 }
@@ -464,6 +468,7 @@ darktheme a {
     #site-volunteers {
         width: 550px;
         height: auto;
+        position: relative;
         }
 
         #site-volunteers p {
@@ -760,13 +765,6 @@ a#main {
         left: -50px;
     }
 
-    div#site-volunteers {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        position: relative;
-    }
-
     #sidetext {
         display: none;
         position: relative;
@@ -828,11 +826,15 @@ div#license {
 }
 
 .settings-wrap button {
-    opacity: 0.6;
     width: 320px;
     background: orange;
     float: right;
     transition: 1s;
+}
+
+.settings-wrap button:hover {
+     outline: black;
+     outline-style: double;
 }
 
 #settings-btn:active {
@@ -1305,7 +1307,7 @@ button#darkmodehome {
     width: 1920px;
     height: 400px;
     position: relative;
-    left: -500px;
+    left: 500px;
     bottom: -200px;
 }
 

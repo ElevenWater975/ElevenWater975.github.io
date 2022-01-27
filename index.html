@@ -12,12 +12,22 @@
 <title>Eleven's Site</title>
 
 <body>
-    <div id="top" class="navtop">
+    <ul id="topnav1">
+    <li><a href="https://ElevenWater975.github.io/support" style="color: blue;">Support</a></li>
+    &nbsp;
+    &nbsp;
+    <li><a href="https://reddit.com/r/ElevensSite" style="color: blue;">Reddit</a></li>
+    &nbsp;
+    &nbsp;
+    <li><a href="https://elevenwater975.github.io/newsletter" style="color: blue;">Newsletter</a></li>
+</ul>
+    <div id="top" class="navtop" style="height: 80px;">
         <ul>
             <button id="moveside" onclick="moveside()">Move navigation to the side</button>
             <li><a href="javascript:void(0)" id="closetop" onclick="closeTop()">X</a></li>
             <li><a href="https://elevenwater975.github.io/support">Support page</a></li>
             <li><a class="twitchtop" href="https://twitch.tv/elevenplayz12">Twitch</a></li>
+            <li><a class="reddittop" href="https://reddit.com/r/ElevensSite">Reddit</a></li>
             <li><a class="youtubetop" href="https://youtube.com/nyrangerfan88">Youtube</a></li>
             <li><a href="https://elevenwater975.github.io/newsletter">Newsletter (Open alpha)</a></li>
             <li><a href="#">About (coming soon)</a></li>
@@ -35,14 +45,20 @@
         <div id="lighttheme">
             <div id="dimmedtheme">
                 <div id="settings-wrap" class="settings-wrap">
-                <button id="settings-btn" onclick="openSettings()">Settings</button>
+                <button id="settings-btn" class="btn btn-primary" style="position: relaitve; left: -30px;" onclick="openSettings()">Settings</button>
             </div>
-                <div id="settings">
+            <br>
+            <br>
+                <div id="settings" style="position: relative; ">
                     <table>
                     <button id="exit-settings" onclick="closeSettings()">X</button>
-                    <button id="darkModeHome" style="width: 266px;" onclick="darkMode()">Dark mode (work in progress)</button>
-                    <button id="lightModeHome" style="border: none; width: 266px;" onclick="lightMode()">Bright mode (Idk why though)</button>
-                    <button id="dimmedmodehome" onclick="alertDimmed()" style="float: left;">Dimmed background
+                    <br>
+                    <br>
+                    
+                    <button id="darkModeHome" style="width: 266px;" onclick="darkMode(), audio.play()">Dark mode (work in progress)</button>
+                    <button id="lightModeHome" style="border: none; width: 266px;" onclick="lightMode(), audio.play();">Bright mode (Idk why though)</button>
+                    <button id="dimmedmodehome" onclick="alertDimmed()" style="float: left;">Dimmed background</button>
+                        <button id="disablesounds" onclick="disableSounds()" style="float: left;">Disable sound</button>
                         (WIP)</button>
                     </table>
                 </div>
@@ -104,7 +120,7 @@
                             </div>
                         </div>
                         <div id="maintext">
-                        <a id="open-nav" onclick="openNav()">
+                        <a id="open-nav" onclick="disabled()">
                         <section id="responsivefix">
                             <span class="open">
                                 <div id="one"></div>
@@ -185,7 +201,7 @@
 }
                     </style>
                     <section id="volunteers">
-                        <div id="site-volunteers"style="background-color: rgb(73, 73, 218); width: 1920px; height: 400px; position: relative; bottom: -200px;">
+                        <div id="site-volunteers"style="background-color: rgb(73, 73, 218); width: 1920px; height: 400px; position: relative; bottom: -200px; left: -500px;">
                             <h1>Site Volunteers</h1>
                             <p>We do not have any site volunteers yet. Eleven is the only one working on the site (No my
                                 site is not a business)</p>
@@ -196,6 +212,12 @@
                                 <p>We may be letting users help with the site</p>
                                 <p>Volunteer roles are not full time or part time jobs. We are not a company.</p>
                             </div>
+                        </div>
+                    </section>
+                    <section id="twitch">
+                        <div id="twitch-streaming" style="position: relative; bottom: -200px; align-items: right; text-align: right;">
+                            <h1>I stream on Twitch!</h1>
+                            <p>To those who don't know, I now stream on twitch. My twitch username is <a href="https://twitch.tv/elevenplayz12">ElevenPlayz12</a></p>
                         </div>
                     </section>
                         </footer>
@@ -220,9 +242,9 @@
                     <p>Don't know where to go? Try some of these external links</p>
                     <a href="#">Contact: nje.eleven34@outlook.com</a>
                     <a href="#">2nd contact: nje.eleven34@icloud.com</a>
-                    <a href="https://youtube.com/nyrangerfan88" target="_blank">YouTube</a>
-                    <a href="https://github.com/ElevenWater975/ElevenWater975.github.io" target="_blank">Site repository</a>
-                    <a href="https://twitch.tv/elevenplayz12" target="_blank">Twitch channel</a>
+                    <a href="https://youtube.com/nyrangerfan88" rel="noopener" target="_blank">YouTube</a>
+                    <a href="https://github.com/ElevenWater975/ElevenWater975.github.io" rel="noopener" target="_blank">Site repository</a>
+                    <a href="https://twitch.tv/elevenplayz12" rel="noopener" target="_blank">Twitch channel</a>
                     <br>
                     <br>
                    
@@ -243,19 +265,19 @@
     </div>
     </div>
 </div>
-<p id="version" style="font-size: 16px; position: relative; left: -46%;">v1.2.4-alpha</p>
+<p id="version">v1.2.4-alpha</p>
     <footer class="external-text">
-            &copy; 2021 ElevenWater975 
+            &copy; 2022 ElevenWater975 
             <br>
     </footer>
     <br>
     <br>
     <footer id="external-links">
-    <div class="footer-nav-links" style="height: 20px;">
+    <div class="footer-nav-links">
         <div id="footer-links">
-            <a href="https://github.com/elevenwater975/elevenwater975.github.io" target="_blank">Github</a>
-            <a href="https://discord.gg/zVEMQ3bQge" target="_blank">Discord</a>
-            <a href="https://github.com/ElevenWater975/ElevenWater975.github.io/blob/main/SECURITY.md" target="_blank">Security policy</a>
+            <a href="https://github.com/elevenwater975/elevenwater975.github.io" rel="noopener" target="_blank">Github</a>
+            <a href="https://discord.gg/zVEMQ3bQge" rel="noopener" target="_blank">Discord</a>
+            <a href="https://github.com/ElevenWater975/ElevenWater975.github.io/blob/main/SECURITY.md" rel="noopener" target="_blank">Security policy</a>
         </div>
     </div>
 </footer>

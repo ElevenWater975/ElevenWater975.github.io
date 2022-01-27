@@ -1,0 +1,19 @@
+.title {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.title h2 {
+    font-size: 36px;
+    font-family: sans-serif;
+}
+
+.title h1 {
+    font-size: 48px;
+    font-family: sans-serif;
+}
+
+#first-paragraph {
+    font-family: sans-serif;
+    font-size: 24px;
+}
