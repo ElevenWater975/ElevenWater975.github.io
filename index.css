@@ -469,6 +469,7 @@ darktheme a {
         width: 550px;
         height: auto;
         position: relative;
+        right: -400px;
         }
 
         #site-volunteers p {
