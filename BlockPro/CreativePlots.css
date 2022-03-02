@@ -1,19 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 .title {
-    font-family: sans-serif;
+    font-family: 'Press Start 2P', cursive;
     font-weight: bold;
 }
 
 .title h2 {
     font-size: 36px;
-    font-family: sans-serif;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .title h1 {
     font-size: 48px;
-    font-family: sans-serif;
+    font-family: 'Press Start 2P', cursive;
 }
 
 #first-paragraph {
     font-family: sans-serif;
     font-size: 24px;
+}
+
+#creative-plots {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: orangered; 
+}
+
+#grass-block {
+    width: 128px;
+    height: 128px;
+    position: relative;
+}
+
+#darkmode {
+    background-color: black;
+    width: 120px;
+    height: 60px;
+    color: white;
+    border-radius: 12px;
+    outline: gray;
+    font-weight: bold;
+    position: relative;
+    right: -970px; 
+    top: -100px;
+}
+
+.dark-mode {
+    background-color: rgb(41, 40, 40);
+    color: white;
 }

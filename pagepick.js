@@ -10,7 +10,7 @@ function nextPage() {
   document.getElementById('next-page').style.display = "none";
 }
 
-function goBack() {
+function goBackSix() {
     // Go back to the last page
     document.getElementById("page1").style.display = 'flex';
     document.getElementById('page2').style.display = 'none';
@@ -158,6 +158,11 @@ function goBackFour() {
 function goBackFive() {
     document.getElementById("winsix").style.display = "none";
     document.getElementById("winfive").style.display = "block";
+}
+
+function fix() {
+    document.getElemenentById("window6").style.display = "none";
+    document.getElementById("window1").style.displaY = "block";
 }
 
 function threeByThree() {

@@ -41,6 +41,9 @@
     <p>This page is not recommended for mobile users. Soon, we may have a mobile version out for mobile users.</p>
     <button id="continue" onclick="siteContinue()">Continue to the site</button>
 </div>
+<div id="mode">
+    <p1>Background: <span class="badge badge-dark">Dark</span></p1>
+</div>
     <div id="everything" style="text-align: center;">
         <div id="lighttheme">
             <div id="dimmedtheme">
@@ -55,31 +58,18 @@
                     <br>
                     <br>
                     
-                    <button id="darkModeHome" style="width: 266px;" onclick="darkMode(), audio.play()">Dark mode (work in progress)</button>
-                    <button id="lightModeHome" style="border: none; width: 266px;" onclick="lightMode(), audio.play();">Bright mode (Idk why though)</button>
+                    <button id="darkModeHome" style="width: 266px;" onclick="darkMode(), audio.play()">Dark mode (toggle)</button>
                     <button id="dimmedmodehome" onclick="alertDimmed()" style="float: left;">Dimmed background</button>
-                        <button id="disablesounds" onclick="disableSounds()" style="float: left;">Disable sound</button>
-                        (WIP)</button>
                     </table>
                 </div>
                 <script>
                     function darkMode() {
                         var dark = document.body;
                         dark.classList.toggle('darktheme');
-                        document.body.color = "white";
                         dark.classList.remove("dimmedtheme");
                     }
                     //Why did I add this? What am I doing?
                     //I am kinda crazy
-                    function lightMode() {
-                        var lightTHEME = document.body;
-                        lightTHEME.classList.toggle("lighttheme");
-                        lightTHEME.classList.remove("dimmedtheme");
-                        console.log("Some person pressed the light mode button. Are they ok?")
-                        const p = document.createElement('p');
-                        p.innerText = "What the-";
-                        document.getElementById('lighttheme').appendChild(p);
-                    }
                 </script>
                 <!--Maybe I should add a responsive image? Also make this site more responsive for mobile users-->
                 <div id="box">
@@ -190,15 +180,6 @@
                     <div id="iphone678plus-responsive">
                     <br>
                     <br>
-                    <style>
-                        #site-volunteers {
-    background-color: rgb(73, 73, 218);
-    width: 1920px;
-    height: 400px;
-    right: -10%;
-    position: relative;
-    bottom: -200px;
-}
                     </style>
                     <section id="volunteers">
                         <div id="site-volunteers"style="background-color: rgb(73, 73, 218); width: 1920px; height: 400px; position: relative; bottom: -200px; left: -500px;">
