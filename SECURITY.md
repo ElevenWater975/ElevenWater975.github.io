@@ -12,7 +12,7 @@ Here are the supported versions:
 | v1.2.0-alpha   | ❌ |
 | v1.0.0-alpha   | ❌ |
 | v1.0.1-alpha   | ❌ |
-| v1.1.0-alpha  |  ❌ |
+| v1.1.0-alpha   | ❌ |
 | V1.0.2-alpha   | ❌ |
 
 
@@ -32,4 +32,3 @@ has ANY of your information while on this site, please contact me at: nje.eleven
 ## Children under 13
 
 This site is a general audience and is not targeted towards anyone under the age of thirteen (13) (12 and under). I do not knowingly collect personal data from users under the age of 13. By accessing or using this site, you must be of age 13 or over. I am legally required to add this due to COPPA (Children's Online Privacy Protection Act). If you are a parent of a Child that is under the age of 13 and they are using the services, contact me at nje.eleven34@icloud.com or nje.eleven34@outlook.com .
-
