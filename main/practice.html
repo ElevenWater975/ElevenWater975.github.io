@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Write Code Here -->
+    <button id="alert" onclick="alertbtn()">Alert Button</button>
+    <button id="confirm" onclick="confirmbtn()">Confirm Button</button>
+    <script>
+        function alertbtn() {
+            alert("This is an alert")
+        }
+
+        function confirmbtn() {
+            confirm("Confirm?")
+        }
+    </script>
+    <style>
+        #alert {
+            color: black;
+            outline: black;
+            background: rgb(237, 193, 61);
+        }
+        #alert:hover {
+        cursor: pointer;
+        }
+        #confirm:hover {
+            cursor: pointer;
+        }
+        #confirm {
+            color: white;
+            outline: black;
+            background: rgb(7, 167, 7);
+        }
+    </style>
+</body>
+</html>

@@ -1,121 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" type="text/css" href="reach.css">
-    <script src="reach.js"></script>
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandHeldFriendly" content="true">
-    <title>Reach me</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ways to reach me</title>
 </head>
-
 <body>
-    <div id="background" style="background: skyblue; height: 200px; position: relative;">
-        <br>
-        <br>
-    </div>
-    <div class="container">
-        <a id="nav" onclick="enableNav()">
-            <div id="one"></div>
-            <div id="two"></div>
-            <div id="three"></div>
-        </a>
-        <tbody>
-            <section id="top-nav">
-                <div id="navigation-bar" style="background: red;">
-                    <table class="show-nav">
-                        <td id="navigation" class="t-nav" style="background-color: red; height: 23px; width: 1553px;">
-                            <a href="https://elevenwater975.github.io" id="home-link">Home</a>
-                            <a href="https://elevenwater975.github.io/main/support" id="support-link">Suppport</a>
-                            <a href="https://elevenwater975.github.io/newsletter" id="newsletter-link">newsletter</a>
-                            <a href="https://elevenwater975.github.io/about" id="about-link">About</a>
-                            <a href="#" onclick="closeNav()" id="close-link">X</a>
-                        </td>
-                    </table>
-                </div>
-        </tbody>
-        </section>
-        <section id="start">
-            <button id="light-mode" onclick="lightMode(), showDark()">Light mode <em>Please don't click this one.</em></button>
-            <button id="dark-mode" onclick="darkMode()">Dark Mode</button>
-            <h2>Some ways you can reach me</h2>
-            </a>
-            <div id="emails"
-                style="background: rgb(184, 129, 27); height: 478px; border: 3px solid black; border-radius: 0;">
-                <h1>Emails</h1>
-                <br>
-                <p>nje.eleven34@icloud.com</p>
-                <br>
-                <p>nje.eleven34@outlook.com</p>
-                <br>
-                <br>
-                <p id="emailsnotice"
-                    style="width: 2000px; text-align: center; position: relative; left: -200px; font-size: 36px;">Once
-                    you email me, I will try to reach out to you <strong>within 48 hours or less.</strong></p>
-            </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <h1>There are even more ways to reach out to us.</h1>
-    <br>
-    <div id="discord" style="position: relative; bottom: -30px; background: rgb(67, 67, 185); height: 478px;">
-        <h1>Discord</h1>
-        <p id="dicsordnotice" style="display: block; position: relative; bottom: -30%;">We have a discord server you can
-            join to talk to friends or get support <a href="#"
-                style="position: relative; top: -30%; border-radius: 0px;">join here</a></p>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div id="twitch" style="background: purple; height: 478px;">
-        <h1>Check me out on twitch</h1>
-        <p style="font-size: 36px; position: relative; bottom: -30%;">I might stream next week or so so <a
-                href="https://twitch.tv/elevenplayz12">Check me out</a> and consider donating <a
-                href="https://streamlabs.com/elevenplayz12/tips" style="color: skyblue; font-size: 24px;">here</a></p>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div id="youtube" style="background: red; height: 478px;">
-        <h1>Check me out on youtube</h1>
-        <p style="position: relative; bottom: -30%; font-size: 36px; font-family: sans-serif;">I make cringe on youtube
-            so consider checking it out <a href="https://youtube.com/nyrangerfan88">here</a></p>
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div id="reddit" style="background: orangered; height: 478px;">
-    <h1>We have an official subreddit for this page.</h1>
-    <p style="position: relative; bottom: -30%; font-size: 36px; font-family: sans-serif;">Post stuff <a href="https://reddit.com/r/elevenssite" style="font-size: 36px; border: 3px solid black;">here</a></p>
-</div> 
-    </section>
-</body>
+<ul id="navbar">
+    <li><a href="https://ElevenWater975.github.io">Home</a></li>
+</ul>
 
+    <div id="warning" class="alert alert-warning" role="alert" style="display: none;">
+        This feature is in beta. It might not work as expected. Continue anyways? <button id="continue" onclick="Yes()">Continue</button> <button id="cancel" onclick="No()" >Cancel</button>
+    </div>
+
+    <div id="danger" class="alert alert-danger" role="alert" style="display: none;">
+        This feature does not work at the moment. <button id="Ok" onclick="hide()">Ok</button>
+      </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="reach.js"></script>
+    <div class="titles">
+<button type="button" class="btn btn-dark" onclick="darkmode()">Dark mode</button>
+<button type="button" class="btn btn-light" onclick="lightmode()">Light mode</button>
+<button type="button" class="btn btn-light" onclick="test()">testbutton</button>
+    <h1>Ways to reach me</h1>
+    <p>There are links below</p>
+</div> 
+
+<div id="endpage">
+    <a href="https://github.com/ElevenWater975/ElevenWater975.github.io" onclick="">Github repository</a>
+</div>
+</body>
 </html>
