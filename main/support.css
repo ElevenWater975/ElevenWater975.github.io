@@ -208,6 +208,7 @@ button {
 
 #security {
     opacity: 0.69;
+    color: black;
     background: wheat;
     padding: 16px 32px;
     transition: 0.5s; 
