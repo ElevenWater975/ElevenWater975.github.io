@@ -1,0 +1,323 @@
+@media screen and (max-width: 375px) {
+body {
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: auto; 
+    border-radius: 25px;
+}
+}
+@media screen and (max-width: 1920px) {
+body {
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+  
+    border: 3px solid white;
+    border-radius: 25px;
+    color: black;
+}
+}
+
+@media screen and (max-width: 320px) {
+body {
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    border: 3px solid white;
+    border-radius: 25px;
+    color: black;
+}
+
+
+}
+
+h1 {
+    font-family: sans-serif;
+    font-size: 28px;
+    color: white;
+}
+p {
+    font-family: sans-serif;
+    font-size: 22px;
+    color: white;
+}
+
+.container {
+    font-size: 24px;
+    font-family: sans-serif;
+    text-align: center;
+    position: relative;
+
+}
+
+input {
+    font-size: 24px;
+    border-radius: 25px;
+    color: blue;
+}
+
+
+button {
+    border-radius: 25px;
+    font-size: 24px;
+    display: block;
+    background-color: green;
+}
+
+button:hover {
+    
+    animation: zoom-in-and-out 2s infinite;
+    box-shadow: 10px 10px 7px #000;
+    background-color: purple;
+    color: white;
+}
+
+@keyframes zoom-in-and-out {
+     50% {
+         transform: scale(1.06);
+     }
+}
+
+    a:hover {
+        color: blue;
+        text-decoration: none;
+    }
+
+    a:click {
+        color: lime;
+        text-decoration: none;
+    }
+    #one {
+        width: 30px;
+    }
+    #two {
+        width: 30px;
+    }
+    #three {
+        width: 30px;
+    }
+
+    #links {
+        display: none;
+        text-align: center;
+        list-style-type: none;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: sans-serif;
+        border: 3px solid black;
+        border-radius: 25px;
+        max-width: 360px;
+        background-color: violet;
+    }
+    .nav div {
+        height: 4px;
+        background-color: white;
+        margin: 5px 0px;
+    }
+
+    .main-wrap {
+        background-color: lightgray;
+        color: black;
+        font-size: 24px;
+        text-align: center;
+        max-width: 540px;
+        position: relative; 
+        left: 35%;
+    }
+
+img {
+    width: 200px;
+    border: 3px solid black;
+    border-radius: 25px; 
+}
+
+@media screen and (max-width: 375px) {
+    form {
+        background-color: lightgray;
+        color: black;
+        font-family: sans-serif;
+        align-items: center;
+        position: relative; 
+        left: 50px;
+    }
+}
+
+.darkmode {
+    background-color: rgb(68, 65, 65);
+    color: white;
+}
+
+#submit {
+    display: block;
+    position: relative;
+    left: 150px;
+}
+
+@media screen and (max-width: 375px) { 
+    body {
+        border: none;
+    }
+
+    #register-form {
+        display: block;
+        position: relative;
+        left: -100px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    header  {
+        margin: 0;
+        height: auto;
+        padding: 10px;
+        position: relative;
+        top: 50%;
+    }
+    image {
+        width: 100px;
+        position: relative;
+        top: -25%;
+    }
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+}
+
+li a {
+    padding: 14px 16px;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+button:active {
+    animation-name: burst;
+    animation-duration: 0.5s;
+}
+
+@keyframes burst {
+    button {
+        padding: 40px;
+    }
+}
+
+.displayIt {
+    display: block;
+}
+
+.external-links {
+    float: left; 
+    font-family: Arial;
+    background-color: gray;
+    font-size: 14px;
+    width: 100%;
+    position: relative;
+}
+
+button {
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 375px) {
+    #notice {
+        position: relative; 
+        bottom: -1000px;
+    }
+
+    form {
+        position: relative;
+        top: 50%;
+    }
+
+    image {
+        width: 50px;
+    }
+
+    header {
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        width: 270;
+        height: 360;
+        position: relative;
+        left: -10%;
+     
+    }
+
+    form {
+        background-color: transparent;
+    }
+
+    img {
+        position: relative;
+        left: 50px;
+    }
+
+    h4 {
+        text-align: center;
+        position: relative;
+        left: -50px;
+        width: auto;
+        height: auto;
+    }
+    
+    #main h1 {
+        text-align: center;
+        position: relative;
+        left: -10px;
+        width: auto;
+        height: auto;
+    }
+
+    #main p {
+        margin-left: 10px;
+        text-align: center;
+        position: relative;
+        left: -10px;  
+        width: auto;
+        height: auto;      
+    }
+}
+
+@media (width: 414px) {
+    div.container {
+        position: relative;
+        left: -150px;
+    }
+
+    #reasons {
+        position: relative;
+        right: -150px;
+    }
+
+    
+    p#noticemobile {
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        left: 150px;
+    }
+}

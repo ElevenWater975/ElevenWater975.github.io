@@ -1,19 +1,24 @@
 <!--Programmed by ElevenWater975 (Known as NJE Eleven) and hosted using Github pages-->
 <!DOCTYPE html>
 <html>
+   <head>
 <!--Trying to make the site respond better for mobile users-->
-<link rel="stylesheet" type="text/css" href="navbar-index.css">
-<link rel="stylesheet" type="text/css" href="index.css">
-<link rel="stylesheet" href="extra.css">
-<script src="index.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/navbar-index.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" href="css/extra.css">
+<script src="js/index.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="HandHeldFriendly" content="true">
 <title>Eleven's Site</title>
-
+</head>
 <body>
     <ul id="topnav1">
-    <li><a href="https://ElevenWater975.github.io/support" style="color: blue;">Support</a></li>
+    <li><a href="https://ElevenWater975.github.io/main/support" style="color: blue;">Support</a></li>
     &nbsp;
     &nbsp;
     <li><a href="https://reddit.com/r/ElevensSite" style="color: blue;">Reddit</a></li>
@@ -34,15 +39,15 @@
         </ul>
     </div>
     <div id="alertdimmed">
-        <p>Warning: this function has bug(s). Continue anyways? <a href="#" onclick="dimmedMode()">Yes</a>|<a href="#" onclick="disableAlert()">No</a></p>
+        <p>Warning: this function has bug(s). Continue anyways? <button type="button" class="btn btn-outline-success" onclick="dimmedMode()">Yes</button>|<button type="button" class="btn btn-outline-danger" onclick="disableAlert()">No</button></p>
     </div>
     <div id="warning">
         <h1>!</h1>
     <p>This page is not recommended for mobile users. Soon, we may have a mobile version out for mobile users.</p>
+    <p>Btw this site is a W.I.P.</p>
     <button id="continue" onclick="siteContinue()">Continue to the site</button>
 </div>
 <div id="mode">
-    <p1>Background: <span class="badge badge-dark">Dark</span></p1>
 </div>
     <div id="everything" style="text-align: center;">
         <div id="lighttheme">
@@ -52,11 +57,10 @@
             </div>
             <br>
             <br>
+            
                 <div id="settings" style="position: relative; ">
                     <table>
                     <button id="exit-settings" onclick="closeSettings()">X</button>
-                    <br>
-                    <br>
                     
                     <button id="darkModeHome" style="width: 266px;" onclick="darkMode(), audio.play()">Dark mode (toggle)</button>
                     <button id="dimmedmodehome" onclick="alertDimmed()" style="float: left;">Dimmed background</button>
@@ -94,11 +98,6 @@
                                 <a href="https://github.com/ElevenWater975/ElevenWater975.github.io" target="_blank">Github
                                     repository</a>
                                 <a href="#">BlockPro page (Coming soon)</a>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
                                 <div id="sidebar-settings">
                                     <p>Settings</p>
                                     <div id="navigation-settings">
@@ -140,7 +139,7 @@
                                         <h2 style="font-size: 48px; font-family: sans-serif;">What is this site about?</h2>
                                         <p>To be honest, I am actually going to use this site for a few things. 
                                             My Minecraft server, Team 3 NJE, etc. 
-                                            This site is in version 1.2.4-alpha. 
+                                            This site is in version 1.2.5-alpha. 
                                             Stay tuned for more updates.
                                         </p>
                                     </div>
@@ -163,31 +162,25 @@
                     <section id="notice-section">
                         <div id="notice">
                     </section>
+                    
                 </div>
-                    <br>
+
                     <div id="box-2">
                     </div>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
                     <div id="brfor320pxdisplay">
-                        <br>
-                        <br>
-                        <br>
                     </div>
                     <div id="box2">
                     <div id="iphone678plus-responsive">
-                    <br>
-                    <br>
+                    
                     </style>
                     <section id="volunteers">
-                        <div id="site-volunteers"style="background-color: rgb(73, 73, 218); width: 1920px; height: 400px; position: relative; bottom: -200px; left: -500px;">
+                        <div id="site-volunteers">
                             <h1>Site Volunteers</h1>
                             <p>We do not have any site volunteers yet. Eleven is the only one working on the site (No my
                                 site is not a business)</p>
-                                <br>
+                               
                             <p>Main developers: ElevenWater975</p>
+                            <p>People who have helped: ProfileLag</p>
                             <br>
                             <div id="noticevolunteer">
                                 <p>We may be letting users help with the site</p>
@@ -196,7 +189,7 @@
                         </div>
                     </section>
                     <section id="twitch">
-                        <div id="twitch-streaming" style="position: relative; bottom: -200px; align-items: right; text-align: right;">
+                        <div id="twitch-streaming">
                             <h1>I stream on Twitch!</h1>
                             <p>To those who don't know, I now stream on twitch. My twitch username is <a href="https://twitch.tv/elevenplayz12">ElevenPlayz12</a></p>
                         </div>
@@ -205,16 +198,7 @@
                 </div>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+
         <hr>
         <button id="easteregg" onclick="easteregg()" contenteditable="true" href="#"></button>
         <footer class="page-end">
@@ -226,8 +210,7 @@
                     <a href="https://youtube.com/nyrangerfan88" rel="noopener" target="_blank">YouTube</a>
                     <a href="https://github.com/ElevenWater975/ElevenWater975.github.io" rel="noopener" target="_blank">Site repository</a>
                     <a href="https://twitch.tv/elevenplayz12" rel="noopener" target="_blank">Twitch channel</a>
-                    <br>
-                    <br>
+
                    
                 </div>
     </div>
@@ -236,9 +219,7 @@
     </div>
     
     </section>
-    <br>
-    <br>
-    <br>
+
     
 </footer>
 </div>
@@ -246,13 +227,14 @@
     </div>
     </div>
 </div>
+
 <p id="version">v1.2.5-alpha</p>
+
     <footer class="external-text">
             &copy; 2022 ElevenWater975 
-            <br>
+
     </footer>
-    <br>
-    <br>
+
     <footer id="external-links">
     <div class="footer-nav-links">
         <div id="footer-links">
@@ -263,5 +245,7 @@
     </div>
 </footer>
 </div>
+
 </body>
+
 </html>
