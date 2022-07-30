@@ -1,83 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <link rel="stylesheet" type="text/css" href="Login.css">
-    <script src="Login.js"></script>
     <meta charset="UTF-8">
-    <meta name="HandHeldFriendly" content="true">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Login</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="Login.css">
+    <title>Document</title>
 </head>
-
 <body>
-    <div id="darktheme">
-        <div class="notice">
-            <strong>
-                <p>If this page isn't working properly, contact me at nje.eleven34@icloud.com or <a id="notice-1"
-                        href="#">nje.eleven34@outlook.com</a></p>
-            </strong>
+    <div id="Title">
+        <h1>Login</h1>
+        <h2>Welcome back! Please log in here.</h2>
         </div>
-
-        <header>
-            <a href="#" class="nav" onclick="appear()">
-                <div id="one"></div>
-                <div id="two"></div>
-                <div id="three"></div>
-
-                <div id="links">
-                    <table id="navigation">
-                    <a href="https://ElevenWater975.github.io/Pages/index.html">Home</a>
-                    <a href="https://ElevenWater975.github.io/Html/support.html">Support page</a>
-                    <a href="https://YouTube.com/nyrangerfan88">YouTube</a>
-                    <a href="https://github.com/ElevenWater975/ElevenWater975.github.io">Github repository</a>
-                    <a href="https://twitch.tv/elevenplayz12">Twitch channel</a>
-                    <a href="#">Discord (Adding soon)</a>
-                    <button id="darkmode" onclick="darkMode()">Dark Mode</button>
-                    </table>
-                </div>
-            </a>
-
-
-
+        <div class="container" id="loginform">
+            <form class="modal-content animate" action="/action_page.php" method="post"></form>
+            <label for="uname"><b>Email</b></label>
+            <br>
+            <input type="text" placeholder="Enter Email Address" name="uname" required>
             <br>
             <br>
-            <br>
-            <br>
-
-            <br>
-            <br>
-            <div class="container">
-                <div class="login-form">
-                    <img src="New Project.jpg">
-                    <form type="Login" id="login">
-                        <h1><em>Welcome back!</em></h1>
-                        <p>Login to your account</p>
-                        <input id="login1" type="email" placeholder="email" required></input>
-
-                        <br>
-                        <input id="login2" type="password" maxlength=64 minlength=8 placeholder="password"
-                            required></input>
-                            <p id="caps-warning">Warning: caps lock is on</p>
-                        <br>
-                        <input id="checkbox" type="checkbox"><span>Remember me</span></input>
-                        <br>
-                        <button type="submit" onclick="welcomeBack()" id="submit">Login</button>
-                </div>
-            </div>
-            </form>
-        </header>
-        <footer>
-            <br>
-            <br>
-            <div class="blue-background">
-                <br>
-                <br>
-                <br>
-                <br>
-            </div>
-    </div>
-    </footer>
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter your password" name="psw" required></input>
+            <button type="submit" id="submit">Login</button>
+            <label>
+                <input type="checkbox" id="remember ">Remember Me</input>
+            </label>
+        </form>
+        </div>
 </body>
-
 </html>

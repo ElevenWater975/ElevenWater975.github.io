@@ -1,195 +1,36 @@
-.main-text {
-    font-size: 2.5em;
+body {
+    background: rgba(44, 43, 43, 0.361);
+}
+
+h1 {
     font-family: sans-serif;
-    text-align: center;
-    font-weight: bold;
-    position: relative;
-    width: 200px;
-    top: 15px;
-}
-
-#main-text {
+    font-size: 48px;
     text-align: center;
 }
 
+h2 {
+    font-family: sans-serif;
+    font-size: 32px;
+    text-align: center;
+}
 
+body {
+    font-family: sans-serif;
+}
 
 .container {
-    border-radius: 25px;
-   font-size: 38px;
-    font-family: sans-serif;
-    text-align: center;
-    position: relative;
+    padding: 16px;
 }
 
-#submit {
-    border-radius: 25px;
-    font-size: 24px;
+#loginform {
+    margin: 70px 500px;
 }
 
-#checkbox {
-    font-size: 25px;
+#password {
+    margin: 30px;
 }
 
-input {
-font-size: 24px;
-border-radius: 25px;
-color: blue;
-}
-
-@media screen and (max-width: 375) {
-nav {
-    float: none;
-    width: 100px;
-}
-}
-
-
-#one {
-    width: 30px;
-}
-#two {
-    width: 30px;
-}
-#three {
-    width: 30px;
-}
-
-.nav div {
-    height: 5px;
-    background-color: white;
-    margin: 5px 0px;
-}
-a:hover {
-    color: red;
-    text-decoration: none;
-}
-
-#links {
-    display: none;
-    background-color: skyblue;
-    font-size: 20px;
-    font-family: sans-serif;
-}
-
-#show-nav {
-    display: block;
-    float: right;
-    background-color: violet;
-    color: white;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-@media screen and (max-width: 375px) {
- body {
-    background: black;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: auto; 
-    width: 375px;
-    border-radius: 25px;
- }
- }
-
-
-
-@media screen and (min-width: 1920px) {
-    form {
-        position: relative;
-        left: 500px;
-    }
-    button {
-    position: relative;
-    left: 10px;
-    width: 300px;
-    background-color: green;
-    color: white;
-    }
-}
-
- .external-links {
-      background-color: darkgray;
-      font-size: 18px;
-      font-family: sans-serif;
- }
-
- #login-form {
-     text-align: center;
-     font-size: 20px;
-     font-family: sans-serif;
-     background-color: lightblue;
-     text-align: center;
- }
-@media screen and (min-width: 375px) {
- button {
-    width: 200px;
-    height: auto;
-    background-color: green;
-    color: white;
-    position: relative;
-    left: 5px;
- }
- input {
-     border: 3px solid black; 
-     border-width: auto;
-     border-radius: 10px;
-     
- }
-}
- /* just a little notice if the site isnt working properly */
- #notice-1 {
-     color: red;
-     border: 3px solid black;
-     border-radius: 25px;
- }
-
- .notice {
-     font-family: sans-serif;
-     font-size: 18px;
- }
-
-@media screen and (min-width: 375px) {
-form {
-    background-color: black;
-    max-width: 800px;
-    border: 3px solid white;
-    border-radius: 25px;
-    color: white;
-    font-family: sans-serif;
-    align-items: center;
-    position: relative; 
-}
-}
-
-img {
-    width: 100px;
-    height: auto;
-} 
-
-#sidetext {
-    border: none;
-    background-color: black;
-}
-
-@media only screen and (max-width: 684px) {
-    body {
-        background: black;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-
-    }
-}
-
-.darktheme {
-    background-color: black;
-    color: white;
-}
-
-#caps-warning {
-    display: none;
-}
-
-#login {
-    position: relative;
-    right: -30%;
+#remember {
+    padding: 20px;
+    margin: 10px;
 }

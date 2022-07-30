@@ -1,5 +1,5 @@
 body {
-    background-image: linear-gradient(.25turn, violet, blue, purple);
+    background-color: rgb(34, 34, 34);
     color: black;
 }
 li {
@@ -234,23 +234,6 @@ button {
     color: white;
 }
 
-#darkmode {  
-    background: linear-gradient(.25turn, violet, blue, purple);
-    color: black
-}
-
-.darkanimation {
-    background: black;
-    color: white;
-    animation-name: fade;
-    animation-duration: 1s;
-}
-
-@keyframes fade {
-from {background: linear-gradient(.25turn, violet, blue, purple)}
-to {background: black}
-
-}
 
 #NJEQna {
     display: none;
