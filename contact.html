@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    
+
     <link id="darkMode" rel="stylesheet" type="text/css" href="css/contact.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,141 +11,156 @@
 </head>
 <div class="dark-theme">
     <div class="bright-theme">
-<body>
-    <a href="#" class="nav" onclick="appear()">
-        <div id="one"></div>
-        <div id="two"></div>
-        <div id="three"></div>
 
-        <div id="hidenav">
-        <a href="https://elevenwater975.github.io">Home page</a>
-        <a href="https://github.com/ElevenWater975/ElevenWater975.github.io">Github repository</a>
-        <a href="https://elevenwater975.github.io/support">Support page</a>
-        <a href="https://discord.gg/QXJJ9x2K7c">Discord</a>
-        <a href="https://reddit.com/r/Blockpro">Blockpro reddit</a>
-        <button id="hidenav" onclick="hideNav()">Hide navigation</button>
-    </div>
-    </a>
+        <body>
+            <a href="#" class="nav" onclick="appear()">
+                <div id="one"></div>
+                <div id="two"></div>
+                <div id="three"></div>
 
-    <br>
-    <br>
-    <br>
-    <script src="js/contactScript.js" type="text/javascript"></script>
-        <br>
-</div>
-<div class="container">
-    <form id="contact-form">
-        
-        <h1>What seems to be the problem?</h1>
-        <br>
-        <br>
-        <br>
-        <div id="basicinputs">
-        <label for="firstname"></label>
-        <input type="text" id="firstname" placeholder="First name: "required>
-        <br>
-        <label for="lastname"></label>
-        <input type="text" id="lastname" placeholder="Last Name (optional)">
-        <br>
-        <label for="email"></label>
-        <input type="email" id="email" placeholder="Enter your email" required>
-        <br>
-        <label for="age" id="age-base" placeholder="age" required></label>
-        <input type="number" size="4" name="age" min="13" id="age" placeholder="Date of Birth: " required>
-        <br>
-    </div>
-    <div id="countries">
-        <select id="country">
-            <label for="country-select" id="country-selection" required></label>
-        <option id="country-selection-dropdown" disabled selected value required onclick="moveText()"> -- Select a country -- </option>
-        <option value="USA" onclick="openLanguageUS()">United Sates</option>
-           
-     
-        <option value="UK" onclick="openLanguageUK()">United Kingdom</option>
-        <option value="Australia" onclick="openLanguageAustralia()">Australia</option>
-        <option value="CA" onclick="openLanguageCA()">Canada</option>
-    </div>
-        <div id="languages-canada">
-            <button id="english-canada" onclick="englishCanada()">English</button>
-            <button id="french-canada" onclick="frenchCanada()">français</button>
-        </div>
-        <option value="Mexico" onclick="openIssuesMexico()">Mexico</option>
-        <option value="Spain" onclick="openIssuesSpain()">Spain</option>
-        <br>
-    </select>
-    <div id="languages">
-    <p>What is your preferred language</p>
-    <button id="en-us" onclick="openEnglish()">English</button>
-    <button id="spanish-us" onclick="openSpanish()">español</button>
-    <button id="french" onclick="openFrench()">Francias</button>
-    <button id="other-us" onclick="openOther()">Other</button>
-</div>
-        <br>
-        
+                <div id="hidenav">
+                    <a href="https://elevenwater975.github.io">Home page</a>
+                    <a href="https://github.com/ElevenWater975/ElevenWater975.github.io">Github repository</a>
+                    <a href="https://elevenwater975.github.io/support">Support page</a>
+                    <a href="https://discord.gg/QXJJ9x2K7c">Discord</a>
+                    <a href="https://reddit.com/r/Blockpro">Blockpro reddit</a>
+                    <button id="hidenav" onclick="hideNav()">Hide navigation</button>
+                </div>
+            </a>
 
-        <br>
-        <br>
-    
-        <!--Dropdown button-->
-        <div id="sideText">
-            <div class="dropdown">
-                    <div id="dropContent" class="dropdown-content">
-                <button id="bugs-button" class="content-bugs" onclick="explainBugs(), hideDropdown()">Bugs and glitches</button>
-                <button id="bugs-espanol" class="content-bugs-espanol" onclick="explainBugsEspanol()">Errores / fallas</button>
-                <button id="security-button" class="content-security" onclick="explainSecurity(), hideDropdown()">Security issues</button>
-                <button id="security-espanol" class="content-security-espanol" onclick="explainSecurityEspanol()">Problemas de seguridad</button>
-                <button id="bugs-francias" class="content-security-francias" onclick="explainSecurityFrancias">Les problèmes de sécurité</button>
-                <button id="security-francias" class="content-security-francias" onclick="explainSecurityFrancias">Bugs et glitches</button>
+            <br>
+            <br>
+            <br>
+            <script src="js/contactScript.js" type="text/javascript"></script>
+            <br>
+    </div>
+    <div class="container">
+        <form id="contact-form">
+
+            <h1>What seems to be the problem?</h1>
+            <br>
+            <br>
+            <br>
+            <div id="basicinputs">
+                <label for="firstname"></label>
+                <input type="text" id="firstname" placeholder="First name: " required>
                 <br>
+                <label for="lastname"></label>
+                <input type="text" id="lastname" placeholder="Last Name (optional)">
                 <br>
-                <input id="bugs-explain" type="text" placeholder="Tell us what is going on with the site"></input>
-                <input id="security-explain" type="text" placeholder="Tell us what is happening with security"></input>
-                <input id="bugs-explain-espanol" type='text'></input>
-                <input id="security-explain-espanol" type="text"></input>
-                <input id="security-explain-francias" type="text"></input>
-                <input id="bugs-explain-francias" type="text"></input>
+                <label for="email"></label>
+                <input type="email" id="email" placeholder="Enter your email" required>
                 <br>
-                <label for="extras" id="any-extras"></label>
-                <input id="extras-text" type="text" class="extras-input">Anything else you would like to tell us? (optional)</div> 
-                <p>We will try to get back to you within 1 day</p>
-                <p>Please consider checking out <a href="https://twitch.tv/elevenplayz12">My twitch channel</a></p>
+                <label for="age" id="age-base" placeholder="age" required></label>
+                <input type="number" size="4" name="age" min="13" id="age" placeholder="Date of Birth: " required>
+                <br>
             </div>
-        </div>
+            <div id="countries">
+                <select id="country">
+                    <label for="country-select" id="country-selection" required></label>
+                    <option id="country-selection-dropdown" disabled selected value required onclick="moveText()"> --
+                        Select a country -- </option>
+                    <option value="USA" onclick="openLanguageUS()">United Sates</option>
+
+
+                    <option value="UK" onclick="openLanguageUK()">United Kingdom</option>
+                    <option value="Australia" onclick="openLanguageAustralia()">Australia</option>
+                    <option value="CA" onclick="openLanguageCA()">Canada</option>
+            </div>
+            <div id="languages-canada">
+                <button id="english-canada" onclick="englishCanada()">English</button>
+                <button id="french-canada" onclick="frenchCanada()">français</button>
+            </div>
+            <option value="Mexico" onclick="openIssuesMexico()">Mexico</option>
+            <option value="Spain" onclick="openIssuesSpain()">Spain</option>
+            <br>
+            </select>
+            <div id="languages">
+                <p>What is your preferred language</p>
+                <button id="en-us" onclick="openEnglish()">English</button>
+                <button id="spanish-us" onclick="openSpanish()">español</button>
+                <button id="french" onclick="openFrench()">Francias</button>
+                <button id="other-us" onclick="openOther()">Other</button>
+            </div>
+            <br>
+
+
+            <br>
+            <br>
+
+            <!--Dropdown button-->
+            <div id="sideText">
+                <div class="dropdown">
+                    <div id="dropContent" class="dropdown-content">
+                        <button id="bugs-button" class="content-bugs" onclick="explainBugs(), hideDropdown()">Bugs and
+                            glitches</button>
+                        <button id="bugs-espanol" class="content-bugs-espanol" onclick="explainBugsEspanol()">Errores /
+                            fallas</button>
+                        <button id="security-button" class="content-security"
+                            onclick="explainSecurity(), hideDropdown()">Security issues</button>
+                        <button id="security-espanol" class="content-security-espanol"
+                            onclick="explainSecurityEspanol()">Problemas de seguridad</button>
+                        <button id="bugs-francias" class="content-security-francias"
+                            onclick="explainSecurityFrancias">Les problèmes de sécurité</button>
+                        <button id="security-francias" class="content-security-francias"
+                            onclick="explainSecurityFrancias">Bugs et glitches</button>
+                        <br>
+                        <br>
+                        <input id="bugs-explain" type="text"
+                            placeholder="Tell us what is going on with the site"></input>
+                        <input id="security-explain" type="text"
+                            placeholder="Tell us what is happening with security"></input>
+                        <input id="bugs-explain-espanol" type='text'></input>
+                        <input id="security-explain-espanol" type="text"></input>
+                        <input id="security-explain-francias" type="text"></input>
+                        <input id="bugs-explain-francias" type="text"></input>
+                        <br>
+                        <label for="extras" id="any-extras"></label>
+                        <input id="extras-text" type="text" class="extras-input">Anything else you would like to tell
+                        us? (optional)
+                    </div>
+                    <p>We will try to get back to you within 1 day</p>
+                    <p>Please consider checking out <a href="https://twitch.tv/elevenplayz12">My twitch channel</a></p>
+                </div>
+            </div>
     </div>
-        <!--End of dropdown element-->
-        </div>
-        <button type="submit" onclick="openText()" class="submitBtn"><i class="fa fa-mail"></i> Contact</button>
-        <br>
-    </div>
-    
-    </form>
+    <!--End of dropdown element-->
 </div>
-    </div>
+<button type="submit" onclick="openText()" class="submitBtn"><i class="fa fa-mail"></i> Contact</button>
+<br>
+</div>
+
+</form>
+</div>
+</div>
 </div>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
 <!--How do I make the contact form contact me?-->
 <footer>
-<div class="otherText">
-    <h1>Thank you for contacting us!</h1>
-    <p>If we get more contacts than usual, the wait time for me to reply to your email will be longer than expected.</p>
-    <p>If you want to check out the repository for this website, go to <a href="https://github.com/ElevenWater975/ElevenWater975.github.io"></a></p>
-    <a href="https://ElevenWater975.github.io">Back to homepage</a>
-    <a href="https://youtube.com/nyrangerfan88">Check out Eleven's youtube!</a>
-    <a href="https://twitch.tv/elevenplayz12">Check out Eleven's twitch channel</a>
-</div>
-<div class="footer-color">
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-</div>
-</div>
+    <div class="otherText">
+        <h1>Thank you for contacting us!</h1>
+        <p>If we get more contacts than usual, the wait time for me to reply to your email will be longer than expected.
+        </p>
+        <p>If you want to check out the repository for this website, go to <a
+                href="https://github.com/ElevenWater975/ElevenWater975.github.io"></a></p>
+        <a href="https://ElevenWater975.github.io">Back to homepage</a>
+        <a href="https://youtube.com/nyrangerfan88">Check out Eleven's youtube!</a>
+        <a href="https://twitch.tv/elevenplayz12">Check out Eleven's twitch channel</a>
+    </div>
+    <div class="footer-color">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
+    </div>
 </footer>
 </body>
 </div>
 </div>
 </div>
+
 </html>

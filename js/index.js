@@ -13,7 +13,7 @@ function alreadyHere() {
     } else if (click === 20) {
         alert("You have clicked this invisible link so many times that this page will now go into light mode. (You can reload to change it back to normal)");
         y.style.background = "white";
-    }
+    } 
 }
 
 function ldt() {
