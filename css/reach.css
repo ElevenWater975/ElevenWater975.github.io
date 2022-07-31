@@ -1,4 +1,58 @@
-.dark {
-    background: rgb(51, 49, 49);
+body {
+    background-color: rgb(42, 42, 42);
     color: white;
 }
+
+ul {
+    list-style-type: none;
+    color: white;
+    background: #333;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+.active {
+    background: blue;
+}
+
+li a:hover {
+    background-color: black;
+}
+
+ul {
+    padding: 16px;
+}
+
+.lightdarktoggle {
+    background-color: white;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-size: 48px;
+}
+
+p {
+    text-align: center;
+    font-size: 24px;
+}
+
+#light {
+    font-size: 32px;
+    size: 12px;
+    font-family: sans-serif;
+    background-color: gray;
+    color: white;
+    }

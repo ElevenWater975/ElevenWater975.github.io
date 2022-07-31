@@ -1,1 +1,117 @@
-image.png
+body {
+    background: rgb(34, 34, 34);
+    color: white;
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 20px;
+}
+
+h1 {
+    font-size: 48px;
+    padding: 50px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+ul {
+    list-style-type: none;
+    color: white;
+    background: #333;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 32px;
+}
+
+.active {
+    background: blue;
+}
+
+li a:hover {
+    background-color: black;
+}
+
+ul {
+    padding: 16px;
+}
+
+.home {
+    animation-name: fadeaway;
+    animation-duration: 4;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeaway {
+0% {opacity: 100%;}
+25% {opacity: 75%;}
+50% {opacity: 50%;}
+75% {opacity: 25%;}
+100% {opacity: 0%;}
+}
+
+#light {
+font-size: 32px;
+size: 12px;
+font-family: sans-serif;
+background-color: gray;
+color: white;
+}
+
+#light:hover {
+    cursor: pointer;
+    color: black;
+}
+
+.LightDarkToggle {
+    background: white;
+    color: black;
+}
+
+#kylebot {
+    padding: 14px;
+    margin: left;
+    text-align: left; 
+    padding-left: 20px;
+}
+
+#kbimg {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+
+.container {
+    display: flex;
+}
+
+.image {
+    flex-basis: 20%;
+    max-width: 100%;
+}
+
+#kbvideos p {
+    text-align: center;
+}
+
+#kbvideos h2 {
+    text-align: left;
+}
+
+ol {
+    display: flex;
+}

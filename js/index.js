@@ -20,3 +20,10 @@ function ldt() {
     var x = document.body;
     x.classList.toggle("LightDarkToggle")
 }
+
+function currentTheme() {
+    let currentTheme = document.body;
+    if (currentTheme.style.background === "rgb(42, 42, 42,)") {
+        document.getElementById("theme1").style.display === "none";
+    }
+}
