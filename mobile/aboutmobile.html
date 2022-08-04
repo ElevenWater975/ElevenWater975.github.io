@@ -1,135 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <script src="aboutmobile.js"></script>
-    <link rel="stylesheet" type="text/css" href="aboutmobile.css">
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandHeldFriendly" content="true">
-
-    <title>About Me</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="aboutmobile.css">
+    <title>Document</title>
 </head>
-
 <body>
-    <div id="dimmed-mode">
-    <div id="sidebar" class="side-bar">
-        <ul id="sidenavigation">
-            <li><a href="https://elevenwater975.github.io">Home page</a></li>
-            <li><a href="https://elevenwater975.github.io/main/newsletter" id="hyperlink-newsletter">newsletter</a></li>
-            <li><a href="https://reddit.com/r/BlockPro" id="hyperlink-reddit">BlockPro Reddit</a></li>
-            <li><a href="https://youtube.com/nyrangerfan88" id="hyperlink-youtube">Youtube channel</a>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <button id="full-sidebar" onclick="fullNavigation()">Full navigation (bugs when using this)</button>
-                <button id="regular-size-navi" onclick="regularSize()">Regular size navigation</button>
-                <button id="crush-sidebar" onclick="crushSidebar()">Crush sidebar (but why?)</button>
-                <button id="CHANGE-IT-BACK" onclick="CHANGEITBACK()">AAAAAA CHANGE IT BACK, CHANGE IT BACK</button>
-        </ul>
-    </div>
-    <a class="nav" id="nav" onclick="openNav()">Open navigation</a>
-
-    <div id="navigation">
-        <ul>
-            <li><a href="https://elevenwater975.github.io">Home</a></li>
-            <li><a href="https://elevenwater975.github.io/support.html">Support page</a></li>
-            <li><a href="https://youtube.com/nyragerfan88">YouTube</a></li>
-            <li><a href='https://twitter.com/ElevenNje'>Twitter</a></li>
-            <div id="close">
-                <li><a id="close-nav" href="javascript:void(0)" onclick="closeNav()">X</a></li>
-            </div>
-        </ul>
-    </div>
-    <button id="settings-button" onclick="openSettings()">Settings</button>
-    <div id="settings">
-        <br>
-        <button id="darkmode" onclick="enableDark()">Dark mode</button>
-        <br>
-        <button id="lightmode" onclick="enableLight()">Light mode</button>
-        <br>
-        <button id="close-sidebar" onclick="closeSidebar()">Show/hide sidebar</button>
-        <br>
-        <button id="dimmed-mode" onclick="dimmedBackground()">Dimmed background</button>
-    </div>
-    <div class="full-page">
-        <h2>This page is not supported for <em>Mobile users</em></h2>
-        <div class='question'>
-            <strong><em>
-                    <h1></h1>
-                </em></strong>
-            <h2>Who is ElevenWater975 anyways? <em>(Mobile version)</em></h2>
-            <p>ElevenWater975 is a gamer, programmer, and a meme maker.</p>
-            <hr>
+    <div id="head">
+    <h1>About me</h1>
+    <h2>You can learn more about ElevenWater975 here.</h2>
+</div>
+    <div id="Columns">
+        <column id="left">
+            <p>Sections</p>
+            <a href="#abm">All About Me</a>
+            <a href="#projects">Other Projects</a>
+            </column>
         </div>
-        <div id="about">
-            <div id="gamer">
-                <h1><strong>Gamer</strong></h1>
-                <p>I really like gaming. My favorite games are Valorant, Minecraft, CS:GO, and Splitgate.</p>
-            </div>
-            <div id="Programmer">
-                <h1><strong>Programmer</strong></h1>
-                <p>Eleven programs every day because they are doing the 100 days of code challenge</p>
-                <p>Eleven's main programming languages are JavaScript, HTML, CSS</p>
-                <p>What is the <strong>100 Days of Code challenge you might ask?</strong></p>
-                <p>It is where you program for 1 hour every day for 100 days.</p>
-            </div>
-            <div id="memer">
-                <!--Images are being put now-->
-                <div class="img-wrap">
-                    <h1><strong>Memer</strong></h1>
-                    <img src="ReadingFPSandPingWrong.jpg">
-                    <p>The meme you see right next to the "memer" title got over 100 updoots on reddit (I used a
-                        template).</p>
-                    <p>I have a really strong interest in memes <strong>DEM SPICY MEMES BOI</strong> How does one simply
-                        not like memes. I don't like tiktok <em>"memes"</em></p>
-
-                    <p>I actually have a <em>Subreddit for my Minecraft server</em> <a
-                            href="https://reddit.com/r/BlockPro">Click here</a>To go to the subreddit</p>
-                </div>
-                <div id="nje-member">
-                    <h1><strong id="nje-title">NJE member</strong></h1>
-                    <p>I am a member of a group called <strong>Team 3 NJE</strong> it is mainly a gaming group. We play
-                        games like <em>Splitgate, Minecraft, etc.</em></p>
-                        <p>We have a subreddit <a href="https://reddit.com/r/nje">Click here</a> to go to it</p>
-                </div>
-                <h1>Why I wanted to make this site</h1>
-
-                <br>
-                <p><em>I really wanted to make the site because I have never manually programmed a site before. I have
-                        used tools like enjin and wix but I really wanted to handcraft my own website.</em></p>
-                <p id="end-of-page">This is the end of the about me page.</p>
-
-            </div>
+        <div id="right">
+    <div id="title">
+    
+    <p>My name is ElevenWater975 (I got this name from Xbox 360). I code in HTML, CSS and JavaScript. This website I am working on is a web project. I am also working on another project called KyleBot. You can check out sections of this page to learn a lot more about me.</p>
+</div>
+    
+    <div id="abm">
+        <h1>All About Me</h1>
+        <p>My name is ElevenWater975 I am 15 years old and I like coding (Mainly web development). This site is front-end. I am a front-end web developer. I started getting into coding when I was 13 years old. I have bene learning on sites like <a href="https://codecademy.com">Codecademy</a> and <a href="https://freecodecamp.org">Freecodecamp</a>. I also have been learning from YouTube videos. Iam also a gamer. I play games like DOOM and Minecraft.</p>
         </div>
-        <canvas id="newCanvas" height="100" width="1920">
+</div>
 
-        </canvas>
-        <div id="notice">
-            <hr>
-            <hr>
-            <p>Theres supposed to be a line above this text</p>
-            <p>Not sure where it is but it might be here soon</p>
-            <br>
-            <p>Please do not make a copy of this website</p>
-            <p>We will not ask for information without explicit permission</p>
-            <p>Version: 1.2.3-alpha</p>
-            <p>Goodbye now</p>
-        </div>
-        <div id="license">
-            <ul>
-            <li><p id="MITLICENSE" style="float: left;">&copy 2021 ElevenWater975</p></li> 
-                <p>Thank you for using the site</p>
-        </ul>
-        </div>
-        <br>
-    </div>
-    </div>
-    </div>
+<div style="text-align: center;" id="projects">
+    <h1>Other Projects</h1>
+    <p>This website is not the only project that I am working on. I am also working on other projects like KyleBot (A Discord bot made in JavaScript) and BlockPro (A Minecraft Java Edition server). </p>
+</div>
+<div id="footer">
+    <p>Footer</p>
 </div>
 </body>
-
 </html>
