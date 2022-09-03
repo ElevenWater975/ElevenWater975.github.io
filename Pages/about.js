@@ -3,7 +3,7 @@ function enableDark() {
     x.classList.add('darktheme');
     x.classList.remove("lighttheme");
 }
-
+ 
 function enableLight() { 
     document.getElementById("darkmode").style.background = "black";
     document.getElementById("darkmode").style.color = "white";

@@ -1,7 +1,7 @@
 {
  "name": "ElevenWater975.github.io",
  "author": "ElevenWater975",
- "version": "1.2.5-alpha",
+ "version": "1.2.6-alpha",
  "dependencies": {
   "bootstrap": "^5.1.3"
  }

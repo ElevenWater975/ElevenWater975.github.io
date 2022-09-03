@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(42, 42, 42);
+    color: white;
+}
+
+#title {
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: sans-serif;
+}
+
+#registerform {
+    text-align: center;
+    display: inline-block;
+    margin-left: 750px;
+    margin-right: auto;
+    text-align: left;
+}
+
+label {
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+#submit {
+    font-size: 20px;
+    font-family: sans-serif;
+    background-color: wheat;
+}
+
+#submit:hover {
+cursor: pointer;
+}
+
+.container input {
+    width: 100%;
+    clear: both;
+}
+

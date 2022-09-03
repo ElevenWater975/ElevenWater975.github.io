@@ -1,139 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="support.css">
-    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta name="HandheldFriendly" content="true">
-    <script src="support.js"></script>
-    <title>Support page</title>
+    <script src="support.js"></script> 
+    <title>Support Page</title>
 </head>
-<!--There is some sort of problem with the border-->
-
 <body>
-    <div id="top" class="navtop">
+    <div id="navbar">
         <ul>
-            <button id="moveside" onclick="moveside()">Move navigation to the side</button>
-            <li><a href="javascript:void(0)" id="closetop" onclick="closeTop()">X</a></li>
-            <li><a href="https://elevenwater975.github.io/about">About</a></li>
-            <li><a class="twitchtop" href="https://twitch.tv/elevenplayz12">Twitch</a></li>
-            <li><a class="youtubetop" href="https://youtube.com/nyrangerfan88">Youtube</a></li>
-            <li><a href="https://elevenwater975.github.io/newsletter">Newsletter (Open alpha)</a></li>
-            <li><a href="#">About (coming soon)</a></li>
+            <li><img src="img/Q8LDVP-j_400x400.png"></img></li>
+            <li><a href="https://github.com/elevenwater975/elevenwater975.github.io">Repository</a></li>
+            <li id="homepage"><a href='https://elevenwater975.github.io' onclick="alreadyHere()">Home</a></li>
+            <li><a href="https://discord.gg/dDYsTVD9hT">Discord Server</a></li>
+            <li><a href="https://reddit.com/r/elevenssite">Subreddit</a></li>
+            <li><a href="https://elevenwater975.github.io/pages/support">Support</a></li>
+            <li><a href="https://elevenwater975.github.io/pages/reach">Reach me</a></li>
+            <li><button type="button" id="light" onclick="ldt()">Light/Dark mode toggle</button></li>
+            <li style="float: right;"><a href="https://elevenwater975.github.io/about" class="active">About me</a></li>
         </ul>
-    </div>
-    <div id="darkmode">
-        <div class="container">
-            <section id="navbar">
-                <div id="sidebar" class="sidenav">
-                    <button id="movetop" onclick="moveTop()">Move navigation to the top</button>
-                    <a href='javascript:void(0)' class="closeNav" onclick="closeNav()">&times;</a>
-                    <a href="https://elevenwater975.github.io/support">Support page</a>
-                    <a href="https://youtube.com/nyrangerfan88">Youtube</a>
-                    <a href="https://elevenwater975.github.io/newsletter">Newsletter</a>
-                    <a href="#">About (soon)</a>
-                    <a href="#">Ways you can reach me (coming soon) </a>
-                    <a href="https://github.com/ElevenWater975/ElevenWater975.github.io">Github repository</a>
-                    <a href="#business">business?</a>
-                    <a href="#">BlockPro page (Coming soon)</a>
-                    <br>
-                    <p>Contact nje.eleven34@icloud.com for help if you need it.</p>
-                </div>
-            </section>
         </div>
-        <a id="open" class="nav" onclick="openNav()">
-            <div id="one"></div>
-            <div id="two"></div>
-            <div id="three"></div>
-
-        </a>
-        <div id="Main">
-            ...
-        </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <button id="darkModeSupport" onclick="dms()">Dark mode</button>
-        <br>
-        <br>
-        <!--CSS below this comment-->
-
-        <!--CSS ends here-->
-        <div class="header">
-
-            <br>
-            <br>
-            <div id="informative">
-                <button class="dropbtn">Informative things</button>
-
-                <h1>Welcome to the support page!</h1>
-                <p>We will answer questions you have with our QNA</p>
-                <p>This page is a bit buggy. If you are having any problems, please contact me at my preferred email:
-                    nje.eleven34@outlook.com</p>
-            </div>
-            <button class="enableQna">Enable QNA</button>
-            <button class="enableProblems" onclick="enableProblem()">Problems and solutions</button>
-            <div id="problems">
-            <div class="problem-1">
-                <button id="closeproblems" onclick="closeProblems()">&times;</button>
-                <button class="security" id="security" onclick="enableSecurityIssues()">What do I do if I experience a security issue?</button>
-                <br>
-                <button class="bugs-and-issues" id="bugs-issues" onclick="bugsIssues()">Why are there bugs that I can easily spot but Eleven can't because Elevens is kinda bad at coding?</button>
-                <br>
-                <button class="mobile-help" id="mobile-help" onclick="enableMobileHelp()" style="opacity: 0.69; padding: 16px 32px; background: wheat; transition: 0.8s; transform: scale(0.90); position: relative; z-index: 1;">Why does most of the site look like garbage on mobile?</button>
-            </div>
-        </div>
-            <div class="QNA" style="color: white;">
-                <!--Answering users questions here-->
-                <p>Q: When will the site go out of alpha?</p>
-                <p>A: Not sure, but I am thinking of going out of alpha in the next 5 months maybe.</p>
-                <br>
-                <p>Q: What is the site for?</p>
-                <p>A: Right now, it is for a blog. But we will add more functionality to it.</p>
-                <br>
-                <p>Q: What version is the site in?</p>
-                <p>A: Right now, the website is in v1.2.2-Alpha</p>
-                <br>
-                <p>Q: Will there be a login screen?</p>
-                <p>A: Probably, we are thinking about it.</p>
-                <br>
-                <p>Q: There is a security vulnerability on the site! What should I do?</p>
-                <p>A: Contact me at nje.eleven34@icloud.com or nje.eleven34@outlook.com and I will handle it.</p>
-                <br>
-                <div id="business">
-                    <p>Q: Is "ElevenWater975" a company?</p>
-                    <p>A: No this site is not a company. ElevenWater975 is a single person just programming this site.
-                    </p>'
-                    <p>Q: How long does it take for Eleven to come up with new ideas for the site?</p>
-                    <p>A: Eleven takes a while to find out what to add to the site. Sit back and relax whilt I come up
-                        with new things</p>
-                    <div id="security">
-                        <p>Q: Does Eleven have a security policy for the website</p>
-                        <p>A: Yes, the site does have a security policy.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <h1>Can't see what you are looking for?</h1>
-        <p>Contact me at nje.eleven34@outlook.com or go to my <a href="#">Contact me</a> page (Coming Soon)</p>
-        <br>
+    <div id="title">
+        <h1>Welcome to the support page</h1>
+        <h2>The support page of Eleven's Site</h2>
     </div>
-    <p>Goodbye now!</p>
-    <p>Running version 1.2.5-alpha learn more at <a
-            href="https://github.com/ElevenWater975/ElevenWater975.github.io">The original repository</a></p>
-            <div id="MITLICENSE"><p></p>&copy; 2021 ElevenWater975</div>
+    <div id="paragraph">
+        <p>Welcome to the support page of <strong>Eleven's Site</strong>. If you need help with anything on the site, you can reference to this page. This page will help with things from mobile compatibility to general questions. If you need more help, contact me at nje.eleven34@icloud.com or go to the <a href="https://discord.gg/dDYsTVD9hT">Eleven's Site Discord Server</a>.</p>
     </div>
-    <div id="backToTop">
-        <button onclick="topFunction()" id="myBtn" title="Go to top">To the Top</button>
+    
+    <div id="whattodoif">
+    <div id="mobilecompatibility">
+        <h2>Mobile Compatibilty</h2>
+        <p>If you are wondering why the site is less compatible with mobile is becuase this site is <strong>mainly for computers</strong>. This website may soon become compatible for mobile. Hopefully before 2023 ends. But right now, this site is not compatible for mobile.</p>
     </div>
-    <script>
-        
-       
-    </script>
-
+    <br>
+    <div id="bugspotted">
+        <h2>Bugs/Errors</h2>
+        <p>So you just found out a bug/error on the website. If you have found a bug on the site, please contact me at <strong>nje.eleven34@icloud.com</strong> and I will make sure to fix that bug if I can. Most bugs can be fixed.</p>
+    </div>
     </div>
 </body>
-
 </html>

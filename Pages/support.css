@@ -1,363 +1,86 @@
-body {
-    background-color: rgb(34, 34, 34);
-    color: black;
+body { 
+    background-color: rgb(42, 42, 42);
+    color: white;
 }
+
+#title {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+p {
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#paragraph {
+    margin-top: 200px;
+}
+
+#paragraph a {
+    color: lightblue;
+}
+
+ul {
+    list-style-type: none;
+    color: white;
+    background: #333;
+    overflow: hidden;
+}
+
 li {
     float: left;
-    list-style-type: none;
-    text-decoration: none;
-    padding: 2px 10px;
-    background: lime;
-    border: 3px solid black;
-    border-radius: 25px;
-    left: -50px;
-    top: 2px;
-    display: block;
-}
-ul {
-    margin: 0;
-    padding: 0;
-}
-a {
-    color: lime;
-    font-size: 24px;
-    font-style: bold;
-    border: 3px solid black;
-    border-radius: 25px;
     font-family: sans-serif;
-    font-stretch: expanded;
-    padding: 10px, 20px;
 }
-a:hover {
-    font-size: 24px;
-    color: blue;
-}
-.header {
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    position: relative;
-}
-p {
+
+li button {
+    font-family: sans-serif;
     font-size: 20px;
-    color: black;
-    display: block;
-}
-
-#backToTop {
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
-    z-index: 80;
-}
-
-#backToTop:hover {
-    background-color: darkgray;
-}
-hr {
-    /*
-    Some dotted lines
-    */
-border-top: 2px dotted red;
-border-bottom: 1px dotted red;
-}
-
-
-/*
-I am going to add my logo into the website (probably)
-*/
-
-#ee {
-    color: white;
-    text-decoration: none;
-}
-
-/* Thanks to dev.to for showing me how to make these fade in transitions */
-.fade-in {
-  animation: fadein 1s ease-in forwards;
-}
-
-.QNA {
-    opacity: 0;
-    font-family: sans-serif;
-    font-size: 24px;
-    border: 3px solid black;
-    border-radius: 25px;
-    background-color: black;
+    background-color:rgb(42, 42, 42);
     color: white;
 }
 
-.QNA p {
+li a {
     color: white;
-}
-
-@keyframes fadein {
-0% { opacity: 0; }
-50% { opacity:0.5; }
-100% { opacity:1; }
-}
-#fade-in.is-visible {
-    opacity: 1;
-    transform: none;
-    visibility: visible;
-}
-.enable-qna {
-    font-family: Arial;
-    display: block;
-    font-family: sans-serif;
-    font-size: 24px;
     text-align: center;
-    background-color: yellow;
-    border: 3px solid black;
-    border-radius: 25px; 
-    position: relative;
-    left: 45%;
-}
-
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed; 
-    z-index: 1;
-    top: 0;
-    left: 0;
-    color: #38383a;
-    background-color: black;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 1s;
-}
-
-.sidenav a {
-    padding: 10px 10px 10px 30px;
-    text-decoration: none;
-    font-size: 38px;
-    border: 2px solid black;
-    text-align: center;
-    color: limegreen; /*The text looks hackerman green */
-    display: block;
-    transition: 0.5s;
-}
-
-.sidenav a:hover {
-    color: rgb(81, 139, 156);
-    font-size: 28px;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-#sidebar {
-    width: 0px; 
-    height: 0px;
-}
-.sidenav .closeNav {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 48px;
-    margin-left: 50px;
-}
-
-.sidenav a:active {
-    border: 3px solid hotpink;
-    border-radius: 50px;
-    font-size: 32px;
-    font-family: sans-serif;
-    background-color: hotpink
-}
-
-#one {
-    width: 30px;
-    background-color: white;
-    border: 3px solid black;
-    border-radius: 25px;
-}
-
-#two {
-    width: 20px;
-    background-color: white;
-    border: 3px solid black;
-    border-radius: 25px;
-}
-
-#three {
-    width: 30px;
-    background-color: white;
-    border: 3px solid black; 
-    border-radius: 25px;
-}
-
-.nav div {
-    height: 4px;
-    margin: 5px 0px; 
-    background-color: white;
-}
-
-.nav div:hover {
-    box-shadow: 2px 2px 2px black;
-    height: 4px;
-    margin: 5px 0px;
-    background-color: skyblue;
-    
-}
-
-button {
-    font-size: 28px;
-    font-family: sans-serif; 
-    cursor: pointer;
-}
-
-#security {
-    opacity: 0.69;
-    color: black;
-    background: wheat;
-    padding: 16px 32px;
-    transition: 0.5s; 
-    transform: scale(1)
-}
-
-#security:hover {
-    box-shadow: 10px 5px 10px;
-    transform: scale(1.05);
-    opacity: 1;
-}
-
-#myBtn {
-    position: relative;
-    left: -30%;
-}
-
-#informative {
-    border: 3px solid white;
-    border-radius: 25px;
-    background-color: black;
-    padding: 16px 14px;
-    color: white;
-}
-
-
-#NJEQna {
-    display: none;
-    font-family: sans-serif;
-    border: 3px solid black;
-    border-radius: 25px;
-}
-
-@media (max-width: 375px) {
-button.dropbtn {
-    display: none;
-}
-
-button.enableNJEQna {
-    margin-left: -50px;
-    position: relative;
-}
-
-button#myBtn {
-text-align: center;
-border: none;
-}
-}
-
-p {
-    color: white;
-}
-
-.navtop a {
-    border: none;
-    background: none;
-    float: left;
-    margin-top: 5px;
-    text-indent: 5px;
-    text-align: center;
-    font-size: 20px;
-    font-family: sans-serif;
-    color: black;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 32px;
 }
 
-.navtop a:hover {
-    background-color: green;
-    font-weight: bold;
-    color: white;
-    transition: 1s;
+.active {
+    background: blue;
 }
 
-.navtop a.active {
+li a:hover {
+    background-color: black;
+}
+
+ul {
+    padding: 16px;
+}
+
+.ltd {
     background-color: white;
     color: black;
 }
-
-.navtop img {
-    float: left;
+.ltd #paragraph a {
+    color: blue;
 }
 
-#top {
-    display: none;
-    height: 150px;
-}
-.navtop {
-    height: 200px;
-    background-color: rgb(77, 74, 74);
-    border: 3px solid gray;
-    border-radius: 5px;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    height: 100px;
-    z-index: 5;
-    transition: 0.6s;
+.ltd #whattodoif h2 {
+    color: blue; 
 }
 
-a {
-    border: none;
-    background: none;
-}
-
-#movetop {
-    position: relative;
-    left: -20px;
-}
-
-#problems {
-    display: none;
-}
-
-#bugs-issues {
-    opacity: 0.69;
-    padding: 16px 32px;
-    background: wheat;
-    transition: 0.8s;
-    transform: scale(0.90);
-    position: relative;
-    z-index: 1;
-}
-
-#bugs-issues:hover {
-    opacity: 1;
-    transform: scale(1);
-}
-
-#mobile-help {
-    opacity: 0.69;
-    padding: 16px 32px;
-    background: wheat;
-    transition: 0.8s;
-    transform: scale(0.90);
-    position: relative;
-    z-index: 1;
-}
-
-#mobile-help:hover {
-    opacity: 1;
-    transform: scale(1);
-}
-
-#MITLICENSE {
-    font-size: 16px;
+#whattodoif h2 {
+    color: lightblue;
     font-family: sans-serif;
-}
-
-#NJEQNA {
-    display: none;
 }

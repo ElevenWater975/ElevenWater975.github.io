@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(42, 42, 42);
+    color: white;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+ul {
+    font-size: 20px;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+.b1 {
+    display: flex;
+}
+
+.b2 {
+    display: flex;
+}
+
+.b3 {
+    display: flex;
+}

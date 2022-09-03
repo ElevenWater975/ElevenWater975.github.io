@@ -18,8 +18,41 @@ table {
 }
 
 #td1:hover {
-    animation-name: scaling;
+    background-color: black;
 }
+
+#td2:hover {
+    background-color: black;
+}
+
+#td3:hover {
+    background-color: black;
+}
+
+#td4:hover {
+    background-color: black;
+}
+
+#td5:hover {
+    background-color: black;
+}
+
+#td6:hover {
+    background-color: black;
+}
+
+#td7:hover {
+    background-color: black;
+}
+
+#td8:hover {
+    background-color: black;
+}
+
+#td9:hover {
+    background-color: black;
+}
+
 
 .wrapper {
     display: table-cell;
@@ -42,7 +75,6 @@ h1 {
 
 h2 {
     font-size: 32px;
-    font-family: arial, Helvetica, sans;
+    font-family: arial, Helvetica,;
     text-align: center;
 }
-
