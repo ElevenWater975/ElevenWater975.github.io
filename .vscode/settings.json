@@ -3,5 +3,15 @@
     "terminal.integrated.fontSize": 20,
     "markdown.preview.fontSize": 20,
     "markdown.preview.lineHeight": 20,
-    "debug.console.fontSize": 20
+    "debug.console.fontSize": 20,
+    "files.exclude": {
+        "**/.github": true,
+        "**/node_modules": true,
+        "**/LICENSE": true,
+        "**/README.md": true,
+        "**/package.json": true,
+        "**/package-lock.json": true,
+        "**/SECURITY.md": true,
+        "**/.vscode": true
+    }
 }

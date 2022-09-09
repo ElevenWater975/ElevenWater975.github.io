@@ -1,489 +1,459 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-@media screen and (max-width: 375px) {
-    html {
-        background-color: black;
-    }
 body {
-font-family: sans-serif;
-font-size: 32px;
-width: 1920;
-height: 1080;
+	font-family: sans-serif;
 }
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@media screen and (max-width: 375px) {
+	html {
+		background-color: black;
+	}
+	body {
+		font-size: 32px;
+		width: 1920;
+		height: 1080;
+	}
 }
 h1 {
-    font-size: 32px;
-    font-family: 'Press Start 2P', cursive;
+	font-size: 32px;
+	font-family: "Press Start 2P", cursive;
 }
 
 P {
-    font-size: 20px;
-    font-family: sans-serif;
+	font-size: 20px;
 }
-
 
 @media screen and(max-width: 375px) {
-#background-image-1 img  {
-    background-image: url("2021-06-27_19.13.38.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+	#background-image-1 img {
+		background-image: url("2021-06-27_19.13.38.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
 }
 
 @media screen and (max-width: 1920px) {
-    #background-image-1 {
-    background-image: url("2021-06-27_19.13.38.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: auto;
-    height: 1090;
-    }
+	#background-image-1 {
+		background-image: url("2021-06-27_19.13.38.png");
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: auto;
+		height: 1090;
+	}
 }
 
 img {
-    position: relative;
-    width: 400px;
-    left: 50px;
+	position: relative;
+	width: 400px;
+	left: 50px;
 }
 
 img:hover {
-animation: zoom 2s infinite;
-position: relative;
-z-index: 1;
-transform: scale (1.07);
-transition: 1.5s;
+	animation: zoom 2s infinite;
+	position: relative;
+	z-index: 1;
+	transform: scale (1.07);
+	transition: 1.5s;
 }
 
+#g1,
+#g2 {
+	font-size: 30px;
 
-#g1 {
-    font-size: 30px;
-    font-family: sans-serif;
-    border: 3px solid black;
-    border-radius: 25px;
-    background-color: yellow;
-    text-align: center;
-    width: 200px;
-}
-
-#g2  {
-    font-size: 30px;
-    font-family: sans-serif;
-    border: 3px solid black;
-    border-radius: 25px;
-    background-color: yellow;
-    text-align: center;
-    width: 200px; 
+	border: 3px solid black;
+	border-radius: 25px;
+	background-color: yellow;
+	text-align: center;
+	width: 200px;
 }
 
 button {
-    display: block; 
-    background-color: yellow;
-    font-size: 18px;
-    font-family: sans-serif;
-    border: 3px solid black;
-    border-radius: 25px;
+	display: block;
+	background-color: yellow;
+	font-size: 18px;
+
+	border: 3px solid black;
+	border-radius: 25px;
 }
 
 li {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 a {
-    font-family: sans-serif;
-    font-size: 20px;
-    text-decoration: none;
+	font-size: 20px;
+	text-decoration: none;
 }
 .main-text {
-    background: gray;
+	background: gray;
 }
 
 #notice {
-    background-color: yellow;
-    border: 3px solid black;
-    border-radius: 25px;
-    width: 300px;
+	background-color: yellow;
+	border: 3px solid black;
+	border-radius: 25px;
+	width: 300px;
 }
 
 #Lobby-Credit {
-    text-align: center;
-    font-size: 32px;
-    border: 3px solid black;
-    border-radius: 25px;
-    background-color: red;
-    color: white;
-    width: 600px;
-    position: relative;
-    left: 650px;
-    top: -50px;
+	text-align: center;
+	font-size: 32px;
+	border: 3px solid black;
+	border-radius: 25px;
+	background-color: red;
+	color: white;
+	width: 600px;
+	position: relative;
+	left: 650px;
+	top: -50px;
 }
 
 /* 3 lines button */
 #one {
-    width: 30px;
-    border: 2px solid black;
-    border-radius: 25px;
+	width: 30px;
+	border: 2px solid black;
+	border-radius: 25px;
 }
 
 #two {
-    width: 20px;
-    border: 2px solid black;
-    border-radius: 25px;
+	width: 20px;
+	border: 2px solid black;
+	border-radius: 25px;
 }
 
 #three {
-    width: 30px;
-    border: 2px solid black;
-    border-radius: 25px;
+	width: 30px;
+	border: 2px solid black;
+	border-radius: 25px;
 }
 
 .nav div {
-    height: 4px;
-    background-color: white;
-    margin: 5px 0px;
-    position: relative;
-    top: 5px;
-    left: 10px;
+	height: 4px;
+	background-color: white;
+	margin: 5px 0px;
+	position: relative;
+	top: 5px;
+	left: 10px;
 }
 
 #links {
-    display: none;
-    border: 3px solid black;
-    border-radius: 25px;
-    background-color: violet;
-    max-width: 650px;
-    text-align: center;
-    font-size: 25px;
-    position: relative;
-    left: 35%;
+	display: none;
+	border: 3px solid black;
+	border-radius: 25px;
+	background-color: violet;
+	max-width: 650px;
+	text-align: center;
+	font-size: 25px;
+	position: relative;
+	left: 35%;
 }
 
 /* The text is not being enlarged hmmm */
 #links:hover {
-    font-size: 32px;
-    color: blue;
-    font-family: sans-serif;
+	font-size: 32px;
+	color: blue;
 }
 a {
-    text-align: right;
-    text-decoration: none;
-    font-family: Arial;
-    font-size: 20px;
+	text-align: right;
+	text-decoration: none;
+	font-family: Arial;
+	font-size: 20px;
 }
 
 a:hover {
-    color: blue;
-    font-family: sans-serif;
+	color: blue;
 }
 
 /* Thanks to w3schools for a tutorial page on how to make a sidebar */
 
 .sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed; 
-    z-index: 1;
-    top: 0;
-    left: 0;
-    color: #38383a;
-    background-color: black;
-    overflow-x: hidden;
-    padding-top: 60px;
-    transition: 1s;
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	color: #38383a;
+	background-color: black;
+	overflow-x: hidden;
+	padding-top: 60px;
+	transition: 1s;
 }
 
 .sidenav a {
-    padding: 10px 10px 10px 30px;
-    text-decoration: none;
-    font-size: 38px;
-    border: 2px solid black;
-    text-align: center;
-    color: limegreen; /*The text looks hackerman green */
-    display: block;
-    transition: 0.5s;
+	padding: 10px 10px 10px 30px;
+	text-decoration: none;
+	font-size: 38px;
+	border: 2px solid black;
+	text-align: center;
+	color: limegreen; /*The text looks hackerman green */
+	display: block;
+	transition: 0.5s;
 }
 
 .sidenav a:hover {
-    color: rgb(81, 139, 156);
-    font-size: 28px;
-    font-family: 'Courier New', Courier, monospace;
+	color: rgb(81, 139, 156);
+	font-size: 28px;
+	font-family: "Courier New", Courier, monospace;
 }
 
 .sidenav .closeNav {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 48px;
-    margin-left: 50px;
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 48px;
+	margin-left: 50px;
 }
 
 #main {
-    transition: margin-left .5s;
-    padding: 20px;
+	transition: margin-left 0.5s;
+	padding: 20px;
 }
 
 @media screen and (max-height: 500px) {
-    .sidenav a {font-size: 18px;}
-    .sidenav {
-        height: 0;
-        width: 100%;
-        padding-top: 15px;
-        position: fixed; 
-        z-index: 1;
-        top: 0;
-        left: 0;
-        color: #38383a;
-        background-color: black;
-        overflow-x: hidden;
-        padding-top: 60px;
-        transition: 1s;
-    }
-    }
+	.sidenav a {
+		font-size: 18px;
+	}
+	.sidenav {
+		height: 0;
+		width: 100%;
+		padding-top: 15px;
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		color: #38383a;
+		background-color: black;
+		overflow-x: hidden;
+		padding-top: 60px;
+		transition: 1s;
+	}
+}
 
-    @media screen and (max-height: 1024px) {
-        .sidenav a {
-        padding: 10px 10px 10px 30px;
-        text-decoration: none;
-        font-size: 38px;
-        color: limegreen;
-        display: block;
-        transition: 0.5s;
-    } 
-    }
+@media screen and (max-height: 1024px) {
+	.sidenav a {
+		padding: 10px 10px 10px 30px;
+		text-decoration: none;
+		font-size: 38px;
+		color: limegreen;
+		display: block;
+		transition: 0.5s;
+	}
+}
 #one {
-    width: 40px;
-    border: 3px solid black;
-    border-radius: 25px;
-    background-color: white;
+	width: 40px;
+	border: 3px solid black;
+	border-radius: 25px;
+	background-color: white;
 }
 
 h2 {
-    font-family: sans-serif;
-    font-weight: bold;
-    margin: 0;
-    padding: 0;
+	font-weight: bold;
+	margin: 0;
+	padding: 0;
 }
 
 #two {
-    width: 40px;
-    border: 3px solid black;
-    border-radius: 10px;
-    background-color: white;
+	width: 40px;
+	border: 3px solid black;
+	border-radius: 10px;
+	background-color: white;
 }
 
 #three {
-    width: 40px;
-    border: 3px solid black;
-    border-radius: 25px; 
-    background-color: white;
+	width: 40px;
+	border: 3px solid black;
+	border-radius: 25px;
+	background-color: white;
 }
 
 .open div {
-    background-color: white;
-    margin: 5px 0px;
-    height: 4px;
-    cursor: pointer;
+	background-color: white;
+	margin: 5px 0px;
+	height: 4px;
+	cursor: pointer;
 }
 
 .closeNav a {
-    border: none;
+	border: none;
 }
 
 a.closeNav:hover {
-color: white;
-background-color: red;
-border: 3px solid black;
-border-radius: 50px;
-font-size: 34px;
-background-attachment: fixed;
-background-repeat: no-repeat;
+	color: white;
+	background-color: red;
+	border: 3px solid black;
+	border-radius: 50px;
+	font-size: 34px;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
 }
 
 #open {
-font-size: 28px;
-color: white;
+	font-size: 28px;
+	color: white;
 
-font-family: sans-serif;
-margin: 0;
-padding: 0;
-text-decoration: none;
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
 }
 
 span#open:hover {
-    color:rgb(0, 195, 255);
-    background-color: black;
-    font-family: monospace;
-    font-size: 24px;
-    cursor: pointer;
-    transition: 0.5s;
+	color: rgb(0, 195, 255);
+	background-color: black;
+	font-family: monospace;
+	font-size: 24px;
+	cursor: pointer;
+	transition: 0.5s;
 }
 
 span#open::selection {
-    cursor: pointer;
+	cursor: pointer;
 }
 
 img {
-    transform: rotate(5deg)scale(0.87);
-    border: 3px solid black;
-    border-radius: 15px;
-    margin: 5px 0px;
-    padding: 0;
+	transform: rotate(5deg) scale(0.87);
+	border: 3px solid black;
+	border-radius: 15px;
+	margin: 5px 0px;
+	padding: 0;
 }
 img:hover {
-transform: scale(1.07);
-transform: rotate(0deg);
-transition: 1s;
-animation: zoom-in-out 1s infinite;
+	transform: scale(1.07);
+	transform: rotate(0deg);
+	transition: 1s;
+	animation: zoom-in-out 1s infinite;
 }
 
 @keyframes zoom-in-out {
-    50% {
-        transform: scale(1.10);
-    }
+	50% {
+		transform: scale(1.1);
+	}
 }
 
 @media (width: 375px) {
-    p {
-        font-size: 2em;
-        color: black;
-        font-weight: bold; 
-    }
+	p {
+		font-size: 2em;
+		color: black;
+		font-weight: bold;
+	}
 
-    body {
-        width: 1250px;
-        height: 812px;
-    }
+	body {
+		width: 1250px;
+		height: 812px;
+	}
 
-    img {
-        width: 500px;
-        height: 500px;
-    }
+	img {
+		width: 500px;
+		height: 500px;
+	}
 
-    h1 {
-        font-size: 2em;
-    }
+	h1 {
+		font-size: 2em;
+	}
 
-    button {
-        font-size: 72px;
-    }
+	button {
+		font-size: 72px;
+	}
 
-    p#g2 {
-        font-size: 48px;
-    }
+	p#g2 {
+		font-size: 48px;
+	}
 
-    p#g1 {
-        font-size: 48px;
-    }
+	p#g1 {
+		font-size: 48px;
+	}
 
-    a {
-        font-size: 52px;
-    }
+	a {
+		font-size: 52px;
+	}
 
-    div#one {
-        width: 100px;
-        height: 20px;
-    }
+	div#one {
+		width: 100px;
+		height: 20px;
+	}
 
-    div#two {
-        width: 100px;
-        height: 20px;
-    }
+	div#two {
+		width: 100px;
+		height: 20px;
+	}
 
-    div#three {
-        width: 100px; 
-        height: 20px;
-    }
-
+	div#three {
+		width: 100px;
+		height: 20px;
+	}
 }
 
 @media (width: 414px) {
-    body {
-        width: 1290px;
-        height: 812px; 
-    }
-    
-    p {
-        font-size: 2em;
-        font-family: sans-serif;
-    }
+	body {
+		width: 1290px;
+		height: 812px;
+	}
 
-    h1 {
-        font-size: 2em;
-        font-size: sans-serif;
-    }
+	p {
+		font-size: 2em;
+	}
 
-    #title {
-        width: 1180px;
-        text-align: center;
-        font-size: 6em;
-        font-family: sans-serif;
-    }
+	h1 {
+		font-size: 2em;
+		font-size: sans-serif;
+	}
 
-    #subtitle {
-        width: 1180px; 
-        text-align: center;
-        font-size: 4em;
-        font-family: sans-serif;
-    }
-    div#one {
-        width: 100px;
-        height: 30px;
-        background-color: white;
-    }
+	#title {
+		width: 1180px;
+		text-align: center;
+		font-size: 6em;
+	}
 
-    div#two {
-        width: 100px;
-        height: 30px;
-        background-color: white;
-    }
+	#subtitle {
+		width: 1180px;
+		text-align: center;
+		font-size: 4em;
+	}
+	div#one,
+	div#two,
+	div#three {
+		width: 100px;
+		height: 30px;
+		background-color: white;
+	}
 
-    div#three {
-        width: 100px; 
-        height: 30px;
-        background-color: white;
-    }
+	button {
+		font-size: 2em;
+	}
 
-    button {
-        font-size: 2em;
-    }
+	#about-blockpro {
+		text-align: center;
+		font-size: 2em;
+	}
 
-    #about-blockpro {
-        text-align: center;
-        font-size: 2em;
-        font-family: sans-serif;
-    }
+	#blendcolor {
+		text-align: center;
+		color: white;
+	}
 
-    #blendcolor {
-        text-align: center;
-        color: white;
-    }
+	#about-blockpro h2 {
+		font-size: 1.9em;
+	}
 
-    #about-blockpro h2 {
-        font-size: 1.90em;
-        font-family: sans-serif;
-    }
+	div#notice {
+		font-size: 2em;
+	}
 
-    div#notice {
-        font-size: 2em;
-    }
+	button#Ping {
+		font-size: 2em;
 
-    button#Ping {
-        font-size: 2em;
-        font-family: sans-serif;
-        text-align: center;
-    }
+		text-align: center;
+	}
 }
 
 div.page-title {
-    color: white;
-    font-family: sans-serif;
+	color: white;
 }
 
 #home-page:hover {
-cursor: pointer; 
+	cursor: pointer;
 }
 
 #discord-server {
-    position: relative;
-    right: -80%;
+	position: relative;
+	right: -80%;
 }
