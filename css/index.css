@@ -19,37 +19,9 @@ h2 {
     font-size: 32px;
 }
 
-ul {
-    list-style-type: none;
-    color: white;
-    background: #333;
-    overflow: hidden;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 32px;
-}
-
 .active {
     background: blue;
 }
-
-li a:hover {
-    background-color: black;
-}
-
-ul {
-    padding: 16px;
-}
-
 .home {
     animation-name: fadeaway;
     animation-duration: 4;
@@ -82,21 +54,10 @@ color: white;
     color: black;
 }
 
-#kylebot {
-    padding: 14px;
-    margin: left;
-    text-align: left; 
-    padding-left: 20px;
-}
-
 #kbimg {
     float: left;
     width: 200px;
     height: 200px;
-}
-
-.container {
-    display: flex;
 }
 
 .image {
@@ -118,4 +79,46 @@ ol {
 
 .sj89i {
     text-align: left;
+}
+
+.container {
+    text-align: left;
+    width: 825px;
+    margin: 0 auto;
+}
+
+.grow {
+    transition: all 0.5s; 
+    
+}
+
+a:hover {
+    transform: scale(1.1);
+}
+
+.active1 {
+    color: black;
+    background-color: rgb(41, 176, 221);
+  }
+
+  li a {
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #dddddd;
+}
+
+ul {
+    background-color: #333;
+    list-style-type: none;
+}
+
+.nav li {
+    display: inline;
+    float: left;
+  }
+
+#title {
+    text-align: center;
 }

@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(42, 42, 42);
+    color: white;
+}
+
+h1 {
+    font-size: 40px;
+    font-family: sans-serif;
+}
+
+h2 {
+    font-size: 32px;
+    font-family: sans-serif;
+}
+
+p {
+    font-size: 21.50px;
+    font-family: "Publico Text", serif;
+}
+
+.container {
+    margin: 0 auto;
+    width: 825px;
+}
+
+#image2 {
+    height: 500px;
+    width: 700px;
+}
+ 
+a {
+    color: lightblue;
+}
+
+ul {
+    list-style-type: none;
+    color: white;
+    background: #333;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+.active {
+    background-color: rgb(41, 176, 221);
+    color: black;
+}
+
+li a:hover {
+    background-color: black;
+}
+
+li button {
+    background-color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+ul {
+    padding: 16px;
+}
+
+#title {
+    margin-top: 100px;
+    position: relative;
+}
+
+.dlt {
+    background-color: white;
+    color: black;
+}
+
+.dlt #journalingstart:a {
+    color: blue;
+}
+
+#title {
+    text-align: center;
+}

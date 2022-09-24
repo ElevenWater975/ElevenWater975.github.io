@@ -32,21 +32,112 @@ p {
 }
 
 #everysection {
-    text-align: left;
     width: 825px;
-    margin: 16px, 0px;
-    position: absolute;
-    top: 190%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
 }
 
 #Sections a {
-    font-size: 21.5px;
+    font-size: 40.5px;
     text-align: center;
     font-family: sans-serif;
     color: lightblue;
     position: absolute;
     left: 50%;
     text-decoration: none;
+}
+
+#author {
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.efa2 {
+    color: rgb(129, 129, 129);
+}
+
+#topBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(172, 25, 25); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 50%; /* Circular button */
+    font-size: 18px; /* Increase font size */
+  }
+  
+  #topBtn:hover {
+    background-color: rgb(9, 226, 38); /* Add a dark-grey background on hover */
+    color: black; /* Change text color on hover */
+  }
+
+  .fitness {
+    padding: 30px; 
+  }
+
+  .meditation {
+    padding: 30px;
+
+  }
+
+  .nofap {
+    padding: 30px;
+  }
+
+  ol {
+    position: relative;
+    top: -60px;
+    right: 50px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+
+  .nav li {
+    display: inline;
+    float: left;
+  }
+
+li a {
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #dddddd;
+}
+
+#navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+.active1 {
+  color: black;
+  background-color: rgb(41, 176, 221);
+}
+
+ul a:hover {
+  background-color: rgb(95, 95, 95);
+}
+
+#ldt:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+.ldt {
+  background-color: white;
+  color: black;
 }
