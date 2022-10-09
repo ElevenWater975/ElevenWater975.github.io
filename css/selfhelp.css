@@ -5,6 +5,37 @@ body {
     width: 100%;
 }
 
+@media (max-width: 1652px) {
+  .container .sidenav {
+    width: 300px;
+  }
+}
+
+@media (max-width: 375px) {
+  .container .sidenav {
+   width: 375px;
+   height: 200px;
+  }
+
+  p {
+    width: 350px;
+    text-align: center;
+  }
+
+  h1 {
+    width: 375px;
+  }
+
+  .container .sidenav {
+    display: none;
+  }
+}
+
+header {
+  max-width: 100%;
+  padding: 0 1em;
+}
+
 h1 {
     font-size: 40px;
     text-align: center;
