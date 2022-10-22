@@ -11,29 +11,89 @@ body {
     width: 100%;
 }
 
-p {
-    font-size: 20px;
+.container a {
+    color: lightblue;
+    text-decoration: none;
 }
 
-h1 {
-    font-size: 48px;
-    padding: 50px;
-    text-align: center;
+@media (min-width: 825px) {
+    p {
+        font-size: 20px;
+    }
+    
+    #vnav {
+        display: none;
+    }
+
+    h1 {
+        font-size: 48px;
+        padding: 50px;
+        text-align: center;
+    }
+    
+    h2 {
+        text-align: center;
+        font-size: 32px;
+    }
+    
+    .active {
+        background: blue;
+    }
+    
+    .home {
+        animation-name: fadeaway;
+        animation-duration: 4;
+        animation-fill-mode: forwards;
+    }
+    .container {
+        text-align: left;
+        width: 825px;
+        margin: 0 auto;
+    }
 }
 
-h2 {
-    text-align: center;
-    font-size: 32px;
-}
+@media (max-width: 824px) {
+    p {
+        font-size: 20px;
+        font-family: Arial;
+    }
 
-.active {
-    background: blue;
-}
+    #vnav li a {
+        color: white;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-size: 20px;
+        justify-content: center;
+        text-align: center;
+    }
 
-.home {
-    animation-name: fadeaway;
-    animation-duration: 4;
-    animation-fill-mode: forwards;
+    li:hover {
+        background-color: rgb(44, 44, 44);
+        padding: 14px 14px;
+    }
+
+    #vnav {
+        padding: 14px 16px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #titlediv {
+        font-size: 32px;
+    }
+
+    h1 {
+        font-size: 40px;
+        font-family: Arial;
+        width: auto;
+    }
+
+    h2 {
+        font-size: 32px;
+        font-family: Arial;
+    }
 }
 
 @keyframes fadeaway {
@@ -103,11 +163,7 @@ ol {
     text-align: left;
 }
 
-.container {
-    text-align: left;
-    width: 825px;
-    margin: 0 auto;
-}
+
 
 .grow {
     transition: all 0.5s;
@@ -160,62 +216,18 @@ ul {
 display: none;
 }
 
-@media (max-width: 390px) {
-    body {
-        width: 390px;
-        overflow-x: hidden;
-        height: 100%;
-    }
-
-    p {
-        font-size: 18px;
-        width: 380px;
-    }
-
-    h1 {
-        font-size: 38px;
-    }
-
-    h2 {
-        font-size: 24px;
-    }
-
-    .container {
-        width: 390px;
-    }
+.LightDarkToggle li a {
+    color: black;
 }
 
-@media (max-width: 376px) {
-    body {
-    width: 375px;
-    overflow-x: hidden;
-    height: 100%;
-    }
+.LightDarkToggle .container a {
+    color: blue;
+}
 
-    p {
-        font-size: 16px;
-        width: 370px;
-    }   
+.active1 {
+    padding: 10px 10px;
+}
 
-    h2 {
-        font-size: 24px;
-        text-align: left;
-        width: 375px;
-    }
-    
-    h1 {
-        font-size: 32px;
-    }
-
-    nav {
-        display: grid;
-    }
-
-    footer {
-        height: 100%;
-    }
-
-    .container {
-        width: 376px;
-    }
+.LightDarkToggle #nav {
+    background-color: rgb(175, 175, 175);
 }

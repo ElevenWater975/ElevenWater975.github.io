@@ -1,105 +1,103 @@
-body { 
+body {
     background-color: rgb(42, 42, 42);
     color: white;
 }
 
-#title {
-    width: 100%;
-    font-family: sans-serif;
-    text-align: center;
+@media (min-width: 825px) {
+    ul {
+        list-style-type: none;
+      }
+    
+      .nav li {
+        display: inline;
+        float: left;
+      }
+    
+    li a {
+        display: block;
+        padding: 14px 16px;
+        text-align: center;
+        text-decoration: none;
+        color: #dddddd;
+    }
+    
+    #navbar {
+      background-color: #333;
+      overflow: hidden;
+      width: 100%; 
+      position: fixed;
+      display: inline-block;
+      margin-top: -9px;
+      margin-left: -24px;
+      transition: width .2s ease-in-out;
+    }
+.container {
+    width: 825px;
+    margin: 0 auto;
 }
-
-h1 {
-    font-size: 40px;
-}
-
-h2 {
-    font-size: 30px;
 }
 
 p {
-    font-size: 20px;
-    font-family: sans-serif;
-}
-
-#paragraph {
-    margin-top: 200px;
-}
-
-#paragraph a {
-    color: lightblue;
-}
-
-ul {
-    list-style-type: none;
-    color: white;
-    background: #333;
-    overflow: hidden;
-    width: 100%;
-}
-
-li {
-    float: left;
-    font-family: sans-serif;
-}
-
-li button {
-    font-family: sans-serif;
-    font-size: 20px;
-    background-color:rgb(42, 42, 42);
-    color: white;
-}
-
-li a {
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 32px;
-}
-
-.active {
-    background: blue;
-}
-
-li a:hover {
-    background-color: black;
-}
-
-ul {
-    padding: 16px;
-}
-
-.ltd {
-    background-color: white;
-    color: black;
-}
-.ltd #paragraph a {
-    color: blue;
-}
-
-.ltd #whattodoif h2 {
-    color: blue; 
-}
-
-#whattodoif h2 {
-    color: lightblue;
-    font-family: sans-serif;
-}
-
-.a28de {
-    color: lightblue;
-}
-
-h2 {
     font-family: Arial;
+    font-size: 24px;
 }
 
 h1 {
+    font-size: 48px;
     font-family: Arial;
 }
 
-.container {
-    width: 825px;
-    margin: 0 auto; 
+.active1 {
+    background-color: lightblue;   
+    color: black;
+}
+
+
+a {
+    font-family: Arial; 
+}
+
+@media (max-width: 824px) {
+    ul {
+        list-style-type: none; 
+    }
+    #navbar {
+        background-color: #333;
+        width: 100%;
+        padding: 20px 16px;
+    }
+    
+    #ldt {
+        float: left;
+    }
+
+    #navbar a {
+        font-size: 20px;
+    }
+
+    .c1 {
+        color: white;
+    }
+
+    .c2 {
+        color: white;
+    }
+
+    .c3 {
+        color: white;
+    }
+
+    .c4 {
+        color: white;
+    }
+
+
+    .active1 a {
+        padding: 10px;
+        color: black; 
+    }
+}
+
+a {
+    text-decoration: none;
 }

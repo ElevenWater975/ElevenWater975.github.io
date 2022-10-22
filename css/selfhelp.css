@@ -36,18 +36,20 @@ header {
   padding: 0 1em;
 }
 
+.title-header h1 {
+  font-size: 62px;
+}
+
+.title-header h2 {
+  font-size: 42px;
+}
+
 h1 {
     font-size: 40px;
     text-align: center;
 }
 
-#span1 {
-    color: rgb(5, 130, 202);
-}
 
-#span3 {
-    color: rgb(233, 116, 116);
-}
 
 p {
     font-size: 20px;
@@ -62,9 +64,11 @@ p {
     color: rgb(189, 23, 23);
 }
 
+@media (min-width: 825px) {
 #everysection {
     width: 825px;
     margin: 0 auto;
+}
 }
 
 #Sections a {
@@ -143,9 +147,78 @@ li a {
     color: #dddddd;
 }
 
+@media (min-width: 825px) {
+  img {
+    width: 825px;
+  }
+
+  .endstatement img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 3px solid wheat;
+    }
+    
+    .endstatement {
+      width: auto;
+      display: inline-block;
+      background-color: rgb(51, 51, 51);
+      border: 5px solid black;
+      color: white;
+      font-family: sans-serif;
+      font-weight: bold; 
+    }
+    
+    .endwrapper {
+      display: inline-block;
+      color: white;
+      font-size: 40px;
+    }
+
+}
+
+@media (max-width: 824px) {
+  img {
+    width: 100%;
+  }
+
+  .endstatement img {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    border: 3px solid wheat;
+    }
+
+    .container p {
+      text-align: center;
+    }
+    
+    .endstatement {
+      width: auto;
+      display: inline-block;
+      color: white;
+      border: 5px solid black;
+      font-family: sans-serif;
+      font-weight: bold; 
+    }
+    
+    .endwrapper {
+      display: inline-block;
+      color: white;
+      font-size: 40px;
+    }
+
+}
+
 #navbar {
-    background-color: #333;
-    overflow: hidden;
+  background-color: #333;
+  overflow: hidden;
+  width: 100%; 
+  position: fixed;
+  display: inline-block;
+  margin-top: -9px;
+  margin-left: -24px;
+  transition: width .2s ease-in-out;
 }
 
 h2 {
@@ -261,4 +334,82 @@ ul a:hover {
 .contacts {
   font-family: Arial;
   font-size: 32px;
+}
+
+
+#one {
+  background-color: white;
+  width: 35px;
+  height: 5px;
+  margin: 6px 0;
+}
+
+#two {
+  background-color: white;
+  width: 35px;
+  height: 5px;
+  margin: 6px 0;
+}
+
+#navigationtoggle:hover {
+  cursor: pointer; 
+}
+
+#three {
+  background-color: white;
+  width: 35px;
+  height: 5px;
+  margin: 6px 0;
+}
+
+.togglenav {
+  display: none;
+}
+
+.togglenavtwo {
+  max-width: 75px;
+}
+
+.container {
+  overflow: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#span1 {
+  color: rgb(5, 130, 202);
+}
+
+#span3 {
+  color: rgb(233, 116, 116);
+}
+
+@media (max-width: 824px) {
+  .container {
+    width: 100%;
+  }
+
+  #navbar {
+    display: none;
+  }
+}
+
+#vnavother {
+  color: white;
+}
+
+.ldt #vnavother a {
+  color: black;
+}
+
+.ldt #ldt {
+  color: white;
+}
+
+@media (min-width: 825px) {
+  #vnavbar {
+    display: none;
+  }
 }

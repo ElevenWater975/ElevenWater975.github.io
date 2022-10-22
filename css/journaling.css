@@ -3,87 +3,178 @@ body {
     color: white;
 }
 
-h1 {
-    font-size: 40px;
-    font-family: sans-serif;
-}
+@media (min-width: 825px) {
+    #navother {
+        width: 100%;
+    }
+    #image2 {
+        height: 500px;
+        width: 700px;
+    }
 
-h2 {
-    font-size: 32px;
-    font-family: sans-serif;
-}
+    .endstatement img {
+      width: 125px;
+      height: 125px;
+      border-radius: 50%;
+      border: 3px solid wheat;
+      }
+      
+      .endstatement {
+        width: auto;
+        display: inline-block;
+        background-color: rgb(51, 51, 51);
+        border: 5px solid black;
+        color: white;
+        font-family: sans-serif;
+        font-weight: bold; 
+      }
+      
+      .endwrapper {
+        display: inline-block;
+        color: white;
+        font-size: 40px;
+      }
 
-p {
-    font-size: 21.50px;
-    font-family: "Publico Text", serif;
-}
+    ul {
+        list-style-type: none;
+      }
+    
+      .nav li {
+        display: inline;
+        float: left;
+      }
+    
+    li a {
+        display: block;
+        padding: 14px 16px;
+        text-align: center;
+        text-decoration: none;
+        color: #dddddd;
+    }
+    
+    #navbar {
+      background-color: #333;
+      overflow: hidden;
+      width: 100%; 
+      position: fixed;
+      display: inline-block;
+      margin-top: -9px;
+      margin-left: -24px;
+      transition: width .2s ease-in-out;
+    }
+    
 
-.container {
-    margin: 0 auto;
-    width: 825px;
-}
+    .container {
+        width: 825px;
+        margin: 0 auto;
+        margin-top: 30px; 
+      }
+      }
+      
+      @media (max-width: 824px) {
+        #image2 {
+            max-width: 100%;
+        }
 
-#image2 {
-    height: 500px;
-    width: 700px;
-}
- 
-a {
-    color: lightblue;
-}
+        .endstatement img {
+          width: 125px;
+          height: 125px;
+          border-radius: 50%;
+          border: 3px solid wheat;
+          }
+          
+          .endstatement {
+            width: auto;
+            display: inline-block;
+            color: white;
+            border: 5px solid black;
+            font-family: sans-serif;
+            font-weight: bold; 
+          }
+          
+          .endwrapper {
+            display: inline-block;
+            color: white;
+            font-size: 40px;
+          }
 
-ul {
-    list-style-type: none;
-    color: white;
-    background: #333;
-    overflow: hidden;
-}
+        #navbar {
+            background-color: #333;
+            text-decoration: none;
+            overflow: hidden;
+            padding: 14px 16px;
+            width: auto;
+        }
 
-li {
-    float: left;
-}
+        .container p {
+          text-align: center;
+        }
 
-li a {
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-family: sans-serif;
-}
+        #navigationtoggle div {
+          display: none; 
+        }
 
-.active {
-    background-color: rgb(41, 176, 221);
-    color: black;
-}
+        li a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
 
-li a:hover {
-    background-color: black;
-}
+        ul {
+            list-style-type: none;
+        }
+      }
 
-li button {
-    background-color: white;
-    font-size: 24px;
-    cursor: pointer;
-}
 
-ul {
-    padding: 16px;
-}
+      h1 {
+        font-size: 48px;
+        font-family: sans-serif;
+      }
+      
+      h2 {
+        font-size: 32px;
+        font-family: sans-serif;
+      }
+      
+      p {
+        font-size: 24px;
+      }
 
-#title {
-    margin-top: 100px;
-    position: relative;
-}
+      .active3 {
+        background-color: lightblue;
+        color: black;
+      }
 
-.dlt {
-    background-color: white;
-    color: black;
-}
+      #navbar a {
+        font-family: Arial;
+      }
+      
+      #navigationtoggle div {
+      width: 35px;
+      height: 5px;
+      background-color: white;
+      margin: 6px 0;
+      }
 
-.dlt #journalingstart:a {
-    color: blue;
-}
+      #navigationtoggle div:hover {
+        cursor: pointer;
+      }
 
-#title {
-    text-align: center;
-}
+      .togglenav {
+        display: none;
+      }
+      
+      .togglenavtwo {
+        max-width: 75px;
+      }
+
+      .container a {
+        color: lightblue;
+        text-decoration: none;
+      }
+
+      @media (max-width: 376px) {
+        h1 {
+          font-size: 40px;
+        }
+      }

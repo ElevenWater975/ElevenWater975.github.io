@@ -10,24 +10,25 @@
 </head>
 <body>
     <header>
-        <div class="title">
-            <p>Eleven's Site / Space of Improvement</p>
-            <h2>Support page</h2>
+        <div class="nav">
+            <ul id="navbar">
+            <li id="navigationtoggle">
+                <div id="one" onclick="closeNav()"></div>
+                <div id="two" onclick="closeNav()"></div>
+                <div id="three" onclick="closeNav()"></div>
+            </li>
+           <div id="navother">
+                <li><a class="c1" href="https://ElevenWater975.github.io">Home</a></li>
+                <li><a class="c2" href="https://ElevenWater975.github.io/Pages/selfhelp">Self-Improvement</a></li>
+                <li><a class="c3" href="https://ElevenWater975.github.io/Pages/journaling">Journaling</a></li>
+                <li><a class="c4" href="https://ElevenWater975.github.io/Pages/meditation">Meditation</a></li>
+                <li><a class="active1" href="#" onclick="alreadyHere()">Support</a></li>
+                <li><a id="ldt" onclick="lightmode()">Light/Dark mode</a></li>
+                </div>
+            </ul>
         </div>
-    <div id="navbar">
-        <ul>
-            <li><img src="img/Q8LDVP-j_400x400.png"></img></li>
-            <li><a href="https://github.com/elevenwater975/elevenwater975.github.io">Repository</a></li>
-            <li id="homepage"><a href='https://elevenwater975.github.io' onclick="alreadyHere()">Home</a></li>
-            <li><a href="https://discord.gg/dDYsTVD9hT">Discord Server</a></li>
-            <li><a href="https://reddit.com/r/elevenssite">Subreddit</a></li>
-            <li><a href="https://elevenwater975.github.io/pages/support">Support</a></li>
-            <li><a href="https://elevenwater975.github.io/pages/reach">Reach me</a></li>
-            <li><button type="button" id="light" onclick="ldt()">Light/Dark mode toggle</button></li>
-            <li style="float: right;"><a href="https://elevenwater975.github.io/about" class="active">About me</a></li>
-        </ul>
     </header>
-    
+    <br>
     <div class="container">
         <h1>Welcome to the support page.</h1>
         <br>
@@ -45,5 +46,15 @@
         <h2>What do I do if I encounter a style error?</h2>
         <p>If you encounter a style error (in my definiton something that doesn't look right, is not aligned properly, or in other words looks like it shouldn't), please report what you're talking about to my <a href="mailto:nje.eleven34@outlook.com">email</a> and tell me which page you are talking about and the style error. I did notice some errors I made in styling elements in CSS and I am trying to fix that. If you report a mobile style error, please notice that I am aware that the site looks terrible on mobile because the site is not mobile compatible. You may find multiple style errors and if you do, please report all of them to me. As said before, I am working on this site almost daily.</p>
     </div> 
+    <br>
+    <div class="container third-paragraph">
+        <h2>How do I encounter a functionality error?</h2>
+        <p>To spot a functionality error, you must first, find what function you are trying to look in to. And what do I mean by function? I mean functions like lightmode/darkmode and stuff that requires the click of a button. If something does not look right and is not doing what it is supposed to (For example, light mode doesn't make the screen light when you click on the light mode button), please contact me from my <a href="mailto:nje.eleven34@outlook.com">email</a> or my discord. Another way to spot an error in functionality is to look through the JavaScript code in my repository and spot any coding errors (if that is what you like doing), but I recommend just finding them through the site.</p>
+    </div>
+    <br>
+    <div class="container conclusion">
+        <h1>Conclusion</h1>
+        <p>So, you have seen how you can report an error or spot one. Errors are frequent in the website since we are almost in beta testing. People like you who come on the site and find bugs make the site brighter and cleaner because that helps me catch the bugs and remove them. Thank you for reading this! Remember, join the <a href="https://discord.gg/kEHAU7ya3B">discord server</a> or email me if you have a bug to report.</p>
+    </div>
 </body>
 </html>

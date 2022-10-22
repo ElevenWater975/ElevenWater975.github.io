@@ -8,26 +8,54 @@
     <link rel="stylesheet" type="text/css" href="../css/selfhelp.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="../js/selfhelp.js"></script>
-    <title>Self Help page</title>
+    <title>Space of Improvement</title>
 </head>
 
 <body>
     <header>
-        <div class="nav">
-            <h1>Space of Improvement</h1>
-            <h2 style="text-align: center;">Better Yourself</h2>
-            <ul id="navbar">
+        <div class="vnav">
+            <ul id="vnavbar">
+                <li id="navigationtoggle">
+                    <div id="one" onclick="closeVNav()"></div>
+                    <div id="two" onclick="closeVNav()"></div>
+                    <div id="three" onclick="closeVNav()"></div>
+                </li>
+                <div id="vnavother">
                 <li><a class="c1" href="https://ElevenWater975.github.io">Home</a></li>
                 <li><a class="active1" onclick="alreadyhere()">Self-Improvement</a></li>
                 <li><a class="c2" href="https://ElevenWater975.github.io/Pages/journaling">Journaling</a></li>
                 <li><a class="c3" href="https://ElevenWater975.github.io/Pages/meditation">Meditation</a></li>
                 <li><a class="c4" href="#" onclick="fixingUp()">Support</a></li>
                 <li><a style="float: right;" id="ldt" onclick="lightmode()">Light/Dark mode</a></li>
+            </div>
+            </ul>
+        </div>
+        <div class="nav">
+            <ul id="navbar">
+            <li id="navigationtoggle">
+                <div id="one" onclick="closeNav()"></div>
+                <div id="two" onclick="closeNav()"></div>
+                <div id="three" onclick="closeNav()"></div>
+            </li>
+           <div id="navother">
+                <li><a class="c1" href="https://ElevenWater975.github.io">Home</a></li>
+                <li><a class="active1" onclick="alreadyhere()">Self-Improvement</a></li>
+                <li><a class="c2" href="https://ElevenWater975.github.io/Pages/journaling">Journaling</a></li>
+                <li><a class="c3" href="https://ElevenWater975.github.io/Pages/meditation">Meditation</a></li>
+                <li><a class="c4" href="https://ElevenWater975.github.io/Pages/support">Support</a></li>
+                <li><a style="float: right;" id="ldt" onclick="lightmode()">Light/Dark mode</a></li>
+                </div>
             </ul>
         </div>
     </header>
     <br>
     <div class="title">
+        <div class="title-header">
+        <h1>Space of Improvement</h1>
+        <h2 style="text-align: center;">Better Yourself</h2>
+            <br>
+    </div>
+        
         <h1 class="aa1">
             <span>I Am On</span>
             <span id="span1">Self Improvement</span>
@@ -37,19 +65,6 @@
         </h1>
     </div>
     <div class="container">
-        <div style="text-align: center;" class="container sidenav">
-            <h3>Made by ElevenWater975</h3>
-            <img src="../img/IMG_3341 (2).JPG">
-            <p>I am a 15-year-old web developer on self-improvement. I have been in web development for quite a while now. I want to work on more projects like this one in the future.</p>
-            <br>
-            <p class="contactme">Contact Me</p>
-            <br>
-            <div class="contacts">
-            <p style="font-size: 24px; font-family: Arial;">nje.eleven34@outlook.com</p>
-            <p style="font-size: 24px; font-family: Arial;">nje.eleven34@icloud.com</p>
-        </div>
-    </div>
-    <div id="elsefromsidenav"></div>
         <button onclick="top()" id="topBtn" title="Back to top">Top</button>
         <br>
         <div id="Sections">
@@ -60,6 +75,7 @@
                 <li class="nofap"><a href="#NoFap">NoFap</a></li>
             </ol>
         </div>
+        
         <br>
     </div>
     
@@ -95,7 +111,7 @@
                 getting more consistent on my workouts. I have been setting a few goals (one of them is to lose a lot of
                 weight) and I want you to as well. Click off this website right now and write down some goals on a piece
                 of paper and when you're done, come back to this website.</p>
-            <img style="width: 825px;" src="../img/fitness-pose-workout-gym-524.jpg">
+            <img src="../img/fitness-pose-workout-gym-524.jpg">
             <caption>This is not me</caption>
             <p class="para5">When you think about what you are going to do for fitness, don't just think about your
                 goals, think of the process on how you're going to achieve those goals. If you just think about your
@@ -125,49 +141,26 @@
         <br>
         <br>
         <br>
-
+        <div class="endstatement">
+            <div class="endwrapper">
+                
+   
+    
+            <img src="../img/IMG_3341 (2).JPG">
+            <h1>Created by ElevenWater975</h1>
+        </div>
+        <p>I want all young men to join me to become the top 1% of men. So many of us including me are down bad and this is normalized unfortunately. We all need to change. Join me on this self-improvement journey and together, we will make progress.</p>
+        </div>
+        <p>"Heeeeeeeee" - ICEcold JT</p>
+    </div>
+            </div>
         <br>
         <p>"Do the hard work, especially when you don't feel like it" - Hamza</p>
     </div>
     </div>
-    <footer class="footermain">
-        
-        <div class="footer-container">
-            <div class="footer-title">
-            <h1>Space of Improvement</h1>
-            <h2>Created by ElevenWater975</h2>
-            <p>My mission is to get people to join me on my self-improvement journey because in today's world, we
-                are so down bad and we want to improve.</p>
-        </div>
-        <br>
-            <div class="footer">
-              
-                <br>
-                <div class="footer-heading footer-1">
-                    <h3>About us</h3>
-                    <a href="https://github.com/ElevenWater975.github.io">Github repository</a><br>
-                    <a href="https://ElevenWater975.github.io">Home page</a>
-                </div>
 
-                <div class="footer-heading footer-2">
-                    <h3>Contact me</h3>
-                    <a href="mailto:nje.eleven34@outlook.com">nje.eleven34@outlook.com</a><br>
-                    <br>
-                    <a href="mailto:nje.eleven34@icloud.com">nje.eleven34@icloud.com</a>
-                </div>
-
-                <div class="footer-heading footer-3">
-                    <h3>Socials</h3>
-                    <a href="https://reddit.com/r/elevenssite">Subreddit</a><br>
-                    <br>
-                    <a href="https://discord.gg/kEHAU7ya3B">Discord server</a><br>
-                    <br>
-                    <a href="https://youtube.com/user/nyrangerfan88">YouTube channel</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    </footer>
+    &copy; 2022 ElevenWater975 
+    Running version 1.3.0-Alpha
 </body>
 
 </html>

@@ -1,4 +1,3 @@
-
 var caps = document.getElementById("caps-warning");
 var input = document.getElementById("login2");
 
