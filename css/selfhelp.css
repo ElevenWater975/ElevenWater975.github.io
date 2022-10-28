@@ -414,4 +414,8 @@ body {
   #vnavbar {
     display: none;
   }
+
+  #vnav {
+    display: none;
+  }
 }
