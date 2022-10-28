@@ -1,9 +1,9 @@
 body {
   background-color: rgb(42, 42, 42);
   color: white;
-
+  width: 100%;
 }
-
+/* The style for the title */
 .title-header {
   text-align: center;
   width: 100%;
@@ -21,7 +21,6 @@ body {
   font-size: 32px;
   font-family: Arial;
 }
-
 ul {
   list-style-type: none;
   background-color: #333;
@@ -32,22 +31,26 @@ ul {
 }
 
 
-li a {
-  display: block;
-  padding: 14px 16px;
-  text-align: center;
-  font-family: Arial;
-  text-decoration: none;
-  color: #dddddd;
-  font-size: 24px;
-}
+
 @media (min-width: 825px) {
+  #vnav {
+    display: none;
+  }
 
   .nav li {
     display: inline;
     float: left;
   }
   
+  li a {
+    display: block;
+    padding: 14px 16px;
+    text-align: center;
+    font-family: Arial;
+    text-decoration: none;
+    color: #dddddd;
+    font-size: 24px;
+  }
 
 #navbar {
   background-color: #333;
@@ -73,8 +76,49 @@ li a {
 }
 
 @media (max-width: 824px) {
-  .container p {
+  .nav {
+    display: none;
+  }
+
+  #vnav li a {
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 20px;
+    justify-content: center;
     text-align: center;
+  }
+
+  .c1 {
+    color: white;
+  }
+
+  .c2 {
+    color: white;
+  }
+
+  .c3 {
+    color: white;
+  }
+
+  .active3 {
+    color: black;
+  }
+
+  .c4 {
+    color: white;
+  }
+
+  #ldt {
+    color: white;
+  }
+
+  #vnav {
+    padding: 14px 16px;
+  }
+
+  .active3 {
+    padding: 10px 10px;
+    color: black;
   }
 
   .endstatement img {

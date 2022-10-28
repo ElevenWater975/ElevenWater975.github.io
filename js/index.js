@@ -9,11 +9,17 @@ function alreadyHere() {
     if (click === 10) {
         alert("You have clicked this invisible link too many times. The whole site will now fade away. (You can reload to change it back to  normal)");
         y.style.opacity = "0%";
-        y.style.transition = "3s";
+        y.style.transition = "3s";  
     } else if (click === 20) {
         alert("You have clicked this invisible link so many times that this page will now go into light mode. (You can reload to change it back to normal)");
         y.style.background = "white";
-    } 
+    } else if (click === 11) {
+        alert("So you really think that something will happen if you click so many times?");
+    } else if (click === 12) {
+        alert("Well guess what, you're right");
+    } else if (click === 13) {
+        alert("Just click like 7 or 8 more times and something new will happen.");
+    }
 }
 
 function ldt() {

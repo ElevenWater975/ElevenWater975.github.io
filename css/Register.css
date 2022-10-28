@@ -16,7 +16,7 @@ body {
     border: 3px solid white;
     border-radius: 25px;
     color: black;
-}
+} 
 }
 
 @media screen and (max-width: 320px) {
