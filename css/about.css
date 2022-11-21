@@ -1,87 +1,73 @@
 body {
-    background: #141414da;
-    color: white;
-    transition: 1s;
+    background-color: black;
 }
+
+p {
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
 h1 {
     font-size: 48px;
     font-family: sans-serif;
 }
 
 h2 {
-font-family: sans-serif; 
-font-size: 32px;
-}
-
-p {
-font-family: sans-serif;
-font-size: 16px;
-}
-
-ul {
+    font-size: 32px;
     font-family: sans-serif;
-    font-size: 18px;
 }
 
-a:hover {
-color: red;
+@media (min-width: 825px) {
+    #vnav {
+        display: none;
+    }
+
+    ul {
+        list-style-type: none;
+      }
+    
+      .nav li {
+        display: inline;
+        float: left;
+      }
+    
+    li a {
+        display: block;
+        padding: 14px 16px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 24px;
+        font-family: sans-serif;
+        color: #dddddd;
+    }
+    
+    #navbar {
+      background-color: #333;
+      overflow: hidden;
+      width: 100%;
+      position: fixed;
+      display: inline-block;
+      margin-top: -9px;
+      margin-left: -24px;
+      transition: width .2s ease-in-out;
+  }
+
 }
 
-a:clicked {
-color: rgb(79, 85, 255);
+#title {
+    color: white;
 }
 
-.darktoggle {
-    background: black;
+#navbar {
+    background-color: #333;
+    overflow: hidden;
 }
 
-#sections {
-    align-items: right;
-    width: 200px;
-    height: 100%;
-    float: right;
-}
+ul a:hover {
+    background-color: rgb(95, 95, 95);
+  }
 
-#left {
-    float: left;
-    width: 15%;
-}
-
-#left p {
-    font-size: 24px;
-}
-
-#left a {
-    font-size: 20px;
-    font-family: sans-serif;
-    text-decoration: none;
-}
-#right {
-    float: left;
-    width: 75%;
-    border-left: 3px double gray;
-}
-
-a {
-    text-decoration: none;
-    color: lightblue; 
-}
-
-#head {
-    text-align: left;
-    border-bottom: 3px double black;
-}
-
-#right {
-    text-align: center;
-}
-
-#footer {
-    clear: both;
-    text-align: center;
-    border-top: 3px double gray;
-}
-
-#head {
-    text-align: center;
-}
+  .active2 {
+    background-color: lightblue;
+    color: black;
+  }

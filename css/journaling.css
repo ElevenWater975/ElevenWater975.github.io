@@ -55,13 +55,13 @@ body {
     #navbar {
       background-color: #333;
       overflow: hidden;
-      width: 100%; 
+      width: 100%;
       position: fixed;
       display: inline-block;
       margin-top: -9px;
       margin-left: -24px;
       transition: width .2s ease-in-out;
-    }
+  }
     
 
     .container {
@@ -141,7 +141,7 @@ body {
       }
 
       .active3 {
-        background-color: lightblue;
+        background-color: #29B0DD;
         color: black;
       }
 
@@ -177,4 +177,8 @@ body {
         h1 {
           font-size: 40px;
         }
+      }
+
+      .togglenavtwo {
+        max-width: 75px;
       }

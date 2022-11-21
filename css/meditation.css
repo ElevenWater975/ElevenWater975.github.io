@@ -1,6 +1,7 @@
 body {
   background-color: rgb(42, 42, 42);
   color: white;
+  overflow-x: hidden;
   width: 100%;
 }
 /* The style for the title */
@@ -49,7 +50,7 @@ ul {
     font-family: Arial;
     text-decoration: none;
     color: #dddddd;
-    font-size: 24px;
+    font-size: 16px;
   }
 
 #navbar {
@@ -59,8 +60,12 @@ ul {
   position: fixed;
   display: inline-block;
   margin-top: -9px;
-  margin-left: -10px;
-  transition: width .2s ease-in-out;
+  margin-left: -24px;
+}
+
+li a:hover {
+  background-color: gray;
+  color: black;
 }
 }
 
@@ -210,13 +215,6 @@ font-weight: bold;
   text-decoration: none;
 }
 
-a {
-  transition: all .4s ease-in-out;
-}
-
-a:hover {
-  transform: scale(1.1);
-}
 
 .contactme {
   background-color: rgb(243, 202, 126);
@@ -289,7 +287,6 @@ a:hover {
   background-color: lime;
   width: 200px;
   height: 50px;
-  border: 1px solid black;
   font-size: 24px;
   float: right;
   position: fixed
@@ -316,18 +313,10 @@ li div {
   height: 5px;
   background-color: white;
   margin: 6px 0px;
-  border: 1px solid black;
-  border-radius: 30%; 
-  margin-bottom: 10px;
 }
 
 li div:hover {
   cursor: pointer;
-}
-
-#navigationtoggle {
-  width: 100px;
-  transition: all .2s ease-in-out;
 }
 
 .togglenav {

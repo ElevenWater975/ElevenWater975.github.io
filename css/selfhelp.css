@@ -237,9 +237,6 @@ ul a:hover {
 }
 
 #ldt:hover {
-  background-color: rgb(0, 0, 0);
-  color: white;
-  border: 2px solid white;
   cursor: pointer;
 }
 
@@ -388,6 +385,8 @@ body {
   color: rgb(233, 116, 116);
 }
 
+/*For screens with a viewport width of 824 pixels or less*/
+
 @media (max-width: 824px) {
   .container {
     width: 100%;
@@ -410,6 +409,7 @@ body {
   color: white;
 }
 
+/* For screens with a viewport width of 825 pixels or more */
 @media (min-width: 825px) {
   #vnavbar {
     display: none;
