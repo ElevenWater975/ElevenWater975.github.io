@@ -24,3 +24,7 @@ function closeVNav() {
     x.classList.add("vtogglenav");
     y.classList.add("vtogglenavtwo");
 }
+
+function comingSoon() {
+    alert("This feature is currently being worked on.");
+}

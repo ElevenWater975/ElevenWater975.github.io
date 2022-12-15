@@ -3,6 +3,11 @@ body {
     color: white;
 }
 
+li a:hover {
+    background-color: darkgray;
+    color: black;
+}
+
 @media (min-width: 825px) {
     ul {
         list-style-type: none;
@@ -48,7 +53,7 @@ h1 {
 }
 
 .active1 {
-    background-color: lightblue;   
+    background-color: #29B0DD;   
     color: black;
 }
 

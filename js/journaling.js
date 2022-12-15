@@ -9,3 +9,7 @@ function closeNav() {
     x.classList.toggle("togglenav");
     y.classList.toggle("togglenavtwo");
 }
+
+function comingSoon() {
+    alert("This feature is currently being worked on.");
+}

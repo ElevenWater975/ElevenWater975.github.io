@@ -33,3 +33,7 @@ function currentTheme() {
         document.getElementById("theme1").style.display === "none";
     }
 }
+
+function comingSoon() {
+    alert("This feature is currently being worked on.");
+}

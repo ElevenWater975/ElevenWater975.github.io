@@ -3,6 +3,11 @@ body {
     color: white;
 }
 
+li a:hover {
+  background-color: darkgray;
+  color: black;
+}
+
 @media (min-width: 825px) {
     #navother {
         width: 100%;
