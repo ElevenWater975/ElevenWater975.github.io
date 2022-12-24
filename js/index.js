@@ -29,11 +29,7 @@ function ldt() {
 
 function currentTheme() {
     let currentTheme = document.body;
-    if (currentTheme.style.background === "rgb(42, 42, 42,)") {
+    if (currentTheme.style.background === "rgb(42, 42, 42,)") {s
         document.getElementById("theme1").style.display === "none";
     }
-}
-
-function comingSoon() {
-    alert("This feature is currently being worked on.");
 }
