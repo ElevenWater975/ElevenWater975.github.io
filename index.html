@@ -15,81 +15,102 @@
     <link rel="stylesheet" href="../css/mobileconfigurations/meditation.css">
     <title>Eleven's Site</title>
 </head>
-
 <body>
     <noscript>To use this site, please enable JavaScript</noscript>
 
-    <main id="app">
+    
+     <div class="logo" style="position: fixed; width: 100%;">
+        <img src="img/White circle 2).png">
+        <li id="navigationtoggle" style="float: right; left: -20px;">
+            <div id="one" onclick="closeNav()"></div>
+            <div id="two" onclick="closeNav()"></div>
+            <div id="three" onclick="closeNav()"></div>
+        </li>
 
-    </main>
-    <div class="verticalnav">
-        <ul id="vnav">
-            <li><a href="https://github.com/elevenwater975/elevenwater975.github.io" class="grow">Repository</a>
-            </li>
-            <br>
-            <li id="homepage"><a style="color: black;" class="active1" href='https://elevenwater975.github.io'
-                    onclick="alreadyHere()" class="grow">Home</a></li>
-            <br>
-            <li><a href="https://discord.gg/dDYsTVD9hT" class="grow">Discord Server</a></li>
-            <li><a href="https://reddit.com/r/elevenssite" class="grow">Subreddit</a></li>
-            <li><a href="https://elevenwater975.github.io/Pages/support" class="grow">Support</a></li>
-            <li><a href="https://elevenwater975.github.io/Pages/selfhelp" class="grow">Self-Improvement</a></li>
-            <li><a href="#" id="ldt" onclick="ldt()">Light/Dark toggle</a></li>
-        </ul>
-    </div>
-    <div class="nav">
-        <nav>
-            <img id="logo" src="img/White circle 2 (1).png">
-            <ul>
-                
-                <li><a href="https://github.com/elevenwater975/elevenwater975.github.io" class="grow">Repository</a>
-                </li>
-                <li id="homepage"><a style="color: black" class="active1" href='#' onclick="alreadyHere()"
+        <li id="navigationtoggle2" style="float: right; display: none;">
+            <div id="one" onclick="closeNav2()"></div>
+            <div id="two" onclick="closeNav2()"></div>
+            <div id="three" onclick="closeNav2 ()"></div>
+        </li>
+        <div id="verticalnav" display: none;>
+            <ul id="vnav">
+                <li><a href="https://github.com/elevenwater975/elevenwater975.github.io" class="grow">Repository</a></li>
+                <li id="homepage"><a style="color: black; background-color: rgb(41, 176, 221);"  href='#' onclick="alreadyHere()"
                         class="grow">Home</a></li>
                 <li><a href="https://discord.gg/dDYsTVD9hT" class="grow">Discord Server</a></li>
                 <li><a href="https://reddit.com/r/elevenssite" class="grow">Subreddit</a></li>
                 <li><a href="https://spaceofimprovement.netlify.app/Pages/support" class="grow">Support</a></li>
                 <li><a href="https://spaceofimprovement.netlify.app/Pages/selfhelp" class="grow">Self-Improvement</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div id="nav" class="nav">
+        <img id="logo" style="width: 70px; height: 70px;" src="img/White circle 2 (1).png">
+        <nav>
+            <ul>
+                <li><a href="https://github.com/elevenwater975/elevenwater975.github.io" class="grow">Repository</a>
+                </li>
+                <li id="homepage"><a style="color: black"  class="active1" href='#' onclick="alreadyHere()"
+                        class="grow">Home</a></li>
+                <li><a href="https://reddit.com/r/elevenssite" class="grow">Subreddit</a></li>
+                <li><a href="https://spaceofimprovement.netlify.app/Pages/support" class="grow">Support</a></li>
+                <li><a href="https://spaceofimprovement.netlify.app/Pages/selfhelp" class="grow">Self-Improvement</a>
+                </li>
                 <li><a class="grow" href="#" onClick="comingSoon()">Other stuff</a></li>
-                <li><a href="#" id="ldt" onclick="ldt()">Light/Dark toggle</a></li>
+                <li style="float: right;"><a href="#" style="float: right;">About</a></li>
             </ul>
         </nav>
     </div>
-    <div id="titlediv">
+    <header id="header-main">
+        <div id="titlediv">
+            <br>
+            <br>
+            <h1>Space of Improvement / Eleven's Site</h1>
+            <br>
+        </div>
         <br>
-        <br>
-        <h1>Space of Improvement / Eleven's Site</h1>
-        <h2>Better yourself every day.</h2>
-    </div>
-    <br>
-    <div class="container">
-        <p>If you don't know who I am, my name is ElevenWater975. I code in HTML, CSS, And JavaScript. This site is a
-            web
-            project I am working on. Another thing that I am working on is a Discord bot named KyleBot. KyleBot is coded
-            in
-            JavaScript. You can test him out or even suggest a new command over at <a
-                href='https://discord.gg/RNGms4BTCz'>The KyleBot Support Server.</a> If you want to know more about me,
-            you
-            can go over to the About Me section of this site.</p>
-        <br>
-        <div id="selfhelp">
+        <div class="container">
             <h2>What is this site about?</h2>
             <p>This site is a self-improvement site. I am here to encourage young men to join me and everyone else on
                 this self-improvement journey. Most young men today are down bad and to fix that, we need to improve and
                 become 1% better every single day. If you look around at modern day young men, you can see how down bad
                 they are including me, I am not trying to play innocent and say that I am better than everyone else.
                 Just like most young men, I am down bad. I am on this self-improvement journey and am taking action and
-                so should you. Hi, my name is Eleven (no not really), and I am a sort of new student on self-improvement.
-                On this site, you will see stuff that I already know. I am continuing to research other stuff and tell you
+                so should you. Hi, my name is Eleven (no not really), and I am a sort of new student on
+                self-improvement.
+                On this site, you will see stuff that I already know. I am continuing to research other stuff and tell
+                you
                 things that I already know. Good luck to all on this journey.</p>
             <br>
-            <p>This site is still in Beta and may have some bugs that I need to fixed. If you need help with something
-                or are reporting a bug, contact me at. <a
-                    href="mailto:nje.eleven34@outlook.com">nje.eleven34@outlook.com</a>.</p>
-        </div>
-        <br>
+            <br>
+            <div style="margin: auto; width: 50%; padding: 10px;" class="button-container">
+                <li id="join-container"><a id="join-text" href="https://discord.gg/kEHAU7ya3B" target="_blank"
+                        class="grow">Join me on this journey</a></li>
+            </div>
+    </header>
+    <hr>
+    <h1>Who am I?</h1>
+    <div id="selfhelp" class="contianer">
+        <p>If you don't know who I am, my name is ElevenWater975. I code in HTML, CSS, And
+            JavaScript. This site is a
+            web
+            project I am working on. Another thing that I am working on is a Discord bot named KyleBot. KyleBot is coded
+            in
+            JavaScript. You can test him out or even suggest a new command over at <a
+                href='https://discord.gg/RNGms4BTCz' style="color: lightblue; text-decoration: none;">The KyleBot
+                Support Server.</a> If you want to know more about me,
+            you
+            can go over to the About Me section of this site.</p>
 
         <br>
+        <p>This site is still in Beta and may have some bugs that I need to fixed. If you need help with something
+            or are reporting a bug, contact me at. <a href="mailto:nje.eleven34@outlook.com"
+                style="color: lightblue; text-decoration: none;">nje.eleven34@outlook.com</a>.</p>
+    </div>
+    <br>
+    <hr>
+
     </div>
     <div id="like_button_container"></div>
     <footer>

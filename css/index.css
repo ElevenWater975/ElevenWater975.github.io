@@ -8,7 +8,20 @@ body {
     background: rgb(34, 34, 34);
     color: white;
     font-family: sans-serif;
-    width: 100%;
+    animation: fadeInAnimation ease-in 0.7s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    overflow-x: hidden;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .container a {
@@ -17,6 +30,61 @@ body {
 }
 
 @media (min-width: 825px) {
+.active1 {
+    color: black;
+    background-color: rgb(41, 176, 221);
+}
+
+    #selfhelp {
+        width: 825px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    a:hover {
+        transform: scale(1.1);
+    }
+
+ 
+    
+    .nav {
+        background-color: rgb(14, 172, 53);
+        overflow: hidden;
+        position: fixed;
+        width: 100%;
+        display: flex;
+    }
+    
+    li {
+        float: left;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    
+    }
+    
+    .logo {
+        display: none;
+    }
+
+    .nav li {
+        display: inline;
+    }
+    
+    
+    .nav a {
+        color: white;
+        font-size: 18px;
+        text-decoration: none;
+        display: block; 
+        text-align: center;
+        padding: 24px 26px;
+    }
+
     p {
         font-size: 20px;
     }
@@ -26,8 +94,7 @@ body {
     }
 
     h1 {
-        font-size: 48px;
-        padding: 50px;
+        font-size: 72px;
         text-align: center;
     }
     
@@ -45,51 +112,90 @@ body {
         animation-duration: 4;
         animation-fill-mode: forwards;
     }
+    
     .container {
         text-align: left;
         width: 825px;
         margin: 0 auto;
     }
+
 }
 
 @media (max-width: 824px) {
-    p {
-        font-size: 20px;
-        font-family: Arial;
+    #navigationtoggle div {
+
+        width: 35px;
+        height: 5px;
+        background-color: white;
+        margin: 6px 0;
+        }
+
+        #navigationtoggle2 div {
+
+            width: 35px;
+            height: 5px;
+            background-color: white;
+            margin: 6px 0;
+            }
+  
+        #navigationtoggle div:hover {
+          cursor: pointer;
+        }
+
+    .logo {
+        display: block;
+        background-color: rgb(14, 172, 53);
     }
 
-    #vnav li a {
-        color: white;
-        text-decoration: none;
-        font-family: sans-serif;
-        font-size: 20px;
-        justify-content: center;
-        text-align: center;
-    }
-
-    li:hover {
-        background-color: rgb(44, 44, 44);
-        padding: 14px 14px;
+    img {
+        width: 100px;
+        height: 100px;
     }
 
     #vnav {
-        padding: 14px 16px;
-    }
-
-    nav {
         display: none;
     }
 
+    div#selfhelp {
+        width: 100%;
+    }
+
     h1 {
-        font-size: 40px;
-        font-family: Arial;
-        width: auto;
+        text-align: center;
+        font-size: 48px;
     }
 
     h2 {
+        text-align: center;
         font-size: 32px;
-        font-family: Arial;
     }
+
+    body {
+        width: 100%;
+        flex-wrap: nowrap;
+        overflow-x: hidden;
+    }
+
+    ul {
+        overflow-x: hidden;
+        background-color: rgb(14, 172, 53);
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #nav {
+        display: none;
+    }
+
+    li a {
+        color: white;
+        text-decoration: none;
+        font-family: sans-serif;
+        display: block;
+        width: 100%;
+        padding: 8px 36px;
+      }
 }
 
 @keyframes fadeaway {
@@ -166,14 +272,7 @@ ol {
 
 }
 
-a:hover {
-    transform: scale(1.1);
-}
 
-.active1 {
-    color: black;
-    background-color: rgb(41, 176, 221);
-}
 
 
 
@@ -181,32 +280,7 @@ a:hover {
     text-align: center;
 }
 
-.nav {
-    overflow: hidden;
-    width: 100%;
-    display: flex;
-}
 
-
-
-ul {
-    background-color: #333;
-    list-style-type: none;
-}
-
-.nav li {
-    display: inline;
-    float: left;
-}
-
-.nav a {
-    color: white;
-    text-decoration: none;
-    float: left;
-    display: block; 
-    text-align: center;
-    padding: 14px 16px;
-}
 
 .nav .icon {
 display: none;
@@ -226,4 +300,59 @@ display: none;
 
 .LightDarkToggle #nav {
     background-color: rgb(175, 175, 175);
+}
+
+#logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  #header-main {
+    background-color: rgb(17, 148, 50);
+    padding-top: 180px;
+    padding-bottom: 180px; 
+  }
+
+  #join-text {
+    font-size: 25px;
+    font-family: sans-serif;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    transition: all .2s ease-in; 
+    border-radius: 25px;
+  }
+
+  li {
+    list-style-type: none;
+  }
+
+  @media (min-width: 1000px) {
+    #join-text {
+        padding: 12px 45px
+    }
+}
+
+#join-text:hover {
+    background-color: rgb(44, 44, 44);
+    border: 1px solid black;
+}
+
+#join-text:active {
+    background-color:rgb(0, 0, 0);
+}
+
+@media (min-width: 825px) {
+.button-container {
+    width: 825px;
+}  
+}
+
+.navappear {
+    display: none;
+}
+
+.-widget-wrap {
+    background-color: #1b1b1b;
+    padding: 10px 30px;
 }
