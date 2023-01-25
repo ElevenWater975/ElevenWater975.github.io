@@ -5,17 +5,9 @@ Here are the supported versions:
 
 | Version       | Supported          |
 | -------       | ------------------ |
-| v1.2.6-alpha  | :white_check_mark: |
-| v1.2.5-alpha  | ❌                |
-| v1.2.4-alpha  | :white_check_mark: |
-| v1.2.3-alpha  | :white_check_mark: |
-| v1.2.2-alpha  | :white_check_mark: |
-| v1.2.1-alpha   | :white_check_mark:|
-| v1.2.0-alpha   | ❌ |
-| v1.0.0-alpha   | ❌ |
-| v1.0.1-alpha   | ❌ |
-| v1.1.0-alpha   | ❌ |
-| V1.0.2-alpha   | ❌ |
+| v1.0.2-Beta  | :white_check_mark:  |
+| v1.0.1-Beta  | :white_check_mark:  |
+| v1.0.0-Beta  | :white_check_mark:  |
 
 
 ## Reporting a Vulnerability
