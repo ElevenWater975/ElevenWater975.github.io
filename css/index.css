@@ -122,8 +122,15 @@ body {
 }
 
 @media (max-width: 824px) {
-    #navigationtoggle div {
+    #join-text {
+        text-align: center;
+    }
 
+    #rumble-text {
+        text-align: center;
+    }
+
+    #navigationtoggle div {
         width: 35px;
         height: 5px;
         background-color: white;
@@ -152,9 +159,6 @@ body {
         height: 100px;
     }
 
-    #vnav {
-        display: none;
-    }
 
     div#selfhelp {
         width: 100%;
@@ -322,14 +326,33 @@ display: none;
     transition: all .2s ease-in; 
     border-radius: 25px;
   }
+  
+  #rumble-text {
+        font-size: 25px;
+        font-family: sans-serif;
+        color: white;
+        border: 1px solid white;
+        padding: 10px;
+        transition: all .2s ease-in; 
+        border-radius: 25px;
+  }
 
   li {
     list-style-type: none;
   }
 
   @media (min-width: 1000px) {
+    .breaker {
+        padding: 40px 0px;
+    }
+
+    #rumble-text {
+        padding: 12px 35px;
+        margin-bottom: -400px;
+        width: 400px;
+    }
     #join-text {
-        padding: 12px 45px
+        padding: 12px 45px;
     }
 }
 
@@ -338,8 +361,17 @@ display: none;
     border: 1px solid black;
 }
 
+#rumble-text:hover {
+    background-color: rgb(44, 44, 44);
+    border: 1px solid black;
+}
+
 #join-text:active {
     background-color:rgb(0, 0, 0);
+}
+
+#rumble-text:active {
+    background-color: #0000
 }
 
 @media (min-width: 825px) {

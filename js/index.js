@@ -33,3 +33,15 @@ function currentTheme() {
         document.getElementById("theme1").style.display === "none";
     }
 }
+
+function closeNav() {
+    document.getElementById("navigationtoggle2").style.display = "block";
+    document.getElementById("navigationtoggle").style.display = "none";
+    document.getElementById("verticalnav").style.display = "block";
+}
+
+function closeNav2() {
+    document.getElementById("navigationtoggle2").style.display = "none";
+    document.getElementById("navigationtoggle").style.display = "block";
+    document.getElementById("verticalnav").style.display = "none";
+}
