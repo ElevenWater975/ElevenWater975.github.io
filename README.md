@@ -1,3 +1,3 @@
-# ElevenWater975.github.io
+# ElevenWater975.github.io (Space of Improvement)
 
-This site is a site that I created back in April 2021. Right now, it it is basically a site just to tell you about me but then, I am going to add a lot of stuff to it. 
+# Originally called "Eleven's site". This site is a self-improvement website made mostly for young men who want to better themselves. I talk about things that I have learned and ask other people to join me on this journey. This site was originally created in April 2021.
